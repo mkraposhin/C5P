@@ -1,44 +1,42 @@
-#ifndef Compound_H
-#define Compound_H
+#ifndef Document_H
+#define Document_H
 
-#include "Element.hxx"
-#include <vector>
+#include "Page.hxx"
 
 namespace krap
 {
 
 /*---------------------------------------------------------------------------*\
-                          Class Compound Declaration
+                          Class Document Declaration
 \*---------------------------------------------------------------------------*/
 
-class Compound
+class Document
 :
     public Element
 {
 protected:
 
-    //- Ordered list of elements in this compound
-    std::vector<Element> elements_;
+    //- Represents the header of the document
+    Element header_;
+
+    //- Represents the body of the document
+    Compound body_;
 
 
 public:
      
     //- Default constructor (creates empty compound)
-    Compound();
+    Document();
 
     //- Copy constructor
-    Compound(const Compound&);
+    Document(const Document&);
 
     //- Destructor
-    ~Compound();
+    ~Document();
 
-    //- Add new element
-    void add (const Element&);
-
-    //- Print elements in compound
+    //- Print the content of the document
     std::ostream& print(std::ostream& ostr) const;
 };
-
 
 }
 

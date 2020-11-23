@@ -7,7 +7,7 @@ krap::Compound::Compound()
 
 krap::Compound::Compound(const Compound& compound)
 :
-    elements_(elements)
+    elements_(compound.elements_)
 {
     
 }
@@ -20,10 +20,10 @@ krap::Compound::~Compound()
 void krap::Compound::add(const Element& elem)
 {
     auto it = elements_.cend();
-    elements_.insert(elem);
+    elements_.insert(it, elem);
 }
 
-std::ostream& krap::Compound::print(std::ostream& ostr)
+std::ostream& krap::Compound::print(std::ostream& ostr) const
 {
     for (auto elem : elements_)
     {
