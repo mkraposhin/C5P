@@ -1,4 +1,5 @@
 add_executable(home.cgi home.cxx)
+install(TARGETS home.cgi DESTINATION cgi-bin)
 
 target_link_libraries(home.cgi PRIVATE krap ${CgiCc_DIR}/lib/libcgicc.a)
 
