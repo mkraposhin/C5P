@@ -2,6 +2,7 @@
 #define Document_H
 
 #include "Page.hxx"
+#include "Head.hxx"
 
 namespace krap
 {
@@ -17,10 +18,10 @@ class Document
 protected:
 
     //- Represents the header of the document
-    Element header_;
+    Head head_;
 
     //- Represents the body of the document
-    Compound body_;
+    Page body_;
 
 
 public:
@@ -35,7 +36,13 @@ public:
     ~Document();
 
     //- Print the content of the document
-    std::ostream& print(std::ostream& ostr) const;
+    virtual std::ostream& print(std::ostream& ostr) const override;
+
+    //- Non-const access to the documents body
+    Page& body();
+    
+    //- Non-const access to the documents head
+    Head& head();
 };
 
 }

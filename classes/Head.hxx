@@ -1,19 +1,18 @@
-#ifndef Page_H
-#define Page_H
+#ifndef Head_H
+#define Head_H
 
 #include "Element.hxx"
-#include "Compound.hxx"
 
 namespace krap
 {
 
 /*---------------------------------------------------------------------------*\
-                            Class Page Declaration
+                            Class Head Declaration
 \*---------------------------------------------------------------------------*/
 
-class Page
+class Head
 :
-    public Compound
+    public Element
 {
 private:
 
@@ -21,16 +20,16 @@ private:
 public:
 
     //- Default constructor
-    Page();
+    Head();
 
     //- Destructor
-    ~Page();
+    ~Head();
 
-    //- Print elements in the Page
+    //- Print elements in the Head
     std::ostream& print(std::ostream& ostr) const override;
 
-    //- Assign operator
-    const Page& operator = (const Compound& );
+    //- Creates clone of itself
+    virtual ElementPtr clone() const;
 };
 
 }
@@ -40,4 +39,3 @@ public:
 //
 //END-OF-FILE
 //
-
