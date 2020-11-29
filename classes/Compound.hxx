@@ -18,9 +18,6 @@ class Compound
 {
 private:
 
-    //-  Forbid copy constructor
-    Compound(const Compound&) = delete;
-
 
 protected:
 
@@ -33,17 +30,20 @@ public:
     //- Default constructor (creates empty compound)
     Compound();
 
+    //- Copy constructor for the Compound
+    Compound(const Compound&);
+
     //- Destructor
     ~Compound();
 
     //- Add new element
-    void add (const Element&);
+    virtual ElementPtr& add (const Element&);
 
     //- Add element stored by ordinary pointer
-    void add (Element* ept);
+    virtual ElementPtr& add (Element* ept);
 
     //- Add element stored by shared_ptr pointer
-    void add (ElementPtr& eptr);
+    virtual ElementPtr& add (ElementPtr& eptr);
 
     //- Print elements in compound
     virtual std::ostream& print(std::ostream& ostr) const override;

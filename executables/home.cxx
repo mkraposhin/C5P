@@ -3,6 +3,8 @@
 #include "ParagraphText.hxx"
 #include "Title.hxx"
 #include "Head.hxx"
+#include "CSSElement.hxx"
+#include "CSSClass.hxx"
 
 int main (int argc, char * argv[])
 {
@@ -18,6 +20,14 @@ int main (int argc, char * argv[])
     ParagraphText secondPar {"This is my personal page"};
     ParagraphText thirdPar {"The site is about CFD, C++ and fluids"};
     ParagraphText fourthPar {"The page is written in C++ and CGI"};
+
+    CSSElement blueColor("color", "blue");
+    CSSElement font24px("font-size", "24px");
+
+    CSSClass parText ("parText");
+    parText.add(blueColor);
+    parText.add(font24px);
+    secondPar % (firstPar % parText);
 
     homeHtml.body().add(firstPar);
     homeHtml.body().add(secondPar);

@@ -1,6 +1,16 @@
 #include "Compound.hxx"
 
 krap::Compound::Compound()
+:
+    Element()
+{
+
+}
+
+krap::Compound::Compound(const Compound& compound)
+:
+    Element(compound),
+    elements_(compound.elements_)
 {
 
 }
@@ -10,24 +20,24 @@ krap::Compound::~Compound()
 
 }
 
-void krap::Compound::add(const Element& elem)
+krap::ElementPtr& krap::Compound::add(const Element& elem)
 {
     auto it = elements_.cend();
-    elements_.insert(it, elem.clone());
+    return *elements_.insert(it, elem.clone());
 }
 
-void krap::Compound::add(Element* eptr)
+krap::ElementPtr& krap::Compound::add(Element* eptr)
 {
-    auto it = elements_.cend();
     ElementPtr newElem {eptr};
-    elements_.insert(it, newElem);
+    auto it = elements_.insert(elements_.cend(), newElem);
     eptr = nullptr;
+    return *it;
 }
 
-void krap::Compound::add(ElementPtr& eptr)
+krap::ElementPtr& krap::Compound::add(ElementPtr& eptr)
 {
     auto it = elements_.cend();
-    elements_.insert(it, eptr);
+    return *elements_.insert(it, eptr);
 }
 
 std::ostream& krap::Compound::print(std::ostream& ostr) const

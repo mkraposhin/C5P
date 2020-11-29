@@ -5,6 +5,8 @@ set(SOURCES ${SOURCES} Page.cxx)
 set(SOURCES ${SOURCES} Head.cxx)
 set(SOURCES ${SOURCES} ParagraphText.cxx)
 set(SOURCES ${SOURCES} Title.cxx)
+set(SOURCES ${SOURCES} CSSElement.cxx)
+set(SOURCES ${SOURCES} CSSClass.cxx)
 
 add_library(krap ${SOURCES})
 

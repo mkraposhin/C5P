@@ -17,6 +17,9 @@ class Document
 {
 protected:
 
+    //-
+    CSSClassMap css_class_map_;
+
     //- Represents the header of the document
     Head head_;
 

@@ -1,5 +1,6 @@
 
 #include "ParagraphText.hxx"
+#include "CSSClass.hxx"
 #include <cgicc/HTMLClasses.h>
 
 krap::ParagraphText::ParagraphText()
@@ -14,6 +15,7 @@ krap::ParagraphText::ParagraphText(const std::string& text)
 
 krap::ParagraphText::ParagraphText(const ParagraphText& ptext)
 :
+    Element(ptext),
     partext_(ptext.partext_)
 {
 }
@@ -24,7 +26,17 @@ krap::ParagraphText::~ParagraphText()
 
 std::ostream& krap::ParagraphText::print(std::ostream& ostr) const
 {
-    ostr << cgicc::p() << partext_ << cgicc::p() << std::endl;
+    if (css())
+    {
+        ostr<< cgicc::p().set("class", (*css()).name())
+            << partext_ << cgicc::p() << std::endl;
+    }
+    else
+    {
+        ostr<< cgicc::p()
+            << partext_ << cgicc::p() << std::endl;
+    }
+    
     return ostr;
 }
 

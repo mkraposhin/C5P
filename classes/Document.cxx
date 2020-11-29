@@ -1,15 +1,24 @@
 #include "Document.hxx"
+#include "CSSClass.hxx"
 #include <cgicc/HTTPHTMLHeader.h>
 #include <cgicc/HTMLClasses.h>
 
 krap::Document::Document()
+:
+    Element(),
+    css_class_map_{},
+    head_{css_class_map_},
+    body_{css_class_map_}
 {
 
 }
 
 krap::Document::Document(const Document& doc)
 :
-    head_(doc.head_)
+    Element(doc),
+    css_class_map_(doc.css_class_map_),
+    head_(doc.head_),
+    body_(doc.body_)
 {
 
 }
