@@ -11,17 +11,15 @@ krap::Head::Head(CSSClassMap& css_class_map)
 {
 }
 
-krap::Head::Head(const Head& h)
+krap::Head::Head(const Head& h, CSSClassMap& css_class_map)
 :
     Element(h),
-    css_class_map_(const_cast<CSSClassMap&>(h.css_class_map_))
+    css_class_map_(css_class_map)
 {
-
 }
 
 krap::Head::~Head()
 {
-
 }
 
 void krap::Head::print_styles(std::ostream& ostr) const
@@ -41,11 +39,6 @@ std::ostream& krap::Head::print(std::ostream& ostr) const
     Element::print(ostr);
     ostr << cgicc::head() << std::endl;
     return ostr;
-}
-
-krap::ElementPtr krap::Head::clone() const
-{
-    return ElementPtr(new Head(*this));
 }
 
 //

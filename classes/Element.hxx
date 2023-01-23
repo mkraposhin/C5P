@@ -11,15 +11,13 @@ namespace krap
 //- Forward declaration of Element
 class Element;
 
-typedef std::shared_ptr<Element> ElementPtr;
+using ElementPtr = std::shared_ptr<Element>;
 
 class CSSClass;
 
-typedef std::shared_ptr<CSSClass> CSSClassPtr;
-
-typedef std::map<std::string,CSSClassPtr> CSSClassMap;
-
-typedef std::pair<std::string,CSSClassPtr> CSSClassMapRec;
+using CSSClassPtr = std::shared_ptr<CSSClass>;
+using CSSClassMap = std::map<std::string,CSSClassPtr>;
+using CSSClassMapRec = std::pair<std::string,CSSClassPtr>;
 
 
 class Element
@@ -40,7 +38,7 @@ private:
     void set_css_class(CSSClass& css);
 
     //-
-    friend Element& operator ^ (Element& el, Element& child);
+    friend Element& operator ^ (Element& el, const Element& child);
 
     //-
     friend CSSClassPtr& operator % (Element& el, CSSClass& css);
@@ -65,8 +63,12 @@ public:
     //- creates clone of itself
     virtual ElementPtr clone() const;
 
+    //- const-ref access to the child pointr
+    const ElementPtr& child() const;
+
     //- gives const-ref access to the style class
     const CSSClassPtr& css() const;
+
 };
 
 
@@ -74,13 +76,13 @@ public:
 std::ostream& operator << (std::ostream& ostr, const Element& elem);
 
 //- set nested element operator
-Element& operator ^ (Element& el, Element& child);
+Element& operator ^ (Element& el, const Element& child);
 
 //- apply CSS Class to this element
 CSSClassPtr& operator % (Element& el, CSSClass& css);
 
 //- apply CSS Class to this element
-CSSClassPtr& operator % (Element& el, CSSClassPtr& cssptr);;
+CSSClassPtr& operator % (Element& el, CSSClassPtr& cssptr);
 
 }//namespace krap
 

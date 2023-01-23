@@ -11,6 +11,10 @@ namespace krap
                           Class Document Declaration
 \*---------------------------------------------------------------------------*/
 
+class Document;
+
+using DocumentPtr = std::shared_ptr<Document>;
+
 class Document
 :
     public Element
@@ -46,6 +50,9 @@ public:
     
     //- Non-const access to the documents head
     Head& head();
+
+    //- creates a clone of itself
+    virtual ElementPtr clone() const override;
 };
 
 }

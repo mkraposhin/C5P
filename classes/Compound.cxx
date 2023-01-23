@@ -17,7 +17,6 @@ krap::Compound::Compound(const Compound& compound)
 
 krap::Compound::~Compound()
 {
-
 }
 
 krap::ElementPtr& krap::Compound::add(const Element& elem)
@@ -62,6 +61,36 @@ const krap::Compound& krap::Compound::operator =
     }
     elements_ = right.elements_;
     return *this;
+}
+
+krap::Element& krap::Compound::operator [] (int i)
+{
+    return *(elements_[i]);
+}
+
+std::vector<krap::ElementPtr>::iterator krap::Compound::begin()
+{
+    return elements_.begin();
+}
+
+std::vector<krap::ElementPtr>::iterator krap::Compound::end()
+{
+    return elements_.end();
+}
+
+std::vector<krap::ElementPtr>::const_iterator krap::Compound::cbegin() const
+{
+    return elements_.cbegin();
+}
+
+std::vector<krap::ElementPtr>::const_iterator krap::Compound::cend() const
+{
+    return elements_.cend();
+}
+
+int krap::Compound::size() const
+{
+    return elements_.size();
 }
 
 /*

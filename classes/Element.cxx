@@ -52,6 +52,11 @@ krap::ElementPtr krap::Element::clone() const
     return std::make_shared<Element>(*this);
 }
 
+const krap::ElementPtr& krap::Element::child() const
+{
+    return child_;
+}
+
 const krap::CSSClassPtr& krap::Element::css() const
 {
     return css_;
@@ -59,7 +64,7 @@ const krap::CSSClassPtr& krap::Element::css() const
 
 std::ostream& Element::Element::print(std::ostream& ostr) const
 {
-    if (child_)
+    if (bool(child_))
     {
         return (*child_).print(ostr);
     }
@@ -71,7 +76,7 @@ std::ostream& krap::operator << (std::ostream& ostr, const krap::Element& elem)
     return elem.print(ostr);
 }
 
-krap::Element& krap::operator ^ (krap::Element& el, krap::Element& cel)
+krap::Element& krap::operator ^ (krap::Element& el, const krap::Element& cel)
 {
     if (&el == &cel)
     {

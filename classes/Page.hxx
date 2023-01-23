@@ -23,8 +23,18 @@ private:
     //- Forbid the constructor without parameters
     Page() = delete;
 
+    //- Forbid copy ctor because it can produce broken links
+    //to css_class_map_
+    Page(const Page&) = delete;
+
     //- Registers CSS from the Element
-    void register_css_clas(ElementPtr& elem);
+    void register_css_class(const Element& elem);
+    
+    //- Registers CSS from the ElementPtr
+    void register_css_class(const ElementPtr& elemptr);
+
+    //- Declare % as friend to this class
+    friend CSSClassPtr& operator % (Page& page, CSSClass& css);
 
 
 public:
@@ -32,8 +42,8 @@ public:
     //-  Constructor with ref to the specified map for CSS Classes
     Page(CSSClassMap& ccm);
 
-    //- Copy constructor
-    Page(const Page&);
+    //- Copy constructor with specified css_class_map
+    Page(const Page&, CSSClassMap&);
 
     //- Destructor
     ~Page();
@@ -54,6 +64,9 @@ public:
     ElementPtr& add(ElementPtr& elem) override;
 
 };
+
+//- apply CSS Class to the page
+CSSClassPtr& operator % (Page& el, CSSClass& css);
 
 }
 

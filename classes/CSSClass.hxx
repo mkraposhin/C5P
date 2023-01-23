@@ -25,7 +25,7 @@ private:
     std::map<std::string,std::shared_ptr<CSSElement>> css_properties_;
 
     //- The type for the record
-    typedef std::pair<std::string,std::shared_ptr<CSSElement>> css_rec_type;
+    using css_rec_type = std::pair<std::string,std::shared_ptr<CSSElement>>;
 
 public:
 

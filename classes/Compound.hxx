@@ -49,18 +49,39 @@ public:
     virtual std::ostream& print(std::ostream& ostr) const override;
 
     //- Assign operator
-    const Compound& operator = (const Compound& right);
+    const Compound& operator = (const Compound& right);    
+
+
+    //- access to elements of a compound
+
+        //- Non-const reference access operator
+        Element& operator [] (int i);
+
+        //- begin of a compound
+        std::vector<ElementPtr>::iterator begin();
+
+        //- end of a compound
+        std::vector<ElementPtr>::iterator end();
+
+        //- const begin of a compound
+        std::vector<ElementPtr>::const_iterator cbegin() const;
+
+        //- const end of a compound
+        std::vector<ElementPtr>::const_iterator cend() const;
+
+        //- total count of elements of a compound
+        int size() const;
 };
 
 
-//- addition of two Elements is the new Compound with two elements
+//- summation of two Elements is the new Compound with two elements
 std::shared_ptr<Compound> operator + 
 (
     const Element& elem1, 
     const Element& elem2
 );
 
-//- addition of one Compound and one Element is equal to adding element
+//- summation of one Compound and one Element is equal to adding element
 //  to this compound (const version)
 std::shared_ptr<Compound> operator +
 (
@@ -68,7 +89,7 @@ std::shared_ptr<Compound> operator +
     const Element& elem
 );
 
-//- addition of one Compound and one Element is equal to adding element
+//- summation of one Compound and one Element is equal to adding element
 //  to this compound (const version)
 std::shared_ptr<Compound> operator +
 (

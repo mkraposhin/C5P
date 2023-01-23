@@ -2,3 +2,5 @@
 *.a
 *.cgi
 settings.json
+build/*
+build
