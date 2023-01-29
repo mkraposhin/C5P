@@ -24,10 +24,31 @@ private:
     //- Reference to the main menu of the site
     const MainMenu& mm_;
 
+    // Create 3-column layout
+
+    //- Layout with three columns
+    Div three_cols_;
+
+    //- Left column
+    Div left_col_;
+
+    //- Middle column
+    Div middle_col_;
+
+    //- Right column
+    Div right_col_;
+
+    //- Layout for mainmenu
+    Div mmenu_layout_;
+
+
 protected:
 
     //- this is invoked to construct the common part of document
     virtual void construct();
+
+    //- returns layout of this page
+    Div& layout();
 
 public:
 

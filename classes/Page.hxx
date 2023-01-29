@@ -34,7 +34,7 @@ private:
     void register_css_class(const ElementPtr& elemptr);
 
     //- Declare % as friend to this class
-    friend CSSClassPtr& operator % (Page& page, CSSClass& css);
+    friend CSSClassPtr& operator % (Page& page, const CSSClass& css);
 
 
 public:
@@ -62,11 +62,10 @@ public:
 
     //- Adds element and registers its CSS class in the table;
     ElementPtr& add(ElementPtr& elem) override;
-
 };
 
 //- apply CSS Class to the page
-CSSClassPtr& operator % (Page& el, CSSClass& css);
+CSSClassPtr& operator % (Page& el, const CSSClass& css);
 
 }
 

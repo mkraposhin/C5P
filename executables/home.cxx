@@ -11,12 +11,15 @@
 #include "MainMenu.hxx"
 #include "CSSElement.hxx"
 #include "CSSClass.hxx"
+#include "Globals.hxx"
 
 int main (int argc, char * argv[])
 {
     cgicc::Cgicc cgi;
 
     using namespace krap;
+
+    krap::init_globals();
 
     Site site;
 
@@ -105,16 +108,16 @@ int main (int argc, char * argv[])
     bodycss.add(whiteFont);
 
     CSSClass divrow {"divrow"};
-    divrow.add(displayFlex);
-    divrow.add(boxSizing);
+    // divrow.add(displayFlex);
+    // divrow.add(boxSizing);
     CSSClass middlecol {"middlecol"};
-    middlecol.add(width30perc);
-    middlecol.add(displayFlex);
-    middlecol.add(boxSizing);
+    // middlecol.add(width30perc);
+    // middlecol.add(displayFlex);
+    // middlecol.add(boxSizing);
     CSSClass sidecol{"sidecol"};
-    sidecol.add(width30perc);
-    sidecol.add(displayFlex);
-    sidecol.add(boxSizing);
+    // sidecol.add(width30perc);
+    // sidecol.add(displayFlex);
+    // sidecol.add(boxSizing);
     threeCol % divrow;
     threeCol[0] % sidecol;
     threeCol[1] % middlecol;

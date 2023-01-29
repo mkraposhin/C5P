@@ -3,6 +3,7 @@
 #include "Home.hxx"
 #include "Education.hxx"
 #include "Patents.hxx"
+#include "ProfExperience.hxx"
 
 void krap::Site::insert_doc(std::string nm, const Document& doc)
 {
@@ -31,6 +32,7 @@ krap::Site::Site()
     insert_doc("home", Home {*this});
     insert_doc("education", Education{*this});
     insert_doc("patents", Patents{*this});
+    insert_doc("prof_experience", ProfExperience{*this});
 }
 
 int krap::Site::n_documents() const

@@ -29,14 +29,13 @@ krap::ElementPtr& krap::Compound::add(Element* eptr)
 {
     ElementPtr newElem {eptr};
     auto it = elements_.insert(elements_.cend(), newElem);
-    eptr = nullptr;
     return *it;
 }
 
 krap::ElementPtr& krap::Compound::add(ElementPtr& eptr)
 {
     auto it = elements_.cend();
-    return *elements_.insert(it, eptr);
+    return *elements_.insert(it, eptr->clone());
 }
 
 std::ostream& krap::Compound::print(std::ostream& ostr) const
@@ -91,6 +90,11 @@ std::vector<krap::ElementPtr>::const_iterator krap::Compound::cend() const
 int krap::Compound::size() const
 {
     return elements_.size();
+}
+
+void krap::Compound::clear()
+{
+    elements_.erase(elements_.cbegin(), elements_.cend());
 }
 
 /*

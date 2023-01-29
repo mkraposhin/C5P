@@ -30,19 +30,44 @@ struct css
      * Width values 
      * 
      */
+    const static CSSElement width10perc;
     const static CSSElement width25perc;
-    const static CSSElement width50perc;
     const static CSSElement width30perc;
+    const static CSSElement width50perc;
+    const static CSSElement width75perc;
 
+    /*
+     *
+     * Display styles
+     * 
+     */
+    const static CSSElement displayFlex;
+    const static CSSElement displayTable;
+    const static CSSElement displayTableRowGroup;
+    const static CSSElement displayRow;
+    const static CSSElement displayCell;
+    
     /*
      *
      * Other style elements
      * 
      */
-    const static CSSElement displayFlex;
+    const static CSSElement boxSizing;
 
-    /* CSS Classes */
+    /*
+     *
+     * CSS Classes
+     * 
+     */
     const static CSSClass menuText;
+    const static CSSClass emptyClass;
+    const static CSSClass divRow;
+    const static CSSClass middleColumn;
+    const static CSSClass sideColumn;
+    const static CSSClass divTable;
+    const static CSSClass divTableBody;
+    const static CSSClass divTableRow;
+    const static CSSClass divTableCell;
 };
 
 namespace constants

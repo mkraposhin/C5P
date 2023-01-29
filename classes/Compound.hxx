@@ -54,6 +54,10 @@ public:
 
     //- access to elements of a compound
 
+        //- Access with specification of a child type
+        template <class CType>
+        CType& operator () (int i);
+
         //- Non-const reference access operator
         Element& operator [] (int i);
 
@@ -71,6 +75,9 @@ public:
 
         //- total count of elements of a compound
         int size() const;
+
+        //- remove all child elements
+        void clear();
 };
 
 
@@ -96,6 +103,12 @@ std::shared_ptr<Compound> operator +
     const Element& elem,
     const std::shared_ptr<Compound>& comp1
 );
+
+template <class CType> CType& 
+krap::Compound::operator () (int i)
+{
+    return dynamic_cast<CType&>(this->operator[](i));
+}
 
 }
 

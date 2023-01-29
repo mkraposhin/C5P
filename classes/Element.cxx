@@ -8,9 +8,9 @@ void krap::Element::set_child(ElementPtr& new_child)
     child_ = new_child;
 }
 
-void krap::Element::set_css_class(CSSClass& css)
+void krap::Element::set_css_class(const CSSClass& css)
 {
-    if (dynamic_cast<CSSClass*>(this)) //it is a CSSClas
+    if (dynamic_cast<CSSClass*>(this)) //it is a CSSClass
     {
         return;
     }
@@ -88,7 +88,8 @@ krap::Element& krap::operator ^ (krap::Element& el, const krap::Element& cel)
     return el;
 }
 
-krap::CSSClassPtr& krap::operator % (krap::Element& el, krap::CSSClass& css)
+krap::CSSClassPtr& krap::operator % (krap::Element& el, 
+    const krap::CSSClass& css)
 {
     el.set_css_class(css);
     return el.css_;

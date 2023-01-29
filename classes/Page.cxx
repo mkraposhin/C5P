@@ -55,14 +55,14 @@ void krap::Page::register_css_class(const Element& nelem)
             
         css_class_map_.insert(new_rec);
     }
-
+    
     if (nelem.child())
     {
         register_css_class(nelem.child());
     }
     if (&nelem != this) //nelem doesn't point to this object
     {
-        if (dynamic_cast<const Compound*>(&nelem))//if it a Compound
+        if (dynamic_cast<const Compound*>(&nelem))//if it is a Compound
         {
             auto compound_of_elements = 
                 dynamic_cast<const Compound&>(nelem);
@@ -104,10 +104,11 @@ krap::ElementPtr& krap::Page::add(ElementPtr& elem)
     return nptr;
 }
 
-krap::CSSClassPtr& krap::operator % (krap::Page& page, krap::CSSClass& css)
+krap::CSSClassPtr& krap::operator % (krap::Page& page,
+    const krap::CSSClass& css)
 {
     CSSClassPtr& cssptr = dynamic_cast<Element&>(page) % css;
-    page.register_css_class(page);
+    page.register_css_class(cssptr);
     return cssptr;
 }
 

@@ -35,13 +35,13 @@ private:
     void set_child(ElementPtr& new_child);
 
     //- Sets the CSS Class for this element
-    void set_css_class(CSSClass& css);
+    void set_css_class(const CSSClass& css);
 
     //-
     friend Element& operator ^ (Element& el, const Element& child);
 
     //-
-    friend CSSClassPtr& operator % (Element& el, CSSClass& css);
+    friend CSSClassPtr& operator % (Element& el, const CSSClass& css);
 
     //-
     friend CSSClassPtr& operator % (Element& el, CSSClassPtr& cssptr);
@@ -79,7 +79,7 @@ std::ostream& operator << (std::ostream& ostr, const Element& elem);
 Element& operator ^ (Element& el, const Element& child);
 
 //- apply CSS Class to this element
-CSSClassPtr& operator % (Element& el, CSSClass& css);
+CSSClassPtr& operator % (Element& el, const CSSClass& css);
 
 //- apply CSS Class to this element
 CSSClassPtr& operator % (Element& el, CSSClassPtr& cssptr);

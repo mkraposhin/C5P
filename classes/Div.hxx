@@ -27,11 +27,11 @@ public:
     //- Destructor
     ~Div();
 
-    //- Print elements in the Div
+    //- Print elements in a Div
     std::ostream& print(std::ostream& ostr) const override;
 
-    //- Creates clone of the ParagraphText
-    ElementPtr clone() const override;
+    //- Creates clone of a Div
+    virtual ElementPtr clone() const override;
 };
 
 }

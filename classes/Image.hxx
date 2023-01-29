@@ -1,7 +1,7 @@
 #ifndef Image_H
 #define Image_H
 
-#include "Element.hxx"
+#include "Div.hxx"
 #include "Uri.hxx"
 
 namespace krap
@@ -25,6 +25,9 @@ private:
     //- The uri
     UriPtr uri_;
 
+    //- Width of an image
+    int width_;
+
 public:
 
     //- Default constructor
@@ -44,6 +47,12 @@ public:
 
     //- Creates clone of the Image
     ElementPtr clone() const override;
+
+    //- Sets the width of an image
+    int width(int w);
+
+    //- Returns the width of an image
+    const int width() const;
 };
 
 }
