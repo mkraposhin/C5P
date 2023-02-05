@@ -7,14 +7,14 @@
 krap::Head::Head(CSSClassMap& css_class_map)
 :
     Element(),
-    css_class_map_(css_class_map)
+    CSSRegistry(css_class_map)
 {
 }
 
 krap::Head::Head(const Head& h, CSSClassMap& css_class_map)
 :
     Element(h),
-    css_class_map_(css_class_map)
+    CSSRegistry(css_class_map)
 {
 }
 
@@ -39,6 +39,13 @@ std::ostream& krap::Head::print(std::ostream& ostr) const
     Element::print(ostr);
     ostr << cgicc::head() << std::endl;
     return ostr;
+}
+
+krap::Element& krap::operator ^ (Head& el, const Element& child)
+{
+    dynamic_cast<Element&>(el) ^ child;
+    el.register_css_class(el.child());
+    return el;
 }
 
 //

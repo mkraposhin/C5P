@@ -6,8 +6,16 @@ krap::Home::Home(const Site& site)
 :
     DocumentImpl(site)
 {
-    ParagraphText txt ("Home");
-    layout().operator()<Div>(1).add(txt);
+    ParagraphText txtHi ("Hi! I'm Matvey Kraposhin.");
+
+    ParagraphText txtAbout ("This site is about my professional experience,"
+    " education, certification and professional interests. Main areas of my"
+    " expertise are: open source software, software development with C++,"
+    " computational analysis of fluids & gases motion. I hope that provided"
+    " information would be helpful for you to estimate whether you need my"
+    " service");
+    layout().operator()<Div>(1).add(txtHi);
+    layout().operator()<Div>(1).add(txtAbout);
     //dynamic_cast<Div&>(layout()[1]).add(txt);
     //body().add(txt);
 }

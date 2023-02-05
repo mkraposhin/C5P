@@ -17,6 +17,15 @@ struct css
     const static CSSElement colorBlue;
     const static CSSElement colorBlack;
     const static CSSElement colorWhite;
+    const static CSSElement colorGray;
+
+    /*
+     *
+     * Bacground colors
+     * 
+     */
+    const static CSSElement bcolorWhite;
+    const static CSSElement bcolorGray;
 
     /*
      *
@@ -24,6 +33,10 @@ struct css
      * 
      */
     const static CSSElement font24px;
+    const static CSSElement font22px;
+    const static CSSElement font20px;
+    const static CSSElement font18px;
+    const static CSSElement font16px;
 
     /*
      *
@@ -35,6 +48,34 @@ struct css
     const static CSSElement width30perc;
     const static CSSElement width50perc;
     const static CSSElement width75perc;
+    const static CSSElement width100perc;
+
+    const static CSSElement width100px;
+    const static CSSElement width200px;
+    const static CSSElement width300px;
+    const static CSSElement width400px;
+    const static CSSElement width500px;
+
+    /*
+     *
+     * Bottom space
+     * 
+     */
+    const static CSSElement bottom0;
+
+    /*
+     *
+     * Position
+     * 
+     */
+    const static CSSElement positionFixed;
+
+    /*
+     *
+     * Overflow
+     * 
+     */
+    const static CSSElement overflowHidden;
 
     /*
      *
@@ -73,7 +114,7 @@ struct css
 namespace constants
 {
     const std::string protocol {"http://"};
-    const std::string site_uri {"127.0.0.1/"};
+    const std::string site_uri {"194.4.51.15/"};
 }
 
 void init_globals();

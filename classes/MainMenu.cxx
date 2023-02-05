@@ -1,11 +1,32 @@
 #include "MainMenu.hxx"
 #include "AText.hxx"
+#include "Globals.hxx"
+
 
 krap::MainMenu::MainMenu()
-: Div()
+: 
+    Div()
 {
-    ElementPtr Home = 
-        AText("Home").clone();
+
+    //- A base css class for the main menu
+    CSSClass menu_class ("menuCssClass");
+
+    //- A css class for links inside the main menu
+    //CSSClass menu_class_links ("menuCssClass a");
+
+    //- A css class for links when a mouse pointer 
+    // hovers over them
+    //CSSClass menu_class_hover ("menuCssClass a:hover");
+
+    menu_class.add(css::bcolorGray);
+    menu_class.add(css::overflowHidden);
+    //menu_class.add(css::bottom0);
+    //menu_class.add(css::positionFixed);
+    menu_class.add(css::width75perc);
+    *this % menu_class;
+
+    // ElementPtr Home = 
+    //     AText("Home").clone();
     // ElementPtr Education = 
     //     AText("Education").clone();
     // ElementPtr ProfExp =
@@ -51,6 +72,7 @@ void krap::MainMenu::insert(std::string name, const UriPtr& uri_ptr)
     ElementPtr item = std::dynamic_pointer_cast<Element>(atext);
     this->add(item);
 }
+
 //
 //END-OF-FILE
 //

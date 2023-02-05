@@ -7,6 +7,9 @@ krap::Patents::Patents(const Site& site)
 :
     DocumentImpl(site)
 {
+    CSSClass patCss {"patCss"};
+    patCss.add(css::width300px);
+
     //Constants
     const int patent_width  = 300;
 
@@ -17,6 +20,7 @@ krap::Patents::Patents(const Site& site)
     " modelling of interaction between liquid metal and gas in order to"
     " compute a droplet distribution properties of yilding metal powder");
     pat_tvel_img.caption(img1_txt);
+    pat_tvel_img % patCss;
 
     CaptionedImage pat_acostic_img{"2017660047.jpg"};
     pat_acostic_img.image().width(patent_width);
@@ -24,12 +28,14 @@ krap::Patents::Patents(const Site& site)
     " analysis of a far-field acoustics"
     );
     pat_acostic_img.caption(img2_txt);
+    pat_acostic_img % patCss;
 
     CaptionedImage pat_hcs{"2017660155.jpg"};
     pat_hcs.image().width(patent_width);
     std::string img3_txt ("State registration of a program for numerical"
     " of compressible flows in a wide range of Mach number value");
     pat_hcs.caption(img3_txt);
+    pat_hcs % patCss;
 
     CaptionedImage pat_qgd{"2018663951.jpg"};
     pat_qgd.image().width(patent_width);
@@ -37,6 +43,7 @@ krap::Patents::Patents(const Site& site)
     " modelling of viscous gas flows using regularized gas dynamics equations"
     " (QGD)");
     pat_qgd.caption(img4_txt);
+    pat_qgd % patCss;
 
     Div& mid_col = layout().operator()<Div>(1);
 

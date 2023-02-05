@@ -3,9 +3,12 @@
 
 #include "Element.hxx"
 #include "Compound.hxx"
+#include "CSSRegistry.hxx"
 
 namespace krap
 {
+
+class Document;
 
 /*---------------------------------------------------------------------------*\
                             Class Page Declaration
@@ -13,12 +16,9 @@ namespace krap
 
 class Page
 :
-    public Compound
+    public Compound, CSSRegistry
 {
 private:
-
-    //- the reference to the map of CSS Classes applied in the document
-    CSSClassMap& css_class_map_;
 
     //- Forbid the constructor without parameters
     Page() = delete;
@@ -26,12 +26,6 @@ private:
     //- Forbid copy ctor because it can produce broken links
     //to css_class_map_
     Page(const Page&) = delete;
-
-    //- Registers CSS from the Element
-    void register_css_class(const Element& elem);
-    
-    //- Registers CSS from the ElementPtr
-    void register_css_class(const ElementPtr& elemptr);
 
     //- Declare % as friend to this class
     friend CSSClassPtr& operator % (Page& page, const CSSClass& css);

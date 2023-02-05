@@ -2,6 +2,7 @@
 #define Head_H
 
 #include "Element.hxx"
+#include "CSSRegistry.hxx"
 
 namespace krap
 {
@@ -12,12 +13,14 @@ namespace krap
 
 class Head
 :
-    public Element
+    public Element, CSSRegistry
 {
-private:
+protected:
 
-    //- the reference to the map of CSS Classes applied in the document
-    CSSClassMap& css_class_map_;
+    //- Gives access to CSSRegistry functions
+    friend Element& operator ^ (Head& el, const Element& child);
+
+private:
 
     //- forbid the default constructor
     Head() = delete;
@@ -42,6 +45,9 @@ public:
     //- Print elements in the Head
     std::ostream& print(std::ostream& ostr) const override;
 };
+
+//- set nested element for a given Head operator
+Element& operator ^ (Head& el, const Element& child);
 
 }
 

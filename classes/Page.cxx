@@ -6,14 +6,14 @@
 krap::Page::Page(CSSClassMap& ccm)
 :
     Compound(),
-    css_class_map_(ccm)
+    CSSRegistry(ccm)
 {
 }
 
 krap::Page::Page(const Page& page, CSSClassMap& css_class_map)
 :
     Compound(page),
-    css_class_map_(css_class_map)
+    CSSRegistry(css_class_map)
 {
 }
 
@@ -41,46 +41,6 @@ const krap::Page& krap::Page::operator = (const krap::Compound& right)
 {
     krap::Compound::operator=(right);
     return *this;
-}
-
-void krap::Page::register_css_class(const Element& nelem)
-{
-    if (nelem.css())
-    {
-        CSSClassMapRec new_rec
-        {
-            (*nelem.css()).name(),
-            nelem.css()
-        };
-            
-        css_class_map_.insert(new_rec);
-    }
-    
-    if (nelem.child())
-    {
-        register_css_class(nelem.child());
-    }
-    if (&nelem != this) //nelem doesn't point to this object
-    {
-        if (dynamic_cast<const Compound*>(&nelem))//if it is a Compound
-        {
-            auto compound_of_elements = 
-                dynamic_cast<const Compound&>(nelem);
-            for (auto it :compound_of_elements)
-            {
-                register_css_class(it);
-            }
-        }
-    }
-}
-
-void krap::Page::register_css_class(const ElementPtr& eptr)
-{
-    if (eptr)
-    {
-        Element& nelem = *eptr;
-        register_css_class(nelem);
-    }
 }
 
 krap::ElementPtr& krap::Page::add(const krap::Element& elem)

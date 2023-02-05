@@ -1,5 +1,6 @@
 set(SOURCES ${SOURCES} Debug.cxx)
 set(SOURCES ${SOURCES} Element.cxx)
+set(SOURCES ${SOURCES} CSSRegistry.cxx)
 set(SOURCES ${SOURCES} Compound.cxx)
 set(SOURCES ${SOURCES} Document.cxx)
 set(SOURCES ${SOURCES} Page.cxx)
@@ -23,6 +24,8 @@ set(SOURCES ${SOURCES} Home.cxx)
 set(SOURCES ${SOURCES} Education.cxx)
 set(SOURCES ${SOURCES} ProfExperience.cxx)
 set(SOURCES ${SOURCES} Patents.cxx)
+set(SOURCES ${SOURCES} MyOssProjects.cxx)
+set(SOURCES ${SOURCES} MyPublications.cxx)
 
 add_library(krap ${SOURCES})
 
