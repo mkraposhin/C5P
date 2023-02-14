@@ -3,24 +3,31 @@
 namespace krap
 {
     const CSSElement css::colorBlue {"color", "blue"};
-    const CSSElement css::colorBlack {"color", "black"};
-    const CSSElement css::colorWhite {"color", "white"};
-    const CSSElement css::colorGray {"color", "gray"};
+    const Black css::colorBlack;
+    const Color<0xFF,0xFF,0xFF> css::colorWhite;
+    const Gray css::colorGray;
 
     const CSSElement css::bcolorWhite{"background-color","white"};
     const CSSElement css::bcolorGray{"background-color", "gray"};
 
-    const CSSElement css::font24px {"font-size", "24px"};
-    const CSSElement css::font22px {"font-size", "22px"};
-    const CSSElement css::font20px {"font-size", "20px"};
-    const CSSElement css::font18px {"font-size", "18px"};
-    const CSSElement css::font16px {"font-size", "16px"};
+    const FontSize<24> css::font24px;
+    const FontSize<22> css::font22px;
+    const FontSize<20> css::font20px;
+    const FontSize<18> css::font18px;
+    const FontSize<16> css::font16px;
+
+    const FontStyle<'n'> css::fontStyleNormal;
+    const FontStyle<'o'> css::fontOblique;
+    const FontStyle<'i'> css::fontItalic;
+    const FontWeight<'n'> css::fontWeightNormal;
+    const FontWeight<'b'> css::fontBold;
 
     const CSSElement css::width10perc{"width","10.0%"};
     const CSSElement css::width25perc{"width","25.0%"};
     const CSSElement css::width30perc{"width","30.0%"};
     const CSSElement css::width50perc{"width","50.0%"};
     const CSSElement css::width75perc{"width","75.0%"};
+    const CSSElement css::width80perc{"width","80.0%"};
     const CSSElement css::width100perc{"width","100.0%"};
 
     const CSSElement css::width100px{"width","100.0px"};
@@ -30,10 +37,39 @@ namespace krap
     const CSSElement css::width500px{"width","500.0px"};
 
     const CSSElement css::bottom0{"bottom", "0"};
+    const CSSElement css::top0{"top", "0"};
 
     const CSSElement css::positionFixed{"position", "fixed"};
 
     const CSSElement css::overflowHidden{"overflow", "hidden"};
+
+    const CSSElement css::marginTop0px{"margin-top", "0px"};
+    const CSSElement css::marginTop10px{"margin-top", "10px"};
+    const CSSElement css::marginTop20px{"margin-top", "20px"};
+    const CSSElement css::marginTop50px{"margin-top", "50px"};
+    const CSSElement css::marginTop100px{"margin-top", "100px"};
+    const CSSElement css::marginTop200px{"margin-top", "200px"};
+    //
+    const CSSElement css::paddingTop0px{"padding-top", "0px"};
+    const CSSElement css::paddingTop10px{"padding-top", "10px"};
+    const CSSElement css::paddingTop20px{"padding-top", "20px"};
+    const CSSElement css::paddingTop50px{"padding-top", "50px"};
+    const CSSElement css::paddingTop100px{"padding-top", "100px"};
+    const CSSElement css::paddingTop200px{"padding-top", "200px"};
+    //
+    const CSSElement css::marginLeft0px{"margin-left","0px"};
+    const CSSElement css::marginLeft10px{"margin-left","10px"};
+    const CSSElement css::marginLeft20px{"margin-left","20px"};
+    const CSSElement css::marginLeft50px{"margin-left","50px"};
+    const CSSElement css::marginLeft100px{"margin-left","100px"};
+    const CSSElement css::marginLeft200px{"margin-left","200px"};
+    //
+    const CSSElement css::marginRight0px{"margin-right", "0px"};
+    const CSSElement css::marginRight10px{"margin-right", "10px"};
+    const CSSElement css::marginRight20px{"margin-right", "20px"};
+    const CSSElement css::marginRight50px{"margin-right", "50px"};
+    const CSSElement css::marginRight100px{"margin-right", "100px"};
+    const CSSElement css::marginRight200px{"margin-right", "200px"};
 
     const CSSElement css::displayFlex {"display","flex"};
     const CSSElement css::displayTable {"display","table"};
@@ -62,7 +98,7 @@ void krap::init_globals()
     const_cast<CSSClass&>(css::divRow).add(css::boxSizing);
     const_cast<CSSClass&>(css::divRow).add(css::displayFlex);
 
-    const_cast<CSSClass&>(css::middleColumn).add(css::width75perc);
+    const_cast<CSSClass&>(css::middleColumn).add(css::width80perc);
     //const_cast<CSSClass&>(css::middleColumn).add(css::displayFlex);
     const_cast<CSSClass&>(css::middleColumn).add(css::boxSizing);
 

@@ -3,6 +3,8 @@
 
 #include "CSSElement.hxx"
 #include "CSSClass.hxx"
+#include "FontStyles.hxx"
+#include "Colors.hxx"
 
 namespace krap
 {
@@ -15,9 +17,9 @@ struct css
      *
      */
     const static CSSElement colorBlue;
-    const static CSSElement colorBlack;
-    const static CSSElement colorWhite;
-    const static CSSElement colorGray;
+    const static Black colorBlack;
+    const static Color<0xFF,0xFF,0xFF> colorWhite;
+    const static Gray colorGray;
 
     /*
      *
@@ -29,14 +31,31 @@ struct css
 
     /*
      *
+     * Font family
+     * 
+     */
+
+    /*
+     *
      * Font sizes
      * 
      */
-    const static CSSElement font24px;
-    const static CSSElement font22px;
-    const static CSSElement font20px;
-    const static CSSElement font18px;
-    const static CSSElement font16px;
+    const static FontSize<24> font24px;
+    const static FontSize<22> font22px;
+    const static FontSize<20> font20px;
+    const static FontSize<18> font18px;
+    const static FontSize<16> font16px;
+
+    /*
+     *
+     * Font styles and weights
+     * 
+     */
+    const static FontStyle<'n'> fontStyleNormal;
+    const static FontStyle<'o'> fontOblique;
+    const static FontStyle<'i'> fontItalic;
+    const static FontWeight<'n'> fontWeightNormal;
+    const static FontWeight<'b'> fontBold;
 
     /*
      *
@@ -48,6 +67,7 @@ struct css
     const static CSSElement width30perc;
     const static CSSElement width50perc;
     const static CSSElement width75perc;
+    const static CSSElement width80perc;
     const static CSSElement width100perc;
 
     const static CSSElement width100px;
@@ -62,6 +82,7 @@ struct css
      * 
      */
     const static CSSElement bottom0;
+    const static CSSElement top0;
 
     /*
      *
@@ -76,6 +97,39 @@ struct css
      * 
      */
     const static CSSElement overflowHidden;
+
+    /*
+     *
+     * Body geometry
+     * 
+     */
+    const static CSSElement marginTop0px;
+    const static CSSElement marginTop10px;
+    const static CSSElement marginTop20px;
+    const static CSSElement marginTop50px;
+    const static CSSElement marginTop100px;
+    const static CSSElement marginTop200px;
+    //
+    const static CSSElement paddingTop0px;
+    const static CSSElement paddingTop10px;
+    const static CSSElement paddingTop20px;
+    const static CSSElement paddingTop50px;
+    const static CSSElement paddingTop100px;
+    const static CSSElement paddingTop200px;
+    //
+    const static CSSElement marginLeft0px;
+    const static CSSElement marginLeft10px;
+    const static CSSElement marginLeft20px;
+    const static CSSElement marginLeft50px;
+    const static CSSElement marginLeft100px;
+    const static CSSElement marginLeft200px;
+    //
+    const static CSSElement marginRight0px;
+    const static CSSElement marginRight10px;
+    const static CSSElement marginRight20px;
+    const static CSSElement marginRight50px;
+    const static CSSElement marginRight100px;
+    const static CSSElement marginRight200px;
 
     /*
      *
@@ -114,7 +168,9 @@ struct css
 namespace constants
 {
     const std::string protocol {"http://"};
-    const std::string site_uri {"194.4.51.15/"};
+    //const std::string site_uri {"194.4.51.15/"};
+    // const std::string site_uri {"kraposhin.online/"};
+    const std::string site_uri {"127.0.0.1/"};
 }
 
 void init_globals();

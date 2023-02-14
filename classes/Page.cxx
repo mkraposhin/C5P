@@ -67,8 +67,9 @@ krap::ElementPtr& krap::Page::add(ElementPtr& elem)
 krap::CSSClassPtr& krap::operator % (krap::Page& page,
     const krap::CSSClass& css)
 {
-    CSSClassPtr& cssptr = dynamic_cast<Element&>(page) % css;
-    page.register_css_class(cssptr);
+    Element& elem = dynamic_cast<Element&>(page);
+    CSSClassPtr& cssptr = elem % css;
+    page.register_css_class(elem);
     return cssptr;
 }
 

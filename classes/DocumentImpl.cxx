@@ -27,7 +27,21 @@ krap::DocumentImpl::DocumentImpl(const Site& site)
     right_col_(),
     mmenu_layout_()
 {
-    body() % krap::css::emptyClass;
+    CSSClass bodyCss {"bodyCss"};
+    bodyCss.add(css::marginTop20px);
+    bodyCss.add(css::paddingTop20px);
+
+    body() % bodyCss;
+
+    CSSClass textClass {"middleColumnText, p, a"};
+    textClass.add(css::font18px);
+    textClass.add(css::fontOblique);
+    textClass.add(FontFamily{"Arial, sans-serif"});
+    Div ap_div;
+    ap_div % textClass;
+    middle_col_.add(ap_div);
+
+
     three_cols_ % krap::css::divRow;
     left_col_ % krap::css::sideColumn;
     middle_col_ % krap::css::middleColumn;

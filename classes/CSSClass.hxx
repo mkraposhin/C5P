@@ -52,6 +52,10 @@ public:
 
     //- Adds property
     void add(const CSSElement& element);
+
+    //- Assigns properties from other css class object to this one
+    // creating deep copy of the corresponding map
+    const CSSClass& operator = (const CSSClass& css_class);
 };
 
 }

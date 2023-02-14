@@ -1,6 +1,7 @@
 #include "CaptionedImage.hxx"
 #include "Globals.hxx"
 #include "ParagraphText.hxx"
+#include "Sizes.hxx"
 
 void krap::CaptionedImage::construct()
 {
@@ -8,10 +9,18 @@ void krap::CaptionedImage::construct()
 
     Div table_body;
     table_body % css::divTableBody;
+
+    CSSClass rowStyle ("rowStyle");
+    rowStyle = css::divTableRow;
     
+    if (image().width() > 0)
+    {
+        rowStyle.add(Width{image().width()});
+    }
+
     Div image_row;
     Div image_div;
-    image_row % css::divTableRow;
+    image_row % rowStyle; //css::divTableRow;
     image_div % css::divTableCell;
     image_div.add(image_);
     image_row.add(image_div);
@@ -19,7 +28,7 @@ void krap::CaptionedImage::construct()
     Div caption_row;
     Div caption_div;
     ParagraphText caption_txt (caption());
-    caption_row % css::divTableRow;
+    caption_row % rowStyle; //css::divTableRow;
     caption_div % css::divTableCell;
     caption_div.add(caption_txt);
     caption_row.add(caption_div);

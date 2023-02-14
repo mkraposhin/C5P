@@ -63,6 +63,25 @@ void krap::CSSClass::add(const CSSElement& element)
     );
 }
 
+const krap::CSSClass& krap::CSSClass::operator = (const CSSClass& css_class)
+{
+    css_properties_.clear();
+    
+    for (const auto& property : css_class.css_properties_)
+    {
+        css_properties_.insert
+        (
+            css_rec_type
+            (
+                property.first,
+                std::dynamic_pointer_cast<CSSElement>
+                    (property.second->clone())
+            )
+        );
+    }
+    return *this;
+}
+
 //
 //END-OF-FILE
 //

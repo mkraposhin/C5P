@@ -2,6 +2,11 @@
 #include "AText.hxx"
 #include "Globals.hxx"
 
+#include "FontStyles.hxx"
+#include "TextDecoration.hxx"
+#include "ObjectFloat.hxx"
+#include "Colors.hxx"
+
 
 krap::MainMenu::MainMenu()
 : 
@@ -12,18 +17,43 @@ krap::MainMenu::MainMenu()
     CSSClass menu_class ("menuCssClass");
 
     //- A css class for links inside the main menu
-    //CSSClass menu_class_links ("menuCssClass a");
+    CSSClass menu_class_links ("menuCssClass a");
 
     //- A css class for links when a mouse pointer 
     // hovers over them
-    //CSSClass menu_class_hover ("menuCssClass a:hover");
+    CSSClass menu_class_hover ("menuCssClass a:hover");
 
-    menu_class.add(css::bcolorGray);
+    menu_class.add(css::bcolorWhite);
     menu_class.add(css::overflowHidden);
-    //menu_class.add(css::bottom0);
-    //menu_class.add(css::positionFixed);
-    menu_class.add(css::width75perc);
+    menu_class.add(css::top0);
+    menu_class.add(css::positionFixed);
+    menu_class.add(css::width80perc);
     *this % menu_class;
+
+    
+    FontSize<26> fnt_25px;
+    FontWeight<'b'> fnt_bold;
+    FontFamily fnt_families ("Arial, Helvetica, sans-serif");
+    TextDecoration<'n'> no_decor;
+    ObjectFloat<'n'> float_none;
+
+    menu_class_links.add(fnt_25px);
+    menu_class_links.add(fnt_families);
+    menu_class_links.add(fnt_bold);
+    menu_class_links.add(css::fontStyleNormal);
+    menu_class_links.add(css::colorGray);
+    menu_class_links.add(no_decor);
+    menu_class_links.add(float_none);
+    menu_class_links.add(DimGray{});
+    Div emptyDiv1;
+    emptyDiv1 % menu_class_links;
+    this->add(emptyDiv1);
+
+    menu_class_hover.add(css::colorWhite);
+    menu_class_hover.add(css::bcolorGray);
+    Div emptyDiv2;
+    emptyDiv2 % menu_class_hover;
+    this->add(emptyDiv2);
 
     // ElementPtr Home = 
     //     AText("Home").clone();
