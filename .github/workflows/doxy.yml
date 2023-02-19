@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World!"
-      - run: ls -la .
+      - run: ls -la /home/runner/work/kraposhin-cg-site
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
           doxyfile-path: './Doxyfile'
