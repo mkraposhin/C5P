@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World!"
+      - uses: mattnotmitt/doxygen-action@1.9.5
+        with:
+          doxyfile-path: 'Doxyfile'
+        
 #uses: mattnotmitt/doxygen-action@1.9.5
 #with:
 #  doxyfile-path: 'Doxyfile'
