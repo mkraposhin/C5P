@@ -1,5 +1,5 @@
 #include "DocumentImpl.hxx"
-#include "Globals.hxx"
+#include "CSSGlobals.hxx"
 
 void krap::DocumentImpl::construct()
 {

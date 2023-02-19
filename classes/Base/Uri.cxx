@@ -1,5 +1,7 @@
 #include "Uri.hxx"
 #include "Site.hxx"
+#include <sstream>
+#include <cgicc/HTMLClasses.h>
 
 krap::Uri::Uri(std::string uri)
 :
@@ -25,6 +27,19 @@ krap::Uri::Uri (const Uri& uri)
 const std::string& krap::Uri::uri() const
 {
     return uri_string_;
+}
+
+const std::string krap::Uri::html(const std::string& txt) const
+{
+    std::stringstream ostr;
+
+    cgicc::a html_elem{};
+
+    ostr<< cgicc::a().set("href", this->uri())
+        << txt 
+        << cgicc::a();
+    
+    return ostr.str();
 }
 
 //

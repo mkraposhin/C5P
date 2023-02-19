@@ -6,6 +6,7 @@
 #include "ProfExperience.hxx"
 #include "MyOssProjects.hxx"
 #include "MyPublications.hxx"
+#include "Contacts.hxx"
 
 void krap::Site::insert_doc(std::string nm, const Document& doc)
 {
@@ -37,6 +38,7 @@ krap::Site::Site()
     insert_doc("prof_experience", ProfExperience{*this});
     insert_doc("my_oss_projects", MyOssProjects{*this});
     insert_doc("my_publications", MyPublications{*this});
+    insert_doc("contacts", Contacts{*this});
 }
 
 int krap::Site::n_documents() const

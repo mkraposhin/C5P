@@ -1,4 +1,5 @@
 #include "Globals.hxx"
+#include "CSSGlobals.hxx"
 
 namespace krap
 {

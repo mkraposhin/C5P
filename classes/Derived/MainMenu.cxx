@@ -1,6 +1,6 @@
 #include "MainMenu.hxx"
 #include "AText.hxx"
-#include "Globals.hxx"
+#include "CSSGlobals.hxx"
 
 #include "FontStyles.hxx"
 #include "TextDecoration.hxx"

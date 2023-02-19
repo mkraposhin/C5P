@@ -44,8 +44,12 @@ public:
     //- Dtor
     ~Uri(){};
 
-    //-
+    //- Returns string representation of URI
     const std::string& uri() const;
+
+    //- Return =s string with html representation
+    //of URI with text
+    const std::string html(const std::string& txt) const;
 };
 
 }

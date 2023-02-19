@@ -2,11 +2,17 @@
 #include "ParagraphText.hxx"
 #include "DivColumn.hxx"
 #include "CaptionedImage.hxx"
+#include "Sizes.hxx"
 
 krap::Education::Education(const Site& site)
 :
     DocumentImpl(site)
 {
+    const int width = 300;
+
+    CSSClass eduColClass ("eduColClass");
+    eduColClass.add(Width(width));
+
     ParagraphText txt ("Education");
 
     ParagraphText txt_mpei("2000 - 2006: National University"
@@ -23,20 +29,24 @@ krap::Education::Education(const Site& site)
 
     CaptionedImage im_intro_nw ("NYUx_FCS.NET.1_Certificate_edX.png");
     im_intro_nw.image().width(300);
-    std::string txt_intro_nw ("2023: Introduction to Networks, EdX," 
-    "https://courses.edx.org/certificates/80ea6e76b8c54c5ebde296d2dfce16da");
+    std::string txt_intro_nw ("2023: Introduction to Networks, EdX," +
+        Uri("https://courses.edx.org/certificates/"
+            "80ea6e76b8c54c5ebde296d2dfce16da").html("certificate")
+    );
     im_intro_nw.caption(txt_intro_nw);
 
     CaptionedImage im_udemy_sql{"sql_udemy.jpg"};
     im_udemy_sql.image().width(300);
     std::string txt_udemy_sql ("2020: SQL & PostgreSQL for Beginners: "
-    " Become an SQL Expert, Udemy "
-    "https://www.udemy.com/certificate/UC-f1c764ec-acbf-4ac3-aeff-2acfd721f982/"
+    " Become an SQL Expert, Udemy " +
+        Uri("https://www.udemy.com/certificate/"
+        "UC-f1c764ec-acbf-4ac3-aeff-2acfd721f982/").html("certificate")
     );
     im_udemy_sql.caption(txt_udemy_sql);
 
 
     DivColumn div_col;
+    div_col % eduColClass;
 
     div_col.add(txt_mpei);
     div_col.add(txt_kiam);

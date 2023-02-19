@@ -1,13 +1,29 @@
 #ifndef FontStyles_H
 #define FontStyles_H
 
+#include "Exception.hxx"
 #include "CSSElement.hxx"
 
 namespace krap
 {
+
 template<int sz>
 class FontSize : public CSSElement
 {
+
+private:
+
+    //- Checks that the value in val is between min and max
+    template<int min, int max, int val>
+    void check_bounds()
+    {
+        if constexpr (val < min || val > max)
+        {
+            throw krap::GenericException
+                {"Wrong font size:" + std::to_string(val)};
+        }
+    }
+
 
 public:
 
@@ -15,7 +31,7 @@ public:
     FontSize<sz>() : 
     CSSElement("font-size",std::to_string(sz)+std::string("px"))
     {
-        #warning "Add checks for illegal values"
+        check_bounds<6,36,sz>();
     }
 
     ~FontSize<sz>(){};

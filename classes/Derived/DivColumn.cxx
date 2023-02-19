@@ -1,5 +1,5 @@
 #include "DivColumn.hxx"
-#include "Globals.hxx"
+#include "CSSGlobals.hxx"
 
 krap::DivColumn::DivColumn()
 :

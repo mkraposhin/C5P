@@ -1,5 +1,5 @@
 #include "CaptionedImage.hxx"
-#include "Globals.hxx"
+#include "CSSGlobals.hxx"
 #include "ParagraphText.hxx"
 #include "Sizes.hxx"
 

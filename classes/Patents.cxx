@@ -2,6 +2,7 @@
 #include "ParagraphText.hxx"
 #include "Image.hxx"
 #include "CaptionedImage.hxx"
+#include "CSSGlobals.hxx"
 
 krap::Patents::Patents(const Site& site)
 :
