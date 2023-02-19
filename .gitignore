@@ -4,3 +4,4 @@
 settings.json
 build/*
 build
+doxygen_doc
