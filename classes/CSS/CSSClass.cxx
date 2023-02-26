@@ -18,7 +18,8 @@ krap::CSSClass::CSSClass(const CSSClass& cssclass)
 :
     Element(cssclass),
     css_class_(cssclass.css_class_),
-    css_properties_(cssclass.css_properties_)
+    css_properties_(cssclass.css_properties_),
+    at_rule_(cssclass.at_rule_)
 {
 }
 
@@ -28,13 +29,23 @@ krap::CSSClass::~CSSClass()
 
 std::ostream& krap::CSSClass::print(std::ostream& ostr) const
 {
-    ostr << "." << name() << std::endl;
-    ostr << "{" << std::endl;
-    for (auto property : css_properties_)
+    const auto& nm = this->name();
+    const auto& css_props = this->css_properties_;
+    auto print_css_class = [&nm, &css_props](std::ostream& ostr)
     {
-        (*property.second).print(ostr);
-    }
-    ostr << "}" << std::endl;
+        ostr << "." << nm << std::endl;
+        ostr << "{" << std::endl;
+        for (auto property : css_props)
+        {
+            (*property.second).print(ostr);
+        }
+        ostr << "}" << std::endl;
+    };
+    if(at_rule_ )
+        at_rule_->print(print_css_class, ostr);
+    else
+        print_css_class(ostr);
+
     return ostr;
 }
 
@@ -80,6 +91,11 @@ const krap::CSSClass& krap::CSSClass::operator = (const CSSClass& css_class)
         );
     }
     return *this;
+}
+
+void krap::CSSClass::at_rule(const AtRule& atru)
+{
+    this->at_rule_ = atru.clone();
 }
 
 //

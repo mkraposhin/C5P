@@ -7,6 +7,7 @@ krap::CSSRegistry::CSSRegistry(CSSClassMap& cmap)
 {
 }
 
+#warning "Make this map both ordered and unique"
 void krap::CSSRegistry::register_css_class(const Element& nelem)
 {
     if (nelem.css())
@@ -15,9 +16,8 @@ void krap::CSSRegistry::register_css_class(const Element& nelem)
         {
             (*nelem.css()).name(),
             nelem.css()
-        };
-            
-        css_class_map_.insert(new_rec);
+        };        
+        css_class_map_.insert(css_class_map_.cend(), new_rec);
     }
 
     if (nelem.child())
@@ -28,9 +28,11 @@ void krap::CSSRegistry::register_css_class(const Element& nelem)
     {
         auto compound_of_elements = 
             dynamic_cast<const Compound&>(nelem);
-        for (auto it :compound_of_elements)
+        for(auto it=compound_of_elements.cbegin(); 
+            it != compound_of_elements.cend();
+            it++)
         {
-            register_css_class(it);
+            register_css_class(*it);
         }
     }
 }

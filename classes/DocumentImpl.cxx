@@ -6,6 +6,10 @@ void krap::DocumentImpl::construct()
     // #warning "Find how to prevent copying of body() content here"
     mmenu_layout_ % krap::css::divRow;
     mmenu_layout_.operator()<Div>(1).add(mm_);
+    if (mm_.jscript())
+        head().jscript(*mm_.jscript());
+    if (mm_.link())
+        head().link(*mm_.link());
     
     head() ^ mmenu_layout_;
     body().add(three_cols_);

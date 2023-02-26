@@ -83,6 +83,7 @@ struct css
      */
     const static CSSElement bottom0;
     const static CSSElement top0;
+    const static CSSElement right0;
 
     /*
      *
@@ -90,6 +91,8 @@ struct css
      * 
      */
     const static CSSElement positionFixed;
+    const static CSSElement positionRelative;
+    const static CSSElement positionAbsolute;
 
     /*
      *
@@ -109,6 +112,13 @@ struct css
     const static CSSElement marginTop50px;
     const static CSSElement marginTop100px;
     const static CSSElement marginTop200px;
+    //
+    const static CSSElement marginBottom0px;
+    const static CSSElement marginBottom10px;
+    const static CSSElement marginBottom20px;
+    const static CSSElement marginBottom50px;
+    const static CSSElement marginBottom100px;
+    const static CSSElement marginBottom200px;
     //
     const static CSSElement paddingTop0px;
     const static CSSElement paddingTop10px;
@@ -136,18 +146,29 @@ struct css
      * Display styles
      * 
      */
+    const static CSSElement displayNone;
+    const static CSSElement displayBlock;
     const static CSSElement displayFlex;
     const static CSSElement displayTable;
     const static CSSElement displayTableRowGroup;
     const static CSSElement displayRow;
     const static CSSElement displayCell;
-    
+
+    /*
+     *
+     * Float
+     * 
+     */
+    const static CSSElement floatNone;
+    const static CSSElement floatRight;
+
     /*
      *
      * Other style elements
      * 
      */
     const static CSSElement boxSizing;
+    const static CSSElement textAlignLeft;
 
     /*
      *

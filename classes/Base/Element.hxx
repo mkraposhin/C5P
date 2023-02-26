@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include <memory>
-#include <map>
+//#include <map>
+#include <list>
 
 namespace krap
 {
@@ -16,8 +17,9 @@ using ElementPtr = std::shared_ptr<Element>;
 class CSSClass;
 
 using CSSClassPtr = std::shared_ptr<CSSClass>;
-using CSSClassMap = std::map<std::string,CSSClassPtr>;
 using CSSClassMapRec = std::pair<std::string,CSSClassPtr>;
+//using CSSClassMap = std::map<std::string,CSSClassPtr>;
+using CSSClassMap = std::list<CSSClassMapRec>;
 
 
 class Element
@@ -30,6 +32,9 @@ private:
 
     //! Pointer to the css class (if applicable)
     CSSClassPtr css_;
+
+    //! The id attribute of an element
+    std::string id_;
 
     //! Sets the pointer to new child
     void set_child(ElementPtr& new_child);
@@ -69,6 +74,11 @@ public:
     //! gives const-ref access to the style class
     const CSSClassPtr& css() const;
 
+    //! Sets the id attribute of an element
+    void id (const std::string& id);
+
+    //! Returs the id attribute of an element
+    const std::string id() const;
 };
 
 

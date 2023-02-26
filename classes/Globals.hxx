@@ -6,14 +6,12 @@
 namespace krap
 {
 
-namespace constants
+struct constants
 {
-    const std::string protocol {"http://"};
-    //const std::string site_uri {"194.4.51.15/"};
-    // const std::string site_uri {"kraposhin.online/"};
-    const std::string site_uri {"127.0.0.1/"};
-    const std::string log_path {"/var/log/cpp_cms"};
-}
+    static const std::string protocol;
+    static const std::string site_uri;
+    static const std::string log_path;
+};
 
 }
 

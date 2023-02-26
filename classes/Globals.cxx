@@ -1,6 +1,17 @@
 #include "Globals.hxx"
 #include "CSSGlobals.hxx"
 
+
+namespace krap
+{
+    const std::string constants::site_uri = "kraposhin.online/";
+    const std::string constants::protocol = "http://";
+    const std::string constants::log_path = "/var/log/cpp_cms";
+    //const std::string site_uri {"194.4.51.15/"};
+    //constants::site_uri = "kraposhin.online/";
+    //const std::string site_uri {"127.0.0.1/"};
+}
+
 namespace krap
 {
     const CSSElement css::colorBlue {"color", "blue"};
@@ -39,8 +50,11 @@ namespace krap
 
     const CSSElement css::bottom0{"bottom", "0"};
     const CSSElement css::top0{"top", "0"};
+    const CSSElement css::right0{"right", "0"};
 
     const CSSElement css::positionFixed{"position", "fixed"};
+    const CSSElement css::positionAbsolute{"position", "absolute"};
+    const CSSElement css::positionRelative{"position", "relative"};
 
     const CSSElement css::overflowHidden{"overflow", "hidden"};
 
@@ -50,6 +64,13 @@ namespace krap
     const CSSElement css::marginTop50px{"margin-top", "50px"};
     const CSSElement css::marginTop100px{"margin-top", "100px"};
     const CSSElement css::marginTop200px{"margin-top", "200px"};
+    //
+    const CSSElement css::marginBottom0px{"margin-bottom", "0px"};
+    const CSSElement css::marginBottom10px{"margin-bottom", "10px"};
+    const CSSElement css::marginBottom20px{"margin-bottom", "20px"};
+    const CSSElement css::marginBottom50px{"margin-bottom", "50px"};
+    const CSSElement css::marginBottom100px{"margin-bottom", "100px"};
+    const CSSElement css::marginBottom200px{"margin-bottom", "200px"};
     //
     const CSSElement css::paddingTop0px{"padding-top", "0px"};
     const CSSElement css::paddingTop10px{"padding-top", "10px"};
@@ -72,13 +93,19 @@ namespace krap
     const CSSElement css::marginRight100px{"margin-right", "100px"};
     const CSSElement css::marginRight200px{"margin-right", "200px"};
 
+    const CSSElement css::displayNone {"display","none"};
+    const CSSElement css::displayBlock {"display","block"};
     const CSSElement css::displayFlex {"display","flex"};
     const CSSElement css::displayTable {"display","table"};
     const CSSElement css::displayTableRowGroup {"display", "table-row-group"};
     const CSSElement css::displayRow {"display","row"};
     const CSSElement css::displayCell {"display","cell"};
 
+    const CSSElement css::floatNone {"float", "none"};
+    const CSSElement css::floatRight {"float", "right"};
+
     const CSSElement css::boxSizing {"box-sizing", "border-box"};
+    const CSSElement css::textAlignLeft {"text-align", "left"};
 
     const CSSClass css::menuText {"menuText"};
     const CSSClass css::emptyClass {"emptyCss"};

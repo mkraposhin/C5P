@@ -40,9 +40,10 @@ krap::ElementPtr& krap::Compound::add(ElementPtr& eptr)
 
 std::ostream& krap::Compound::print(std::ostream& ostr) const
 {
-    for (auto elem : elements_)
+    for(auto it=elements_.cbegin();
+        it!=elements_.cend(); it++)
     {
-        (*elem).print(ostr);
+        (*it)->print(ostr);
     }
 
     return ostr;
@@ -54,11 +55,9 @@ const krap::Compound& krap::Compound::operator =
     const krap::Compound& right
 )
 {
-    for (auto elem : elements_)
-    {
-        elem.reset();
-    }
-    elements_ = right.elements_;
+    this->clear();
+    elements_.insert(elements_.cend(),
+        right.elements_.cbegin(),right.elements_.cend());
     return *this;
 }
 

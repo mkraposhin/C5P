@@ -2,7 +2,9 @@
 #define Head_H
 
 #include "Element.hxx"
+#include "JScript.hxx"
 #include "CSSRegistry.hxx"
+#include "Link.hxx"
 
 namespace krap
 {
@@ -17,36 +19,48 @@ class Head
 {
 protected:
 
-    //- Gives access to CSSRegistry functions
+    //! Gives access to CSSRegistry functions
     friend Element& operator ^ (Head& el, const Element& child);
 
 private:
 
-    //- forbid the default constructor
+    //! Storage for a JS stored in this head
+    std::shared_ptr<JScript> jscript_;
+
+    //! Storage for a Link stored in this head
+    std::shared_ptr<Link> link_;
+
+    //! forbid the default constructor
     Head() = delete;
 
-    //- forbid copy ctor since it can lead to a broken reference
+    //! forbid copy ctor since it can lead to a broken reference
     Head(const Head&) = delete;
     
-    //- Prints the list of styles into the separate section
+    //! Prints the list of styles into a separate section
     void print_styles(std::ostream& ostr) const;
 
 public:
 
-    //- Default constructor
+    //! Default constructor
     Head(CSSClassMap& css_class_map);
 
-    //- Copy constructor
+    //! Copy constructor
     Head(const Head& h, CSSClassMap& css_class_map);
 
-    //- Destructor
+    //! Destructor
     ~Head();
 
-    //- Print elements in the Head
+    //! Print elements in the Head
     std::ostream& print(std::ostream& ostr) const override;
+
+    //! Sets a java script for this head
+    void jscript(const JScript& js);
+
+    //! 
+    void link(const Link& l);
 };
 
-//- set nested element for a given Head operator
+//! this operator is to set a nested element for a given Head
 Element& operator ^ (Head& el, const Element& child);
 
 }

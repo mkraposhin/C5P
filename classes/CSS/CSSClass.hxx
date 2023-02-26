@@ -3,6 +3,7 @@
 
 #include "Element.hxx"
 #include "CSSElement.hxx"
+#include "AtRule.hxx"
 #include <map>
 
 namespace krap
@@ -18,44 +19,51 @@ class CSSClass
 {
 private:
 
-    //- The name of CSS Class
+    //! The name of a CSS class
     std::string css_class_;
 
-    //- The list of properties(css elements)
+    //! The list of properties(css elements) that are contained
+    //! in a CSS class (a CSSClass object)
     std::map<std::string,std::shared_ptr<CSSElement>> css_properties_;
 
-    //- The type for the record
+    //! The type for the record
     using css_rec_type = std::pair<std::string,std::shared_ptr<CSSElement>>;
+
+    //! An AtRule that is applied to a CSSClass object
+    AtRulePtr at_rule_;
 
 public:
 
-    //- Default constructor
+    //! Default constructor of CSSClass
     CSSClass();
 
-    //- Create from the text string
+    //! Create a CSSClass object from the text string
     CSSClass(const std::string& name);
 
-    //- Copy constructor
+    //! Copy constructor
     CSSClass(const CSSClass& );
 
-    //- Destructor
+    //! Destructor
     ~CSSClass();
 
-    //- Print elements in the CSSClass
+    //! Print elements in a CSS class (CSSClass object)
     std::ostream& print(std::ostream& ostr) const override;
 
-    //- Creates clone of the CSSClass
+    //! Creates clone of a CSS class
     ElementPtr clone() const override;
 
-    //- Returns the name of the class 
+    //! Returns the name of a CSS class 
     const std::string& name() const;
 
-    //- Adds property
+    //! Adds a property to this CSS class
     void add(const CSSElement& element);
 
-    //- Assigns properties from other css class object to this one
-    // creating deep copy of the corresponding map
+    //! Assigns properties from an other css class object to this one
+    //! creating deep copy of the corresponding map
     const CSSClass& operator = (const CSSClass& css_class);
+
+    //! Sets an at-rule for this css class object
+    void at_rule(const AtRule& atru);
 };
 
 }

@@ -20,19 +20,22 @@ krap::Div::~Div()
 
 std::ostream& krap::Div::print(std::ostream& ostr) const
 {
+    std::string id_str="";
+    if (id() != std::string(""))
+    {
+        id_str = " id=" + std::string("\"") + id() + "\" ";
+    }
     if (css())
     {
-        //ostr << cgicc::div().set("class", (*css()).name()) << std::endl;
-        ostr << "<div class=\"" << (*css()).name() << "\">" << std::endl;
+        ostr<< "<div class=\"" << (*css()).name()
+            << "\"" << id_str << ">" << std::endl;
     }
     else
     {
-        //ostr << cgicc::div() << std::endl;
-        ostr << "<div " << ">" << std::endl;
+        ostr<< "<div " << id_str << ">" << std::endl;
     }
     Compound::print(ostr)
         << std::endl << "</div>" << std::endl;
-        //<< std::endl << cgicc::div() << std::endl;
     return ostr;
 }
 

@@ -3,6 +3,7 @@
 
 #include "Element.hxx"
 #include "Uri.hxx"
+#include "JScript.hxx"
 
 namespace krap
 {
@@ -28,6 +29,9 @@ private:
     //- The uri
     UriPtr uri_;
 
+    //! Contains a name of a function to be executed on the click event
+    std::string on_click_;
+
 public:
 
     //- Default constructor
@@ -50,6 +54,9 @@ public:
 
     //- Sets uri
     void uri (const std::string& s);
+
+    //! Sets an on click function
+    void on_click(const JScript& js);
 };
 
 }
