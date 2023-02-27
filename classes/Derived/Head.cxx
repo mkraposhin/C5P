@@ -15,7 +15,9 @@ krap::Head::Head(const Head& h, CSSClassMap& css_class_map)
 :
     Element(h),
     CSSRegistry(css_class_map),
-    jscript_(h.jscript_)
+    jscript_(h.jscript_),
+    link_(h.link_),
+    metas_(h.metas_)
 {
 }
 
@@ -42,6 +44,11 @@ std::ostream& krap::Head::print(std::ostream& ostr) const
         jscript_->print(ostr);
     if (link_)
         link_->print(ostr);
+    for (auto it=metas_.cbegin(); it!=metas_.cend(); it++)
+    {
+        ostr<<cgicc::meta().set("name",it->first).set("content",it->second)
+            <<std::endl;
+    }
     Element::print(ostr);
     ostr << cgicc::head() << std::endl;
     return ostr;
@@ -55,6 +62,11 @@ void krap::Head::jscript(const JScript& js)
 void krap::Head::link(const Link& l)
 {
     link_ = std::dynamic_pointer_cast<Link>(l.clone());
+}
+
+void krap::Head::add_meta(const std::string name, const std::string content)
+{
+    metas_.insert(metas_.cend(), MetaPair{name,content});
 }
 
 krap::Element& krap::operator ^ (Head& el, const Element& child)

@@ -28,6 +28,7 @@ krap::Document::~Document()
 std::ostream& krap::Document::print(std::ostream& ostr) const
 {
     ostr <<  cgicc::HTTPHTMLHeader() << std::endl;
+    ostr << std::endl << "<!DOCTYPE html>" << std::endl;
     ostr << cgicc::html() << std::endl;
 
     head_.print(ostr);

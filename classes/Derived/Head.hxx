@@ -22,6 +22,9 @@ protected:
     //! Gives access to CSSRegistry functions
     friend Element& operator ^ (Head& el, const Element& child);
 
+    //! This defines a content of the meta tag
+    using MetaPair = std::pair<std::string,std::string>;
+
 private:
 
     //! Storage for a JS stored in this head
@@ -29,6 +32,9 @@ private:
 
     //! Storage for a Link stored in this head
     std::shared_ptr<Link> link_;
+
+    //! A list of the meta tags
+    std::list<MetaPair> metas_;
 
     //! forbid the default constructor
     Head() = delete;
@@ -56,8 +62,11 @@ public:
     //! Sets a java script for this head
     void jscript(const JScript& js);
 
-    //! 
+    //! Sets the link tag
     void link(const Link& l);
+
+    //! Adds a new meta tag
+    void add_meta(const std::string name, const std::string content);
 };
 
 //! this operator is to set a nested element for a given Head

@@ -31,6 +31,8 @@ krap::DocumentImpl::DocumentImpl(const Site& site)
     right_col_(),
     mmenu_layout_()
 {
+    head().add_meta("viewport", "width=device-width, initial-scale=1.0");
+
     CSSClass bodyCss {"bodyCss"};
     bodyCss.add(css::marginTop20px);
     bodyCss.add(css::paddingTop20px);
