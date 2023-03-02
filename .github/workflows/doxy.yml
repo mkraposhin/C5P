@@ -20,6 +20,7 @@ jobs:
           repository: mkraposhin/mkraposhin.github.io
       - run: ls -la .
       - run: cd sources/
+      - run: ls -la .
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
           doxyfile-path: './Doxyfile'
