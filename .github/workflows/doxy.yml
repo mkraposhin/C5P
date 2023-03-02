@@ -24,8 +24,14 @@ jobs:
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
           doxyfile-path: 'sources/Doxyfile'
-      - run: ls -la . #mv doxygen_doc/*../docs/
-      - run: ls -la sources/ #cd ../docs && ls -la .
+      - run: mv doxygen_doc/* docs/
+      - run: |
+          cd docs/
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A
+          git commit -m "gh-pages auto update"
+          git push -u origin
 
 #       - run: ls -la /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
 #       - run: ls -la .
