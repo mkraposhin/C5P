@@ -12,21 +12,23 @@ jobs:
         uses: actions/checkout@v3
         with:
           path: sources
+          fetch-depth: 0
       - name: Docs
         uses: actions/checkout@v3
         with:
           path: docs
           repository: mkraposhin/mkraposhin.github.io
       - run: ls -la .
+      - run: cd sources/
+      - uses: mattnotmitt/doxygen-action@1.9.5
+        with:
+          doxyfile-path: './Doxyfile'
+      - run: mv doxygen_doc/*../docs/
+      - run: cd ../docs && ls -la .
 
-#       - uses: actions/checkout@v3
-#         with:
-#           fetch-depth: 0
 #       - run: ls -la /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
 #       - run: ls -la .
-#       - uses: mattnotmitt/doxygen-action@1.9.5
-#         with:
-#           doxyfile-path: './Doxyfile'
+
 #       - shell: bash
 #         run: |
 #           git config user.name github-actions
