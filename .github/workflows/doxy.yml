@@ -24,7 +24,7 @@ jobs:
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
           doxyfile-path: 'sources/Doxyfile'
-      - run: mv doxygen_doc/* docs/
+      - run: cp -rf doxygen_doc/* docs/
       - run: |
           cd docs/
           git config user.name github-actions
