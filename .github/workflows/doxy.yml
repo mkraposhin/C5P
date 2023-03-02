@@ -4,7 +4,7 @@ on:
       - main
 
 jobs:
-  print_hello:
+  make_doxygen:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World!"
@@ -14,6 +14,10 @@ jobs:
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
           doxyfile-path: './Doxyfile'
+      - uses: actions/upload-artifact@v3
+          with:
+            name: doxy-artifact
+            path: /home/runner/work/kraposhin-cg-site/kraposhin-cg-site/doxygen_doc # or path/to/artifact
         
 #uses: mattnotmitt/doxygen-action@1.9.5
 #with:
