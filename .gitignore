@@ -1,7 +1,0 @@
-*.o
-*.a
-*.cgi
-settings.json
-build/*
-build
-doxygen_doc
