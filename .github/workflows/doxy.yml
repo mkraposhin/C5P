@@ -9,6 +9,8 @@ jobs:
     steps:
       - run: echo "Hello World!"
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - run: ls -la /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
       - run: ls -la .
       - uses: mattnotmitt/doxygen-action@1.9.5
@@ -16,17 +18,22 @@ jobs:
           doxyfile-path: './Doxyfile'
       - shell: bash
         run: |
-          mkdir /home/runner/work/t-doxy && cd /home/runner/work/t-doxy
-          cp -rf /home/runner/work/kraposhin-cg-site/kraposhin-cg-site/doxygen_doc/* ./
-          cd /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
-          ls -la .
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git switch gh-pages
-          mv /home/runner/work/t-doxy/* ./
           ls -la .
-          git add -A
-          git commit -m "gh-pages auto update"
-          git push -u origin
-
+  
+#          mkdir /home/runner/work/t-doxy && cd /home/runner/work/t-doxy
+#          cp -rf /home/runner/work/kraposhin-cg-site/kraposhin-cg-site/doxygen_doc/* ./
+#          cd /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
+#          ls -la .
+#          git switch gh-pages
+#          mv /home/runner/work/t-doxy/* ./
+#          ls -la .
+#          git add -A
+#          git commit -m "gh-pages auto update"
+#          git push -u origin
+#
 #      - uses: actions/upload-artifact@v3
 #        with:
 #          name: doxy-artifact
