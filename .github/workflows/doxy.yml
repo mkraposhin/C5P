@@ -23,9 +23,9 @@ jobs:
       - run: ls -la .
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
-          doxyfile-path: './Doxyfile'
-      - run: mv doxygen_doc/*../docs/
-      - run: cd ../docs && ls -la .
+          doxyfile-path: 'sources/Doxyfile'
+      - run: ls -la . #mv doxygen_doc/*../docs/
+      - run: ls -la sources/ #cd ../docs && ls -la .
 
 #       - run: ls -la /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
 #       - run: ls -la .
