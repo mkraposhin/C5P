@@ -18,7 +18,7 @@ jobs:
         run: |
           mkdir /home/runner/work/t-doxy && cd /home/runner/work/t-doxy
           cp -rf /home/runner/work/kraposhin-cg-site/kraposhin-cg-site/doxygen_doc/* ./
-          cd /home/runner/work/kraposhin-cg-site/kraposhin-cg-site\
+          cd /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
           ls -la .
           git checkout gh-pages
           mv /home/runner/work/t-doxy/* ./
