@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           path: docs
-          repository: mkraposhin.github.io
+          repository: mkraposhin/mkraposhin.github.io
       - run: ls -la .
 
 #       - uses: actions/checkout@v3
