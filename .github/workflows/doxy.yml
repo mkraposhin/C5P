@@ -8,23 +8,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World!"
-      - uses: actions/checkout@v3
+      - name: Sources
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 0
-      - run: ls -la /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
+          path: sources
+      - name: Docs
+        uses: actions/checkout@v3
+        with:
+          path: docs
+          repository: mkraposhi.github.io
       - run: ls -la .
-      - uses: mattnotmitt/doxygen-action@1.9.5
-        with:
-          doxyfile-path: './Doxyfile'
-      - shell: bash
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git switch gh-pages
-          ls -la .
-          git add -A
-          git commit -m "gh-pages auto update"
-          git push -u origin
+
+#       - uses: actions/checkout@v3
+#         with:
+#           fetch-depth: 0
+#       - run: ls -la /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
+#       - run: ls -la .
+#       - uses: mattnotmitt/doxygen-action@1.9.5
+#         with:
+#           doxyfile-path: './Doxyfile'
+#       - shell: bash
+#         run: |
+#           git config user.name github-actions
+#           git config user.email github-actions@github.com
+#           git switch gh-pages
+#           ls -la .
+#           git add -A
+#           git commit -m "gh-pages auto update"
+#           git push -u origin
   
 #          mkdir /home/runner/work/t-doxy && cd /home/runner/work/t-doxy
 #          cp -rf /home/runner/work/kraposhin-cg-site/kraposhin-cg-site/doxygen_doc/* ./
