@@ -20,10 +20,10 @@ jobs:
       - shell: bash
         run: |
           cd sources/
-          rm -rf doxygen_doc
           git config user.name github-actions
           git config user.email github-actions@github.com
           git switch gh-pages
+          rm -rf doxygen_doc
           ls -la .
           #git add -A
           #git commit -m "gh-pages auto update"
