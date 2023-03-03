@@ -14,8 +14,9 @@ jobs:
           path: sources
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
-         doxyfile-path: 'sources/Doxyfile'
-      - run: ls -la ./doxygen_doc/html
+         working-directory: sources
+         doxyfile-path: 'Doxyfile'
+      - run: cp -rf sources/doxygen_doc ../
       - shell: bash
         run: |
           cd sources/
