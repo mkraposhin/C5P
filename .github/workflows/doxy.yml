@@ -28,6 +28,7 @@ jobs:
           mv /home/runner/work/t-doxy/doxygen_doc ./
           ls -la . doxygen_doc/
           ls -la . doxygen_doc/html/index.html
+          git status
           git add -A
           git commit -m "gh-pages auto update"
           git push -u origin
