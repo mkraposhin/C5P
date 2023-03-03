@@ -19,11 +19,12 @@ jobs:
       - run: rm -rf /home/runner/work/t-doxy && mkdir /home/runner/work/t-doxy && cp -rf doxygen_doc/ /home/runner/work/t-doxy/ 
       - shell: bash
         run: |
+          cd sources/
           git config user.name github-actions
           git config user.email github-actions@github.com
           git switch gh-pages
           rm -rf sources/doxygen_doc
-          ls -la sources/
+          ls -la .
           #git add -A
           #git commit -m "gh-pages auto update"
           #git push -u origin
