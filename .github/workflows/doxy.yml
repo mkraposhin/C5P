@@ -25,7 +25,7 @@ jobs:
           git switch gh-pages
           rm -rf doxygen_doc
           ls -la .
-          mv /home/runner/work/t-doxy/doxygen_doc ./
+          mv /home/runner/work/t-doxy/doxygen_doc/html ./
           date > build_date
           ls -la . doxygen_doc/
           ls -la . doxygen_doc/html/index.html
