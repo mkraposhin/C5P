@@ -25,9 +25,10 @@ jobs:
           git switch gh-pages
           rm -rf doxygen_doc
           ls -la .
-          #git add -A
-          #git commit -m "gh-pages auto update"
-          #git push -u origin
+          mv /home/runner/work/t-doxy/doxygen_doc ./
+          git add -A
+          git commit -m "gh-pages auto update"
+          git push -u origin
 
 
 
