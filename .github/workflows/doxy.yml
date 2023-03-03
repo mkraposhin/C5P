@@ -26,6 +26,7 @@ jobs:
           rm -rf doxygen_doc
           ls -la .
           mv /home/runner/work/t-doxy/doxygen_doc ./
+          date > build_date
           ls -la . doxygen_doc/
           ls -la . doxygen_doc/html/index.html
           git status
