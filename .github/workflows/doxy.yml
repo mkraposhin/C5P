@@ -28,7 +28,7 @@ jobs:
           git switch gh-pages
           rm -rf doxygen_doc
           rm -rf html
-          cp -rf ..docs_build/doxygen_doc/html/ ./
+          cp -rf ../docs_build/doxygen_doc/html/ ./
           date > build_date
           git status
           git add -A
