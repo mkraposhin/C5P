@@ -13,10 +13,10 @@ jobs:
           fetch-depth: 0
           path: sources
       - run: ls -la .
-      - uses: mattnotmitt/doxygen-action@1.9.5
-        with:
-          doxyfile-path: 'sources/Doxyfile'
-      - run: rm -rf /home/runner/work/t-doxy && mkdir /home/runner/work/t-doxy && cp -rf doxygen_doc/ /home/runner/work/t-doxy/ 
+      #- uses: mattnotmitt/doxygen-action@1.9.5
+      #  with:
+      #    doxyfile-path: 'sources/Doxyfile'
+      #- run: rm -rf /home/runner/work/t-doxy && mkdir /home/runner/work/t-doxy && cp -rf doxygen_doc/ /home/runner/work/t-doxy/ 
       - shell: bash
         run: |
           cd sources/
@@ -24,11 +24,11 @@ jobs:
           git config user.email github-actions@github.com
           git switch gh-pages
           rm -rf doxygen_doc
-          ls -la .
-          mv /home/runner/work/t-doxy/doxygen_doc/html ./
+          #ls -la .
+          #mv /home/runner/work/t-doxy/doxygen_doc/html ./
           date > build_date
-          ls -la . doxygen_doc/
-          ls -la . doxygen_doc/html/index.html
+          #ls -la . doxygen_doc/
+          #ls -la . doxygen_doc/html/index.html
           git status
           git add -A
           git commit -m "gh-pages auto update"
