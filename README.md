@@ -1,1 +1,1 @@
-# kraposhin-cg-site
+The source code for a personal site
