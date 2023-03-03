@@ -8,30 +8,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World!"
-      - name: Sources
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
-          path: sources
           fetch-depth: 0
-      - name: Docs
-        uses: actions/checkout@v3
-        with:
-          path: docs
-          repository: mkraposhin/mkraposhin.github.io
-      - run: ls -la .
-      - run: cd sources/ && ls -la
       - run: ls -la .
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
-          doxyfile-path: 'sources/Doxyfile'
-      - run: cp -rf doxygen_doc/* docs/
-      - run: |
-          cd docs/
+          doxyfile-path: 'Doxyfile'
+      - shell: bash
+        run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -A
-          git commit -m "gh-pages auto update"
-          git push -u origin
+          git switch gh-pages
+          ls -la .
+          #git add -A
+          #git commit -m "gh-pages auto update"
+          #git push -u origin
+
+
+
+# - run: |
+#           cd docs/
+#           git config user.name github-actions
+#           git config user.email github-actions@github.com
+#           git add -A
+#           git commit -m "gh-pages auto update"
+#           git push -u origin
 
 #       - run: ls -la /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
 #       - run: ls -la .
