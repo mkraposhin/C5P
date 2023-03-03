@@ -12,11 +12,14 @@ jobs:
         with:
           fetch-depth: 0
           path: sources
+      - run: mkdir docs_build
+      - run: cp -rf sources/classes docs_build/
+      - run: cp -rf sources/executables docs_build/
+      - run: cp -rf sources/Doxyfile docs_build/
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
-         working-directory: sources
+         working-directory: docs_build
          doxyfile-path: 'Doxyfile'
-      - run: cp -rf sources/doxygen_doc ../
       - shell: bash
         run: |
           cd sources/
@@ -25,7 +28,7 @@ jobs:
           git switch gh-pages
           rm -rf doxygen_doc
           rm -rf html
-          cp -rf ../doxygen_doc/html/ ./
+          cp -rf ..docs_build/doxygen_doc/html/ ./
           date > build_date
           git status
           git add -A
