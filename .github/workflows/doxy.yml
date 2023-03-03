@@ -24,11 +24,9 @@ jobs:
           git config user.email github-actions@github.com
           git switch gh-pages
           rm -rf doxygen_doc
-          #ls -la .
-          #mv /home/runner/work/t-doxy/doxygen_doc/html ./
+          rm -rf html
+          mv ../doxygen_doc/html ./
           date > build_date
-          #ls -la . doxygen_doc/
-          #ls -la . doxygen_doc/html/index.html
           git status
           git add -A
           git commit -m "gh-pages auto update"
