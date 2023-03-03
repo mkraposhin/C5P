@@ -15,7 +15,7 @@ jobs:
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
           doxyfile-path: 'Doxyfile'
-      - run: rm -rf /home/runner/work/t-doxy && mkdir /home/runner/work/t-doxy && mv doxygen_doc/ /home/runner/work/t-doxy/ 
+      - run: rm -rf /home/runner/work/t-doxy && mkdir /home/runner/work/t-doxy && cp -rf doxygen_doc/ /home/runner/work/t-doxy/ 
       - shell: bash
         run: |
           git config user.name github-actions
