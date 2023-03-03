@@ -24,12 +24,45 @@
 */
 var NAVTREE =
 [
-  [ "cpp_cms", "index.html", ]
+  [ "cpp_cms", "index.html", [
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ]
+      ] ]
+    ] ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
+    ] ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"AText_8cxx.html",
+"classkrap_1_1CSSElement.html#a1d04e95f6d248ff97fdf08af0205169a",
+"classkrap_1_1FontSize.html#ab187ffd657fdb08ae541e426b2aae6ea",
+"classkrap_1_1Site.html#a8ed884e2aa153d522e3932a3dcd89cd6",
+"structkrap_1_1css.html#a872a0106ce40543c47c950d4abeced68"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

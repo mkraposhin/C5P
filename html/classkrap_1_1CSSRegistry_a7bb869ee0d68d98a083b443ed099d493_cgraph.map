@@ -1,0 +1,5 @@
+<map id="krap::CSSRegistry::register_css_class" name="krap::CSSRegistry::register_css_class">
+<area shape="rect" id="node1" title="Registers the CSS from a given Element." alt="" coords="5,23,139,63"/>
+<area shape="rect" id="node2" href="$classkrap_1_1Element.html#a6168c3b67a8fa13f49a5ce6b26648502" title="const&#45;ref access to the child pointr" alt="" coords="187,5,320,31"/>
+<area shape="rect" id="node3" href="$classkrap_1_1Element.html#a9c647e5c6e69c0105ce54c8d901d9142" title="gives const&#45;ref access to the style class" alt="" coords="190,55,317,80"/>
+</map>
