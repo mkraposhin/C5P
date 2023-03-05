@@ -1,4 +1,4 @@
 <map id="krap::MainMenu::insert" name="krap::MainMenu::insert">
 <area shape="rect" id="node1" title="Inserts a new element to this menu." alt="" coords="5,5,156,31"/>
-<area shape="rect" id="node2" href="$classkrap_1_1AText.html#ac9fb7ac19c103f79b2b841702a067230" title="creates clone of itself" alt="" coords="204,5,328,31"/>
+<area shape="rect" id="node2" href="$classkrap_1_1AText.html#ac9fb7ac19c103f79b2b841702a067230" title="Creates clone of the AText." alt="" coords="204,5,328,31"/>
 </map>
