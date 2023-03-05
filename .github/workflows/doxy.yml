@@ -4,16 +4,74 @@ on:
       - main
 
 jobs:
-  print_hello:
+  make_doxygen:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World!"
       - uses: actions/checkout@v3
-      - run: ls -la /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
-      - run: ls -la .
+        with:
+          fetch-depth: 0
+          path: sources
+      - run: mkdir docs_build
+      - run: cp -rf sources/classes docs_build/
+      - run: cp -rf sources/executables docs_build/
+      - run: cp -rf sources/Doxyfile docs_build/
       - uses: mattnotmitt/doxygen-action@1.9.5
         with:
-          doxyfile-path: './Doxyfile'
+         working-directory: docs_build
+         doxyfile-path: 'Doxyfile'
+      - shell: bash
+        run: |
+          cd sources/
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git switch gh-pages
+          rm -rf doxygen_doc
+          rm -rf html
+          cp -rf ../docs_build/doxygen_doc/html/ ./
+          date > build_date
+          git status
+          git add -A
+          git commit -m "gh-pages auto update"
+          git push -u origin
+
+
+# - run: |
+#           cd docs/
+#           git config user.name github-actions
+#           git config user.email github-actions@github.com
+#           git add -A
+#           git commit -m "gh-pages auto update"
+#           git push -u origin
+
+#       - run: ls -la /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
+#       - run: ls -la .
+
+#       - shell: bash
+#         run: |
+#           git config user.name github-actions
+#           git config user.email github-actions@github.com
+#           git switch gh-pages
+#           ls -la .
+#           git add -A
+#           git commit -m "gh-pages auto update"
+#           git push -u origin
+  
+#          mkdir /home/runner/work/t-doxy && cd /home/runner/work/t-doxy
+#          cp -rf /home/runner/work/kraposhin-cg-site/kraposhin-cg-site/doxygen_doc/* ./
+#          cd /home/runner/work/kraposhin-cg-site/kraposhin-cg-site
+#          ls -la .
+#          git switch gh-pages
+#          mv /home/runner/work/t-doxy/* ./
+#          ls -la .
+#          git add -A
+#          git commit -m "gh-pages auto update"
+#          git push -u origin
+#
+#      - uses: actions/upload-artifact@v3
+#        with:
+#          name: doxy-artifact
+#          path: /home/runner/work/kraposhin-cg-site/kraposhin-cg-site/doxygen_doc # or path/to/artifact
         
 #uses: mattnotmitt/doxygen-action@1.9.5
 #with:
