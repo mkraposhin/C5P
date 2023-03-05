@@ -23,10 +23,10 @@ class AText
 {
 private:
 
-    //- The text
+    //! The text stored in this html element
     std::string text_;
     
-    //- The uri
+    //! The uri to which this html element may point
     UriPtr uri_;
 
     //! Contains a name of a function to be executed on the click event
@@ -34,25 +34,25 @@ private:
 
 public:
 
-    //- Default constructor
+    //! Default constructor
     AText();
 
-    //- Create from the text string
+    //! Create from the text string
     AText(const std::string& text);
 
-    //- Copy constructor
+    //! Copy constructor
     AText(const AText& p);
 
-    //- Destructor
+    //! Destructor
     ~AText();
 
-    //- Print elements in the AText
+    //! Print elements in the AText
     std::ostream& print(std::ostream& ostr) const override;
 
-    //- Creates clone of the AText
+    //! Creates clone of the AText
     ElementPtr clone() const override;
 
-    //- Sets uri
+    //! Sets uri
     void uri (const std::string& s);
 
     //! Sets an on click function

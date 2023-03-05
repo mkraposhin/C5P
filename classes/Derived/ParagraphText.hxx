@@ -16,27 +16,27 @@ class ParagraphText
 {
 private:
 
-    //- The text in the paragraph
+    //! The text in the paragraph
     std::string partext_;
 
 public:
 
-    //- Default constructor
+    //! Default constructor
     ParagraphText();
 
-    //- Create from the text string
+    //! Create from the text string
     ParagraphText(const std::string& text);
 
-    //- Copy constructor
+    //! Copy constructor
     ParagraphText(const ParagraphText& p);
 
-    //- Destructor
+    //! Destructor
     ~ParagraphText();
 
-    //- Print elements in the ParagraphText
+    //! Print elements in the ParagraphText
     std::ostream& print(std::ostream& ostr) const override;
 
-    //- Creates clone of the ParagraphText
+    //! Creates clone of the ParagraphText
     ElementPtr clone() const override;
 };
 
