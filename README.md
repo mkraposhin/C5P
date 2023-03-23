@@ -5,5 +5,5 @@ USES
 ----
 
 1. C++ STL library
-2. Maddy for Markdown rendering
+2. Maddy for Markdown rendering [Maddy](https://github.com/progsource/maddy)
 
