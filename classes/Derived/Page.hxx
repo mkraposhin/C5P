@@ -16,7 +16,7 @@ class Document;
 
 class Page
 :
-    public Compound, CSSRegistry
+    public Element, Compound, CSSRegistry
 {
 private:
 

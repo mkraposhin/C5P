@@ -1,15 +1,15 @@
 #include "Compound.hxx"
 
 krap::Compound::Compound()
-:
-    Element()
+// :
+//     Element()
 {
 
 }
 
 krap::Compound::Compound(const Compound& compound)
 :
-    Element(compound),
+    // Element(compound),
     elements_(compound.elements_)
 {
 
@@ -40,6 +40,7 @@ krap::ElementPtr& krap::Compound::add(ElementPtr& eptr)
 
 std::ostream& krap::Compound::print(std::ostream& ostr) const
 {
+    ostr<<std::endl;
     for(auto it=elements_.cbegin();
         it!=elements_.cend(); it++)
     {

@@ -33,9 +33,6 @@ private:
     //! Pointer to the css class (if applicable)
     CSSClassPtr css_;
 
-    //! The id attribute of an element
-    std::string id_;
-
     //! Sets the pointer to new child
     void set_child(ElementPtr& new_child);
 
@@ -73,14 +70,7 @@ public:
 
     //! gives const-ref access to the style class
     const CSSClassPtr& css() const;
-
-    //! Sets the id attribute of an element
-    void id (const std::string& id);
-
-    //! Returs the id attribute of an element
-    const std::string id() const;
 };
-
 
 //! ostream output operator
 std::ostream& operator << (std::ostream& ostr, const Element& elem);

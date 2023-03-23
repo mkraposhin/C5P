@@ -5,6 +5,7 @@
 
 krap::Page::Page(CSSClassMap& ccm)
 :
+    Element(),
     Compound(),
     CSSRegistry(ccm)
 {
@@ -12,6 +13,7 @@ krap::Page::Page(CSSClassMap& ccm)
 
 krap::Page::Page(const Page& page, CSSClassMap& css_class_map)
 :
+    Element(page),
     Compound(page),
     CSSRegistry(css_class_map)
 {

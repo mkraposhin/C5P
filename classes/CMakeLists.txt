@@ -4,6 +4,8 @@ set(SOURCES ${SOURCES} Base/Element.cxx)
 set(SOURCES ${SOURCES} Base/Compound.cxx)
 set(SOURCES ${SOURCES} Base/Uri.cxx)
 
+set(SOURCES ${SOURCES} Drafts/Attributes.cxx)
+
 set(SOURCES ${SOURCES} CSS/CSSRegistry.cxx)
 set(SOURCES ${SOURCES} CSS/CSSElement.cxx)
 set(SOURCES ${SOURCES} CSS/CSSClass.cxx)
@@ -40,4 +42,5 @@ target_include_directories(krap PRIVATE
     "Base"
     "CSS"
     "Derived"
+    "Drafts"
     "${CMAKE_SOURCE_DIR}/classes")

@@ -1,14 +1,47 @@
 #ifndef AText_H
 #define AText_H
 
-#include "Element.hxx"
-#include "Uri.hxx"
-#include "JScript.hxx"
+#include "HtmlTag.hxx"
+#include "Attributes.hxx"
 
 namespace krap
 {
 
-class Uri;
+/*---------------------------------------------------------------------------*\
+                            Class ATextValue Declaration
+\*---------------------------------------------------------------------------*/
+
+struct ATextValue
+{
+    //!
+    using value_type = std::string;
+
+    //!
+    const std::string tag_str = "a";
+
+    //!
+    const bool has_closing    = true;
+
+    //! The text stored in this html element
+    std::string text_;
+
+    //!
+    ATextValue()
+    : text_(""){}
+
+    //!
+    ATextValue(const ATextValue& tval)
+    : text_(tval.text_){}
+
+    //!
+    void value_print(std::ostream& ostr) const
+    {
+        ostr << text_;
+    }
+};
+
+using ATextBase = HtmlTagBase<ATextValue,
+    UriAttribute,OnClickAttribute,IdAttribute>;
 
 class AText;
 using ATextPtr = std::shared_ptr<AText>;
@@ -19,44 +52,29 @@ using ATextPtr = std::shared_ptr<AText>;
 
 class AText
 :
-    public Element
+    public ATextBase
 {
-private:
-
-    //! The text stored in this html element
-    std::string text_;
-    
-    //! The uri to which this html element may point
-    UriPtr uri_;
-
-    //! Contains a name of a function to be executed on the click event
-    std::string on_click_;
-
 public:
 
     //! Default constructor
-    AText();
+    AText() = default;
 
     //! Create from the text string
-    AText(const std::string& text);
+    explicit AText(const std::string& text)
+    :
+    ATextBase(){text_ = text;}
 
     //! Copy constructor
-    AText(const AText& p);
+    AText(const AText& p) = default;
 
     //! Destructor
-    ~AText();
+    ~AText(){};
 
-    //! Print elements in the AText
-    std::ostream& print(std::ostream& ostr) const override;
-
-    //! Creates clone of the AText
-    ElementPtr clone() const override;
-
-    //! Sets uri
-    void uri (const std::string& s);
-
-    //! Sets an on click function
-    void on_click(const JScript& js);
+    //! Creates a clone of an "a" html tag
+    ElementPtr clone () const override
+    {
+        return ElementPtr(new AText{*this});
+    }
 };
 
 }
