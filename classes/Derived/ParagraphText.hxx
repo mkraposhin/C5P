@@ -1,44 +1,34 @@
 #ifndef ParagraphText_H
 #define ParagraphText_H
 
-#include "Element.hxx"
+#include "HtmlTag.hxx"
+#include "Attributes.hxx"
 
 namespace krap
 {
-
 /*---------------------------------------------------------------------------*\
                             Class ParagraphText Declaration
 \*---------------------------------------------------------------------------*/
 
-class ParagraphText
-:
-    public Element
+struct ParagraphTextValue : public ValueBase<krap::TagId::P,true,std::string>
 {
-private:
+    //!
+    ParagraphTextValue() = default;
 
-    //! The text in the paragraph
-    std::string partext_;
+    //!
+    ParagraphTextValue(const ParagraphTextValue& tval) = default;
 
-public:
-
-    //! Default constructor
-    ParagraphText();
-
-    //! Create from the text string
-    ParagraphText(const std::string& text);
-
-    //! Copy constructor
-    ParagraphText(const ParagraphText& p);
-
-    //! Destructor
-    ~ParagraphText();
-
-    //! Print elements in the ParagraphText
-    std::ostream& print(std::ostream& ostr) const override;
-
-    //! Creates clone of the ParagraphText
-    ElementPtr clone() const override;
+    //!
+    void value_print(std::ostream& ostr) const override
+    {
+        ostr << value_;
+    }
 };
+
+using ParagrahTextBase = HtmlTagBase<ParagraphTextValue>;
+using ParagraphText = HtmlTagImpl<ParagrahTextBase>;
+
+using ParagraphPtr = std::shared_ptr<ParagraphText>;
 
 }
 

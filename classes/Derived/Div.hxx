@@ -2,37 +2,30 @@
 #define Div_H
 
 #include "Compound.hxx"
+#include "HtmlTag.hxx"
+#include "Attributes.hxx"
 
 namespace krap
 {
 
-/*---------------------------------------------------------------------------*\
-                            Class Div Declaration
-\*---------------------------------------------------------------------------*/
-
-class Div
-:
-    public Compound
+//!
+struct DivValue : public ValueBase<krap::TagId::DIV,true,void*>, public Compound
 {
-private:
+    //!
+    DivValue() = default;
+    
+    //!
+    DivValue(const DivValue& divval) = default;
 
-public:
-
-    //- Default constructor (Empty Div container)
-    Div();
-
-    //- Copy constructor
-    Div(const Div& );
-
-    //- Destructor
-    ~Div();
-
-    //- Print elements in a Div
-    std::ostream& print(std::ostream& ostr) const override;
-
-    //- Creates clone of a Div
-    virtual ElementPtr clone() const override;
+    //!
+    void value_print(std::ostream& ostr) const override
+    {
+        Compound::print(ostr);
+    }
 };
+
+using DivBase = HtmlTagBase<DivValue,IdAttribute>;
+using Div = HtmlTagImpl<DivBase>;
 
 }
 

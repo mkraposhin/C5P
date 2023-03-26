@@ -1,63 +1,36 @@
 #ifndef AText_H
 #define AText_H
 
-#include "Element.hxx"
-#include "Uri.hxx"
-#include "JScript.hxx"
+#include "HtmlTag.hxx"
+#include "Attributes.hxx"
 
 namespace krap
 {
 
-class Uri;
-
-class AText;
-using ATextPtr = std::shared_ptr<AText>;
-
 /*---------------------------------------------------------------------------*\
-                            Class AText Declaration
+                            Class ATextImpl Declaration
 \*---------------------------------------------------------------------------*/
 
-class AText
-:
-    public Element
+struct ATextValue : public ValueBase<krap::TagId::A,true,std::string>
 {
-private:
+    //!
+    ATextValue() = default;
 
-    //! The text stored in this html element
-    std::string text_;
-    
-    //! The uri to which this html element may point
-    UriPtr uri_;
+    //!
+    ATextValue(const ATextValue& tval) = default;
 
-    //! Contains a name of a function to be executed on the click event
-    std::string on_click_;
-
-public:
-
-    //! Default constructor
-    AText();
-
-    //! Create from the text string
-    AText(const std::string& text);
-
-    //! Copy constructor
-    AText(const AText& p);
-
-    //! Destructor
-    ~AText();
-
-    //! Print elements in the AText
-    std::ostream& print(std::ostream& ostr) const override;
-
-    //! Creates clone of the AText
-    ElementPtr clone() const override;
-
-    //! Sets uri
-    void uri (const std::string& s);
-
-    //! Sets an on click function
-    void on_click(const JScript& js);
+    //!
+    void value_print(std::ostream& ostr) const override
+    {
+        ostr << value_;
+    }
 };
+
+using ATextBase = HtmlTagBase<ATextValue,
+    UriAttribute,OnClickAttribute,IdAttribute>;
+using AText = HtmlTagImpl<ATextBase>;
+
+using ATextPtr = std::shared_ptr<AText>;
 
 }
 

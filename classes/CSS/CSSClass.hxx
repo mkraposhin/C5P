@@ -26,7 +26,7 @@ private:
     //! in a CSS class (a CSSClass object)
     std::map<std::string,std::shared_ptr<CSSElement>> css_properties_;
 
-    //! The type for the record
+    //! The type for a record
     using css_rec_type = std::pair<std::string,std::shared_ptr<CSSElement>>;
 
     //! An AtRule that is applied to a CSSClass object

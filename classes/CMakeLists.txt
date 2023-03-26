@@ -4,6 +4,8 @@ set(SOURCES ${SOURCES} Base/Element.cxx)
 set(SOURCES ${SOURCES} Base/Compound.cxx)
 set(SOURCES ${SOURCES} Base/Uri.cxx)
 
+set(SOURCES ${SOURCES} Drafts/HtmlTag.cxx)
+
 set(SOURCES ${SOURCES} CSS/CSSRegistry.cxx)
 set(SOURCES ${SOURCES} CSS/CSSElement.cxx)
 set(SOURCES ${SOURCES} CSS/CSSClass.cxx)
@@ -12,16 +14,10 @@ set(SOURCES ${SOURCES} CSS/AtRule.cxx)
 set(SOURCES ${SOURCES} Derived/Document.cxx)
 set(SOURCES ${SOURCES} Derived/Page.cxx)
 set(SOURCES ${SOURCES} Derived/Head.cxx)
-set(SOURCES ${SOURCES} Derived/ParagraphText.cxx)
-set(SOURCES ${SOURCES} Derived/AText.cxx)
-set(SOURCES ${SOURCES} Derived/Image.cxx)
 set(SOURCES ${SOURCES} Derived/CaptionedImage.cxx)
 set(SOURCES ${SOURCES} Derived/DivColumn.cxx)
-set(SOURCES ${SOURCES} Derived/Title.cxx)
-set(SOURCES ${SOURCES} Derived/Div.cxx)
 set(SOURCES ${SOURCES} Derived/MainMenu.cxx)
 set(SOURCES ${SOURCES} Derived/JScript.cxx)
-set(SOURCES ${SOURCES} Derived/Link.cxx)
 
 set(SOURCES ${SOURCES} Globals.cxx)
 set(SOURCES ${SOURCES} Site.cxx)
@@ -40,4 +36,5 @@ target_include_directories(krap PRIVATE
     "Base"
     "CSS"
     "Derived"
+    "Drafts"
     "${CMAKE_SOURCE_DIR}/classes")

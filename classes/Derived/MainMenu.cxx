@@ -125,12 +125,11 @@ krap::MainMenu::MainMenu()
 
     this->jscript_ = j_script.clone();
 
-    Link menu_link
-    (
-        "stylesheet",
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/"
-        "4.7.0/css/font-awesome.min.css"
-    );
+    Link menu_link;
+    menu_link.uri("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/"
+        "4.7.0/css/font-awesome.min.css");
+    menu_link.rel("stylesheet");
+
     link_ = std::dynamic_pointer_cast<Link>(menu_link.clone());
 
     AText hidden_txt;

@@ -27,8 +27,7 @@ void krap::Element::set_css_class(const CSSClass& css)
 krap::Element::Element()
 :
     child_(nullptr),
-    css_(nullptr),
-    id_("")
+    css_(nullptr)
 {
 
 }
@@ -36,8 +35,7 @@ krap::Element::Element()
 krap::Element::Element(const Element& el)
 :
     child_(nullptr),
-    css_(el.css_),
-    id_(el.id_)
+    css_(el.css_)
 {
     if (el.child_)
     {
@@ -72,16 +70,6 @@ std::ostream& krap::Element::print(std::ostream& ostr) const
         return (*child_).print(ostr);
     }
     return ostr;
-}
-
-void krap::Element::id (const std::string& id)
-{
-    id_ = id;
-}
-
-const std::string krap::Element::id() const
-{
-    return id_;
 }
 
 std::ostream& krap::operator << (std::ostream& ostr, const krap::Element& elem)

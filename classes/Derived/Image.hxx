@@ -1,59 +1,33 @@
 #ifndef Image_H
 #define Image_H
 
-#include "Div.hxx"
-#include "Uri.hxx"
+#include "HtmlTag.hxx"
+#include "Attributes.hxx"
 
 namespace krap
 {
-
-class Uri;
-
-class Image;
-using ImagePtr = std::shared_ptr<Image>;
 
 /*---------------------------------------------------------------------------*\
                             Class Image Declaration
 \*---------------------------------------------------------------------------*/
 
-class Image
-:
-    public Element
+struct ImageValue : public ValueBase<krap::TagId::IMAGE,true,void*>
 {
-private:
-    
-    //- The uri
-    UriPtr uri_;
+    //!
+    ImageValue() = default;
 
-    //- Width of an image
-    int width_;
+    //!
+    ImageValue(const ImageValue& tval) = default;
 
-public:
-
-    //- Default constructor
-    Image();
-
-    //- Create from the text string
-    Image(const std::string& text);
-
-    //- Copy constructor
-    Image(const Image& p);
-
-    //- Destructor
-    ~Image();
-
-    //- Print elements in the Image
-    std::ostream& print(std::ostream& ostr) const override;
-
-    //- Creates clone of the Image
-    ElementPtr clone() const override;
-
-    //- Sets the width of an image
-    int width(int w);
-
-    //- Returns the width of an image
-    const int width() const;
+    //!
+    void value_print(std::ostream& ostr) const override final
+    {}
 };
+
+using ImageBase = HtmlTagBase<ImageValue,
+    SrcAttribute,WidthAttribute>;
+using Image = HtmlTagImpl<ImageBase>;
+using ImagePtr = std::shared_ptr<Image>;
 
 }
 

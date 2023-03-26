@@ -1,37 +1,33 @@
 #ifndef Link_H
 #define Link_H
 
-#include "Element.hxx"
+#include "HtmlTag.hxx"
+#include "Attributes.hxx"
 
 namespace krap
 {
 
-class Link : public Element
+/*---------------------------------------------------------------------------*\
+                            Class Link Declaration
+\*---------------------------------------------------------------------------*/
+
+struct LinkValue : public ValueBase<krap::TagId::LINK,false,void*>
 {
-
-private:
+    //!
+    LinkValue() = default;
 
     //!
-    const std::string rel_;
+    LinkValue(const LinkValue& tval) = default;
 
     //!
-    const std::string href_;
-
-public:
-
-    //!
-    Link(const std::string& rel, const std::string& href);
-
-    //!
-    ~Link();
-
-    //! creates clone of itself
-    ElementPtr clone() const override;
-
-    //! Print elements in the Link
-    std::ostream& print(std::ostream& ostr) const override;
-
+    void value_print(std::ostream& ostr) const override
+    {}
 };
+
+using LinkBase = HtmlTagBase<LinkValue,RelAttribute,UriAttribute>;
+using Link = HtmlTagImpl<LinkBase>;
+
+using LinkPtr = std::shared_ptr<Link>;
 
 }
 

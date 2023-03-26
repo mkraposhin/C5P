@@ -12,71 +12,69 @@ namespace krap
                           Class Compound Declaration
 \*---------------------------------------------------------------------------*/
 
+//!
 class Compound
-:
-    public Element
 {
 private:
 
 
 protected:
 
-    //- Ordered list of elements in this compound
+    //! Ordered list of elements in this compound
     std::vector<ElementPtr> elements_;
-
 
 public:
      
-    //- Default constructor (creates empty compound)
+    //! Default constructor (creates empty compound)
     Compound();
 
-    //- Copy constructor for the Compound
+    //! Copy constructor for the Compound
     Compound(const Compound&);
 
-    //- Destructor
+    //! Destructor
     ~Compound();
 
-    //- Add new element
+    //! Adds a new element
     virtual ElementPtr& add (const Element&);
 
-    //- Add element stored by ordinary pointer
+    //! Adds an element stored by ordinary pointer
     virtual ElementPtr& add (Element* ept);
 
-    //- Add element stored by shared_ptr pointer
+    //! Adds an element stored by shared_ptr pointer
     virtual ElementPtr& add (ElementPtr& eptr);
 
-    //- Print elements in compound
-    virtual std::ostream& print(std::ostream& ostr) const override;
+    //! Prints elements in compound
+    virtual std::ostream& print(std::ostream& ostr) const;
 
-    //- Assign operator
+    //! Assign operator
     const Compound& operator = (const Compound& right);    
 
 
     //- access to elements of a compound
 
-        //- Access with specification of a child type
+        //! Access with specification of a child type
         template <class CType>
         CType& operator () (int i);
 
-        //- Non-const reference access operator
+        //! Non-const reference access operator
         Element& operator [] (int i);
 
-        //- begin of a compound
+        //! begin of a compound
         std::vector<ElementPtr>::iterator begin();
 
-        //- end of a compound
+        //! end of a compound
         std::vector<ElementPtr>::iterator end();
 
-        //- const begin of a compound
+        //! const begin of a compound
         std::vector<ElementPtr>::const_iterator cbegin() const;
 
-        //- const end of a compound
+        //! const end of a compound
         std::vector<ElementPtr>::const_iterator cend() const;
 
-        //- total count of elements of a compound
+        //! total count of elements of a compound
         int size() const;
 
-        //- remove all child elements
+        //! removes all child elements from a compound
         void clear();
 };
 
