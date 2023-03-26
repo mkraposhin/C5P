@@ -15,10 +15,16 @@ class IdAttribute : public HtmlAttributeBase
 public:
 
     //! Sets the id attribute of an element
-    void id (const std::string& id);
+    void id (const std::string& id)
+    {
+        id_ = id;
+    }
 
     //! Returs the id attribute of an element
-    const std::string id() const;
+    const std::string id() const
+    {
+        return id_;
+    }
 
     //!
     IdAttribute():id_(std::string("")){};

@@ -8,62 +8,24 @@
 namespace krap
 {
 
-struct DivValue : public Compound
+//!
+struct DivValue : public ValueBase<krap::TagId::DIV,true,void*>, public Compound
 {
     //!
-    const std::string tag_str = "div";
+    DivValue() = default;
+    
+    //!
+    DivValue(const DivValue& divval) = default;
 
     //!
-    const bool has_closing    = true;
-
-    //!
-    DivValue()
-    : Compound(){}
-
-    //!
-    DivValue(const DivValue& divval)
-    : Compound(divval){}
-
-    //!
-    void value_print(std::ostream& ostr) const
+    void value_print(std::ostream& ostr) const override
     {
         Compound::print(ostr);
     }
 };
 
 using DivBase = HtmlTagBase<DivValue,IdAttribute>;
-
-/*---------------------------------------------------------------------------*\
-                            Class Div Declaration
-\*---------------------------------------------------------------------------*/
-
-class Div
-:
-    public DivBase
-{
-private:
-
-public:
-
-    //! Default constructor (Empty Div container)
-    Div()
-    :
-    DivBase(){}
-
-    //! Copy constructor
-    Div(const Div& div)
-    :
-    DivBase(div){}
-
-    //! Destructor
-    ~Div(){};
-
-    //! Creates clone of a Div
-    virtual ElementPtr clone() const override
-    {
-        return ElementPtr(new Div(*this));
-    }    
-};
+using Div = HtmlTagImpl<DivBase>;
 
 }
 

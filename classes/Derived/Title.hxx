@@ -1,7 +1,8 @@
 #ifndef Title_H
 #define Title_H
 
-#include "Element.hxx"
+#include "HtmlTag.hxx"
+#include "Attributes.hxx"
 
 namespace krap
 {
@@ -10,35 +11,25 @@ namespace krap
                             Class Title Declaration
 \*---------------------------------------------------------------------------*/
 
-class Title
-:
-    public Element
+struct TitleValue : public ValueBase<krap::TagId::TITLE,true,std::string>
 {
-private:
+    //!
+    TitleValue() = default;
 
-    //- The text in the title
-    std::string ttext_;
+    //!
+    TitleValue(const TitleValue& tval) = default;
 
-public:
-
-    //- Default constructor
-    Title();
-
-    //- Create from the text string
-    Title(const std::string& text);
-
-    //- Copy constructor
-    Title(const Title& );
-
-    //- Destructor
-    ~Title();
-
-    //- Print elements in the Title
-    std::ostream& print(std::ostream& ostr) const override;
-
-    //- Creates clone of the ParagraphText
-    ElementPtr clone() const override;
+    //!
+    void value_print(std::ostream& ostr) const override
+    {
+        ostr << value_;
+    }
 };
+
+using TitleBase = HtmlTagBase<TitleValue>;
+using Title = HtmlTagImpl<TitleBase>;
+
+using TitlePtr = std::shared_ptr<Title>;
 
 }
 

@@ -4,6 +4,9 @@
 #include "UriAttribute.hxx"
 #include "OnClickAttribute.hxx"
 #include "IdAttribute.hxx"
+#include "SrcAttribute.hxx"
+#include "WidthAttribute.hxx"
+#include "RelAttribute.hxx"
 
 #endif
 

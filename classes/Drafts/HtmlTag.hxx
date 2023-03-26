@@ -1,7 +1,6 @@
 #ifndef HtmlTag_H
 #define HtmlTag_H
 
-// #include <tuple>
 #include <iostream>
 #include <Element.hxx>
 #include <CSSClass.hxx>
@@ -9,28 +8,56 @@
 namespace krap
 {
 
-const char* tag_str[] = {"a", "p", "div"};
+//!
+extern const char* tag_str[];
 
-template<int tag, bool t_has_closing>
+//!
+enum TagId
+{
+    A = 0,
+    P,
+    DIV,
+    IMAGE,
+    TITLE,
+    LINK
+};
+
+//!
+template<unsigned int tagid, bool t_has_closing, typename T>
 struct ValueBase
 {
     //!
-    const std::string tag_str = tag_str[tag];
+    using value_type = std::string;
+
+    //!
+    static const std::string tag_str;
 
     //!
     const bool has_closing    = t_has_closing;
 
     //!
+    T value_;
+
+    //!
     ValueBase(){}
 
     //!
-    ValueBase(const ValueBase& valbase){}
+    ValueBase(const ValueBase& valbase):
+    value_(valbase.value_){}
 
     //!
-    virtual void value_print(std::ostream& ostr) const
-    {
-    }
+    virtual void value_print(std::ostream& ostr) const = 0;
+
+    //! Forbid move ctor
+    ValueBase (ValueBase&& v) = delete;
+
+    //! Forbid move assignment operator
+    const ValueBase& operator = (ValueBase&& v) = delete;
 };
+
+template<unsigned int tagid, bool t_has_closing, typename T>
+const std::string krap::ValueBase<tagid,t_has_closing,T>::tag_str =
+std::string(krap::tag_str[tagid]);
 
 //! A type to hold several attributes
 template <class ...Attrs>
@@ -40,6 +67,9 @@ using AttributesList = std::tuple<Attrs...>;
 template <class ValueType, class ...Attrs>
 struct HtmlTagBase : public Element, ValueType, public Attrs...
 {
+    //!
+    using value_type = typename ValueType::value_type;
+
     //! Copy ctor for a tag
     HtmlTagBase(const HtmlTagBase& TagBase)
     :
@@ -55,23 +85,6 @@ struct HtmlTagBase : public Element, ValueType, public Attrs...
         ValueType(),
         Attrs()...
     {}
-
-    // //!
-    // template<class T>
-    // void print_attribs
-    // (const T*, const Attrs* ...attrs, std::ostream &ostr) const
-    // {
-    //     T::print_attribute(ostr);
-    //     print_attribs(attrs..., ostr);
-    // }
-
-    // //!
-    // template<class T>
-    // void print_attribs
-    // (const T* cattr, std::ostream &ostr) const
-    // {
-    //     T::print_attribute(ostr);
-    // }
 
     //!
     std::ostream& print_attribs(std::ostream& ostr) const
@@ -103,73 +116,47 @@ struct HtmlTagBase : public Element, ValueType, public Attrs...
             ostr<< "</"<< ValueType::tag_str << ">" << std::endl;
         }
     }
-
-    //using Base_T = HtmlTagBase<ValueType, Attrs...>;
-
-    // //! Creates a clone of an html tag
-    // ElementPtr clone() const override
-    // {
-    //     return ElementPtr(new Base_T{*this});
-    // }
 };
 
-// //!
-// template <class AL, int pos>
-// void print_attributes(AL& attrib_list, std::ostream& ostr)
-// {
-//     if constexpr (pos >= 0)
-//     {
-//         auto c_attr = std::get<pos>(attrib_list);
-//         c_attr.print_attribute(ostr);
-//         print_attributes<pos-1>(attrib_list);
-//     }
-// }
+template <typename Base>
+class HtmlTagImpl : public Base
+{
+protected:
 
-// template <class ...Attrs>
-// struct HtmlTagBase
-// {
+    using DerivedType = HtmlTagImpl<Base>; 
 
-//     AttributesList<Attrs...> attribs_;
+    //!
+    template <typename ToClass>
+    ElementPtr clone_cast() const
+    {
+        ElementPtr eptr {new ToClass{*dynamic_cast<const ToClass*>(this)}};
+        return eptr;
+    }
 
+public:
 
-//     HtmlTagBase(const HtmlTagBase& tag)
-//     {}
+    //!
+    HtmlTagImpl(){};
 
-// };
+    //!
+    HtmlTagImpl(const HtmlTagImpl& html_impl) = default;
 
-// //!
-// template <class TagType>
-// struct HtmlTag : public TagType
-// {
+    //!
+    HtmlTagImpl(const typename Base::value_type& val)
+    : Base()
+    {
+        Base::value_ = val;
+    };
 
-//     //!
-//     HtmlTag (const HtmlTag& html_tag)
-//     :
-//         TagType(html_tag)
-//     {
+    //!
+    ~HtmlTagImpl(){};
 
-//     }
-
-//     //!
-//     void print(std::ostream& ostr)
-//     {
-//         if (TagType == EmptyType)
-//         {
-//             //that might be a container object
-//             //value_print(ostr) ??
-//         }
-//         ostr<< "<" << tag_str << ">";
-//         value_print(ostr);
-//         if (has_closing)
-//         {
-//             ostr<< "</"<< tag_str << ">" << std::endl;
-//         }
-//     }
-
-//     //!
-//     virtual void value_print(std::ostream& ostr) = 0;
-
-// };
+    //!
+    ElementPtr clone () const override
+    {
+        return clone_cast<DerivedType>();
+    }
+};
 
 }
 

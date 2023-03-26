@@ -48,12 +48,13 @@ krap::CaptionedImage::CaptionedImage()
     construct();
 }
 
-krap::CaptionedImage::CaptionedImage(const std::string& text)
+krap::CaptionedImage::CaptionedImage(const std::string& where)
 :
     Div(),
-    image_(text),
-    caption_(std::string(""))
+    image_(),
+    caption_("")
 {
+    image_.src(constants::protocol + constants::site_uri + "images/" + where);
     construct();
 }
 

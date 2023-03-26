@@ -8,74 +8,29 @@ namespace krap
 {
 
 /*---------------------------------------------------------------------------*\
-                            Class ATextValue Declaration
+                            Class ATextImpl Declaration
 \*---------------------------------------------------------------------------*/
 
-struct ATextValue
+struct ATextValue : public ValueBase<krap::TagId::A,true,std::string>
 {
     //!
-    using value_type = std::string;
+    ATextValue() = default;
 
     //!
-    const std::string tag_str = "a";
+    ATextValue(const ATextValue& tval) = default;
 
     //!
-    const bool has_closing    = true;
-
-    //! The text stored in this html element
-    std::string text_;
-
-    //!
-    ATextValue()
-    : text_(""){}
-
-    //!
-    ATextValue(const ATextValue& tval)
-    : text_(tval.text_){}
-
-    //!
-    void value_print(std::ostream& ostr) const
+    void value_print(std::ostream& ostr) const override
     {
-        ostr << text_;
+        ostr << value_;
     }
 };
 
 using ATextBase = HtmlTagBase<ATextValue,
     UriAttribute,OnClickAttribute,IdAttribute>;
+using AText = HtmlTagImpl<ATextBase>;
 
-class AText;
 using ATextPtr = std::shared_ptr<AText>;
-
-/*---------------------------------------------------------------------------*\
-                            Class AText Declaration
-\*---------------------------------------------------------------------------*/
-
-class AText
-:
-    public ATextBase
-{
-public:
-
-    //! Default constructor
-    AText() = default;
-
-    //! Create from the text string
-    explicit AText(const std::string& text)
-    :
-    ATextBase(){text_ = text;}
-
-    //! Copy constructor
-    AText(const AText& p) = default;
-
-    //! Destructor
-    ~AText(){};
-
-    //! Creates a clone of an "a" html tag
-    ElementPtr clone () const override
-    {
-        return ElementPtr(new AText{*this});
-    }
-};
 
 }
 

@@ -6,6 +6,8 @@
 
 namespace krap
 {
+
+//! A base class to define an html attribute
 struct HtmlAttributeBase
 {
     //! Prints a given html attribute to a given stream
