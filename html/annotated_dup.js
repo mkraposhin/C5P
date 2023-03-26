@@ -1,7 +1,7 @@
 var annotated_dup =
 [
     [ "krap", "namespacekrap.html", [
-      [ "AText", "classkrap_1_1AText.html", "classkrap_1_1AText" ],
+      [ "ATextValue", "structkrap_1_1ATextValue.html", "structkrap_1_1ATextValue" ],
       [ "AtRule", "classkrap_1_1AtRule.html", "classkrap_1_1AtRule" ],
       [ "CaptionedImage", "classkrap_1_1CaptionedImage.html", "classkrap_1_1CaptionedImage" ],
       [ "Color", "classkrap_1_1Color.html", "classkrap_1_1Color" ],
@@ -13,8 +13,8 @@ var annotated_dup =
       [ "CSSElement", "classkrap_1_1CSSElement.html", "classkrap_1_1CSSElement" ],
       [ "CSSRegistry", "classkrap_1_1CSSRegistry.html", "classkrap_1_1CSSRegistry" ],
       [ "Debug", "classkrap_1_1Debug.html", "classkrap_1_1Debug" ],
-      [ "Div", "classkrap_1_1Div.html", "classkrap_1_1Div" ],
       [ "DivColumn", "classkrap_1_1DivColumn.html", "classkrap_1_1DivColumn" ],
+      [ "DivValue", "structkrap_1_1DivValue.html", "structkrap_1_1DivValue" ],
       [ "Document", "classkrap_1_1Document.html", "classkrap_1_1Document" ],
       [ "DocumentImpl", "classkrap_1_1DocumentImpl.html", "classkrap_1_1DocumentImpl" ],
       [ "Education", "classkrap_1_1Education.html", "classkrap_1_1Education" ],
@@ -28,20 +28,20 @@ var annotated_dup =
       [ "Header", "classkrap_1_1Header.html", "classkrap_1_1Header" ],
       [ "Height", "classkrap_1_1Height.html", "classkrap_1_1Height" ],
       [ "Home", "classkrap_1_1Home.html", "classkrap_1_1Home" ],
-      [ "Image", "classkrap_1_1Image.html", "classkrap_1_1Image" ],
+      [ "ImageValue", "structkrap_1_1ImageValue.html", "structkrap_1_1ImageValue" ],
       [ "JScript", "classkrap_1_1JScript.html", "classkrap_1_1JScript" ],
-      [ "Link", "classkrap_1_1Link.html", "classkrap_1_1Link" ],
+      [ "LinkValue", "structkrap_1_1LinkValue.html", "structkrap_1_1LinkValue" ],
       [ "MainMenu", "classkrap_1_1MainMenu.html", "classkrap_1_1MainMenu" ],
       [ "MyOssProjects", "classkrap_1_1MyOssProjects.html", "classkrap_1_1MyOssProjects" ],
       [ "MyPublications", "classkrap_1_1MyPublications.html", "classkrap_1_1MyPublications" ],
       [ "ObjectFloat", "classkrap_1_1ObjectFloat.html", "classkrap_1_1ObjectFloat" ],
       [ "Page", "classkrap_1_1Page.html", "classkrap_1_1Page" ],
-      [ "ParagraphText", "classkrap_1_1ParagraphText.html", "classkrap_1_1ParagraphText" ],
+      [ "ParagraphTextValue", "structkrap_1_1ParagraphTextValue.html", "structkrap_1_1ParagraphTextValue" ],
       [ "Patents", "classkrap_1_1Patents.html", "classkrap_1_1Patents" ],
       [ "ProfExperience", "classkrap_1_1ProfExperience.html", "classkrap_1_1ProfExperience" ],
       [ "Site", "classkrap_1_1Site.html", "classkrap_1_1Site" ],
       [ "TextDecoration", "classkrap_1_1TextDecoration.html", "classkrap_1_1TextDecoration" ],
-      [ "Title", "classkrap_1_1Title.html", "classkrap_1_1Title" ],
+      [ "TitleValue", "structkrap_1_1TitleValue.html", "structkrap_1_1TitleValue" ],
       [ "Uri", "classkrap_1_1Uri.html", "classkrap_1_1Uri" ],
       [ "Width", "classkrap_1_1Width.html", "classkrap_1_1Width" ]
     ] ]

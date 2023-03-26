@@ -96,21 +96,16 @@ $(document).ready(function(){initNavTree('AText_8hxx.html',''); initResizable();
   <div class="headertitle"><div class="title">AText.hxx File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="Element_8hxx_source.html">Element.hxx</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Uri_8hxx_source.html">Uri.hxx</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="JScript_8hxx_source.html">JScript.hxx</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;HtmlTag.hxx&quot;</code><br />
+<code>#include &quot;Attributes.hxx&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for AText.hxx:</div>
 <div class="dyncontent">
 <div class="center"><img src="AText_8hxx__incl.png" border="0" usemap="#aclasses_2Derived_2AText_8hxx" alt=""/></div>
 <map name="aclasses_2Derived_2AText_8hxx" id="aclasses_2Derived_2AText_8hxx">
-<area shape="rect" title=" " alt="" coords="49,5,223,31"/>
-<area shape="rect" href="Element_8hxx.html" title=" " alt="" coords="91,152,181,177"/>
-<area shape="rect" href="Uri_8hxx.html" title=" " alt="" coords="105,79,167,104"/>
-<area shape="rect" href="JScript_8hxx.html" title=" " alt="" coords="191,79,276,104"/>
-<area shape="rect" title=" " alt="" coords="5,225,77,251"/>
-<area shape="rect" title=" " alt="" coords="102,225,170,251"/>
-<area shape="rect" title=" " alt="" coords="194,225,233,251"/>
+<area shape="rect" title=" " alt="" coords="25,5,200,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,100,104"/>
+<area shape="rect" title=" " alt="" coords="124,79,224,104"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -118,11 +113,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="AText_8hxx__dep__incl.png" border="0" usemap="#aclasses_2Derived_2AText_8hxxdep" alt=""/></div>
 <map name="aclasses_2Derived_2AText_8hxxdep" id="aclasses_2Derived_2AText_8hxxdep">
-<area shape="rect" title=" " alt="" coords="325,5,500,31"/>
-<area shape="rect" href="AText_8cxx.html" title=" " alt="" coords="5,79,180,104"/>
-<area shape="rect" href="MainMenu_8cxx.html" title=" " alt="" coords="204,79,405,104"/>
-<area shape="rect" href="MyOssProjects_8cxx.html" title=" " alt="" coords="429,79,612,104"/>
-<area shape="rect" href="MyPublications_8cxx.html" title=" " alt="" coords="637,79,818,104"/>
+<area shape="rect" title=" " alt="" coords="235,5,409,31"/>
+<area shape="rect" href="MainMenu_8cxx.html" title=" " alt="" coords="5,79,207,104"/>
+<area shape="rect" href="MyOssProjects_8cxx.html" title=" " alt="" coords="231,79,413,104"/>
+<area shape="rect" href="MyPublications_8cxx.html" title=" " alt="" coords="438,79,619,104"/>
 </map>
 </div>
 </div>
@@ -130,7 +124,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkrap_1_1AText.html">krap::AText</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkrap_1_1ATextValue.html">krap::ATextValue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -140,6 +134,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a3919eaa27ae8138487605e9c8afc823f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekrap.html#a3919eaa27ae8138487605e9c8afc823f">krap::ATextBase</a> = HtmlTagBase&lt; ATextValue, UriAttribute, OnClickAttribute, IdAttribute &gt;</td></tr>
+<tr class="separator:a3919eaa27ae8138487605e9c8afc823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca84cf270e87aa284555f1bb48d9fbb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekrap.html#afca84cf270e87aa284555f1bb48d9fbb">krap::AText</a> = HtmlTagImpl&lt; ATextBase &gt;</td></tr>
+<tr class="separator:afca84cf270e87aa284555f1bb48d9fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece56057f1d6d6ca20e5e4caf4af3c0a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekrap.html#aece56057f1d6d6ca20e5e4caf4af3c0a">krap::ATextPtr</a> = std::shared_ptr&lt; AText &gt;</td></tr>
 <tr class="separator:aece56057f1d6d6ca20e5e4caf4af3c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

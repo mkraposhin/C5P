@@ -1,11 +1,11 @@
 <map id="krap::Site" name="krap::Site">
-<area shape="rect" id="node1" title=" " alt="" coords="135,331,211,356"/>
-<area shape="rect" id="node2" href="$classkrap_1_1Document.html" title=" " alt="" coords="49,243,161,268"/>
+<area shape="rect" id="node1" title=" " alt="" coords="179,256,255,281"/>
+<area shape="rect" id="node2" href="$classkrap_1_1Document.html" title=" " alt="" coords="93,168,205,193"/>
 <area shape="rect" id="node3" href="$classkrap_1_1Element.html" title=" " alt="" coords="5,5,105,31"/>
-<area shape="rect" id="node4" href="$classkrap_1_1Head.html" title=" " alt="" coords="47,155,131,180"/>
-<area shape="rect" id="node7" href="$classkrap_1_1Compound.html" title=" " alt="" coords="245,80,359,105"/>
-<area shape="rect" id="node5" href="$classkrap_1_1CSSRegistry.html" title=" " alt="" coords="93,80,220,105"/>
-<area shape="rect" id="node6" href="$classkrap_1_1Page.html" title=" " alt="" coords="155,155,238,180"/>
-<area shape="rect" id="node9" href="$classkrap_1_1Div.html" title=" " alt="" coords="263,155,335,180"/>
-<area shape="rect" id="node8" href="$classkrap_1_1MainMenu.html" title=" " alt="" coords="192,243,305,268"/>
+<area shape="rect" id="node4" href="$classkrap_1_1Head.html" title=" " alt="" coords="72,80,156,105"/>
+<area shape="rect" id="node6" href="$classkrap_1_1Page.html" title=" " alt="" coords="181,80,263,105"/>
+<area shape="rect" id="node5" href="$classkrap_1_1CSSRegistry.html" title=" " alt="" coords="129,5,256,31"/>
+<area shape="rect" id="node7" href="$classkrap_1_1Compound.html" title=" " alt="" coords="281,5,395,31"/>
+<area shape="rect" id="node8" href="$classkrap_1_1MainMenu.html" title=" " alt="" coords="244,168,357,193"/>
+<area shape="rect" id="node9" title=" " alt="" coords="288,80,329,105"/>
 </map>

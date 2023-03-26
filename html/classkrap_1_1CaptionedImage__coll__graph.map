@@ -1,7 +1,4 @@
 <map id="krap::CaptionedImage" name="krap::CaptionedImage">
-<area shape="rect" id="node1" title=" " alt="" coords="40,253,187,279"/>
-<area shape="rect" id="node2" href="$classkrap_1_1Div.html" title=" " alt="" coords="35,179,107,204"/>
-<area shape="rect" id="node3" href="$classkrap_1_1Compound.html" title=" " alt="" coords="5,80,120,105"/>
-<area shape="rect" id="node4" href="$classkrap_1_1Element.html" title=" " alt="" coords="59,5,159,31"/>
-<area shape="rect" id="node5" href="$classkrap_1_1Image.html" title=" " alt="" coords="111,129,201,155"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,79,152,104"/>
+<area shape="rect" id="node2" title=" " alt="" coords="58,5,99,31"/>
 </map>

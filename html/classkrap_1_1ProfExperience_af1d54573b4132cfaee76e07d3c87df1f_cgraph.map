@@ -1,9 +1,7 @@
 <map id="krap::ProfExperience::ProfExperience" name="krap::ProfExperience::ProfExperience">
-<area shape="rect" id="node1" title=" " alt="" coords="5,74,145,114"/>
-<area shape="rect" id="node2" href="$classkrap_1_1CSSClass.html#aeaf3a643e61a0d5ff2b469967e8bbba2" title="Adds a property to this CSS class." alt="" coords="195,5,335,31"/>
-<area shape="rect" id="node4" href="$classkrap_1_1Compound.html#aa5a589439e5cb92a5eeb414e58d398af" title=" " alt="" coords="395,81,538,107"/>
-<area shape="rect" id="node6" href="$classkrap_1_1DivColumn.html#ada4be34abc7a45ba2e834e0630c47c09" title=" " alt="" coords="193,107,336,132"/>
-<area shape="rect" id="node7" href="$classkrap_1_1DocumentImpl.html#a0c3a1f08d823b4cd86d421fb24ce66c1" title=" " alt="" coords="196,157,333,197"/>
-<area shape="rect" id="node3" href="$classkrap_1_1CSSElement.html#aa36f98f61b63b1705ad0c4da2ce05e89" title=" " alt="" coords="384,5,549,31"/>
-<area shape="rect" id="node5" href="$classkrap_1_1Element.html#a87638ab80a8fb43f27708f4bec992e13" title="creates clone of itself" alt="" coords="597,81,735,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,145,63"/>
+<area shape="rect" id="node2" href="$classkrap_1_1CSSClass.html#aeaf3a643e61a0d5ff2b469967e8bbba2" title="Adds a property to this CSS class." alt="" coords="384,5,524,31"/>
+<area shape="rect" id="node4" href="$classkrap_1_1DivColumn.html#ada4be34abc7a45ba2e834e0630c47c09" title=" " alt="" coords="193,31,336,56"/>
+<area shape="rect" id="node5" href="$classkrap_1_1DocumentImpl.html#a0c3a1f08d823b4cd86d421fb24ce66c1" title=" " alt="" coords="196,81,333,121"/>
+<area shape="rect" id="node3" href="$classkrap_1_1CSSElement.html#aa36f98f61b63b1705ad0c4da2ce05e89" title=" " alt="" coords="572,5,737,31"/>
 </map>

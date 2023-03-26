@@ -11,6 +11,5 @@ var searchData=
   ['width500px_8',['width500px',['../structkrap_1_1css.html#adf49d5d162de4540658b28fd1414cc31',1,'krap::css']]],
   ['width50perc_9',['width50perc',['../structkrap_1_1css.html#ad65d1cbce00e0cf503a0291b6bb11cf5',1,'krap::css']]],
   ['width75perc_10',['width75perc',['../structkrap_1_1css.html#a146a79e45086126a3237303611e5aa55',1,'krap::css']]],
-  ['width80perc_11',['width80perc',['../structkrap_1_1css.html#a84462478563dd13106177b19cef86a09',1,'krap::css']]],
-  ['width_5f_12',['width_',['../classkrap_1_1Image.html#a6046acf2c494091202ca6c178fae4a9d',1,'krap::Image']]]
+  ['width80perc_11',['width80perc',['../structkrap_1_1css.html#a84462478563dd13106177b19cef86a09',1,'krap::css']]]
 ];

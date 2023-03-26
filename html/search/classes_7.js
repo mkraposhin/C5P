@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['image_0',['Image',['../classkrap_1_1Image.html',1,'krap']]]
+  ['imagevalue_0',['ImageValue',['../structkrap_1_1ImageValue.html',1,'krap']]]
 ];

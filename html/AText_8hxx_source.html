@@ -95,79 +95,49 @@ $(document).ready(function(){initNavTree('AText_8hxx_source.html',''); initResiz
 <a href="AText_8hxx.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef AText_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define AText_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="Element_8hxx.html">Element.hxx</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="Uri_8hxx.html">Uri.hxx</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="JScript_8hxx.html">JScript.hxx</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacekrap.html">krap</a></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>Uri;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>AText;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespacekrap.html#aece56057f1d6d6ca20e5e4caf4af3c0a">   14</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacekrap.html#aece56057f1d6d6ca20e5e4caf4af3c0a">ATextPtr</a> = std::shared_ptr&lt;AText&gt;;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/*---------------------------------------------------------------------------*\</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">                            Class AText Declaration</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">\*---------------------------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classkrap_1_1AText.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classkrap_1_1AText.html">AText</a></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">public</span> <a class="code hl_class" href="classkrap_1_1Element.html">Element</a></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classkrap_1_1AText.html#a1a463f3c77b34e95cf4db60bb5c89ccc">   27</a></span>    std::string <a class="code hl_variable" href="classkrap_1_1AText.html#a1a463f3c77b34e95cf4db60bb5c89ccc">text_</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classkrap_1_1AText.html#aa6745944933ed971cfbd6f251e91c3b2">   30</a></span>    <a class="code hl_typedef" href="namespacekrap.html#a9f35de4f0dea4f826e0b2f338fe1b0a8">UriPtr</a> <a class="code hl_variable" href="classkrap_1_1AText.html#aa6745944933ed971cfbd6f251e91c3b2">uri_</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classkrap_1_1AText.html#a5faad738f329c46d879e61d98180b56e">   33</a></span>    std::string <a class="code hl_variable" href="classkrap_1_1AText.html#a5faad738f329c46d879e61d98180b56e">on_click_</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;HtmlTag.hxx&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Attributes.hxx&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacekrap.html">krap</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/*---------------------------------------------------------------------------*\</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">                            Class ATextImpl Declaration</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">\*---------------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structkrap_1_1ATextValue.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structkrap_1_1ATextValue.html">ATextValue</a> : <span class="keyword">public</span> ValueBase&lt;krap::TagId::A,true,std::string&gt;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structkrap_1_1ATextValue.html#a9122d97da5759c5a46c95b443452b319">   17</a></span>    <a class="code hl_function" href="structkrap_1_1ATextValue.html#a9122d97da5759c5a46c95b443452b319">ATextValue</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structkrap_1_1ATextValue.html#a95bd976874ec48022c98601df54b7ec0">   20</a></span>    <a class="code hl_function" href="structkrap_1_1ATextValue.html#a95bd976874ec48022c98601df54b7ec0">ATextValue</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structkrap_1_1ATextValue.html">ATextValue</a>&amp; tval) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structkrap_1_1ATextValue.html#a5afc6d2b95c5575131ab01c2144c8388">   23</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structkrap_1_1ATextValue.html#a5afc6d2b95c5575131ab01c2144c8388">value_print</a>(std::ostream&amp; ostr)<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        ostr &lt;&lt; value_;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespacekrap.html#a3919eaa27ae8138487605e9c8afc823f">   29</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacekrap.html#a3919eaa27ae8138487605e9c8afc823f">ATextBase</a> = HtmlTagBase&lt;<a class="code hl_struct" href="structkrap_1_1ATextValue.html">ATextValue</a>,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    UriAttribute,OnClickAttribute,IdAttribute&gt;;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespacekrap.html#afca84cf270e87aa284555f1bb48d9fbb">   31</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacekrap.html#afca84cf270e87aa284555f1bb48d9fbb">AText</a> = HtmlTagImpl&lt;ATextBase&gt;;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespacekrap.html#aece56057f1d6d6ca20e5e4caf4af3c0a">   33</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacekrap.html#aece56057f1d6d6ca20e5e4caf4af3c0a">ATextPtr</a> = std::shared_ptr&lt;AText&gt;;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="classkrap_1_1AText.html#a2168e6be9ca70dfed13fdb953f11f204">AText</a>();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="classkrap_1_1AText.html#a2168e6be9ca70dfed13fdb953f11f204">AText</a>(<span class="keyword">const</span> std::string&amp; text);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_function" href="classkrap_1_1AText.html#a2168e6be9ca70dfed13fdb953f11f204">AText</a>(<span class="keyword">const</span> <a class="code hl_class" href="classkrap_1_1AText.html">AText</a>&amp; p);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_function" href="classkrap_1_1AText.html#a671fcbeabf26d99800d9bd963f2d7eca">~AText</a>();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    std::ostream&amp; <a class="code hl_function" href="classkrap_1_1AText.html#a8215d6bf7bb6d30a61caf1586aaea821">print</a>(std::ostream&amp; ostr) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_typedef" href="namespacekrap.html#af3f91ef61a6fb22c8074c9c1d288302b">ElementPtr</a> <a class="code hl_function" href="classkrap_1_1AText.html#ac9fb7ac19c103f79b2b841702a067230">clone</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classkrap_1_1AText.html#a24c876dca764b5ed2feb66c8c3b8affa">uri</a> (<span class="keyword">const</span> std::string&amp; s);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classkrap_1_1AText.html#adedde01eff68ffefd3c971aa69b3ba57">on_click</a>(<span class="keyword">const</span> <a class="code hl_class" href="classkrap_1_1JScript.html">JScript</a>&amp; js);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">//</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">//END-OF-FILE</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//</span></div>
-<div class="ttc" id="aElement_8hxx_html"><div class="ttname"><a href="Element_8hxx.html">Element.hxx</a></div></div>
-<div class="ttc" id="aJScript_8hxx_html"><div class="ttname"><a href="JScript_8hxx.html">JScript.hxx</a></div></div>
-<div class="ttc" id="aUri_8hxx_html"><div class="ttname"><a href="Uri_8hxx.html">Uri.hxx</a></div></div>
-<div class="ttc" id="aclasskrap_1_1AText_html"><div class="ttname"><a href="classkrap_1_1AText.html">krap::AText</a></div><div class="ttdef"><b>Definition:</b> <a href="AText_8hxx_source.html#l00020">AText.hxx:23</a></div></div>
-<div class="ttc" id="aclasskrap_1_1AText_html_a1a463f3c77b34e95cf4db60bb5c89ccc"><div class="ttname"><a href="classkrap_1_1AText.html#a1a463f3c77b34e95cf4db60bb5c89ccc">krap::AText::text_</a></div><div class="ttdeci">std::string text_</div><div class="ttdoc">The text stored in this html element.</div><div class="ttdef"><b>Definition:</b> <a href="AText_8hxx_source.html#l00027">AText.hxx:27</a></div></div>
-<div class="ttc" id="aclasskrap_1_1AText_html_a2168e6be9ca70dfed13fdb953f11f204"><div class="ttname"><a href="classkrap_1_1AText.html#a2168e6be9ca70dfed13fdb953f11f204">krap::AText::AText</a></div><div class="ttdeci">AText()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> <a href="AText_8cxx_source.html#l00006">AText.cxx:6</a></div></div>
-<div class="ttc" id="aclasskrap_1_1AText_html_a24c876dca764b5ed2feb66c8c3b8affa"><div class="ttname"><a href="classkrap_1_1AText.html#a24c876dca764b5ed2feb66c8c3b8affa">krap::AText::uri</a></div><div class="ttdeci">void uri(const std::string &amp;s)</div><div class="ttdoc">Sets uri.</div><div class="ttdef"><b>Definition:</b> <a href="AText_8cxx_source.html#l00062">AText.cxx:62</a></div></div>
-<div class="ttc" id="aclasskrap_1_1AText_html_a5faad738f329c46d879e61d98180b56e"><div class="ttname"><a href="classkrap_1_1AText.html#a5faad738f329c46d879e61d98180b56e">krap::AText::on_click_</a></div><div class="ttdeci">std::string on_click_</div><div class="ttdoc">Contains a name of a function to be executed on the click event.</div><div class="ttdef"><b>Definition:</b> <a href="AText_8hxx_source.html#l00033">AText.hxx:33</a></div></div>
-<div class="ttc" id="aclasskrap_1_1AText_html_a671fcbeabf26d99800d9bd963f2d7eca"><div class="ttname"><a href="classkrap_1_1AText.html#a671fcbeabf26d99800d9bd963f2d7eca">krap::AText::~AText</a></div><div class="ttdeci">~AText()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="AText_8cxx_source.html#l00031">AText.cxx:31</a></div></div>
-<div class="ttc" id="aclasskrap_1_1AText_html_a8215d6bf7bb6d30a61caf1586aaea821"><div class="ttname"><a href="classkrap_1_1AText.html#a8215d6bf7bb6d30a61caf1586aaea821">krap::AText::print</a></div><div class="ttdeci">std::ostream &amp; print(std::ostream &amp;ostr) const override</div><div class="ttdoc">Print elements in the AText.</div><div class="ttdef"><b>Definition:</b> <a href="AText_8cxx_source.html#l00035">AText.cxx:35</a></div></div>
-<div class="ttc" id="aclasskrap_1_1AText_html_aa6745944933ed971cfbd6f251e91c3b2"><div class="ttname"><a href="classkrap_1_1AText.html#aa6745944933ed971cfbd6f251e91c3b2">krap::AText::uri_</a></div><div class="ttdeci">UriPtr uri_</div><div class="ttdoc">The uri to which this html element may point.</div><div class="ttdef"><b>Definition:</b> <a href="AText_8hxx_source.html#l00030">AText.hxx:30</a></div></div>
-<div class="ttc" id="aclasskrap_1_1AText_html_ac9fb7ac19c103f79b2b841702a067230"><div class="ttname"><a href="classkrap_1_1AText.html#ac9fb7ac19c103f79b2b841702a067230">krap::AText::clone</a></div><div class="ttdeci">ElementPtr clone() const override</div><div class="ttdoc">Creates clone of the AText.</div><div class="ttdef"><b>Definition:</b> <a href="AText_8cxx_source.html#l00057">AText.cxx:57</a></div></div>
-<div class="ttc" id="aclasskrap_1_1AText_html_adedde01eff68ffefd3c971aa69b3ba57"><div class="ttname"><a href="classkrap_1_1AText.html#adedde01eff68ffefd3c971aa69b3ba57">krap::AText::on_click</a></div><div class="ttdeci">void on_click(const JScript &amp;js)</div><div class="ttdoc">Sets an on click function.</div><div class="ttdef"><b>Definition:</b> <a href="AText_8cxx_source.html#l00074">AText.cxx:74</a></div></div>
-<div class="ttc" id="aclasskrap_1_1Element_html"><div class="ttname"><a href="classkrap_1_1Element.html">krap::Element</a></div><div class="ttdef"><b>Definition:</b> <a href="Element_8hxx_source.html#l00025">Element.hxx:26</a></div></div>
-<div class="ttc" id="aclasskrap_1_1JScript_html"><div class="ttname"><a href="classkrap_1_1JScript.html">krap::JScript</a></div><div class="ttdef"><b>Definition:</b> <a href="JScript_8hxx_source.html#l00009">JScript.hxx:10</a></div></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//END-OF-FILE</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//</span></div>
 <div class="ttc" id="anamespacekrap_html"><div class="ttname"><a href="namespacekrap.html">krap</a></div><div class="ttdef"><b>Definition:</b> <a href="Contacts_8hxx_source.html#l00006">Contacts.hxx:7</a></div></div>
-<div class="ttc" id="anamespacekrap_html_a9f35de4f0dea4f826e0b2f338fe1b0a8"><div class="ttname"><a href="namespacekrap.html#a9f35de4f0dea4f826e0b2f338fe1b0a8">krap::UriPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Uri &gt; UriPtr</div><div class="ttdef"><b>Definition:</b> <a href="Uri_8hxx_source.html#l00013">Uri.hxx:13</a></div></div>
-<div class="ttc" id="anamespacekrap_html_aece56057f1d6d6ca20e5e4caf4af3c0a"><div class="ttname"><a href="namespacekrap.html#aece56057f1d6d6ca20e5e4caf4af3c0a">krap::ATextPtr</a></div><div class="ttdeci">std::shared_ptr&lt; AText &gt; ATextPtr</div><div class="ttdef"><b>Definition:</b> <a href="AText_8hxx_source.html#l00014">AText.hxx:14</a></div></div>
-<div class="ttc" id="anamespacekrap_html_af3f91ef61a6fb22c8074c9c1d288302b"><div class="ttname"><a href="namespacekrap.html#af3f91ef61a6fb22c8074c9c1d288302b">krap::ElementPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Element &gt; ElementPtr</div><div class="ttdef"><b>Definition:</b> <a href="Element_8hxx_source.html#l00015">Element.hxx:15</a></div></div>
+<div class="ttc" id="anamespacekrap_html_a3919eaa27ae8138487605e9c8afc823f"><div class="ttname"><a href="namespacekrap.html#a3919eaa27ae8138487605e9c8afc823f">krap::ATextBase</a></div><div class="ttdeci">HtmlTagBase&lt; ATextValue, UriAttribute, OnClickAttribute, IdAttribute &gt; ATextBase</div><div class="ttdef"><b>Definition:</b> <a href="AText_8hxx_source.html#l00029">AText.hxx:30</a></div></div>
+<div class="ttc" id="anamespacekrap_html_aece56057f1d6d6ca20e5e4caf4af3c0a"><div class="ttname"><a href="namespacekrap.html#aece56057f1d6d6ca20e5e4caf4af3c0a">krap::ATextPtr</a></div><div class="ttdeci">std::shared_ptr&lt; AText &gt; ATextPtr</div><div class="ttdef"><b>Definition:</b> <a href="AText_8hxx_source.html#l00033">AText.hxx:33</a></div></div>
+<div class="ttc" id="anamespacekrap_html_afca84cf270e87aa284555f1bb48d9fbb"><div class="ttname"><a href="namespacekrap.html#afca84cf270e87aa284555f1bb48d9fbb">krap::AText</a></div><div class="ttdeci">HtmlTagImpl&lt; ATextBase &gt; AText</div><div class="ttdef"><b>Definition:</b> <a href="AText_8hxx_source.html#l00031">AText.hxx:31</a></div></div>
+<div class="ttc" id="astructkrap_1_1ATextValue_html"><div class="ttname"><a href="structkrap_1_1ATextValue.html">krap::ATextValue</a></div><div class="ttdef"><b>Definition:</b> <a href="AText_8hxx_source.html#l00014">AText.hxx:15</a></div></div>
+<div class="ttc" id="astructkrap_1_1ATextValue_html_a5afc6d2b95c5575131ab01c2144c8388"><div class="ttname"><a href="structkrap_1_1ATextValue.html#a5afc6d2b95c5575131ab01c2144c8388">krap::ATextValue::value_print</a></div><div class="ttdeci">void value_print(std::ostream &amp;ostr) const override</div><div class="ttdef"><b>Definition:</b> <a href="AText_8hxx_source.html#l00023">AText.hxx:23</a></div></div>
+<div class="ttc" id="astructkrap_1_1ATextValue_html_a9122d97da5759c5a46c95b443452b319"><div class="ttname"><a href="structkrap_1_1ATextValue.html#a9122d97da5759c5a46c95b443452b319">krap::ATextValue::ATextValue</a></div><div class="ttdeci">ATextValue()=default</div></div>
+<div class="ttc" id="astructkrap_1_1ATextValue_html_a95bd976874ec48022c98601df54b7ec0"><div class="ttname"><a href="structkrap_1_1ATextValue.html#a95bd976874ec48022c98601df54b7ec0">krap::ATextValue::ATextValue</a></div><div class="ttdeci">ATextValue(const ATextValue &amp;tval)=default</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

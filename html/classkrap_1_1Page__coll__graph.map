@@ -1,6 +1,6 @@
 <map id="krap::Page" name="krap::Page">
-<area shape="rect" id="node1" title=" " alt="" coords="93,152,176,177"/>
-<area shape="rect" id="node2" href="$classkrap_1_1Compound.html" title=" " alt="" coords="5,79,120,104"/>
-<area shape="rect" id="node3" href="$classkrap_1_1Element.html" title=" " alt="" coords="13,5,113,31"/>
-<area shape="rect" id="node4" href="$classkrap_1_1CSSRegistry.html" title=" " alt="" coords="145,79,271,104"/>
+<area shape="rect" id="node1" title=" " alt="" coords="146,79,229,104"/>
+<area shape="rect" id="node2" href="$classkrap_1_1Element.html" title=" " alt="" coords="5,5,105,31"/>
+<area shape="rect" id="node3" href="$classkrap_1_1Compound.html" title=" " alt="" coords="130,5,245,31"/>
+<area shape="rect" id="node4" href="$classkrap_1_1CSSRegistry.html" title=" " alt="" coords="269,5,396,31"/>
 </map>

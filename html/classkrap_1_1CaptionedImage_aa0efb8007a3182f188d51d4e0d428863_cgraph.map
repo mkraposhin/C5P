@@ -1,12 +1,8 @@
 <map id="krap::CaptionedImage::clone" name="krap::CaptionedImage::clone">
-<area shape="rect" id="node1" title="creates clone of itself" alt="" coords="5,77,152,117"/>
-<area shape="rect" id="node2" href="$classkrap_1_1Compound.html#a4272915f35b18d7f87b74f9cb34b1f87" title=" " alt="" coords="200,55,349,80"/>
-<area shape="rect" id="node3" href="$classkrap_1_1CaptionedImage.html#a0f11c5cb9d9dc7870dcd04be20d3caf7" title=" " alt="" coords="201,105,348,145"/>
-<area shape="rect" id="node4" href="$classkrap_1_1CSSClass.html#aeaf3a643e61a0d5ff2b469967e8bbba2" title="Adds a property to this CSS class." alt="" coords="401,5,541,31"/>
-<area shape="rect" id="node6" href="$classkrap_1_1Compound.html#aa5a589439e5cb92a5eeb414e58d398af" title=" " alt="" coords="399,55,542,80"/>
-<area shape="rect" id="node8" href="$classkrap_1_1CaptionedImage.html#a14ccdcbb06231ce664298fa11f896c69" title=" " alt="" coords="397,105,544,145"/>
-<area shape="rect" id="node9" href="$classkrap_1_1CaptionedImage.html#a41674bc306ebc1f6b658132d05f64657" title=" " alt="" coords="397,169,544,209"/>
-<area shape="rect" id="node10" href="$classkrap_1_1Image.html#a3c26250d43a2ffcf106a00d5b44be5af" title=" " alt="" coords="407,233,534,259"/>
-<area shape="rect" id="node5" href="$classkrap_1_1CSSElement.html#aa36f98f61b63b1705ad0c4da2ce05e89" title=" " alt="" coords="592,5,757,31"/>
-<area shape="rect" id="node7" href="$classkrap_1_1Element.html#a87638ab80a8fb43f27708f4bec992e13" title="creates clone of itself" alt="" coords="606,55,743,80"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,152,95"/>
+<area shape="rect" id="node2" href="$classkrap_1_1CaptionedImage.html#a0f11c5cb9d9dc7870dcd04be20d3caf7" title=" " alt="" coords="200,55,347,95"/>
+<area shape="rect" id="node3" href="$classkrap_1_1CSSClass.html#aeaf3a643e61a0d5ff2b469967e8bbba2" title="Adds a property to this CSS class." alt="" coords="398,5,538,31"/>
+<area shape="rect" id="node5" href="$classkrap_1_1CaptionedImage.html#a14ccdcbb06231ce664298fa11f896c69" title=" " alt="" coords="395,55,541,95"/>
+<area shape="rect" id="node6" href="$classkrap_1_1CaptionedImage.html#a41674bc306ebc1f6b658132d05f64657" title=" " alt="" coords="395,119,541,159"/>
+<area shape="rect" id="node4" href="$classkrap_1_1CSSElement.html#aa36f98f61b63b1705ad0c4da2ce05e89" title=" " alt="" coords="589,5,755,31"/>
 </map>

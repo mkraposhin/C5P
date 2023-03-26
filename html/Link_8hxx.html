@@ -91,21 +91,21 @@ $(document).ready(function(){initNavTree('Link_8hxx.html',''); initResizable(); 
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">Link.hxx File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="Element_8hxx_source.html">Element.hxx</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;HtmlTag.hxx&quot;</code><br />
+<code>#include &quot;Attributes.hxx&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Link.hxx:</div>
 <div class="dyncontent">
 <div class="center"><img src="Link_8hxx__incl.png" border="0" usemap="#aclasses_2Derived_2Link_8hxx" alt=""/></div>
 <map name="aclasses_2Derived_2Link_8hxx" id="aclasses_2Derived_2Link_8hxx">
-<area shape="rect" title=" " alt="" coords="53,5,219,31"/>
-<area shape="rect" href="Element_8hxx.html" title=" " alt="" coords="91,79,181,104"/>
-<area shape="rect" title=" " alt="" coords="5,152,77,177"/>
-<area shape="rect" title=" " alt="" coords="102,152,170,177"/>
-<area shape="rect" title=" " alt="" coords="194,152,233,177"/>
+<area shape="rect" title=" " alt="" coords="29,5,196,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,100,104"/>
+<area shape="rect" title=" " alt="" coords="124,79,224,104"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -113,9 +113,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Link_8hxx__dep__incl.png" border="0" usemap="#aclasses_2Derived_2Link_8hxxdep" alt=""/></div>
 <map name="aclasses_2Derived_2Link_8hxxdep" id="aclasses_2Derived_2Link_8hxxdep">
-<area shape="rect" title=" " alt="" coords="712,5,879,31"/>
+<area shape="rect" title=" " alt="" coords="643,5,809,31"/>
 <area shape="rect" href="Head_8hxx.html" title=" " alt="" coords="429,79,601,104"/>
-<area shape="rect" href="Link_8cxx.html" title=" " alt="" coords="903,79,1069,104"/>
 <area shape="rect" href="MainMenu_8cxx.html" title=" " alt="" coords="764,152,965,177"/>
 <area shape="rect" href="MainMenu_8hxx.html" title=" " alt="" coords="625,79,827,104"/>
 <area shape="rect" href="Document_8hxx.html" title=" " alt="" coords="438,152,638,177"/>
@@ -147,13 +146,22 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkrap_1_1Link.html">krap::Link</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkrap_1_1LinkValue.html">krap::LinkValue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacekrap"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekrap.html">krap</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a0c1a2bc4f57afaf6bb4a630dccb3ab43"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekrap.html#a0c1a2bc4f57afaf6bb4a630dccb3ab43">krap::LinkBase</a> = HtmlTagBase&lt; LinkValue, RelAttribute, UriAttribute &gt;</td></tr>
+<tr class="separator:a0c1a2bc4f57afaf6bb4a630dccb3ab43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac519d185675a40f50fb2b186a5e0c2a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekrap.html#ac519d185675a40f50fb2b186a5e0c2a1">krap::Link</a> = HtmlTagImpl&lt; LinkBase &gt;</td></tr>
+<tr class="separator:ac519d185675a40f50fb2b186a5e0c2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5362e50fc7714b44801945bf16ed767"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekrap.html#ac5362e50fc7714b44801945bf16ed767">krap::LinkPtr</a> = std::shared_ptr&lt; Link &gt;</td></tr>
+<tr class="separator:ac5362e50fc7714b44801945bf16ed767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

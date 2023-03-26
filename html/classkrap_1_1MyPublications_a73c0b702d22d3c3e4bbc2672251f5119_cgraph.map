@@ -1,10 +1,7 @@
 <map id="krap::MyPublications::MyPublications" name="krap::MyPublications::MyPublications">
-<area shape="rect" id="node1" title=" " alt="" coords="5,99,147,139"/>
-<area shape="rect" id="node2" href="$classkrap_1_1CSSClass.html#aeaf3a643e61a0d5ff2b469967e8bbba2" title="Adds a property to this CSS class." alt="" coords="196,5,336,31"/>
-<area shape="rect" id="node4" href="$classkrap_1_1Compound.html#aa5a589439e5cb92a5eeb414e58d398af" title=" " alt="" coords="397,81,539,107"/>
-<area shape="rect" id="node6" href="$classkrap_1_1DivColumn.html#ada4be34abc7a45ba2e834e0630c47c09" title=" " alt="" coords="195,107,337,132"/>
-<area shape="rect" id="node7" href="$classkrap_1_1DocumentImpl.html#a0c3a1f08d823b4cd86d421fb24ce66c1" title=" " alt="" coords="197,157,335,197"/>
-<area shape="rect" id="node8" href="$classkrap_1_1AText.html#a24c876dca764b5ed2feb66c8c3b8affa" title="Sets uri." alt="" coords="213,221,319,247"/>
-<area shape="rect" id="node3" href="$classkrap_1_1CSSElement.html#aa36f98f61b63b1705ad0c4da2ce05e89" title=" " alt="" coords="385,5,551,31"/>
-<area shape="rect" id="node5" href="$classkrap_1_1Element.html#a87638ab80a8fb43f27708f4bec992e13" title="creates clone of itself" alt="" coords="599,81,736,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,147,63"/>
+<area shape="rect" id="node2" href="$classkrap_1_1CSSClass.html#aeaf3a643e61a0d5ff2b469967e8bbba2" title="Adds a property to this CSS class." alt="" coords="385,5,525,31"/>
+<area shape="rect" id="node4" href="$classkrap_1_1DivColumn.html#ada4be34abc7a45ba2e834e0630c47c09" title=" " alt="" coords="195,31,337,56"/>
+<area shape="rect" id="node5" href="$classkrap_1_1DocumentImpl.html#a0c3a1f08d823b4cd86d421fb24ce66c1" title=" " alt="" coords="197,81,335,121"/>
+<area shape="rect" id="node3" href="$classkrap_1_1CSSElement.html#aa36f98f61b63b1705ad0c4da2ce05e89" title=" " alt="" coords="573,5,739,31"/>
 </map>

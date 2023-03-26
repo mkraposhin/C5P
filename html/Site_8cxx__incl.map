@@ -1,33 +1,35 @@
 <map id="classes/Site.cxx" name="classes/Site.cxx">
 <area shape="rect" id="node1" title=" " alt="" coords="437,5,553,31"/>
-<area shape="rect" id="node2" href="$Site_8hxx.html" title=" " alt="" coords="288,225,355,251"/>
-<area shape="rect" id="node23" href="$Uri_8hxx.html" title=" " alt="" coords="950,445,1011,471"/>
-<area shape="rect" id="node24" href="$Home_8hxx.html" title=" " alt="" coords="864,79,942,104"/>
-<area shape="rect" id="node26" href="$Education_8hxx.html" title=" " alt="" coords="34,79,135,104"/>
-<area shape="rect" id="node27" href="$Patents_8hxx.html" title=" " alt="" coords="160,79,249,104"/>
-<area shape="rect" id="node28" href="$ProfExperience_8hxx.html" title=" " alt="" coords="274,79,404,104"/>
-<area shape="rect" id="node29" href="$MyOssProjects_8hxx.html" title=" " alt="" coords="428,79,562,104"/>
-<area shape="rect" id="node30" href="$MyPublications_8hxx.html" title=" " alt="" coords="586,79,718,104"/>
-<area shape="rect" id="node31" href="$Contacts_8hxx.html" title=" " alt="" coords="743,79,839,104"/>
-<area shape="rect" id="node3" href="$Globals_8hxx.html" title=" " alt="" coords="103,519,191,544"/>
-<area shape="rect" id="node5" href="$Document_8hxx.html" title=" " alt="" coords="420,299,522,324"/>
-<area shape="rect" id="node17" title=" " alt="" coords="82,592,129,617"/>
-<area shape="rect" id="node21" href="$MainMenu_8hxx.html" title=" " alt="" coords="716,372,820,397"/>
-<area shape="rect" id="node4" title=" " alt="" coords="93,665,148,691"/>
-<area shape="rect" id="node6" href="$Page_8hxx.html" title=" " alt="" coords="432,372,507,397"/>
+<area shape="rect" id="node2" href="$Site_8hxx.html" title=" " alt="" coords="284,225,351,251"/>
+<area shape="rect" id="node25" href="$Uri_8hxx.html" title=" " alt="" coords="949,445,1011,471"/>
+<area shape="rect" id="node26" href="$Home_8hxx.html" title=" " alt="" coords="863,79,942,104"/>
+<area shape="rect" id="node28" href="$Education_8hxx.html" title=" " alt="" coords="33,79,135,104"/>
+<area shape="rect" id="node29" href="$Patents_8hxx.html" title=" " alt="" coords="159,79,249,104"/>
+<area shape="rect" id="node30" href="$ProfExperience_8hxx.html" title=" " alt="" coords="273,79,404,104"/>
+<area shape="rect" id="node31" href="$MyOssProjects_8hxx.html" title=" " alt="" coords="428,79,561,104"/>
+<area shape="rect" id="node32" href="$MyPublications_8hxx.html" title=" " alt="" coords="586,79,718,104"/>
+<area shape="rect" id="node33" href="$Contacts_8hxx.html" title=" " alt="" coords="743,79,839,104"/>
+<area shape="rect" id="node3" href="$Globals_8hxx.html" title=" " alt="" coords="88,519,176,544"/>
+<area shape="rect" id="node5" href="$Document_8hxx.html" title=" " alt="" coords="422,299,525,324"/>
+<area shape="rect" id="node17" title=" " alt="" coords="54,592,101,617"/>
+<area shape="rect" id="node23" href="$MainMenu_8hxx.html" title=" " alt="" coords="707,372,811,397"/>
+<area shape="rect" id="node4" title=" " alt="" coords="65,665,119,691"/>
+<area shape="rect" id="node6" href="$Page_8hxx.html" title=" " alt="" coords="429,372,504,397"/>
 <area shape="rect" id="node18" href="$Head_8hxx.html" title=" " alt="" coords="584,372,659,397"/>
-<area shape="rect" id="node7" href="$Element_8hxx.html" title=" " alt="" coords="607,665,698,691"/>
-<area shape="rect" id="node11" href="$Compound_8hxx.html" title=" " alt="" coords="532,519,639,544"/>
-<area shape="rect" id="node13" href="$CSSRegistry_8hxx.html" title=" " alt="" coords="289,445,408,471"/>
-<area shape="rect" id="node8" title=" " alt="" coords="556,739,628,764"/>
-<area shape="rect" id="node9" title=" " alt="" coords="464,739,532,764"/>
-<area shape="rect" id="node10" title=" " alt="" coords="653,739,692,764"/>
-<area shape="rect" id="node12" title=" " alt="" coords="556,592,615,617"/>
-<area shape="rect" id="node14" href="$CSSClass_8hxx.html" title=" " alt="" coords="266,519,370,544"/>
-<area shape="rect" id="node15" href="$CSSElement_8hxx.html" title=" " alt="" coords="312,592,430,617"/>
-<area shape="rect" id="node16" href="$AtRule_8hxx.html" title=" " alt="" coords="154,592,236,617"/>
-<area shape="rect" id="node19" href="$JScript_8hxx.html" title=" " alt="" coords="659,445,744,471"/>
-<area shape="rect" id="node20" href="$Link_8hxx.html" title=" " alt="" coords="768,445,838,471"/>
-<area shape="rect" id="node22" href="$Div_8hxx.html" title=" " alt="" coords="862,445,925,471"/>
-<area shape="rect" id="node25" href="$DocumentImpl_8hxx.html" title=" " alt="" coords="427,152,555,177"/>
+<area shape="rect" id="node7" href="$Element_8hxx.html" title=" " alt="" coords="553,665,644,691"/>
+<area shape="rect" id="node11" href="$Compound_8hxx.html" title=" " alt="" coords="477,519,584,544"/>
+<area shape="rect" id="node13" href="$CSSRegistry_8hxx.html" title=" " alt="" coords="262,445,381,471"/>
+<area shape="rect" id="node8" title=" " alt="" coords="516,739,588,764"/>
+<area shape="rect" id="node9" title=" " alt="" coords="423,739,491,764"/>
+<area shape="rect" id="node10" title=" " alt="" coords="613,739,651,764"/>
+<area shape="rect" id="node12" title=" " alt="" coords="528,592,587,617"/>
+<area shape="rect" id="node14" href="$CSSClass_8hxx.html" title=" " alt="" coords="251,519,355,544"/>
+<area shape="rect" id="node15" href="$CSSElement_8hxx.html" title=" " alt="" coords="233,592,351,617"/>
+<area shape="rect" id="node16" href="$AtRule_8hxx.html" title=" " alt="" coords="125,592,208,617"/>
+<area shape="rect" id="node19" href="$JScript_8hxx.html" title=" " alt="" coords="840,445,925,471"/>
+<area shape="rect" id="node20" href="$Link_8hxx.html" title=" " alt="" coords="747,445,816,471"/>
+<area shape="rect" id="node21" title=" " alt="" coords="783,519,878,544"/>
+<area shape="rect" id="node22" title=" " alt="" coords="659,519,759,544"/>
+<area shape="rect" id="node24" href="$Div_8hxx.html" title=" " alt="" coords="659,445,722,471"/>
+<area shape="rect" id="node27" href="$DocumentImpl_8hxx.html" title=" " alt="" coords="427,152,555,177"/>
 </map>
