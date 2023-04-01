@@ -149,10 +149,12 @@ struct css
     const static CSSElement displayNone;
     const static CSSElement displayBlock;
     const static CSSElement displayFlex;
-    const static CSSElement displayTable;
-    const static CSSElement displayTableRowGroup;
     const static CSSElement displayRow;
     const static CSSElement displayCell;
+    const static CSSElement displayTable;
+    const static CSSElement displayTableRowGroup;
+    const static CSSElement displayTableRow;
+    const static CSSElement displayTableCell;
 
     /*
      *

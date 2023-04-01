@@ -47,6 +47,7 @@ krap::Patents::Patents(const Site& site)
     pat_qgd % patCss;
 
     Div& mid_col = layout().operator()<Div>(1);
+    mid_col % patCss;
 
     mid_col.add(pat_tvel_img);
     mid_col.add(pat_acostic_img);

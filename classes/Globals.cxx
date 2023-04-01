@@ -9,7 +9,6 @@ namespace krap
     const std::string constants::protocol = "http://";
     const std::string constants::log_path = "/var/log/cpp_cms";
     //const std::string site_uri {"194.4.51.15/"};
-    //constants::site_uri = "kraposhin.online/";
 }
 
 namespace krap
@@ -99,7 +98,9 @@ namespace krap
     const CSSElement css::displayTable {"display","table"};
     const CSSElement css::displayTableRowGroup {"display", "table-row-group"};
     const CSSElement css::displayRow {"display","row"};
+    const CSSElement css::displayTableRow {"display","table-row"};
     const CSSElement css::displayCell {"display","cell"};
+    const CSSElement css::displayTableCell {"display","table-cell"};
 
     const CSSElement css::floatNone {"float", "none"};
     const CSSElement css::floatRight {"float", "right"};
@@ -136,8 +137,8 @@ void krap::init_globals()
 
     const_cast<CSSClass&>(css::divTable).add(css::displayTable);
     const_cast<CSSClass&>(css::divTableBody).add(css::displayTableRowGroup);
-    const_cast<CSSClass&>(css::divTableRow).add(css::displayRow);
-    const_cast<CSSClass&>(css::divTableCell).add(css::displayCell);
+    const_cast<CSSClass&>(css::divTableRow).add(css::displayTableRow);
+    const_cast<CSSClass&>(css::divTableCell).add(css::displayTableCell);
 }
 
 //

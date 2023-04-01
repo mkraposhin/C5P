@@ -9,7 +9,7 @@ pars_(pars)
 krap::AtRule::~AtRule()
 {}
 
-std::shared_ptr<krap::AtRule> krap::AtRule::clone() const
+std::shared_ptr<krap::AtRule> krap::AtRule::AtRule::clone() const
 {
     return std::shared_ptr<AtRule>{new AtRule{this->name_, this->pars_}};
 }

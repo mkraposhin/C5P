@@ -74,10 +74,47 @@ void krap::CSSClass::add(const CSSElement& element)
     );
 }
 
+bool krap::CSSClass::remove(const CSSElement& element)
+{
+    if (css_properties_.count(element.name()))
+    {
+        css_properties_.erase(element.name());
+        return true;
+    }
+    return false;
+}
+
 const krap::CSSClass& krap::CSSClass::operator = (const CSSClass& css_class)
 {
     css_properties_.clear();
     
+    for (const auto& property : css_class.css_properties_)
+    {
+        css_properties_.insert
+        (
+            css_rec_type
+            (
+                property.first,
+                std::dynamic_pointer_cast<CSSElement>
+                    (property.second->clone())
+            )
+        );
+    }
+
+    if (css_class.at_rule_)
+    {
+        at_rule_ = css_class.at_rule_->clone();
+    }
+    else
+    {
+        at_rule_.reset(css_class.at_rule_.get());
+    }
+    
+    return *this;
+}
+
+const krap::CSSClass& krap::CSSClass::operator += (const CSSClass& css_class)
+{
     for (const auto& property : css_class.css_properties_)
     {
         css_properties_.insert

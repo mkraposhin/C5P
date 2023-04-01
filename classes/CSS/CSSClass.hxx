@@ -58,9 +58,18 @@ public:
     //! Adds a property to this CSS class
     void add(const CSSElement& element);
 
+    /// @brief Removes a property from this CSS class
+    /// @return 'true' if element was found and removed, otherwise returns false
+    bool remove(const CSSElement& element);
+
     //! Assigns properties from an other css class object to this one
     //! creating deep copy of the corresponding map
     const CSSClass& operator = (const CSSClass& css_class);
+
+    /// @brief Adds properties from a CSS class to this CSS class
+    /// @param css_class is an object from where properties are copied
+    /// @return a reference to modified CSS class
+    const CSSClass& operator += (const CSSClass& css_class);
 
     //! Sets an at-rule for this css class object
     void at_rule(const AtRule& atru);

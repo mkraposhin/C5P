@@ -9,6 +9,8 @@ project(KrapSite)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+set (MADDY_SRC "/home/matvey/data/site-forge/Maddy_src")
+
 add_subdirectory(classes)
 add_subdirectory(executables)
 

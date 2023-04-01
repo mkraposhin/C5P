@@ -5,6 +5,7 @@ set(SOURCES ${SOURCES} Base/Compound.cxx)
 set(SOURCES ${SOURCES} Base/Uri.cxx)
 
 set(SOURCES ${SOURCES} Drafts/HtmlTag.cxx)
+set(SOURCES ${SOURCES} Drafts/Markdown.cxx)
 
 set(SOURCES ${SOURCES} CSS/CSSRegistry.cxx)
 set(SOURCES ${SOURCES} CSS/CSSElement.cxx)
@@ -16,6 +17,7 @@ set(SOURCES ${SOURCES} Derived/Page.cxx)
 set(SOURCES ${SOURCES} Derived/Head.cxx)
 set(SOURCES ${SOURCES} Derived/CaptionedImage.cxx)
 set(SOURCES ${SOURCES} Derived/DivColumn.cxx)
+set(SOURCES ${SOURCES} Derived/DivRow.cxx)
 set(SOURCES ${SOURCES} Derived/MainMenu.cxx)
 set(SOURCES ${SOURCES} Derived/JScript.cxx)
 
@@ -37,4 +39,5 @@ target_include_directories(krap PRIVATE
     "CSS"
     "Derived"
     "Drafts"
-    "${CMAKE_SOURCE_DIR}/classes")
+    "${CMAKE_SOURCE_DIR}/classes"
+    "${MADDY_SRC}/include")
