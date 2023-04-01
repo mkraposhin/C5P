@@ -14,6 +14,8 @@ var structkrap_1_1css =
     [ "displayNone", "structkrap_1_1css.html#ac34aefd44eff5676e8bcffe4b2f7e89e", null ],
     [ "displayRow", "structkrap_1_1css.html#abbd302f11cd804a5201d222a44867d93", null ],
     [ "displayTable", "structkrap_1_1css.html#ac358672f608825041786dd9a16e93fe9", null ],
+    [ "displayTableCell", "structkrap_1_1css.html#ac4ed5d9a0c561c0cf892fe9bdcd26119", null ],
+    [ "displayTableRow", "structkrap_1_1css.html#ab5c75d01d23a5d2cafa983d5970179cc", null ],
     [ "displayTableRowGroup", "structkrap_1_1css.html#a21a2cde001a49c6620d9e5f85b3f56fb", null ],
     [ "divRow", "structkrap_1_1css.html#afad3e635a9d3a24d0b9725bc5e76f0d1", null ],
     [ "divTable", "structkrap_1_1css.html#aed2bbfb4779d6108a723fc5e7dbed2a3", null ],

@@ -6,6 +6,8 @@ var dir_72196b0341a9e949cc3e8051522c2e98 =
     [ "Div.hxx", "Div_8hxx.html", "Div_8hxx" ],
     [ "DivColumn.cxx", "DivColumn_8cxx.html", null ],
     [ "DivColumn.hxx", "DivColumn_8hxx.html", "DivColumn_8hxx" ],
+    [ "DivRow.cxx", "DivRow_8cxx.html", null ],
+    [ "DivRow.hxx", "DivRow_8hxx.html", "DivRow_8hxx" ],
     [ "Document.cxx", "Document_8cxx.html", null ],
     [ "Document.hxx", "Document_8hxx.html", "Document_8hxx" ],
     [ "Head.cxx", "Head_8cxx.html", null ],

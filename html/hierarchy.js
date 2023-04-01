@@ -15,6 +15,7 @@ var hierarchy =
     [ "Div", null, [
       [ "krap::CaptionedImage", "classkrap_1_1CaptionedImage.html", null ],
       [ "krap::DivColumn", "classkrap_1_1DivColumn.html", null ],
+      [ "krap::DivRow", "classkrap_1_1DivRow.html", null ],
       [ "krap::MainMenu", "classkrap_1_1MainMenu.html", null ]
     ] ],
     [ "krap::Element", "classkrap_1_1Element.html", [
@@ -37,6 +38,8 @@ var hierarchy =
         [ "krap::FontStyle< style >", "classkrap_1_1FontStyle.html", null ],
         [ "krap::FontWeight< weight >", "classkrap_1_1FontWeight.html", null ],
         [ "krap::Height", "classkrap_1_1Height.html", null ],
+        [ "krap::MaxHeight", "classkrap_1_1MaxHeight.html", null ],
+        [ "krap::MaxWidth", "classkrap_1_1MaxWidth.html", null ],
         [ "krap::ObjectFloat< float_type >", "classkrap_1_1ObjectFloat.html", null ],
         [ "krap::TextDecoration< decoration >", "classkrap_1_1TextDecoration.html", null ],
         [ "krap::Width", "classkrap_1_1Width.html", null ]

@@ -1,5 +1,5 @@
 <map id="krap::CSSElement" name="krap::CSSElement">
-<area shape="rect" id="node1" title=" " alt="" coords="153,490,280,515"/>
+<area shape="rect" id="node1" title=" " alt="" coords="153,539,280,565"/>
 <area shape="rect" id="node3" href="$classkrap_1_1Color.html" title=" " alt="" coords="354,5,481,45"/>
 <area shape="rect" id="node4" href="$classkrap_1_1FontSize.html" title=" " alt="" coords="347,70,487,95"/>
 <area shape="rect" id="node5" href="$classkrap_1_1FontSize.html" title=" " alt="" coords="347,119,487,145"/>
@@ -17,8 +17,10 @@
 <area shape="rect" id="node17" href="$classkrap_1_1FontStyle.html" title=" " alt="" coords="339,711,496,737"/>
 <area shape="rect" id="node18" href="$classkrap_1_1FontWeight.html" title=" " alt="" coords="328,761,507,786"/>
 <area shape="rect" id="node19" href="$classkrap_1_1Height.html" title=" " alt="" coords="372,810,463,835"/>
-<area shape="rect" id="node20" href="$classkrap_1_1ObjectFloat.html" title=" " alt="" coords="353,860,481,900"/>
-<area shape="rect" id="node21" href="$classkrap_1_1TextDecoration.html" title=" " alt="" coords="347,924,487,964"/>
-<area shape="rect" id="node22" href="$classkrap_1_1Width.html" title=" " alt="" coords="374,989,461,1014"/>
-<area shape="rect" id="node2" href="$classkrap_1_1Element.html" title=" " alt="" coords="5,490,105,515"/>
+<area shape="rect" id="node20" href="$classkrap_1_1MaxHeight.html" title=" " alt="" coords="360,859,475,885"/>
+<area shape="rect" id="node21" href="$classkrap_1_1MaxWidth.html" title=" " alt="" coords="362,909,473,934"/>
+<area shape="rect" id="node22" href="$classkrap_1_1ObjectFloat.html" title=" " alt="" coords="353,959,481,999"/>
+<area shape="rect" id="node23" href="$classkrap_1_1TextDecoration.html" title=" " alt="" coords="347,1023,487,1063"/>
+<area shape="rect" id="node24" href="$classkrap_1_1Width.html" title=" " alt="" coords="374,1087,461,1113"/>
+<area shape="rect" id="node2" href="$classkrap_1_1Element.html" title=" " alt="" coords="5,539,105,565"/>
 </map>

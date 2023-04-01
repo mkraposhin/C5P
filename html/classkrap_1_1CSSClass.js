@@ -9,8 +9,10 @@ var classkrap_1_1CSSClass =
     [ "at_rule", "classkrap_1_1CSSClass.html#a224dead3c1665b90c0e07008ae7846a6", null ],
     [ "clone", "classkrap_1_1CSSClass.html#a35640233410880b186e0c01aa30bb422", null ],
     [ "name", "classkrap_1_1CSSClass.html#a99a1a6f7323422d5e7ebfbd6bb2c84fc", null ],
+    [ "operator+=", "classkrap_1_1CSSClass.html#aa4af8fd1807c4a399ee0ece12d6e4e87", null ],
     [ "operator=", "classkrap_1_1CSSClass.html#a8aee53b801c7674af8283b1f0fe3c7a3", null ],
     [ "print", "classkrap_1_1CSSClass.html#a6ba630dfdfc1efdb7390cb3139c4515c", null ],
+    [ "remove", "classkrap_1_1CSSClass.html#aaca4f6ac90a5163c090ab49d9b6a1271", null ],
     [ "at_rule_", "classkrap_1_1CSSClass.html#a8c0f064115033c7c2c298bf953cf7116", null ],
     [ "css_class_", "classkrap_1_1CSSClass.html#af5cf4284a99ae698bfd626e366a690d7", null ],
     [ "css_properties_", "classkrap_1_1CSSClass.html#aaea257c37530f2bf5f822a29cb8059fb", null ]
