@@ -7,6 +7,7 @@
 #include "MyOssProjects.hxx"
 #include "MyPublications.hxx"
 #include "Contacts.hxx"
+#include "MyContributions.hxx"
 
 void krap::Site::insert_doc(std::string nm, const Document& doc)
 {
@@ -34,10 +35,11 @@ krap::Site::Site()
 {
     insert_doc("home", Home {*this});
     insert_doc("education", Education{*this});
-    insert_doc("patents", Patents{*this});
     insert_doc("prof_experience", ProfExperience{*this});
-    insert_doc("my_oss_projects", MyOssProjects{*this});
-    insert_doc("my_publications", MyPublications{*this});
+    //insert_doc("patents", Patents{*this});
+    //insert_doc("my_oss_projects", MyOssProjects{*this});
+    //insert_doc("my_publications", MyPublications{*this});
+    insert_doc("my_contributions", MyContributions(*this));
     insert_doc("contacts", Contacts{*this});
 }
 

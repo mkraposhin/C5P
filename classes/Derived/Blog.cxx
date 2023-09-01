@@ -6,9 +6,14 @@ void krap::Blog::setup_css()
 {
     title_css_class_.add(krap::css::borderNone);
     title_css_class_.add(krap::css::outlineNone);
+    title_css_class_.add(krap::css::width100perc);
+    title_css_class_.add(css::font18px);
+    title_css_class_.add(FontFamily{"Arial, sans-serif"});
+    title_css_class_.add(krap::css::textAlignLeft);
 
     contents_css_class_.add(krap::css::displayNone);
     contents_css_class_.add(krap::css::overflowHidden);
+    contents_css_class_.add(krap::css::width100perc);
 
     hover_css_class_.add(krap::css::bcolorGray);
 }

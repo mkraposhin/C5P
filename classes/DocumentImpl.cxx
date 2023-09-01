@@ -41,7 +41,6 @@ krap::DocumentImpl::DocumentImpl(const Site& site)
 
     CSSClass textClass {"middleColumnText, p, a"};
     textClass.add(css::font18px);
-    textClass.add(css::fontOblique);
     textClass.add(FontFamily{"Arial, sans-serif"});
     Div ap_div;
     ap_div % textClass;

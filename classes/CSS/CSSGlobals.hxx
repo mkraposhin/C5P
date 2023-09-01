@@ -59,6 +59,16 @@ struct css
 
     /*
      *
+     * Text alignment
+     * 
+     */
+    const static CSSElement textAlignLeft;
+    const static CSSElement textAlignRight;
+    const static CSSElement textAlignCenter;
+    const static CSSElement textAlignJustify;
+
+    /*
+     *
      * Width values 
      * 
      */
@@ -170,7 +180,6 @@ struct css
      * 
      */
     const static CSSElement boxSizing;
-    const static CSSElement textAlignLeft;
     const static CSSElement outlineNone;
     const static CSSElement borderNone;
 

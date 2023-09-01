@@ -4,7 +4,7 @@
 
 namespace krap
 {
-    //const std::string constants::site_uri = "kraposhin.online/";
+    // const std::string constants::site_uri = "kraposhin.online/";
     const std::string constants::site_uri = "127.0.0.1/";
     const std::string constants::protocol = "http://";
     const std::string constants::log_path = "/var/log/cpp_cms";
@@ -32,6 +32,11 @@ namespace krap
     const FontStyle<'i'> css::fontItalic;
     const FontWeight<'n'> css::fontWeightNormal;
     const FontWeight<'b'> css::fontBold;
+
+    const CSSElement css::textAlignLeft{"text-align","left"};
+    const CSSElement css::textAlignRight{"text-align","right"};
+    const CSSElement css::textAlignCenter{"text-align","center"};
+    const CSSElement css::textAlignJustify{"text-align","justify"};
 
     const CSSElement css::width10perc{"width","10.0%"};
     const CSSElement css::width25perc{"width","25.0%"};
@@ -106,7 +111,6 @@ namespace krap
     const CSSElement css::floatRight {"float", "right"};
 
     const CSSElement css::boxSizing {"box-sizing", "border-box"};
-    const CSSElement css::textAlignLeft {"text-align", "left"};
     const CSSElement css::outlineNone {"outline", "none"};
     const CSSElement css::borderNone {"border", "none"};
 

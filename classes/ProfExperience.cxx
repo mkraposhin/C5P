@@ -14,7 +14,7 @@ krap::ProfExperience::ProfExperience(const Site& site)
     CSSClass profExperienceColClass ("profExperienceColClass");
     profExperienceColClass.add(Width(width));
 
-    Header<1> head_empl ("Employment history");
+    Header<2> head_empl ("Employment history");
 
     ParagraphText txt_nrcki("2006 - 2014: National Research Center"
     " \"Kurchatow institute\": engineer, junior researcher, researcher"
@@ -23,17 +23,16 @@ krap::ProfExperience::ProfExperience(const Site& site)
     ParagraphText txt_ispras("2015 - 2022: Institute for system programming"
     " of the RAS: senior researcher, head of a laboratory");
 
-    Header<1> head_techn ("Skills & Technologies");
+    Header<2> head_techn ("Skills & Technologies");
 
     ParagraphText txt_cpp ("C++ language - standards ISO98, C++11, g++"
         "compiler");
     ParagraphText txt_bash ("Bash scripting language");
     ParagraphText txt_linux ("Linux operating system experienced user");
+    ParagraphText txt_tf ("Tungsten Fabric SDN user & contributor");
     ParagraphText txt_make ("GNU " + Uri("https://www.gnu.org/software/make/").
         html("Make") + " project build system");
     ParagraphText txt_docker ("Docker container virtualization technology");
-    ParagraphText txt_tf (Uri("https://tungsten.io/").html("The Tungsten Fabric") +
-    " SDN framework");
     ParagraphText txt_latex ("LaTeX document preparation system");
     ParagraphText txt_sql ("SQL (PostgreSQL) user");
     ParagraphText txt_git ("Git version control system");
@@ -57,6 +56,7 @@ krap::ProfExperience::ProfExperience(const Site& site)
     div_col.add(txt_cpp);
     div_col.add(txt_bash);
     div_col.add(txt_linux);
+    div_col.add(txt_tf);
     div_col.add(txt_make);
     div_col.add(txt_docker);
     div_col.add(txt_latex);

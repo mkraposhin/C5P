@@ -141,16 +141,6 @@ krap::MainMenu::MainMenu()
     resp_txt.uri("javascript:void(0);");
     resp_txt.on_click(j_script);
     this->add(resp_txt);
-/*
-    Contact information.
-    Academic history (if you're not in academia or a recent graduate this can be moved beneath Professional experience)
-    Qualifications and skills.
-    Professional experience.
-    Publications and presentations.
-    Awards and honors.
-    Grants and scholarships.
-    Licenses and certifications.
-*/
 }
 
 void krap::MainMenu::insert(std::string nm)

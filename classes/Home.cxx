@@ -7,41 +7,31 @@
 #include "Markdown.hxx"
 #include "Blog.hxx"
 #include "MarkdownBlog.hxx"
+#include "Header.hxx"
 
 krap::Home::Home(const Site& site)
 :
     DocumentImpl(site)
 {
-    ParagraphText txtHi ("Hi! I'm Matvey Kraposhin and I'm extremely happy"
-    " to see you here.");
 
-    ParagraphText txtAbout ("This site is about my professional experience,"
-    " education, certification and professional interests. Main areas of my"
-    " expertise are: open source software, software development with C++,"
-    " computational analysis of fluids & gases motion.");//" I hope that provided"
-    //" information would be helpful for you to estimate whether you need my"
-    //" service");
+    Header<2> head_techn ("Hello!");
+    ParagraphText txt_hi ("I'm Matvey Kraposhin and this is my personal site."
+    " I hope you'll find it useful.");
 
-    DivRow row_0;
-    row_0.add(txtHi);
-    row_0.add(txtAbout);
+    ParagraphText txt_about ("This resource is about my professional experience,"
+    " and interests. Main areas of my expertise are: "
+    " open source software, software development with C++ (the site is assemblied using this language),"
+    " computational analysis of fluids & gases motion.");
 
-    CSSClass row_0_css {"greet_wcss"};
-    row_0_css.add(MaxWidth(600));
-    row_0.row_css(row_0_css);
+    ParagraphText txt_blog("You can find news, list of resources and short notes "
+    "about open source in the blog below."
+    " If you have any ideas for sharing or about collaboration,"
+    " please feel free to contact me.");
 
+    Header<2> head_notes ("Notes & news");
     Blog blog1;
 
     body().jscript(*blog1.jscript());
-
-    ParagraphText pTxt1 {"Paragraph Text 1"};
-    ParagraphText pTxt2 {"Paragraph Text 2"};
-    Div div1; div1.add(pTxt1);
-    Div div2; div2.add(pTxt2);
-    BlogEntry be1{"Blog entry 1", div1};
-    BlogEntry be2{"Blog entry 2", div2};
-    blog1.add(be1);
-    blog1.add(be2);
 
     Markdown file_md;
     file_md.set_file("../md/main.md");
@@ -49,19 +39,21 @@ krap::Home::Home(const Site& site)
     const std::vector<std::string> md_titles =
         {
             "Developers And Testers Forum June 2023",
-            "Tungsten Fabric Ports"
+            "Tungsten Fabric Ports",
+            "Disable Loading Of vrouter.ko On Boot",
+            "List Of Tungsten Fabric Resources",
+            "Compilation Of Tungsten Fabric R2011 From Source On CentOS 8",
+            "Compilation Of Tungsten Fabric R2011 From Source On Ubuntu 20.04"
         };
     MarkdownBlog md_blog {"../md", md_titles};
 
-    layout().operator()<Div>(1).add(row_0);
-    layout().operator()<Div>(1).add(file_md);
-    layout().operator()<Div>(1).add(blog1);
-    layout().operator()<Div>(1).add(md_blog);
-    // layout().operator()<Div>(1).add(txtHi);
-    // layout().operator()<Div>(1).add(txtAbout);
-    // layout().operator()<Div>(1).add(row_1);
-    //dynamic_cast<Div&>(layout()[1]).add(txt);
-    //body().add(txt);
+    Div& mid_col = layout().operator()<Div>(1);
+    mid_col.add(head_techn);
+    mid_col.add(txt_hi);
+    mid_col.add(txt_about);
+    mid_col.add(txt_blog);
+    mid_col.add(head_notes);
+    mid_col.add(md_blog);
 }
 //
 //END-OF-FILE

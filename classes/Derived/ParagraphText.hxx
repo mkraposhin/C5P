@@ -25,8 +25,8 @@ struct ParagraphTextValue : public ValueBase<krap::TagId::P,true,std::string>
     }
 };
 
-using ParagrahTextBase = HtmlTagBase<ParagraphTextValue>;
-using ParagraphText = HtmlTagImpl<ParagrahTextBase>;
+using ParagraphTextBase = HtmlTagBase<ParagraphTextValue>;
+using ParagraphText = HtmlTagImpl<ParagraphTextBase>;
 
 using ParagraphPtr = std::shared_ptr<ParagraphText>;
 
