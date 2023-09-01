@@ -53,9 +53,7 @@ var hierarchy =
           [ "krap::Contacts", "classkrap_1_1Contacts.html", null ],
           [ "krap::Education", "classkrap_1_1Education.html", null ],
           [ "krap::Home", "classkrap_1_1Home.html", null ],
-          [ "krap::MyOssProjects", "classkrap_1_1MyOssProjects.html", null ],
-          [ "krap::MyPublications", "classkrap_1_1MyPublications.html", null ],
-          [ "krap::Patents", "classkrap_1_1Patents.html", null ],
+          [ "krap::MyContributions", "classkrap_1_1MyContributions.html", null ],
           [ "krap::ProfExperience", "classkrap_1_1ProfExperience.html", null ]
         ] ]
       ] ],

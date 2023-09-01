@@ -1,7 +1,8 @@
 <map id="krap::JScript::clone" name="krap::JScript::clone">
-<area shape="rect" id="node1" title="Creates a clone of this JScript object." alt="" coords="364,42,495,67"/>
-<area shape="rect" id="node2" href="$classkrap_1_1Head.html#af18ff21414f44f586044f80a2b956e30" title="Adds a java script for this head." alt="" coords="191,15,316,41"/>
-<area shape="rect" id="node4" href="$classkrap_1_1Page.html#a912c7d5a5593ce0014f57c702ce5bea4" title="Adds a java script for this body." alt="" coords="191,66,315,91"/>
-<area shape="rect" id="node3" href="$classkrap_1_1DocumentImpl.html#a5fa78cbb270e94921a85d18eb114aed0" title=" " alt="" coords="5,5,143,45"/>
-<area shape="rect" id="node5" href="$classkrap_1_1Home.html#a07d20867c7feae5366bbb609ed6e5636" title=" " alt="" coords="9,70,139,95"/>
+<area shape="rect" id="node1" title="Creates a clone of this JScript object." alt="" coords="373,46,504,71"/>
+<area shape="rect" id="node2" href="$classkrap_1_1Head.html#af18ff21414f44f586044f80a2b956e30" title="Adds a java script for this head." alt="" coords="200,17,325,42"/>
+<area shape="rect" id="node4" href="$classkrap_1_1Page.html#a912c7d5a5593ce0014f57c702ce5bea4" title="Adds a java script for this body." alt="" coords="201,70,325,95"/>
+<area shape="rect" id="node3" href="$classkrap_1_1DocumentImpl.html#a5fa78cbb270e94921a85d18eb114aed0" title=" " alt="" coords="10,5,147,45"/>
+<area shape="rect" id="node5" href="$classkrap_1_1Home.html#a07d20867c7feae5366bbb609ed6e5636" title=" " alt="" coords="14,70,143,95"/>
+<area shape="rect" id="node6" href="$classkrap_1_1MyContributions.html#ac05890f6afc85ea2efecaf75470be4f6" title="Ctor." alt="" coords="5,120,152,160"/>
 </map>

@@ -3,7 +3,7 @@ var searchData=
   ['main_5fmenu_0',['main_menu',['../classkrap_1_1Site.html#a580a59c36c36521cb7545368a4989afb',1,'krap::Site']]],
   ['main_5fmenu_5f_1',['main_menu_',['../classkrap_1_1Site.html#a46bca5cd6f866aa51b6675fd644346a5',1,'krap::Site']]],
   ['main_5fmenu_5fid_2',['MAIN_MENU_ID',['../MainMenu_8cxx.html#a95a0e6fde9373e5866fa97a0342da6a5',1,'MainMenu.cxx']]],
-  ['mainmenu_3',['MainMenu',['../classkrap_1_1MainMenu.html',1,'krap::MainMenu'],['../classkrap_1_1MainMenu.html#acd2fc53ae575281e030186a4e83180d4',1,'krap::MainMenu::MainMenu()'],['../classkrap_1_1MainMenu.html#aa9d22a837f183184fca8dfc0d767be8c',1,'krap::MainMenu::MainMenu(const MainMenu &amp;)=delete']]],
+  ['mainmenu_3',['MainMenu',['../classkrap_1_1MainMenu.html',1,'krap::MainMenu'],['../classkrap_1_1MainMenu.html#aa9d22a837f183184fca8dfc0d767be8c',1,'krap::MainMenu::MainMenu(const MainMenu &amp;)=delete'],['../classkrap_1_1MainMenu.html#acd2fc53ae575281e030186a4e83180d4',1,'krap::MainMenu::MainMenu()']]],
   ['mainmenu_2ecxx_4',['MainMenu.cxx',['../MainMenu_8cxx.html',1,'']]],
   ['mainmenu_2ehxx_5',['MainMenu.hxx',['../MainMenu_8hxx.html',1,'']]],
   ['mainmenuptr_6',['MainMenuPtr',['../namespacekrap.html#ac6eeb93be25ca72f3acb73a487025adc',1,'krap']]],
@@ -31,7 +31,7 @@ var searchData=
   ['margintop200px_28',['marginTop200px',['../structkrap_1_1css.html#aba55c2cc22dcab1389198409d875ec1b',1,'krap::css']]],
   ['margintop20px_29',['marginTop20px',['../structkrap_1_1css.html#aaa7a04c3a994f44d86b7f5edc55d7e20',1,'krap::css']]],
   ['margintop50px_30',['marginTop50px',['../structkrap_1_1css.html#a0aab676533b2395e8b6774034fd16944',1,'krap::css']]],
-  ['markdownblog_31',['MarkdownBlog',['../classkrap_1_1MarkdownBlog.html',1,'krap::MarkdownBlog'],['../classkrap_1_1MarkdownBlog.html#a3db6eddc7eb79842c34825ae9ee6d76a',1,'krap::MarkdownBlog::MarkdownBlog(const MarkdownBlog &amp;md_blog)'],['../classkrap_1_1MarkdownBlog.html#aa0226dc7abe3d21c6d0bd917fb0d225a',1,'krap::MarkdownBlog::MarkdownBlog(const std::string &amp;dir, const std::vector&lt; std::string &gt; &amp;titles)']]],
+  ['markdownblog_31',['MarkdownBlog',['../classkrap_1_1MarkdownBlog.html',1,'krap::MarkdownBlog'],['../classkrap_1_1MarkdownBlog.html#aa0226dc7abe3d21c6d0bd917fb0d225a',1,'krap::MarkdownBlog::MarkdownBlog(const std::string &amp;dir, const std::vector&lt; std::string &gt; &amp;titles)'],['../classkrap_1_1MarkdownBlog.html#a3db6eddc7eb79842c34825ae9ee6d76a',1,'krap::MarkdownBlog::MarkdownBlog(const MarkdownBlog &amp;md_blog)']]],
   ['markdownblog_2ecxx_32',['MarkdownBlog.cxx',['../MarkdownBlog_8cxx.html',1,'']]],
   ['markdownblog_2ehxx_33',['MarkdownBlog.hxx',['../MarkdownBlog_8hxx.html',1,'']]],
   ['maxheight_34',['MaxHeight',['../classkrap_1_1MaxHeight.html',1,'krap::MaxHeight'],['../classkrap_1_1MaxHeight.html#afe84bf8ddcdff5c31e4c8ba3b7bf490e',1,'krap::MaxHeight::MaxHeight()']]],
@@ -43,11 +43,7 @@ var searchData=
   ['middlecolumn_40',['middleColumn',['../structkrap_1_1css.html#a9aea744e8f19e0b32114deb98a264ed6',1,'krap::css']]],
   ['mm_5f_41',['mm_',['../classkrap_1_1DocumentImpl.html#a9cd920e7cb00e0d95f4d54b29718de0b',1,'krap::DocumentImpl']]],
   ['mmenu_5flayout_5f_42',['mmenu_layout_',['../classkrap_1_1DocumentImpl.html#ac9d4713410f74d5f6ef528d198854025',1,'krap::DocumentImpl']]],
-  ['myossprojects_43',['MyOssProjects',['../classkrap_1_1MyOssProjects.html',1,'krap::MyOssProjects'],['../classkrap_1_1MyOssProjects.html#abab1281b26c6b8abafd412eca683c79a',1,'krap::MyOssProjects::MyOssProjects()']]],
-  ['myossprojects_2ecxx_44',['MyOssProjects.cxx',['../MyOssProjects_8cxx.html',1,'']]],
-  ['myossprojects_2ehxx_45',['MyOssProjects.hxx',['../MyOssProjects_8hxx.html',1,'']]],
-  ['mypublications_46',['MyPublications',['../classkrap_1_1MyPublications.html',1,'krap::MyPublications'],['../classkrap_1_1MyPublications.html#a73c0b702d22d3c3e4bbc2672251f5119',1,'krap::MyPublications::MyPublications()']]],
-  ['mypublications_2ecxx_47',['MyPublications.cxx',['../MyPublications_8cxx.html',1,'']]],
-  ['mypublications_2ehxx_48',['MyPublications.hxx',['../MyPublications_8hxx.html',1,'']]],
-  ['mypublications_5fh_49',['MyPublications_h',['../MyPublications_8hxx.html#a050543b935532664c605eb34a69bf7a2',1,'MyPublications.hxx']]]
+  ['mycontributions_43',['MyContributions',['../classkrap_1_1MyContributions.html',1,'krap::MyContributions'],['../classkrap_1_1MyContributions.html#ac05890f6afc85ea2efecaf75470be4f6',1,'krap::MyContributions::MyContributions()']]],
+  ['mycontributions_2ecxx_44',['MyContributions.cxx',['../MyContributions_8cxx.html',1,'']]],
+  ['mycontributions_2ehxx_45',['MyContributions.hxx',['../MyContributions_8hxx.html',1,'']]]
 ];

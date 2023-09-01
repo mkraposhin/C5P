@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['disallow_5fall_0',['DISALLOW_ALL',['../classkrap_1_1MyOssProjects.html#a47cca5e2093dbef9c314a69e1e7fb533',1,'krap::MyOssProjects::DISALLOW_ALL()'],['../classkrap_1_1Home.html#a4352f6138f17903c746e652e6feac400',1,'krap::Home::DISALLOW_ALL()']]],
+  ['disallow_5fall_0',['DISALLOW_ALL',['../classkrap_1_1MyContributions.html#a1015a9b36fab6e5d1a09c5c8c82d4277',1,'krap::MyContributions::DISALLOW_ALL()'],['../classkrap_1_1Home.html#a4352f6138f17903c746e652e6feac400',1,'krap::Home::DISALLOW_ALL()']]],
   ['disallow_5fcopy_1',['DISALLOW_COPY',['../classkrap_1_1CSSRegistry.html#aa6d7342376a14a81a9ee5efe76b15ee5',1,'krap::CSSRegistry::DISALLOW_COPY()'],['../classkrap_1_1Header.html#ab9ec18c0eec4575387b6c25eae33acf6',1,'krap::Header::DISALLOW_COPY()']]],
   ['disallow_5feq_2',['DISALLOW_EQ',['../classkrap_1_1CSSRegistry.html#aaf754e9cf7c99129b537a7cec6a71d8c',1,'krap::CSSRegistry::DISALLOW_EQ()'],['../classkrap_1_1Header.html#a107a455c421f43e8c4da33f185be7669',1,'krap::Header::DISALLOW_EQ()']]],
   ['div_5frow_3',['div_row',['../classkrap_1_1DivRow.html#a21a5fa653d9aeacf558994b387bd9c29',1,'krap::DivRow']]],

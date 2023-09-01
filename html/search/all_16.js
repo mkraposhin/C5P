@@ -27,14 +27,12 @@ var searchData=
   ['_7emarkdownblog_24',['~MarkdownBlog',['../classkrap_1_1MarkdownBlog.html#a2d4bb2a5deecdc5861f354d9642250ed',1,'krap::MarkdownBlog']]],
   ['_7emaxheight_25',['~MaxHeight',['../classkrap_1_1MaxHeight.html#a19e72cbf17ff19acf1e858492414ced0',1,'krap::MaxHeight']]],
   ['_7emaxwidth_26',['~MaxWidth',['../classkrap_1_1MaxWidth.html#add7d9c5af0edef772a32a762e6241f4e',1,'krap::MaxWidth']]],
-  ['_7emyossprojects_27',['~MyOssProjects',['../classkrap_1_1MyOssProjects.html#a9273becb6bdfde91492522e1e782ca9e',1,'krap::MyOssProjects']]],
-  ['_7emypublications_28',['~MyPublications',['../classkrap_1_1MyPublications.html#a85a192c0b8be2a06ffb38d92ef943535',1,'krap::MyPublications']]],
-  ['_7eobjectfloat_29',['~ObjectFloat',['../classkrap_1_1ObjectFloat.html#afc049a90365d1d4d3044ef81db2a4ded',1,'krap::ObjectFloat']]],
-  ['_7epage_30',['~Page',['../classkrap_1_1Page.html#a2ea978a7a17b6d27d218648bc00b9de6',1,'krap::Page']]],
-  ['_7epatents_31',['~Patents',['../classkrap_1_1Patents.html#a9b3a95b5c2c2b47e0b5ff2b044d7c6a4',1,'krap::Patents']]],
-  ['_7eprofexperience_32',['~ProfExperience',['../classkrap_1_1ProfExperience.html#a89138e1ada7dd6a72cc652db8be1d4c1',1,'krap::ProfExperience']]],
-  ['_7esite_33',['~Site',['../classkrap_1_1Site.html#a81f261ef5077e1cd347d04d30badcb62',1,'krap::Site']]],
-  ['_7etextdecoration_34',['~TextDecoration',['../classkrap_1_1TextDecoration.html#aef811c27c7dbf538d55af34ff1ab9162',1,'krap::TextDecoration']]],
-  ['_7euri_35',['~Uri',['../classkrap_1_1Uri.html#a27f77c2ed6727283ca71696c5fa993c1',1,'krap::Uri']]],
-  ['_7ewidth_36',['~Width',['../classkrap_1_1Width.html#a679c1f3ae9271de4313515d1e547c083',1,'krap::Width']]]
+  ['_7emycontributions_27',['~MyContributions',['../classkrap_1_1MyContributions.html#a2248ea9bc499cd695a06cda309d1376d',1,'krap::MyContributions']]],
+  ['_7eobjectfloat_28',['~ObjectFloat',['../classkrap_1_1ObjectFloat.html#afc049a90365d1d4d3044ef81db2a4ded',1,'krap::ObjectFloat']]],
+  ['_7epage_29',['~Page',['../classkrap_1_1Page.html#a2ea978a7a17b6d27d218648bc00b9de6',1,'krap::Page']]],
+  ['_7eprofexperience_30',['~ProfExperience',['../classkrap_1_1ProfExperience.html#a89138e1ada7dd6a72cc652db8be1d4c1',1,'krap::ProfExperience']]],
+  ['_7esite_31',['~Site',['../classkrap_1_1Site.html#a81f261ef5077e1cd347d04d30badcb62',1,'krap::Site']]],
+  ['_7etextdecoration_32',['~TextDecoration',['../classkrap_1_1TextDecoration.html#aef811c27c7dbf538d55af34ff1ab9162',1,'krap::TextDecoration']]],
+  ['_7euri_33',['~Uri',['../classkrap_1_1Uri.html#a27f77c2ed6727283ca71696c5fa993c1',1,'krap::Uri']]],
+  ['_7ewidth_34',['~Width',['../classkrap_1_1Width.html#a679c1f3ae9271de4313515d1e547c083',1,'krap::Width']]]
 ];

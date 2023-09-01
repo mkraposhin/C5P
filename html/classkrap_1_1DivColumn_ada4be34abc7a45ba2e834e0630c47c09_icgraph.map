@@ -1,8 +1,7 @@
 <map id="krap::DivColumn::add" name="krap::DivColumn::add">
-<area shape="rect" id="node1" title=" " alt="" coords="227,112,369,137"/>
+<area shape="rect" id="node1" title=" " alt="" coords="227,84,369,109"/>
 <area shape="rect" id="node2" href="$classkrap_1_1Contacts.html#a5cfd6761098242b99591160dd257bf3b" title=" " alt="" coords="11,5,173,31"/>
 <area shape="rect" id="node3" href="$classkrap_1_1Education.html#a8fb239248fc7069aca8c7d9bd7bcbfdc" title=" " alt="" coords="5,55,179,80"/>
-<area shape="rect" id="node4" href="$classkrap_1_1MyOssProjects.html#abab1281b26c6b8abafd412eca683c79a" title=" " alt="" coords="21,105,163,145"/>
-<area shape="rect" id="node5" href="$classkrap_1_1MyPublications.html#a73c0b702d22d3c3e4bbc2672251f5119" title=" " alt="" coords="21,169,163,209"/>
-<area shape="rect" id="node6" href="$classkrap_1_1ProfExperience.html#af1d54573b4132cfaee76e07d3c87df1f" title=" " alt="" coords="22,233,162,273"/>
+<area shape="rect" id="node4" href="$classkrap_1_1MyContributions.html#ac05890f6afc85ea2efecaf75470be4f6" title="Ctor." alt="" coords="19,105,165,145"/>
+<area shape="rect" id="node5" href="$classkrap_1_1ProfExperience.html#af1d54573b4132cfaee76e07d3c87df1f" title=" " alt="" coords="22,169,162,209"/>
 </map>

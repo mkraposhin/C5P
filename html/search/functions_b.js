@@ -5,6 +5,5 @@ var searchData=
   ['markdownblog_2',['MarkdownBlog',['../classkrap_1_1MarkdownBlog.html#aa0226dc7abe3d21c6d0bd917fb0d225a',1,'krap::MarkdownBlog::MarkdownBlog(const std::string &amp;dir, const std::vector&lt; std::string &gt; &amp;titles)'],['../classkrap_1_1MarkdownBlog.html#a3db6eddc7eb79842c34825ae9ee6d76a',1,'krap::MarkdownBlog::MarkdownBlog(const MarkdownBlog &amp;md_blog)']]],
   ['maxheight_3',['MaxHeight',['../classkrap_1_1MaxHeight.html#afe84bf8ddcdff5c31e4c8ba3b7bf490e',1,'krap::MaxHeight']]],
   ['maxwidth_4',['MaxWidth',['../classkrap_1_1MaxWidth.html#a4e42b4af62048e4bb9ad8706f4154d06',1,'krap::MaxWidth']]],
-  ['myossprojects_5',['MyOssProjects',['../classkrap_1_1MyOssProjects.html#abab1281b26c6b8abafd412eca683c79a',1,'krap::MyOssProjects']]],
-  ['mypublications_6',['MyPublications',['../classkrap_1_1MyPublications.html#a73c0b702d22d3c3e4bbc2672251f5119',1,'krap::MyPublications']]]
+  ['mycontributions_5',['MyContributions',['../classkrap_1_1MyContributions.html#ac05890f6afc85ea2efecaf75470be4f6',1,'krap::MyContributions']]]
 ];
