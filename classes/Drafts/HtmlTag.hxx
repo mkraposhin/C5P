@@ -19,7 +19,8 @@ enum TagId
     DIV,
     IMAGE,
     TITLE,
-    LINK
+    LINK,
+    BUTTON
 };
 
 //!

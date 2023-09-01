@@ -4,6 +4,7 @@
 #include "Element.hxx"
 #include "Compound.hxx"
 #include "CSSRegistry.hxx"
+#include "JScript.hxx"
 
 namespace krap
 {
@@ -20,45 +21,50 @@ class Page
 {
 private:
 
-    //- Forbid the constructor without parameters
+    /// @brief Forbid the constructor without parameters
     Page() = delete;
 
-    //- Forbid copy ctor because it can produce broken links
-    //to css_class_map_
+    /// @brief Forbid copy ctor because it can produce broken links
+    /// to css_class_map_
     Page(const Page&) = delete;
 
-    //- Declare % as friend to this class
+    /// @brief Declare % as friend to this class
     friend CSSClassPtr& operator % (Page& page, const CSSClass& css);
 
+    /// @brief Storage for JS in this body
+    std::vector<JScript> jscripts_;
 
 public:
 
-    //-  Constructor with ref to the specified map for CSS Classes
+    /// @brief Constructor with ref to the specified map for CSS Classes
     Page(CSSClassMap& ccm);
 
-    //- Copy constructor with specified css_class_map
+    /// @brief Copy constructor with specified css_class_map
     Page(const Page&, CSSClassMap&);
 
-    //- Destructor
+    /// @brief Destructor
     ~Page();
 
-    //- Print elements in the Page
+    /// @brief Print elements in the Page
     std::ostream& print(std::ostream& ostr) const override;
 
-    //- Assign operator
+    /// @brief Assign operator
     const Page& operator = (const Compound& );
 
-    //- Adds element and registers its CSS class in the table;
+    /// @brief Adds element and registers its CSS class in the table;
     ElementPtr& add(const Element& elem) override;
 
-    //- Adds element and registers its CSS class in the table;
+    /// @brief Adds element and registers its CSS class in the table;
     ElementPtr& add(Element* elem) override;
 
-    //- Adds element and registers its CSS class in the table;
+    /// @brief Adds element and registers its CSS class in the table;
     ElementPtr& add(ElementPtr& elem) override;
+
+    /// @brief Adds a java script for this body
+    void jscript(const JScript& js);
 };
 
-//- apply CSS Class to the page
+/// @brief apply CSS Class to the page
 CSSClassPtr& operator % (Page& el, const CSSClass& css);
 
 }

@@ -15,7 +15,8 @@ krap::Page::Page(const Page& page, CSSClassMap& css_class_map)
 :
     Element(page),
     Compound(page),
-    CSSRegistry(css_class_map)
+    CSSRegistry(css_class_map),
+    jscripts_(page.jscripts_)
 {
 }
 
@@ -35,6 +36,10 @@ std::ostream& krap::Page::print(std::ostream& ostr) const
         ostr << cgicc::body() << std::endl;
     }
     Compound::print(ostr);
+    for (auto js : jscripts_)
+    {
+        js.print(ostr);
+    }
     ostr << cgicc::body() << std::endl;
     return ostr;
 }
@@ -64,6 +69,11 @@ krap::ElementPtr& krap::Page::add(ElementPtr& elem)
     ElementPtr& nptr = Compound::add(elem);
     register_css_class(nptr);
     return nptr;
+}
+
+void krap::Page::jscript(const JScript& js)
+{
+    jscripts_.push_back(*js.clone());
 }
 
 krap::CSSClassPtr& krap::operator % (krap::Page& page,

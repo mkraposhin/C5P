@@ -29,6 +29,8 @@ public:
     std::ostream& print(std::ostream&) const;
 };
 
+using JScriptPtr = std::shared_ptr<JScript>;
+
 }//namespace krap
 
 #endif

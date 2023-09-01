@@ -107,6 +107,8 @@ namespace krap
 
     const CSSElement css::boxSizing {"box-sizing", "border-box"};
     const CSSElement css::textAlignLeft {"text-align", "left"};
+    const CSSElement css::outlineNone {"outline", "none"};
+    const CSSElement css::borderNone {"border", "none"};
 
     const CSSClass css::menuText {"menuText"};
     const CSSClass css::emptyClass {"emptyCss"};

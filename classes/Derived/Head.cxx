@@ -15,7 +15,7 @@ krap::Head::Head(const Head& h, CSSClassMap& css_class_map)
 :
     Element(h),
     CSSRegistry(css_class_map),
-    jscript_(h.jscript_),
+    jscripts_(h.jscripts_),
     link_(h.link_),
     metas_(h.metas_)
 {
@@ -40,8 +40,10 @@ std::ostream& krap::Head::print(std::ostream& ostr) const
 {
     ostr << cgicc::head() << std::endl;
     print_styles(ostr);
-    if (jscript_)
-        jscript_->print(ostr);
+    for (auto js : jscripts_)
+    {
+        js.print(ostr);
+    }
     if (link_)
         link_->print(ostr);
     for (auto it=metas_.cbegin(); it!=metas_.cend(); it++)
@@ -56,7 +58,7 @@ std::ostream& krap::Head::print(std::ostream& ostr) const
 
 void krap::Head::jscript(const JScript& js)
 {
-    jscript_ = js.clone();
+    jscripts_.push_back(*js.clone());
 }
 
 void krap::Head::link(const Link& l)

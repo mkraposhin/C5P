@@ -4,6 +4,7 @@
 
 krap::Div &krap::DivRow::div_row()
 {
+    #warning "Make it as in DivColumn"
     return this->operator()<Div>(0).operator()<Div>(0);
 }
 

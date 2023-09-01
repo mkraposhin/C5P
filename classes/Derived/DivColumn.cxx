@@ -1,16 +1,22 @@
 #include "DivColumn.hxx"
 #include "CSSGlobals.hxx"
 
-krap::DivColumn::DivColumn()
-:
-    Div()
+krap::Div& krap::DivColumn::init_column_body()
 {
     Div col_body;
     col_body % css::divTableBody;
 
     (*this) % css::divTable;
     Div::add(col_body);
+
+    return this->operator()<Div>(0);
 }
+
+krap::DivColumn::DivColumn()
+:
+    Div(),
+    column_body_(init_column_body())
+{}
 
 krap::DivColumn::~DivColumn()
 {
@@ -30,7 +36,7 @@ krap::ElementPtr& krap::DivColumn::add(const Element& el)
 
     el_cell.add(el);
     el_row.add(el_cell);
-    return this->operator()<Div>(0).add(el_row);
+    return column_body_.add(el_row);
 }
 
 krap::ElementPtr& krap::DivColumn::add(Element* eptr)
@@ -42,7 +48,7 @@ krap::ElementPtr& krap::DivColumn::add(Element* eptr)
 
     el_cell.add(eptr);
     el_row.add(el_cell);
-    return this->operator()<Div>(0).add(el_row);
+    return column_body_.add(el_row);
 }
 
 krap::ElementPtr& krap::DivColumn::add(ElementPtr& eptr)
@@ -54,7 +60,7 @@ krap::ElementPtr& krap::DivColumn::add(ElementPtr& eptr)
 
     el_cell.add(eptr);
     el_row.add(el_cell);
-    return this->operator()<Div>(0).add(el_row);
+    return column_body_.add(el_row);
 }
 
 //

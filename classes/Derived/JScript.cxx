@@ -24,7 +24,8 @@ std::shared_ptr<krap::JScript> krap::JScript::clone() const
 std::ostream& krap::JScript::print(std::ostream& ostr) const
 {
     ostr << cgicc::script() << std::endl;
-    ostr << "function " << this->func_name_ << std::endl;
+    if (this->func_name_.size())
+        ostr << "function " << this->func_name_ << std::endl;
     ostr << this->script_txt_ << std::endl;
     ostr << cgicc::script() << std::endl;
 

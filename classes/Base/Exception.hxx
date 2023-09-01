@@ -13,8 +13,6 @@ class GenericException : public std::exception
 
 private:
     
-    DISALLOW_EQ(GenericException)
-
     //- an exception reason
     std::string reason_;
 
@@ -26,7 +24,7 @@ public:
     //- Ctor with reason
     GenericException(std::string reason)
     :
-    //std::exception(),
+    std::exception(),
     reason_(reason)
     {}
 

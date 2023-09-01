@@ -5,6 +5,7 @@
 #include "JScript.hxx"
 #include "CSSRegistry.hxx"
 #include "Link.hxx"
+#include <vector>
 
 namespace krap
 {
@@ -27,8 +28,8 @@ protected:
 
 private:
 
-    //! Storage for a JS stored in this head
-    std::shared_ptr<JScript> jscript_;
+    /// @brief Storage for JS in this head
+    std::vector<JScript> jscripts_;
 
     //! Storage for a Link stored in this head
     std::shared_ptr<Link> link_;
@@ -47,25 +48,25 @@ private:
 
 public:
 
-    //! Default constructor
+    /// @brief Default constructor
     Head(CSSClassMap& css_class_map);
 
-    //! Copy constructor
+    /// @brief Copy constructor
     Head(const Head& h, CSSClassMap& css_class_map);
 
-    //! Destructor
+    /// @brief Destructor
     ~Head();
 
-    //! Print elements in the Head
+    /// @brief Prints elements in the Head
     std::ostream& print(std::ostream& ostr) const override;
 
-    //! Sets a java script for this head
+    /// @brief Adds a java script for this head
     void jscript(const JScript& js);
 
-    //! Sets the link tag
+    /// @brief Sets the link tag
     void link(const Link& l);
 
-    //! Adds a new meta tag
+    /// @brief Adds a new meta tag
     void add_meta(const std::string name, const std::string content);
 };
 

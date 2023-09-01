@@ -11,6 +11,12 @@ class DivColumn : public Div
 
 private:
 
+    /// @brief
+    Div& init_column_body();
+
+    /// @brief
+    Div& column_body_;
+
 public:
 
     //- Constructs column of Div elements

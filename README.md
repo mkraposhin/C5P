@@ -6,4 +6,5 @@ USES
 
 1. C++ STL library
 2. [Maddy](https://github.com/progsource/maddy) for Markdown rendering
+3. [CgiCC](https://gnu.org/software/cgicc) for CGI requests
 

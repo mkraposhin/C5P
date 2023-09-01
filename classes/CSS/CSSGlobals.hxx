@@ -171,6 +171,8 @@ struct css
      */
     const static CSSElement boxSizing;
     const static CSSElement textAlignLeft;
+    const static CSSElement outlineNone;
+    const static CSSElement borderNone;
 
     /*
      *
