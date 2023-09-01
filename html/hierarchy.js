@@ -13,6 +13,10 @@ var hierarchy =
     ] ],
     [ "krap::Debug", "classkrap_1_1Debug.html", null ],
     [ "Div", null, [
+      [ "krap::Blog", "classkrap_1_1Blog.html", [
+        [ "krap::MarkdownBlog", "classkrap_1_1MarkdownBlog.html", null ]
+      ] ],
+      [ "krap::BlogEntry", "classkrap_1_1BlogEntry.html", null ],
       [ "krap::CaptionedImage", "classkrap_1_1CaptionedImage.html", null ],
       [ "krap::DivColumn", "classkrap_1_1DivColumn.html", null ],
       [ "krap::DivRow", "classkrap_1_1DivRow.html", null ],
@@ -67,6 +71,7 @@ var hierarchy =
     [ "krap::Uri", "classkrap_1_1Uri.html", null ],
     [ "ValueBase", null, [
       [ "krap::ATextValue", "structkrap_1_1ATextValue.html", null ],
+      [ "krap::ButtonValue", "structkrap_1_1ButtonValue.html", null ],
       [ "krap::DivValue", "structkrap_1_1DivValue.html", null ],
       [ "krap::ImageValue", "structkrap_1_1ImageValue.html", null ],
       [ "krap::LinkValue", "structkrap_1_1LinkValue.html", null ],

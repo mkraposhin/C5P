@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['linkvalue_0',['LinkValue',['../structkrap_1_1LinkValue.html',1,'krap']]]
+  ['jscript_0',['JScript',['../classkrap_1_1JScript.html',1,'krap']]]
 ];

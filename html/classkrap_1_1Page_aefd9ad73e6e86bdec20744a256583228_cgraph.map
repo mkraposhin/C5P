@@ -1,5 +1,5 @@
 <map id="krap::Page::add" name="krap::Page::add">
-<area shape="rect" id="node1" title="Adds an element stored by ordinary pointer." alt="" coords="5,5,116,31"/>
+<area shape="rect" id="node1" title="Adds element and registers its CSS class in the table;." alt="" coords="5,5,116,31"/>
 <area shape="rect" id="node2" href="$classkrap_1_1Compound.html#aa5a589439e5cb92a5eeb414e58d398af" title="Adds a new element." alt="" coords="164,5,307,31"/>
 <area shape="rect" id="node3" href="$classkrap_1_1Element.html#a87638ab80a8fb43f27708f4bec992e13" title="creates clone of itself" alt="" coords="355,5,492,31"/>
 </map>

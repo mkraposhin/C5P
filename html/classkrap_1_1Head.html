@@ -134,10 +134,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1f219b269cae098139116d2ffbe151d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classkrap_1_1Head.html#a1f219b269cae098139116d2ffbe151d4">More...</a><br /></td></tr>
 <tr class="separator:a1f219b269cae098139116d2ffbe151d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8885b49d11c02a27a64d238925649c44"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkrap_1_1Head.html#a8885b49d11c02a27a64d238925649c44">print</a> (std::ostream &amp;ostr) const override</td></tr>
-<tr class="memdesc:a8885b49d11c02a27a64d238925649c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print elements in the <a class="el" href="classkrap_1_1Head.html">Head</a>.  <a href="classkrap_1_1Head.html#a8885b49d11c02a27a64d238925649c44">More...</a><br /></td></tr>
+<tr class="memdesc:a8885b49d11c02a27a64d238925649c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints elements in the <a class="el" href="classkrap_1_1Head.html">Head</a>.  <a href="classkrap_1_1Head.html#a8885b49d11c02a27a64d238925649c44">More...</a><br /></td></tr>
 <tr class="separator:a8885b49d11c02a27a64d238925649c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af18ff21414f44f586044f80a2b956e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkrap_1_1Head.html#af18ff21414f44f586044f80a2b956e30">jscript</a> (const <a class="el" href="classkrap_1_1JScript.html">JScript</a> &amp;js)</td></tr>
-<tr class="memdesc:af18ff21414f44f586044f80a2b956e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a java script for this head.  <a href="classkrap_1_1Head.html#af18ff21414f44f586044f80a2b956e30">More...</a><br /></td></tr>
+<tr class="memdesc:af18ff21414f44f586044f80a2b956e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a java script for this head.  <a href="classkrap_1_1Head.html#af18ff21414f44f586044f80a2b956e30">More...</a><br /></td></tr>
 <tr class="separator:af18ff21414f44f586044f80a2b956e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04dbd9315bd10688c1c3dbb1c0ee9d43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkrap_1_1Head.html#a04dbd9315bd10688c1c3dbb1c0ee9d43">link</a> (const <a class="el" href="namespacekrap.html#ac519d185675a40f50fb2b186a5e0c2a1">Link</a> &amp;l)</td></tr>
 <tr class="memdesc:a04dbd9315bd10688c1c3dbb1c0ee9d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the link tag.  <a href="classkrap_1_1Head.html#a04dbd9315bd10688c1c3dbb1c0ee9d43">More...</a><br /></td></tr>
@@ -196,9 +196,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a42ac83e1df0a5c20f391a10edb35c991"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classkrap_1_1JScript.html">JScript</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkrap_1_1Head.html#a42ac83e1df0a5c20f391a10edb35c991">jscript_</a></td></tr>
-<tr class="memdesc:a42ac83e1df0a5c20f391a10edb35c991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for a JS stored in this head.  <a href="classkrap_1_1Head.html#a42ac83e1df0a5c20f391a10edb35c991">More...</a><br /></td></tr>
-<tr class="separator:a42ac83e1df0a5c20f391a10edb35c991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4b9759d8cfd80965b403ea8adc5013"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classkrap_1_1JScript.html">JScript</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkrap_1_1Head.html#a9a4b9759d8cfd80965b403ea8adc5013">jscripts_</a></td></tr>
+<tr class="memdesc:a9a4b9759d8cfd80965b403ea8adc5013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for JS in this head.  <a href="classkrap_1_1Head.html#a9a4b9759d8cfd80965b403ea8adc5013">More...</a><br /></td></tr>
+<tr class="separator:a9a4b9759d8cfd80965b403ea8adc5013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f1b8c2d0701490860997b62e94d54ee"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="namespacekrap.html#ac519d185675a40f50fb2b186a5e0c2a1">Link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkrap_1_1Head.html#a8f1b8c2d0701490860997b62e94d54ee">link_</a></td></tr>
 <tr class="memdesc:a8f1b8c2d0701490860997b62e94d54ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for a Link stored in this head.  <a href="classkrap_1_1Head.html#a8f1b8c2d0701490860997b62e94d54ee">More...</a><br /></td></tr>
 <tr class="separator:a8f1b8c2d0701490860997b62e94d54ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,7 +218,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Head_8hxx_source.html#l00016">16</a> of file <a class="el" href="Head_8hxx_source.html">Head.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Head_8hxx_source.html#l00017">17</a> of file <a class="el" href="Head_8hxx_source.html">Head.hxx</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a6b5059249d5b8ba3c8444fe8ec69d452" name="a6b5059249d5b8ba3c8444fe8ec69d452"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b5059249d5b8ba3c8444fe8ec69d452">&#9670;&#160;</a></span>MetaPair</h2>
@@ -242,7 +242,7 @@ Friends</h2></td></tr>
 
 <p>This defines a content of the meta tag. </p>
 
-<p class="definition">Definition at line <a class="el" href="Head_8hxx_source.html#l00026">26</a> of file <a class="el" href="Head_8hxx_source.html">Head.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Head_8hxx_source.html#l00027">27</a> of file <a class="el" href="Head_8hxx_source.html">Head.hxx</a>.</p>
 
 </div>
 </div>
@@ -406,7 +406,7 @@ Friends</h2></td></tr>
 
 <p>Adds a new meta tag. </p>
 
-<p class="definition">Definition at line <a class="el" href="Head_8cxx_source.html#l00067">67</a> of file <a class="el" href="Head_8cxx_source.html">Head.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Head_8cxx_source.html#l00069">69</a> of file <a class="el" href="Head_8cxx_source.html">Head.cxx</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -435,15 +435,15 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Sets a java script for this head. </p>
+<p>Adds a java script for this head. </p>
 
-<p class="definition">Definition at line <a class="el" href="Head_8cxx_source.html#l00057">57</a> of file <a class="el" href="Head_8cxx_source.html">Head.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Head_8cxx_source.html#l00059">59</a> of file <a class="el" href="Head_8cxx_source.html">Head.cxx</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkrap_1_1Head_af18ff21414f44f586044f80a2b956e30_cgraph.png" border="0" usemap="#aclasskrap_1_1Head_af18ff21414f44f586044f80a2b956e30_cgraph" alt=""/></div>
 <map name="aclasskrap_1_1Head_af18ff21414f44f586044f80a2b956e30_cgraph" id="aclasskrap_1_1Head_af18ff21414f44f586044f80a2b956e30_cgraph">
-<area shape="rect" title="Sets a java script for this head." alt="" coords="5,5,131,31"/>
+<area shape="rect" title="Adds a java script for this head." alt="" coords="5,5,131,31"/>
 <area shape="rect" href="classkrap_1_1JScript.html#ac9da069fbcf030f3181b515fdb4617c9" title="Creates a clone of this JScript object." alt="" coords="179,5,309,31"/>
 </map>
 </div>
@@ -452,7 +452,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkrap_1_1Head_af18ff21414f44f586044f80a2b956e30_icgraph.png" border="0" usemap="#aclasskrap_1_1Head_af18ff21414f44f586044f80a2b956e30_icgraph" alt=""/></div>
 <map name="aclasskrap_1_1Head_af18ff21414f44f586044f80a2b956e30_icgraph" id="aclasskrap_1_1Head_af18ff21414f44f586044f80a2b956e30_icgraph">
-<area shape="rect" title="Sets a java script for this head." alt="" coords="191,13,316,38"/>
+<area shape="rect" title="Adds a java script for this head." alt="" coords="191,13,316,38"/>
 <area shape="rect" href="classkrap_1_1DocumentImpl.html#a5fa78cbb270e94921a85d18eb114aed0" title=" " alt="" coords="5,5,143,45"/>
 </map>
 </div>
@@ -477,7 +477,7 @@ Here is the caller graph for this function:</div>
 
 <p>Sets the link tag. </p>
 
-<p class="definition">Definition at line <a class="el" href="Head_8cxx_source.html#l00062">62</a> of file <a class="el" href="Head_8cxx_source.html">Head.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Head_8cxx_source.html#l00064">64</a> of file <a class="el" href="Head_8cxx_source.html">Head.cxx</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -514,7 +514,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Print elements in the <a class="el" href="classkrap_1_1Head.html">Head</a>. </p>
+<p>Prints elements in the <a class="el" href="classkrap_1_1Head.html">Head</a>. </p>
 
 <p>Reimplemented from <a class="el" href="classkrap_1_1Element.html#a2ca768f5bdb31b7d8f5973daef215b00">krap::Element</a>.</p>
 
@@ -524,7 +524,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classkrap_1_1Head_a8885b49d11c02a27a64d238925649c44_cgraph.png" border="0" usemap="#aclasskrap_1_1Head_a8885b49d11c02a27a64d238925649c44_cgraph" alt=""/></div>
 <map name="aclasskrap_1_1Head_a8885b49d11c02a27a64d238925649c44_cgraph" id="aclasskrap_1_1Head_a8885b49d11c02a27a64d238925649c44_cgraph">
-<area shape="rect" title="Print elements in the Head." alt="" coords="5,5,120,31"/>
+<area shape="rect" title="Prints elements in the Head." alt="" coords="5,5,120,31"/>
 <area shape="rect" href="classkrap_1_1Element.html#a2ca768f5bdb31b7d8f5973daef215b00" title=" " alt="" coords="168,5,299,31"/>
 </map>
 </div>
@@ -601,8 +601,8 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a42ac83e1df0a5c20f391a10edb35c991" name="a42ac83e1df0a5c20f391a10edb35c991"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42ac83e1df0a5c20f391a10edb35c991">&#9670;&#160;</a></span>jscript_</h2>
+<a id="a9a4b9759d8cfd80965b403ea8adc5013" name="a9a4b9759d8cfd80965b403ea8adc5013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4b9759d8cfd80965b403ea8adc5013">&#9670;&#160;</a></span>jscripts_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -611,7 +611,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="classkrap_1_1JScript.html">JScript</a>&gt; krap::Head::jscript_</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classkrap_1_1JScript.html">JScript</a>&gt; krap::Head::jscripts_</td>
         </tr>
       </table>
   </td>
@@ -621,9 +621,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Storage for a JS stored in this head. </p>
+<p>Storage for JS in this head. </p>
 
-<p class="definition">Definition at line <a class="el" href="Head_8hxx_source.html#l00031">31</a> of file <a class="el" href="Head_8hxx_source.html">Head.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Head_8hxx_source.html#l00032">32</a> of file <a class="el" href="Head_8hxx_source.html">Head.hxx</a>.</p>
 
 </div>
 </div>
@@ -649,7 +649,7 @@ Here is the call graph for this function:</div>
 
 <p>Storage for a Link stored in this head. </p>
 
-<p class="definition">Definition at line <a class="el" href="Head_8hxx_source.html#l00034">34</a> of file <a class="el" href="Head_8hxx_source.html">Head.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Head_8hxx_source.html#l00035">35</a> of file <a class="el" href="Head_8hxx_source.html">Head.hxx</a>.</p>
 
 </div>
 </div>
@@ -675,7 +675,7 @@ Here is the call graph for this function:</div>
 
 <p>A list of the meta tags. </p>
 
-<p class="definition">Definition at line <a class="el" href="Head_8hxx_source.html#l00037">37</a> of file <a class="el" href="Head_8hxx_source.html">Head.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Head_8hxx_source.html#l00038">38</a> of file <a class="el" href="Head_8hxx_source.html">Head.hxx</a>.</p>
 
 </div>
 </div>

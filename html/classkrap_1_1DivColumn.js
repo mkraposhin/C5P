@@ -6,5 +6,7 @@ var classkrap_1_1DivColumn =
     [ "add", "classkrap_1_1DivColumn.html#ada4be34abc7a45ba2e834e0630c47c09", null ],
     [ "add", "classkrap_1_1DivColumn.html#a8e515d4a667d75138e0fa2b3e4fedb6c", null ],
     [ "add", "classkrap_1_1DivColumn.html#ac10d58ae2ded845dc3cc44c94523adb7", null ],
-    [ "clone", "classkrap_1_1DivColumn.html#ad32ce915752f28508a6cad5985473d45", null ]
+    [ "clone", "classkrap_1_1DivColumn.html#ad32ce915752f28508a6cad5985473d45", null ],
+    [ "init_column_body", "classkrap_1_1DivColumn.html#a0ef09bce97cc73c951f4da3046c2957c", null ],
+    [ "column_body_", "classkrap_1_1DivColumn.html#a074599c272b8b93fb07d4fdbdd1b06a3", null ]
 ];

@@ -1,18 +1,20 @@
 <map id="krap::CSSClass::add" name="krap::CSSClass::add">
-<area shape="rect" id="node1" title="Adds a property to this CSS class." alt="" coords="453,315,593,340"/>
-<area shape="rect" id="node2" href="$classkrap_1_1DivColumn.html#ada4be34abc7a45ba2e834e0630c47c09" title=" " alt="" coords="245,156,387,181"/>
-<area shape="rect" id="node3" href="$classkrap_1_1Contacts.html#a5cfd6761098242b99591160dd257bf3b" title=" " alt="" coords="11,5,173,31"/>
-<area shape="rect" id="node4" href="$classkrap_1_1Education.html#a8fb239248fc7069aca8c7d9bd7bcbfdc" title=" " alt="" coords="5,56,179,81"/>
-<area shape="rect" id="node5" href="$classkrap_1_1MyOssProjects.html#abab1281b26c6b8abafd412eca683c79a" title=" " alt="" coords="21,109,163,149"/>
-<area shape="rect" id="node6" href="$classkrap_1_1MyPublications.html#a73c0b702d22d3c3e4bbc2672251f5119" title=" " alt="" coords="21,177,163,217"/>
-<area shape="rect" id="node7" href="$classkrap_1_1ProfExperience.html#af1d54573b4132cfaee76e07d3c87df1f" title=" " alt="" coords="22,249,162,289"/>
-<area shape="rect" id="node8" href="$classkrap_1_1DivRow.html#a153d99ce8491f5012da7f3a014079d66" title="Sets width for each element." alt="" coords="254,307,378,347"/>
-<area shape="rect" id="node9" href="$classkrap_1_1CaptionedImage.html#a0f11c5cb9d9dc7870dcd04be20d3caf7" title=" " alt="" coords="243,371,389,411"/>
-<area shape="rect" id="node12" href="$classkrap_1_1DivRow.html#a57c5446bc6a9e302346bee4edaf28136" title="Constructs a row of Div elements." alt="" coords="241,436,391,461"/>
-<area shape="rect" id="node13" href="$classkrap_1_1DocumentImpl.html#a01a7a812a438e56de47a3680953b9178" title=" " alt="" coords="247,486,385,526"/>
-<area shape="rect" id="node14" href="$classkrap_1_1Home.html#a07d20867c7feae5366bbb609ed6e5636" title=" " alt="" coords="251,551,381,576"/>
-<area shape="rect" id="node15" href="$classkrap_1_1MainMenu.html#acd2fc53ae575281e030186a4e83180d4" title="Default Ctor." alt="" coords="227,600,405,625"/>
-<area shape="rect" id="node16" href="$classkrap_1_1Patents.html#a2111c0bfc39608dae93090ce000d5f08" title=" " alt="" coords="241,649,391,675"/>
-<area shape="rect" id="node10" href="$classkrap_1_1CaptionedImage.html#abf270c7180519c4fb58284e7204c29fc" title=" " alt="" coords="19,407,165,447"/>
-<area shape="rect" id="node11" href="$classkrap_1_1CaptionedImage.html#aa0efb8007a3182f188d51d4e0d428863" title=" " alt="" coords="19,343,165,383"/>
+<area shape="rect" id="node1" title="Adds a property to this CSS class." alt="" coords="453,349,593,374"/>
+<area shape="rect" id="node2" href="$classkrap_1_1DivColumn.html#ada4be34abc7a45ba2e834e0630c47c09" title=" " alt="" coords="245,108,387,133"/>
+<area shape="rect" id="node3" href="$classkrap_1_1Contacts.html#a5cfd6761098242b99591160dd257bf3b" title=" " alt="" coords="11,8,173,33"/>
+<area shape="rect" id="node4" href="$classkrap_1_1Education.html#a8fb239248fc7069aca8c7d9bd7bcbfdc" title=" " alt="" coords="5,58,179,84"/>
+<area shape="rect" id="node5" href="$classkrap_1_1MyOssProjects.html#abab1281b26c6b8abafd412eca683c79a" title=" " alt="" coords="21,111,163,151"/>
+<area shape="rect" id="node6" href="$classkrap_1_1MyPublications.html#a73c0b702d22d3c3e4bbc2672251f5119" title=" " alt="" coords="21,179,163,219"/>
+<area shape="rect" id="node7" href="$classkrap_1_1ProfExperience.html#af1d54573b4132cfaee76e07d3c87df1f" title=" " alt="" coords="22,251,162,291"/>
+<area shape="rect" id="node8" href="$classkrap_1_1DivRow.html#a153d99ce8491f5012da7f3a014079d66" title="Sets width for each element." alt="" coords="254,310,378,350"/>
+<area shape="rect" id="node9" href="$classkrap_1_1CaptionedImage.html#a0f11c5cb9d9dc7870dcd04be20d3caf7" title=" " alt="" coords="243,374,389,414"/>
+<area shape="rect" id="node12" href="$classkrap_1_1DivRow.html#a57c5446bc6a9e302346bee4edaf28136" title="Constructs a row of Div elements." alt="" coords="241,438,391,464"/>
+<area shape="rect" id="node13" href="$classkrap_1_1DocumentImpl.html#a01a7a812a438e56de47a3680953b9178" title=" " alt="" coords="247,488,385,528"/>
+<area shape="rect" id="node14" href="$classkrap_1_1Home.html#a07d20867c7feae5366bbb609ed6e5636" title=" " alt="" coords="251,553,381,578"/>
+<area shape="rect" id="node15" href="$classkrap_1_1MainMenu.html#acd2fc53ae575281e030186a4e83180d4" title="Default Ctor." alt="" coords="227,602,405,628"/>
+<area shape="rect" id="node16" href="$classkrap_1_1Patents.html#a2111c0bfc39608dae93090ce000d5f08" title=" " alt="" coords="241,652,391,677"/>
+<area shape="rect" id="node17" href="$classkrap_1_1Blog.html#ac204aace63ec08c568d605c68d85a4f6" title="Sets properties of CSS classes." alt="" coords="243,701,389,726"/>
+<area shape="rect" id="node10" href="$classkrap_1_1CaptionedImage.html#abf270c7180519c4fb58284e7204c29fc" title=" " alt="" coords="19,344,165,384"/>
+<area shape="rect" id="node11" href="$classkrap_1_1CaptionedImage.html#aa0efb8007a3182f188d51d4e0d428863" title=" " alt="" coords="19,408,165,448"/>
+<area shape="rect" id="node18" href="$classkrap_1_1Blog.html#a315bf1ecb261bfb8b9354fc810b2c077" title=" " alt="" coords="37,701,147,726"/>
 </map>

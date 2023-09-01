@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['title_0',['Title',['../namespacekrap.html#a1cec110fe84200acddf1b89394722ac6',1,'krap']]],
-  ['titlebase_1',['TitleBase',['../namespacekrap.html#a83dc6c05acc3a08ee43c656f0e971c91',1,'krap']]],
-  ['titleptr_2',['TitlePtr',['../namespacekrap.html#a4ff45249801b97898d4af1fd2d693120',1,'krap']]]
+  ['slategrey_0',['SlateGrey',['../namespacekrap.html#a38d89c4948c5a5b7c4f2cb434cf2239e',1,'krap']]]
 ];

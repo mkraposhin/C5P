@@ -1,7 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,47,105"/>
-<area shape="rect" id="node2" href="$classkrap_1_1CaptionedImage.html" title=" " alt="" coords="95,5,241,31"/>
-<area shape="rect" id="node3" href="$classkrap_1_1DivColumn.html" title=" " alt="" coords="110,55,226,80"/>
-<area shape="rect" id="node4" href="$classkrap_1_1DivRow.html" title=" " alt="" coords="119,104,217,129"/>
-<area shape="rect" id="node5" href="$classkrap_1_1MainMenu.html" title=" " alt="" coords="111,153,225,179"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,47,155"/>
+<area shape="rect" id="node2" href="$classkrap_1_1Blog.html" title="keeps and renders blog (list of titled records)" alt="" coords="129,5,207,31"/>
+<area shape="rect" id="node4" href="$classkrap_1_1BlogEntry.html" title="describes one entry in a blog" alt="" coords="114,55,222,80"/>
+<area shape="rect" id="node5" href="$classkrap_1_1CaptionedImage.html" title=" " alt="" coords="95,104,241,129"/>
+<area shape="rect" id="node6" href="$classkrap_1_1DivColumn.html" title=" " alt="" coords="110,153,226,179"/>
+<area shape="rect" id="node7" href="$classkrap_1_1DivRow.html" title=" " alt="" coords="119,203,217,228"/>
+<area shape="rect" id="node8" href="$classkrap_1_1MainMenu.html" title=" " alt="" coords="111,252,225,277"/>
+<area shape="rect" id="node3" href="$classkrap_1_1MarkdownBlog.html" title=" " alt="" coords="289,5,428,31"/>
 </map>

@@ -2,6 +2,7 @@ var structkrap_1_1css =
 [
     [ "bcolorGray", "structkrap_1_1css.html#a020a4f6532f49a9802eb28f1ab9650df", null ],
     [ "bcolorWhite", "structkrap_1_1css.html#af8971a76a274dcfd8c93295754664aee", null ],
+    [ "borderNone", "structkrap_1_1css.html#a292989fd78c53595aaa9241856830291", null ],
     [ "bottom0", "structkrap_1_1css.html#aa0958848440c44595d1ddc7c438fb660", null ],
     [ "boxSizing", "structkrap_1_1css.html#aeac6568e3b3c636f140b87f89908d31d", null ],
     [ "colorBlack", "structkrap_1_1css.html#a85f1933f8165ec3a721fd6e48d6300ae", null ],
@@ -61,6 +62,7 @@ var structkrap_1_1css =
     [ "marginTop50px", "structkrap_1_1css.html#a0aab676533b2395e8b6774034fd16944", null ],
     [ "menuText", "structkrap_1_1css.html#a4898b9e120dc6111365755daa1fe3ec0", null ],
     [ "middleColumn", "structkrap_1_1css.html#a9aea744e8f19e0b32114deb98a264ed6", null ],
+    [ "outlineNone", "structkrap_1_1css.html#aa7c9117bd2be9efbc03ddc64c5b12a49", null ],
     [ "overflowHidden", "structkrap_1_1css.html#a00221197c9bd0267398f70d46ac0a363", null ],
     [ "paddingTop0px", "structkrap_1_1css.html#ad85a64583cb84480f6eec042d1fbdb0d", null ],
     [ "paddingTop100px", "structkrap_1_1css.html#a390830826314c70b7e6a00d45af3301e", null ],

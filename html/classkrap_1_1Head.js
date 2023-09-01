@@ -12,7 +12,7 @@ var classkrap_1_1Head =
     [ "print", "classkrap_1_1Head.html#a8885b49d11c02a27a64d238925649c44", null ],
     [ "print_styles", "classkrap_1_1Head.html#aaecbf5f9ccbcb2b39579d12f14b2984f", null ],
     [ "operator^", "classkrap_1_1Head.html#a1caa185f259ad84bea52f0ceb71d5480", null ],
-    [ "jscript_", "classkrap_1_1Head.html#a42ac83e1df0a5c20f391a10edb35c991", null ],
+    [ "jscripts_", "classkrap_1_1Head.html#a9a4b9759d8cfd80965b403ea8adc5013", null ],
     [ "link_", "classkrap_1_1Head.html#a8f1b8c2d0701490860997b62e94d54ee", null ],
     [ "metas_", "classkrap_1_1Head.html#aad01722f6129143b8fc93802fea11bde", null ]
 ];

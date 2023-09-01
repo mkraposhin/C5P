@@ -3,6 +3,9 @@ var annotated_dup =
     [ "krap", "namespacekrap.html", [
       [ "ATextValue", "structkrap_1_1ATextValue.html", "structkrap_1_1ATextValue" ],
       [ "AtRule", "classkrap_1_1AtRule.html", "classkrap_1_1AtRule" ],
+      [ "Blog", "classkrap_1_1Blog.html", "classkrap_1_1Blog" ],
+      [ "BlogEntry", "classkrap_1_1BlogEntry.html", "classkrap_1_1BlogEntry" ],
+      [ "ButtonValue", "structkrap_1_1ButtonValue.html", "structkrap_1_1ButtonValue" ],
       [ "CaptionedImage", "classkrap_1_1CaptionedImage.html", "classkrap_1_1CaptionedImage" ],
       [ "Color", "classkrap_1_1Color.html", "classkrap_1_1Color" ],
       [ "Compound", "classkrap_1_1Compound.html", "classkrap_1_1Compound" ],
@@ -33,6 +36,7 @@ var annotated_dup =
       [ "JScript", "classkrap_1_1JScript.html", "classkrap_1_1JScript" ],
       [ "LinkValue", "structkrap_1_1LinkValue.html", "structkrap_1_1LinkValue" ],
       [ "MainMenu", "classkrap_1_1MainMenu.html", "classkrap_1_1MainMenu" ],
+      [ "MarkdownBlog", "classkrap_1_1MarkdownBlog.html", "classkrap_1_1MarkdownBlog" ],
       [ "MaxHeight", "classkrap_1_1MaxHeight.html", "classkrap_1_1MaxHeight" ],
       [ "MaxWidth", "classkrap_1_1MaxWidth.html", "classkrap_1_1MaxWidth" ],
       [ "MyOssProjects", "classkrap_1_1MyOssProjects.html", "classkrap_1_1MyOssProjects" ],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['uri_2ecxx_0',['Uri.cxx',['../Uri_8cxx.html',1,'']]],
-  ['uri_2ehxx_1',['Uri.hxx',['../Uri_8hxx.html',1,'']]]
+  ['textdecoration_2ehxx_0',['TextDecoration.hxx',['../TextDecoration_8hxx.html',1,'']]],
+  ['title_2ehxx_1',['Title.hxx',['../Title_8hxx.html',1,'']]]
 ];

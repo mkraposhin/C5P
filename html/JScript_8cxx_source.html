@@ -118,17 +118,18 @@ $(document).ready(function(){initNavTree('JScript_8cxx_source.html',''); initRes
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classkrap_1_1JScript.html#a1dd2374953bed0ffbe96bc6e94bc852f">   24</a></span>std::ostream&amp; <a class="code hl_function" href="classkrap_1_1JScript.html#a1dd2374953bed0ffbe96bc6e94bc852f">krap::JScript::print</a>(std::ostream&amp; ostr)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    ostr &lt;&lt; cgicc::script() &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    ostr &lt;&lt; <span class="stringliteral">&quot;function &quot;</span> &lt;&lt; this-&gt;func_name_ &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    ostr &lt;&lt; this-&gt;script_txt_ &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    ostr &lt;&lt; cgicc::script() &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">return</span> ostr;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">//</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//END-OF-FILE</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span> (this-&gt;func_name_.size())</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        ostr &lt;&lt; <span class="stringliteral">&quot;function &quot;</span> &lt;&lt; this-&gt;func_name_ &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    ostr &lt;&lt; this-&gt;script_txt_ &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    ostr &lt;&lt; cgicc::script() &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> ostr;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//END-OF-FILE</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="ttc" id="aJScript_8hxx_html"><div class="ttname"><a href="JScript_8hxx.html">JScript.hxx</a></div></div>
 <div class="ttc" id="aclasskrap_1_1JScript_html"><div class="ttname"><a href="classkrap_1_1JScript.html">krap::JScript</a></div><div class="ttdef"><b>Definition:</b> <a href="JScript_8hxx_source.html#l00009">JScript.hxx:10</a></div></div>
 <div class="ttc" id="aclasskrap_1_1JScript_html_a1dd2374953bed0ffbe96bc6e94bc852f"><div class="ttname"><a href="classkrap_1_1JScript.html#a1dd2374953bed0ffbe96bc6e94bc852f">krap::JScript::print</a></div><div class="ttdeci">std::ostream &amp; print(std::ostream &amp;) const</div><div class="ttdoc">Prints this script.</div><div class="ttdef"><b>Definition:</b> <a href="JScript_8cxx_source.html#l00024">JScript.cxx:24</a></div></div>

@@ -1,0 +1,6 @@
+<map id="krap::MarkdownBlog::MarkdownBlog" name="krap::MarkdownBlog::MarkdownBlog">
+<area shape="rect" id="node1" title="Creates a new MarkdownBlog by specifying directory with files and the list of files (list of titles)" alt="" coords="5,5,144,45"/>
+<area shape="rect" id="node2" href="$classkrap_1_1Blog.html#ad5f86d942d93060c50dc7fe4e2e8a63c" title="Adds a new blog entry from the constant ref." alt="" coords="192,13,299,38"/>
+<area shape="rect" id="node3" href="$classkrap_1_1Compound.html#aa5a589439e5cb92a5eeb414e58d398af" title="Adds a new element." alt="" coords="347,13,489,38"/>
+<area shape="rect" id="node4" href="$classkrap_1_1Element.html#a87638ab80a8fb43f27708f4bec992e13" title="creates clone of itself" alt="" coords="537,13,675,38"/>
+</map>

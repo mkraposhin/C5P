@@ -1,6 +1,6 @@
 <map id="krap::Element::css" name="krap::Element::css">
 <area shape="rect" id="node1" title="gives const&#45;ref access to the style class" alt="" coords="347,31,473,56"/>
 <area shape="rect" id="node2" href="$classkrap_1_1CSSRegistry.html#a7bb869ee0d68d98a083b443ed099d493" title="Registers the CSS from a given Element." alt="" coords="165,23,299,63"/>
-<area shape="rect" id="node3" href="$namespacekrap.html#a61c5031208f3f0042c17b88ff2bb72b7" title=" " alt="" coords="5,5,117,31"/>
+<area shape="rect" id="node3" href="$namespacekrap.html#a61c5031208f3f0042c17b88ff2bb72b7" title="apply CSS Class to the page" alt="" coords="5,5,117,31"/>
 <area shape="rect" id="node4" href="$namespacekrap.html#a3cf46152a46f658677e71633548b47c6" title="this operator is to set a nested element for a given Head" alt="" coords="8,55,115,80"/>
 </map>

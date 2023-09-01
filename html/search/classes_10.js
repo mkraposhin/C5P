@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['width_0',['Width',['../classkrap_1_1Width.html',1,'krap']]]
+  ['uri_0',['Uri',['../classkrap_1_1Uri.html',1,'krap']]]
 ];
