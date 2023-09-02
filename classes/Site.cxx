@@ -2,10 +2,7 @@
 #include "Uri.hxx"
 #include "Home.hxx"
 #include "Education.hxx"
-#include "Patents.hxx"
 #include "ProfExperience.hxx"
-#include "MyOssProjects.hxx"
-#include "MyPublications.hxx"
 #include "Contacts.hxx"
 #include "MyContributions.hxx"
 

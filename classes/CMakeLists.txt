@@ -41,4 +41,5 @@ target_include_directories(krap PRIVATE
     "Derived"
     "Drafts"
     "${CMAKE_SOURCE_DIR}/classes"
-    "${MADDY_SRC}/include")
+    "${MADDY_SRC}/include"
+    "${MD4C_INC_DIR}")

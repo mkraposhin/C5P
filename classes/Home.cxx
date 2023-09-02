@@ -13,7 +13,6 @@ krap::Home::Home(const Site& site)
 :
     DocumentImpl(site)
 {
-
     Header<2> head_techn ("Hello!");
     ParagraphText txt_hi ("I'm Matvey Kraposhin and this is my personal site."
     " I hope you'll find it useful.");
@@ -32,9 +31,6 @@ krap::Home::Home(const Site& site)
     Blog blog1;
 
     body().jscript(*blog1.jscript());
-
-    Markdown file_md;
-    file_md.set_file("../md/main.md");
 
     const std::vector<std::string> md_titles =
         {
