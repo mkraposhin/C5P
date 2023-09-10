@@ -1,8 +1,10 @@
 <map id="krap::Home::Home" name="krap::Home::Home">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,135,105"/>
-<area shape="rect" id="node2" href="$classkrap_1_1Document.html#a172caaf176e1c8bada0ec867c33fd30c" title=" " alt="" coords="183,5,328,31"/>
-<area shape="rect" id="node3" href="$classkrap_1_1Blog.html#a1bc3fc8f11192a9dc31f0f3dd57f313b" title="returns pointer to the JS responsible for collapsing of blog entries" alt="" coords="195,55,315,80"/>
-<area shape="rect" id="node4" href="$classkrap_1_1Page.html#a912c7d5a5593ce0014f57c702ce5bea4" title="Adds a java script for this body." alt="" coords="193,104,317,129"/>
-<area shape="rect" id="node6" href="$classkrap_1_1DocumentImpl.html#a0c3a1f08d823b4cd86d421fb24ce66c1" title=" " alt="" coords="187,154,324,194"/>
-<area shape="rect" id="node5" href="$classkrap_1_1JScript.html#ac9da069fbcf030f3181b515fdb4617c9" title="Creates a clone of this JScript object." alt="" coords="376,104,507,129"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,135,155"/>
+<area shape="rect" id="node2" href="$classkrap_1_1Head.html#a2e3cea87c3372fbaf529fba97f6fb8b8" title="Adds a new meta tag." alt="" coords="183,5,329,31"/>
+<area shape="rect" id="node3" href="$classkrap_1_1Document.html#a172caaf176e1c8bada0ec867c33fd30c" title=" " alt="" coords="183,55,329,80"/>
+<area shape="rect" id="node4" href="$classkrap_1_1Document.html#a46d847864962e27cc7010a9db8044375" title=" " alt="" coords="183,104,329,129"/>
+<area shape="rect" id="node5" href="$classkrap_1_1Blog.html#a1bc3fc8f11192a9dc31f0f3dd57f313b" title="returns pointer to the JS responsible for collapsing of blog entries" alt="" coords="196,153,316,179"/>
+<area shape="rect" id="node6" href="$classkrap_1_1Page.html#a912c7d5a5593ce0014f57c702ce5bea4" title="Adds a java script for this body." alt="" coords="194,203,318,228"/>
+<area shape="rect" id="node8" href="$classkrap_1_1DocumentImpl.html#a0c3a1f08d823b4cd86d421fb24ce66c1" title=" " alt="" coords="187,253,325,293"/>
+<area shape="rect" id="node7" href="$classkrap_1_1JScript.html#ac9da069fbcf030f3181b515fdb4617c9" title="Creates a clone of this JScript object." alt="" coords="377,203,508,228"/>
 </map>

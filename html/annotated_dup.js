@@ -35,6 +35,7 @@ var annotated_dup =
       [ "ImageValue", "structkrap_1_1ImageValue.html", "structkrap_1_1ImageValue" ],
       [ "JScript", "classkrap_1_1JScript.html", "classkrap_1_1JScript" ],
       [ "LinkValue", "structkrap_1_1LinkValue.html", "structkrap_1_1LinkValue" ],
+      [ "ListItemValue", "structkrap_1_1ListItemValue.html", "structkrap_1_1ListItemValue" ],
       [ "MainMenu", "classkrap_1_1MainMenu.html", "classkrap_1_1MainMenu" ],
       [ "MarkdownBlog", "classkrap_1_1MarkdownBlog.html", "classkrap_1_1MarkdownBlog" ],
       [ "MaxHeight", "classkrap_1_1MaxHeight.html", "classkrap_1_1MaxHeight" ],
@@ -47,6 +48,7 @@ var annotated_dup =
       [ "Site", "classkrap_1_1Site.html", "classkrap_1_1Site" ],
       [ "TextDecoration", "classkrap_1_1TextDecoration.html", "classkrap_1_1TextDecoration" ],
       [ "TitleValue", "structkrap_1_1TitleValue.html", "structkrap_1_1TitleValue" ],
+      [ "UnorderedListValue", "structkrap_1_1UnorderedListValue.html", "structkrap_1_1UnorderedListValue" ],
       [ "Uri", "classkrap_1_1Uri.html", "classkrap_1_1Uri" ],
       [ "Width", "classkrap_1_1Width.html", "classkrap_1_1Width" ]
     ] ]

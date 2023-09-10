@@ -3,7 +3,8 @@ var hierarchy =
     [ "krap::AtRule", "classkrap_1_1AtRule.html", null ],
     [ "krap::Compound", "classkrap_1_1Compound.html", [
       [ "krap::DivValue", "structkrap_1_1DivValue.html", null ],
-      [ "krap::Page", "classkrap_1_1Page.html", null ]
+      [ "krap::Page", "classkrap_1_1Page.html", null ],
+      [ "krap::UnorderedListValue", "structkrap_1_1UnorderedListValue.html", null ]
     ] ],
     [ "krap::constants", "structkrap_1_1constants.html", null ],
     [ "krap::css", "structkrap_1_1css.html", null ],
@@ -73,7 +74,9 @@ var hierarchy =
       [ "krap::DivValue", "structkrap_1_1DivValue.html", null ],
       [ "krap::ImageValue", "structkrap_1_1ImageValue.html", null ],
       [ "krap::LinkValue", "structkrap_1_1LinkValue.html", null ],
+      [ "krap::ListItemValue", "structkrap_1_1ListItemValue.html", null ],
       [ "krap::ParagraphTextValue", "structkrap_1_1ParagraphTextValue.html", null ],
-      [ "krap::TitleValue", "structkrap_1_1TitleValue.html", null ]
+      [ "krap::TitleValue", "structkrap_1_1TitleValue.html", null ],
+      [ "krap::UnorderedListValue", "structkrap_1_1UnorderedListValue.html", null ]
     ] ]
 ];
