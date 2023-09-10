@@ -13,6 +13,7 @@ krap::Home::Home(const Site& site)
 :
     DocumentImpl(site)
 {
+    head().add_meta("keywords", "Matvey Kraposhin, C++, SDN, Tungsten Fabric, OpenFOAM, FVM");
     Header<2> head_techn ("Hello!");
     ParagraphText txt_hi ("I'm Matvey Kraposhin and this is my personal site."
     " I hope you'll find it useful.");
@@ -34,6 +35,7 @@ krap::Home::Home(const Site& site)
 
     const std::vector<std::string> md_titles =
         {
+            "Markdown Rendering Using HTML",
             "Developers And Testers Forum June 2023",
             "Tungsten Fabric Ports",
             "Disable Loading Of vrouter.ko On Boot",

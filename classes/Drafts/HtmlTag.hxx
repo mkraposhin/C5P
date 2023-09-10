@@ -9,9 +9,6 @@ namespace krap
 {
 
 //!
-extern const char* tag_str[];
-
-//!
 enum TagId
 {
     A = 0,
@@ -20,8 +17,14 @@ enum TagId
     IMAGE,
     TITLE,
     LINK,
-    BUTTON
+    BUTTON,
+    LIST_ITEM,
+    UNORDERED_LIST,
+    ORDERED_LIST
 };
+
+//!
+extern const char* tag_str[];
 
 //!
 template<unsigned int tagid, bool t_has_closing, typename T>

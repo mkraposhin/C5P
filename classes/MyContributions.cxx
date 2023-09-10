@@ -4,6 +4,9 @@
 #include "DivColumn.hxx"
 #include "AText.hxx"
 #include "CaptionedImage.hxx"
+#include "UnorderedList.hxx"
+#include "ParagraphText.hxx"
+#include "ListItem.hxx"
 #include "Header.hxx"
 #include "Sizes.hxx"
 #include "CSSGlobals.hxx"
@@ -28,11 +31,72 @@ krap::MyContributions::MyContributions(const Site& site)
         textVertSpaces.add(css::marginBottom10px);
         textVertSpaces.add(css::marginTop10px);
 
-        AText txt_hcs { Uri("https://github.com/mkraposhin/hybridCentralSolvers").
-            html("Hybrid Central Solvers") + 
-            ": a set of OpenFOAM programs for"
-            " comptational analysis of compressible gas and fluid flow, include"
-            " multicomponent and multiphase formulations"};
+        Div div_hcs;
+        {
+            AText txt_hcs { Uri("https://github.com/mkraposhin/hybridCentralSolvers").
+                html("Hybrid Central Solvers") + 
+                ": a set of OpenFOAM programs for"
+                " comptational analysis of compressible gas and fluid flow, include"
+                " multicomponent and multiphase formulations"};
+
+            ParagraphText txt1{
+                "This set of programs allows to simulate deep subsonic (M < 0.1), transonic and"
+                " supersonic (1 < M < 5) flow with viscsosity, turbulence, mesh motion,"
+                " conjugate heat transfer, presence of several componets (fraction) or phases,"
+                " arbitray equation of state."
+            };
+
+            ParagraphText txt2{
+                "The original idea employed in these programs consists in combination of approximate"
+                " Riemann solver developed by Kurganov and Tadmore for high speed flows and projection-"
+                " like pressure implicit algorithm (PIMPLE) that has been used successfully for many"
+                " years in OpenFOAM."
+            };
+
+            ParagraphText txt3{
+                "Such an approach has allowed to resolve some borderline cases, where many methods"
+                " fail to work. Additionaly, the incorporation of Kurganov Riemann solvers into"
+                " PIMPLE loop have increased robustness of programs for practical cases with"
+                " complex 3D geometry."
+            };
+
+            ParagraphText txt4{
+                "Up to now, solvers have been used in more than 50 scientific studies (8 defended PhD),"
+                " such as:"
+            };
+
+            ListItem it1 {"Analysis of Radiation Discretization for Modelling a Spark Gap for Surge Currents "};
+            ListItem it2 {"Computational analysis and mitigation of micro-pressure waves in high-speed train tunnels"};
+            ListItem it3 {"Numerical analysis of cavitation about marine propellers using a compressible multiphase VOF fractional step method"};
+            ListItem it4 {"Numerical investigation of the auto-ignition of transient hydrogen injection in supersonic airflow"};
+            ListItem it5 {"Three-dimensional Effects in Dual-pulse Laser Energy Deposition:"};
+            ListItem it6 {"URANS Analysis of a Launch Vehicle Aero-Acoustic Environment"};
+            ListItem it7 {"Analysis of the oscillations induced by a supersonic jet applied to produce nanofibers"};
+            ListItem it8 {"Numerical and experimental analysis of detonation induced by shock wave focusing"};
+            ListItem it9 {"The diffraction and re-initiation behavior of detonation wave in premixed H2–O2–Ar mixture"};
+            ListItem it10{"Calculations of the Density Profile for Pulse Injection of Working Gas into the PF Chamber and Experimental Results"};
+            ListItem it11{"And other studies."};
+
+            UnorderedList uo;
+            uo.add(it1);
+            uo.add(it2);
+            uo.add(it3);
+            uo.add(it4);
+            uo.add(it5);
+            uo.add(it6);
+            uo.add(it7);
+            uo.add(it8);
+            uo.add(it9);
+            uo.add(it10);
+            uo.add(it11);
+
+            div_hcs.add(txt_hcs);
+            div_hcs.add(txt1);
+            div_hcs.add(txt2);
+            div_hcs.add(txt3);
+            div_hcs.add(txt4);
+            div_hcs.add(uo);
+        }
         //txt_hcs % textVertSpaces;
 
         AText txt_liba { Uri("https://github.com/mkraposhin/libAcoustics").
@@ -59,7 +123,7 @@ krap::MyContributions::MyContributions(const Site& site)
 
         div_col.add(txt_tf_rest);
         div_col.add(txt_tf);
-        div_col.add(txt_hcs);
+        div_col.add(div_hcs);
         div_col.add(txt_liba);
         div_col.add(txt_qgd);
 
@@ -186,6 +250,28 @@ krap::MyContributions::MyContributions(const Site& site)
         div_col.add(pat_qgd);
 
         BlogEntry be ("My patents", div_col);
+        contributions.add(be);
+    }
+
+    // Conferences and journal
+    {
+        ParagraphText txt1 {"I participated in next forums:"};
+
+        ListItem it1 {"Special section of ISP RAS Open Conference, chair of the section (2015 - 2021)"};
+        ListItem it2 {"OpenFOAM workshop training tracks, author and instructor of a track"};
+        ListItem it3 {"Local Russian OpenFOAM training tracks, author and instructor"};
+        ListItem it4 {"MDPI special issue \"The Progress of Fluid Flow Computer Modelling Using Open Source Software\", guest editor"};
+        ListItem it5 {"Tungsten Fabric section of LFN Developer & Testers Forum June 2023, program committee member"};
+        UnorderedList uo;
+        uo.add(it1);
+        uo.add(it2);
+        uo.add(it3);
+        uo.add(it4);
+        uo.add(it5);
+
+        DivColumn div_col;
+        div_col.add(uo);
+        BlogEntry be {"Organizational activities", div_col};
         contributions.add(be);
     }
 
