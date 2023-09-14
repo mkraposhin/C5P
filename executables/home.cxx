@@ -2,8 +2,9 @@
 #include <cgicc/HTTPHTMLHeader.h>
 #include <cgicc/HTMLClasses.h>
 
-#include "Site.hxx"
-#include "CSSGlobals.hxx"
+#include "SiteImpl.hxx"
+#include "CSS.hxx"
+#include "Globals.hxx"
 #include "Exception.hxx"
 
 int main (int argc, char * argv[])
@@ -13,26 +14,33 @@ int main (int argc, char * argv[])
     {
         cgicc::Cgicc cgi;
 
-        krap::init_globals();
+        krap::css::init_globals();
 
-        Site site;
+        SiteImpl site;
 
         auto goHome = [&cgi, &site]()
         {
-            bool home = false;
-            home |= (cgi.getElements().size() == 0);
-            if (home) return home;
+            if (cgi.getElements().size() == 0)
+            {
+                return true;
+            }
 
-            home |= (cgi.getElement("where")->isEmpty());
-            if (home) return home;
+            if (cgi.getElement("where")->isEmpty())
+            {
+                return true;
+            }
 
-            home |= !site.has_document(cgi("where"));
-            if (home) return home;
+            if (!site.has_document(cgi("where")))
+            {
+                return true;
+            }
 
-            home |= (cgi("where") == std::string("home"));
-            if (home) return home;
+            if (cgi("where") == std::string("home"))
+            {
+                return true;
+            }
 
-            return home;
+            return false;
         };
 
         if (goHome())

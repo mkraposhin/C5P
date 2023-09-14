@@ -1,0 +1,36 @@
+#include "Color.hxx"
+
+#ifndef Colors_H
+#define Colors_H
+
+namespace krap::css
+{
+
+namespace color
+{
+
+extern const Color<0x00,0x00,0x00> Black;
+extern const Color<0x39,0x39,0x39> DarkGrey;
+extern const Color<0x69,0x69,0x69> DimGray;
+extern const Color<0x80,0x80,0x80> Gray;
+extern const Color<0xD3,0xD3,0xD3> LightGray;
+extern const Color<0xFF,0xFF,0xFF> White;
+
+extern const Color<0x70,0x80,0x90> SlateGrey;
+extern const Color<0x77,0x88,0x99> LightSlateGray;
+extern const Color<0x2F,0x4F,0x4F> DarkSlateGray;
+
+extern const Color<0xFF,0x00,0x00> Red;
+extern const Color<0x00,0xFF,0x00> Green;
+extern const Color<0x00,0x00,0xFF> Blue;
+
+} // color
+
+} // krap::css
+
+#endif
+
+//
+//END-OF-FILE
+//
+

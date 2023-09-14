@@ -3,8 +3,9 @@
 
 #include <iostream>
 #include <memory>
-//#include <map>
 #include <list>
+
+#include "Globals.hxx"
 
 namespace krap
 {
