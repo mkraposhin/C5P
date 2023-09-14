@@ -1,4 +1,0 @@
-<map id="krap::Blog::add" name="krap::Blog::add">
-<area shape="rect" id="node1" title="Adds a new blog entry from the constant ref." alt="" coords="192,13,299,38"/>
-<area shape="rect" id="node2" href="$classkrap_1_1MarkdownBlog.html#aa0226dc7abe3d21c6d0bd917fb0d225a" title="Creates a new MarkdownBlog by specifying directory with files and the list of files (list of titles)" alt="" coords="5,5,144,45"/>
-</map>

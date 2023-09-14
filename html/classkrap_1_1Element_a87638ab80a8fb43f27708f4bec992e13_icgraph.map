@@ -1,11 +1,6 @@
 <map id="krap::Element::clone" name="krap::Element::clone">
-<area shape="rect" id="node1" title="creates clone of itself" alt="" coords="552,122,689,147"/>
-<area shape="rect" id="node2" href="$classkrap_1_1Compound.html#aa5a589439e5cb92a5eeb414e58d398af" title="Adds a new element." alt="" coords="356,73,499,98"/>
-<area shape="rect" id="node8" href="$classkrap_1_1Element.html#abc2643947b8820e4a55342596e79599b" title="Copy constructor." alt="" coords="351,122,504,147"/>
-<area shape="rect" id="node9" href="$namespacekrap.html#ae187cad3d95232a068becef2a4199e36" title=" " alt="" coords="374,171,481,197"/>
-<area shape="rect" id="node3" href="$classkrap_1_1Blog.html#ad5f86d942d93060c50dc7fe4e2e8a63c" title="Adds a new blog entry from the constant ref." alt="" coords="194,19,301,45"/>
-<area shape="rect" id="node5" href="$classkrap_1_1Page.html#a3368cf7dc86f05c4fde55e3d9b0e1427" title="Adds element and registers its CSS class in the table;." alt="" coords="192,73,303,98"/>
-<area shape="rect" id="node7" href="$classkrap_1_1Blog.html#a315bf1ecb261bfb8b9354fc810b2c077" title=" " alt="" coords="192,122,303,147"/>
-<area shape="rect" id="node4" href="$classkrap_1_1MarkdownBlog.html#aa0226dc7abe3d21c6d0bd917fb0d225a" title="Creates a new MarkdownBlog by specifying directory with files and the list of files (list of titles)" alt="" coords="5,5,144,45"/>
-<area shape="rect" id="node6" href="$classkrap_1_1DocumentImpl.html#a5fa78cbb270e94921a85d18eb114aed0" title=" " alt="" coords="6,69,143,109"/>
+<area shape="rect" id="node1" title="creates clone of itself" alt="" coords="207,55,344,80"/>
+<area shape="rect" id="node2" href="$classkrap_1_1Compound.html#aa5a589439e5cb92a5eeb414e58d398af" title="Adds a new element." alt="" coords="11,5,153,31"/>
+<area shape="rect" id="node3" href="$classkrap_1_1Element.html#abc2643947b8820e4a55342596e79599b" title="Copy constructor." alt="" coords="5,55,159,80"/>
+<area shape="rect" id="node4" href="$namespacekrap.html#ae187cad3d95232a068becef2a4199e36" title=" " alt="" coords="29,104,135,129"/>
 </map>

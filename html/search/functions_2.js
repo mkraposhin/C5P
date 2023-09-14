@@ -1,20 +1,11 @@
 var searchData=
 [
-  ['caption_0',['caption',['../classkrap_1_1CaptionedImage.html#a14ccdcbb06231ce664298fa11f896c69',1,'krap::CaptionedImage::caption() const'],['../classkrap_1_1CaptionedImage.html#a4e5bb9a15c04ce3fd686f155aba69248',1,'krap::CaptionedImage::caption(const std::string &amp;s)']]],
-  ['captionedimage_1',['CaptionedImage',['../classkrap_1_1CaptionedImage.html#abf270c7180519c4fb58284e7204c29fc',1,'krap::CaptionedImage::CaptionedImage()'],['../classkrap_1_1CaptionedImage.html#a03feaaa3da0ae32e9e9339d5dabbf710',1,'krap::CaptionedImage::CaptionedImage(const std::string &amp;text)'],['../classkrap_1_1CaptionedImage.html#aea2f4872c3827832a3fd41cc4e248a08',1,'krap::CaptionedImage::CaptionedImage(const CaptionedImage &amp;p)']]],
-  ['cbegin_2',['cbegin',['../classkrap_1_1Compound.html#ad60cef565a27f3a01ae6efaa2209d74e',1,'krap::Compound']]],
-  ['cell_5fwidth_3',['cell_width',['../classkrap_1_1DivRow.html#a153d99ce8491f5012da7f3a014079d66',1,'krap::DivRow']]],
-  ['cend_4',['cend',['../classkrap_1_1Compound.html#ac607f861872d0aee9cccbd7dfbbf7433',1,'krap::Compound']]],
-  ['check_5fbounds_5',['check_bounds',['../classkrap_1_1FontSize.html#a28bdc126ca70295414fca7e9f52788df',1,'krap::FontSize']]],
-  ['child_6',['child',['../classkrap_1_1Element.html#a6168c3b67a8fa13f49a5ce6b26648502',1,'krap::Element']]],
-  ['clear_7',['clear',['../classkrap_1_1Compound.html#a4272915f35b18d7f87b74f9cb34b1f87',1,'krap::Compound']]],
-  ['clone_8',['clone',['../classkrap_1_1Header.html#a2a747c50ae896d5895443117b56e5747',1,'krap::Header::clone()'],['../classkrap_1_1CSSElement.html#a1c293bde0757fbfc07cc14ffd108b311',1,'krap::CSSElement::clone()'],['../classkrap_1_1CSSClass.html#a35640233410880b186e0c01aa30bb422',1,'krap::CSSClass::clone()'],['../classkrap_1_1AtRule.html#a4164b29ba9951612ebf782e5c0826138',1,'krap::AtRule::clone()'],['../classkrap_1_1JScript.html#ac9da069fbcf030f3181b515fdb4617c9',1,'krap::JScript::clone()'],['../classkrap_1_1Document.html#af5f527d71bb1abde0ac61036eeaaeef5',1,'krap::Document::clone()'],['../classkrap_1_1DivColumn.html#ad32ce915752f28508a6cad5985473d45',1,'krap::DivColumn::clone()'],['../classkrap_1_1CaptionedImage.html#aa0efb8007a3182f188d51d4e0d428863',1,'krap::CaptionedImage::clone()'],['../classkrap_1_1BlogEntry.html#aa88b6cd6aaef4be5eac5a80e9b6c765c',1,'krap::BlogEntry::clone()'],['../classkrap_1_1Element.html#a87638ab80a8fb43f27708f4bec992e13',1,'krap::Element::clone()'],['../classkrap_1_1DocumentImpl.html#af18174b4b2568d495fe977fd68af3727',1,'krap::DocumentImpl::clone()'],['../classkrap_1_1DivRow.html#a3ff5ff1d3dc0320bcb49392c0c2eca59',1,'krap::DivRow::clone()']]],
-  ['color_9',['Color',['../classkrap_1_1Color.html#a591e4d3bf9d5ab8f73a482c3944afdc2',1,'krap::Color']]],
-  ['compound_10',['Compound',['../classkrap_1_1Compound.html#aef99d4765a7f9bdf7e17b3b6ffad26ce',1,'krap::Compound::Compound()'],['../classkrap_1_1Compound.html#ac2d2052d988f8e27dc1b0904bf7ee08a',1,'krap::Compound::Compound(const Compound &amp;)']]],
-  ['construct_11',['construct',['../classkrap_1_1CaptionedImage.html#a0f11c5cb9d9dc7870dcd04be20d3caf7',1,'krap::CaptionedImage::construct()'],['../classkrap_1_1DocumentImpl.html#a5fa78cbb270e94921a85d18eb114aed0',1,'krap::DocumentImpl::construct()']]],
-  ['contacts_12',['Contacts',['../classkrap_1_1Contacts.html#a5cfd6761098242b99591160dd257bf3b',1,'krap::Contacts']]],
-  ['css_13',['css',['../classkrap_1_1Element.html#a9c647e5c6e69c0105ce54c8d901d9142',1,'krap::Element']]],
-  ['cssclass_14',['CSSClass',['../classkrap_1_1CSSClass.html#a21f1739b50b34aaba4910f7c03a9f72e',1,'krap::CSSClass::CSSClass()'],['../classkrap_1_1CSSClass.html#aa58ab4bf01a1d5f503a6deb31320912c',1,'krap::CSSClass::CSSClass(const std::string &amp;name)'],['../classkrap_1_1CSSClass.html#af66595646591d2875c60441eaf2b6c9c',1,'krap::CSSClass::CSSClass(const CSSClass &amp;)']]],
-  ['csselement_15',['CSSElement',['../classkrap_1_1CSSElement.html#abbf56d07cac2ccce615222299bf5dbb9',1,'krap::CSSElement::CSSElement()'],['../classkrap_1_1CSSElement.html#a6b28313079d9034f4ed57bb3575801f4',1,'krap::CSSElement::CSSElement(const std::string &amp;name, const std::string &amp;text)'],['../classkrap_1_1CSSElement.html#a3b16111c22a168b628d828045e25de0e',1,'krap::CSSElement::CSSElement(const CSSElement &amp;)']]],
-  ['cssregistry_16',['CSSRegistry',['../classkrap_1_1CSSRegistry.html#a7efc2de329a108a2fd4ab8387338f7be',1,'krap::CSSRegistry']]]
+  ['cbegin_0',['cbegin',['../classkrap_1_1Compound.html#ad60cef565a27f3a01ae6efaa2209d74e',1,'krap::Compound']]],
+  ['cend_1',['cend',['../classkrap_1_1Compound.html#ac607f861872d0aee9cccbd7dfbbf7433',1,'krap::Compound']]],
+  ['child_2',['child',['../classkrap_1_1Element.html#a6168c3b67a8fa13f49a5ce6b26648502',1,'krap::Element']]],
+  ['clear_3',['clear',['../classkrap_1_1Compound.html#a4272915f35b18d7f87b74f9cb34b1f87',1,'krap::Compound']]],
+  ['clone_4',['clone',['../classkrap_1_1Element.html#a87638ab80a8fb43f27708f4bec992e13',1,'krap::Element::clone()'],['../classkrap_1_1HtmlTagImpl.html#ab57b90f01cb2f2c7021f138b81b7c0c5',1,'krap::HtmlTagImpl::clone() const override']]],
+  ['clone_5fcast_5',['clone_cast',['../classkrap_1_1HtmlTagImpl.html#ac65e186f632be980d0d67a4a505ccf00',1,'krap::HtmlTagImpl']]],
+  ['compound_6',['Compound',['../classkrap_1_1Compound.html#aef99d4765a7f9bdf7e17b3b6ffad26ce',1,'krap::Compound::Compound()'],['../classkrap_1_1Compound.html#ac2d2052d988f8e27dc1b0904bf7ee08a',1,'krap::Compound::Compound(const Compound &amp;)']]],
+  ['css_7',['css',['../classkrap_1_1Element.html#a9c647e5c6e69c0105ce54c8d901d9142',1,'krap::Element']]]
 ];

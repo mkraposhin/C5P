@@ -1,8 +1,0 @@
-<map id="krap::Compound::add" name="krap::Compound::add">
-<area shape="rect" id="node1" title="Adds a new element." alt="" coords="351,73,493,98"/>
-<area shape="rect" id="node2" href="$classkrap_1_1Blog.html#ad5f86d942d93060c50dc7fe4e2e8a63c" title="Adds a new blog entry from the constant ref." alt="" coords="194,19,301,45"/>
-<area shape="rect" id="node4" href="$classkrap_1_1Page.html#a3368cf7dc86f05c4fde55e3d9b0e1427" title="Adds element and registers its CSS class in the table;." alt="" coords="192,73,303,98"/>
-<area shape="rect" id="node6" href="$classkrap_1_1Blog.html#a315bf1ecb261bfb8b9354fc810b2c077" title=" " alt="" coords="192,122,303,147"/>
-<area shape="rect" id="node3" href="$classkrap_1_1MarkdownBlog.html#aa0226dc7abe3d21c6d0bd917fb0d225a" title="Creates a new MarkdownBlog by specifying directory with files and the list of files (list of titles)" alt="" coords="5,5,144,45"/>
-<area shape="rect" id="node5" href="$classkrap_1_1DocumentImpl.html#a5fa78cbb270e94921a85d18eb114aed0" title=" " alt="" coords="6,69,143,109"/>
-</map>

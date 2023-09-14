@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['elementptr_0',['ElementPtr',['../namespacekrap.html#af3f91ef61a6fb22c8074c9c1d288302b',1,'krap']]]
+  ['value_5ftype_0',['value_type',['../structkrap_1_1ValueBase.html#a87c1a79e1cb3bf1a3d8d3f16f44ee67a',1,'krap::ValueBase::value_type()'],['../structkrap_1_1HtmlTagBase.html#ad72156764c0ced7fe4030e15c0b378af',1,'krap::HtmlTagBase::value_type()']]]
 ];

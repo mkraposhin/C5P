@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['education_0',['Education',['../classkrap_1_1Education.html',1,'krap']]],
-  ['element_1',['Element',['../classkrap_1_1Element.html',1,'krap']]]
+  ['htmlattributebase_0',['HtmlAttributeBase',['../structkrap_1_1HtmlAttributeBase.html',1,'krap']]],
+  ['htmltagbase_1',['HtmlTagBase',['../structkrap_1_1HtmlTagBase.html',1,'krap']]],
+  ['htmltagimpl_2',['HtmlTagImpl',['../classkrap_1_1HtmlTagImpl.html',1,'krap']]]
 ];

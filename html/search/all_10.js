@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['reason_5f_0',['reason_',['../classkrap_1_1GenericException.html#a0b787682cf1c67b91f2c262cac347501',1,'krap::GenericException']]],
-  ['register_5fcss_5fclass_1',['register_css_class',['../classkrap_1_1CSSRegistry.html#a7bb869ee0d68d98a083b443ed099d493',1,'krap::CSSRegistry::register_css_class(const Element &amp;elem)'],['../classkrap_1_1CSSRegistry.html#aac3a3ea31ddf743e6d38ee8675718de6',1,'krap::CSSRegistry::register_css_class(const ElementPtr &amp;elemptr)']]],
-  ['remove_2',['remove',['../classkrap_1_1CSSClass.html#aaca4f6ac90a5163c090ab49d9b6a1271',1,'krap::CSSClass']]],
-  ['right0_3',['right0',['../structkrap_1_1css.html#a123f9ef290d33f8c12c4374e96e5edf2',1,'krap::css']]],
-  ['right_5fcol_5f_4',['right_col_',['../classkrap_1_1DocumentImpl.html#abd8f5da0731a2c30900c59175303d0da',1,'krap::DocumentImpl']]],
-  ['row_5fcss_5',['row_css',['../classkrap_1_1DivRow.html#ae05e48cf9e41923ebe7273cd0b2e3859',1,'krap::DivRow']]]
+  ['value_5f_0',['value_',['../structkrap_1_1ValueBase.html#a9d7f5d8fa45413e4b7094be509b40337',1,'krap::ValueBase']]],
+  ['value_5fprint_1',['value_print',['../structkrap_1_1ValueBase.html#a2f9b6f4fc4b3fef9e75de4622a3be660',1,'krap::ValueBase']]],
+  ['value_5ftype_2',['value_type',['../structkrap_1_1ValueBase.html#a87c1a79e1cb3bf1a3d8d3f16f44ee67a',1,'krap::ValueBase::value_type()'],['../structkrap_1_1HtmlTagBase.html#ad72156764c0ced7fe4030e15c0b378af',1,'krap::HtmlTagBase::value_type()']]],
+  ['valuebase_3',['ValueBase',['../structkrap_1_1ValueBase.html',1,'krap::ValueBase&lt; tagid, t_has_closing, T &gt;'],['../structkrap_1_1ValueBase.html#ad5e6ea65f069ea6cc1d01106c833af51',1,'krap::ValueBase::ValueBase()'],['../structkrap_1_1ValueBase.html#a1227615e65017284f0d61dc4af4935a8',1,'krap::ValueBase::ValueBase(const ValueBase &amp;valbase)'],['../structkrap_1_1ValueBase.html#af257349e0f907312534a37a90611aa56',1,'krap::ValueBase::ValueBase(ValueBase &amp;&amp;v)=delete']]]
 ];

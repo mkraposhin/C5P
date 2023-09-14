@@ -30,7 +30,10 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ]
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -38,8 +41,8 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
@@ -49,8 +52,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Functions", "globals_func.html", null ]
       ] ]
     ] ]
   ] ]
@@ -58,11 +60,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AText_8hxx.html",
-"classkrap_1_1BlogEntry.html#a446077a205b8a3e6223800e2c6a8fb7a",
-"classkrap_1_1DocumentImpl.html#a9cd920e7cb00e0d95f4d54b29718de0b",
-"classkrap_1_1Page.html#a8340ff8407fc256bd1433762008b5b75",
-"structkrap_1_1TitleValue.html#a3dcd6babb601e7cec0b5f9e7f2e3a6d2"
+"Compound_8cxx.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

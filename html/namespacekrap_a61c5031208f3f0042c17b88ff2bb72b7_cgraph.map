@@ -1,6 +1,0 @@
-<map id="krap::operator%" name="krap::operator%">
-<area shape="rect" id="node1" title="apply CSS Class to the page" alt="" coords="5,31,117,56"/>
-<area shape="rect" id="node2" href="$classkrap_1_1CSSRegistry.html#a7bb869ee0d68d98a083b443ed099d493" title="Registers the CSS from a given Element." alt="" coords="165,23,299,63"/>
-<area shape="rect" id="node3" href="$classkrap_1_1Element.html#a6168c3b67a8fa13f49a5ce6b26648502" title="const&#45;ref access to the child pointr" alt="" coords="347,5,480,31"/>
-<area shape="rect" id="node4" href="$classkrap_1_1Element.html#a9c647e5c6e69c0105ce54c8d901d9142" title="gives const&#45;ref access to the style class" alt="" coords="350,55,477,80"/>
-</map>

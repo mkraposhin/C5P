@@ -1,25 +1,5 @@
 var searchData=
 [
-  ['bcolorgray_0',['bcolorGray',['../structkrap_1_1css.html#a020a4f6532f49a9802eb28f1ab9650df',1,'krap::css']]],
-  ['bcolorwhite_1',['bcolorWhite',['../structkrap_1_1css.html#af8971a76a274dcfd8c93295754664aee',1,'krap::css']]],
-  ['begin_2',['begin',['../classkrap_1_1Compound.html#ac662392f75b6b28a2e40fe47f3a22313',1,'krap::Compound']]],
-  ['black_3',['Black',['../namespacekrap.html#a19b3e3140ebab30bcbc5b75ce50cec69',1,'krap']]],
-  ['blank_5fdoc_5f_4',['blank_doc_',['../classkrap_1_1Site.html#a2057ac782fe320650b9972088191c950',1,'krap::Site']]],
-  ['blog_5',['Blog',['../classkrap_1_1Blog.html#a315bf1ecb261bfb8b9354fc810b2c077',1,'krap::Blog::Blog()'],['../classkrap_1_1Blog.html#acfa7d8b7a9fa3715a54d5fb5ca2a755b',1,'krap::Blog::Blog(const Blog &amp;)'],['../classkrap_1_1Blog.html',1,'krap::Blog']]],
-  ['blog_2ecxx_6',['Blog.cxx',['../Blog_8cxx.html',1,'']]],
-  ['blog_2ehxx_7',['Blog.hxx',['../Blog_8hxx.html',1,'']]],
-  ['blogentry_8',['BlogEntry',['../classkrap_1_1BlogEntry.html#a84e3a6b7c29babb30f141f8eb4127465',1,'krap::BlogEntry::BlogEntry(const std::string &amp;title, Div entry_contents)'],['../classkrap_1_1BlogEntry.html#a9e90cd64c1a2843174e2444305f456f1',1,'krap::BlogEntry::BlogEntry(const BlogEntry &amp;be, const CSSClass &amp;, const CSSClass &amp;)'],['../classkrap_1_1BlogEntry.html#a2c0d8afb557468d6064b52e3d6ed9553',1,'krap::BlogEntry::BlogEntry(const BlogEntry &amp;be)'],['../classkrap_1_1BlogEntry.html#aba1d199c0880f56bbb7f3bced6b570ed',1,'krap::BlogEntry::BlogEntry(const std::string &amp;title, Div entry_contents, const CSSClass &amp;title_css, const CSSClass &amp;cont_css)'],['../classkrap_1_1BlogEntry.html#afb4dcf36dc08fb7ff4ffef1dbc756b9c',1,'krap::BlogEntry::BlogEntry()'],['../classkrap_1_1BlogEntry.html',1,'krap::BlogEntry']]],
-  ['blogentry_2ecxx_9',['BlogEntry.cxx',['../BlogEntry_8cxx.html',1,'']]],
-  ['blogentry_2ehxx_10',['BlogEntry.hxx',['../BlogEntry_8hxx.html',1,'']]],
-  ['blogentryptr_11',['BlogEntryPtr',['../namespacekrap.html#a81bd4a67f1e2d31459bac8d6a3a8bbda',1,'krap']]],
-  ['body_12',['body',['../classkrap_1_1Document.html#a172caaf176e1c8bada0ec867c33fd30c',1,'krap::Document']]],
-  ['body_5f_13',['body_',['../classkrap_1_1Document.html#a9dcc64ab545491d42605ffeb871a42b0',1,'krap::Document']]],
-  ['bordernone_14',['borderNone',['../structkrap_1_1css.html#a292989fd78c53595aaa9241856830291',1,'krap::css']]],
-  ['bottom0_15',['bottom0',['../structkrap_1_1css.html#aa0958848440c44595d1ddc7c438fb660',1,'krap::css']]],
-  ['boxsizing_16',['boxSizing',['../structkrap_1_1css.html#aeac6568e3b3c636f140b87f89908d31d',1,'krap::css']]],
-  ['button_17',['Button',['../namespacekrap.html#a6c27f6db2a432c1f09bcf4351575ae12',1,'krap']]],
-  ['button_2ehxx_18',['Button.hxx',['../Button_8hxx.html',1,'']]],
-  ['buttonbase_19',['ButtonBase',['../namespacekrap.html#ad7a519c23e91eea35bcb53d409e7641a',1,'krap']]],
-  ['buttonptr_20',['ButtonPtr',['../namespacekrap.html#a36f188a242c990e2459473fe54be5a8f',1,'krap']]],
-  ['buttonvalue_21',['ButtonValue',['../structkrap_1_1ButtonValue.html#a0821f5b0a4ea11eb87cbdd6d833eb033',1,'krap::ButtonValue::ButtonValue()=default'],['../structkrap_1_1ButtonValue.html#a0d97ca9cca042162639c9f5585985815',1,'krap::ButtonValue::ButtonValue(const ButtonValue &amp;tval)=default'],['../structkrap_1_1ButtonValue.html',1,'krap::ButtonValue']]]
+  ['begin_0',['begin',['../classkrap_1_1Compound.html#ac662392f75b6b28a2e40fe47f3a22313',1,'krap::Compound']]],
+  ['button_1',['BUTTON',['../namespacekrap.html#a5b960fa3f20ac0f2661e5d156def7d43ae1bedcecaceb853722298b7e4f98421c',1,'krap']]]
 ];

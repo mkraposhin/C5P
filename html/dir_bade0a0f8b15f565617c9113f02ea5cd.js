@@ -8,6 +8,7 @@ var dir_bade0a0f8b15f565617c9113f02ea5cd =
     [ "Element.hxx", "Element_8hxx.html", "Element_8hxx" ],
     [ "Exception.cxx", "Exception_8cxx.html", null ],
     [ "Exception.hxx", "Exception_8hxx.html", "Exception_8hxx" ],
-    [ "Uri.cxx", "Uri_8cxx.html", null ],
-    [ "Uri.hxx", "Uri_8hxx.html", "Uri_8hxx" ]
+    [ "HtmlAttributeBase.hxx", "HtmlAttributeBase_8hxx.html", "HtmlAttributeBase_8hxx" ],
+    [ "HtmlTag.cxx", "HtmlTag_8cxx.html", null ],
+    [ "HtmlTag.hxx", "HtmlTag_8hxx.html", "HtmlTag_8hxx" ]
 ];

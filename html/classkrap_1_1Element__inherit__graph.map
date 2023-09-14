@@ -1,37 +1,4 @@
 <map id="krap::Element" name="krap::Element">
-<area shape="rect" id="node1" title=" " alt="" coords="5,638,105,663"/>
-<area shape="rect" id="node2" href="$classkrap_1_1CSSClass.html" title=" " alt="" coords="164,514,277,539"/>
-<area shape="rect" id="node3" href="$classkrap_1_1CSSElement.html" title=" " alt="" coords="157,563,284,589"/>
-<area shape="rect" id="node26" href="$classkrap_1_1Document.html" title=" " alt="" coords="165,613,277,638"/>
-<area shape="rect" id="node33" href="$classkrap_1_1Head.html" title=" " alt="" coords="179,662,263,687"/>
-<area shape="rect" id="node34" href="$classkrap_1_1Header.html" title=" " alt="" coords="153,711,288,737"/>
-<area shape="rect" id="node35" href="$classkrap_1_1Page.html" title=" " alt="" coords="179,761,262,786"/>
-<area shape="rect" id="node4" href="$classkrap_1_1Color.html" title=" " alt="" coords="362,5,489,45"/>
-<area shape="rect" id="node5" href="$classkrap_1_1FontSize.html" title=" " alt="" coords="355,70,495,95"/>
-<area shape="rect" id="node6" href="$classkrap_1_1FontSize.html" title=" " alt="" coords="355,119,495,145"/>
-<area shape="rect" id="node7" href="$classkrap_1_1FontSize.html" title=" " alt="" coords="355,169,495,194"/>
-<area shape="rect" id="node8" href="$classkrap_1_1FontSize.html" title=" " alt="" coords="355,218,495,243"/>
-<area shape="rect" id="node9" href="$classkrap_1_1FontSize.html" title=" " alt="" coords="355,267,495,293"/>
-<area shape="rect" id="node10" href="$classkrap_1_1FontStyle.html" title=" " alt="" coords="355,317,495,342"/>
-<area shape="rect" id="node11" href="$classkrap_1_1FontStyle.html" title=" " alt="" coords="355,366,495,391"/>
-<area shape="rect" id="node12" href="$classkrap_1_1FontStyle.html" title=" " alt="" coords="357,415,493,441"/>
-<area shape="rect" id="node13" href="$classkrap_1_1FontWeight.html" title=" " alt="" coords="350,465,501,490"/>
-<area shape="rect" id="node14" href="$classkrap_1_1FontWeight.html" title=" " alt="" coords="350,514,501,539"/>
-<area shape="rect" id="node15" href="$classkrap_1_1Color.html" title=" " alt="" coords="357,563,494,589"/>
-<area shape="rect" id="node16" href="$classkrap_1_1FontFamily.html" title=" " alt="" coords="367,613,484,638"/>
-<area shape="rect" id="node17" href="$classkrap_1_1FontSize.html" title=" " alt="" coords="356,662,495,687"/>
-<area shape="rect" id="node18" href="$classkrap_1_1FontStyle.html" title=" " alt="" coords="347,711,504,737"/>
-<area shape="rect" id="node19" href="$classkrap_1_1FontWeight.html" title=" " alt="" coords="336,761,515,786"/>
-<area shape="rect" id="node20" href="$classkrap_1_1Height.html" title=" " alt="" coords="380,810,471,835"/>
-<area shape="rect" id="node21" href="$classkrap_1_1MaxHeight.html" title=" " alt="" coords="368,859,483,885"/>
-<area shape="rect" id="node22" href="$classkrap_1_1MaxWidth.html" title=" " alt="" coords="370,909,481,934"/>
-<area shape="rect" id="node23" href="$classkrap_1_1ObjectFloat.html" title=" " alt="" coords="361,959,489,999"/>
-<area shape="rect" id="node24" href="$classkrap_1_1TextDecoration.html" title=" " alt="" coords="355,1023,495,1063"/>
-<area shape="rect" id="node25" href="$classkrap_1_1Width.html" title=" " alt="" coords="382,1087,469,1113"/>
-<area shape="rect" id="node27" href="$classkrap_1_1DocumentImpl.html" title=" " alt="" coords="357,1137,494,1162"/>
-<area shape="rect" id="node28" href="$classkrap_1_1Contacts.html" title=" " alt="" coords="583,1038,689,1063"/>
-<area shape="rect" id="node29" href="$classkrap_1_1Education.html" title=" " alt="" coords="581,1087,691,1113"/>
-<area shape="rect" id="node30" href="$classkrap_1_1Home.html" title=" " alt="" coords="592,1137,680,1162"/>
-<area shape="rect" id="node31" href="$classkrap_1_1MyContributions.html" title=" " alt="" coords="563,1186,709,1211"/>
-<area shape="rect" id="node32" href="$classkrap_1_1ProfExperience.html" title=" " alt="" coords="566,1235,706,1261"/>
+<area shape="rect" id="node1" title=" " alt="" coords="26,5,126,31"/>
+<area shape="rect" id="node2" href="$structkrap_1_1HtmlTagBase.html" title=" " alt="" coords="5,79,147,119"/>
 </map>
