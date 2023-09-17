@@ -1,4 +1,4 @@
 var HtmlAttributeBase_8hxx =
 [
-    [ "krap::HtmlAttributeBase", "structkrap_1_1HtmlAttributeBase.html", "structkrap_1_1HtmlAttributeBase" ]
+    [ "c5p::HtmlAttributeBase", "structc5p_1_1HtmlAttributeBase.html", "structc5p_1_1HtmlAttributeBase" ]
 ];

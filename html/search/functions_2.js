@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['cbegin_0',['cbegin',['../classkrap_1_1Compound.html#ad60cef565a27f3a01ae6efaa2209d74e',1,'krap::Compound']]],
-  ['cend_1',['cend',['../classkrap_1_1Compound.html#ac607f861872d0aee9cccbd7dfbbf7433',1,'krap::Compound']]],
-  ['child_2',['child',['../classkrap_1_1Element.html#a6168c3b67a8fa13f49a5ce6b26648502',1,'krap::Element']]],
-  ['clear_3',['clear',['../classkrap_1_1Compound.html#a4272915f35b18d7f87b74f9cb34b1f87',1,'krap::Compound']]],
-  ['clone_4',['clone',['../structkrap_1_1CompoundTagInitializer.html#ad6d270c10b0521b656c4dcda63dd58e9',1,'krap::CompoundTagInitializer::clone()'],['../classkrap_1_1Element.html#a87638ab80a8fb43f27708f4bec992e13',1,'krap::Element::clone()'],['../classkrap_1_1HtmlTagImpl.html#a10eb2b269456d601421b4ee720461c2e',1,'krap::HtmlTagImpl::clone() const override']]],
-  ['clone_5fcast_5',['clone_cast',['../classkrap_1_1HtmlTagImpl.html#ac65e186f632be980d0d67a4a505ccf00',1,'krap::HtmlTagImpl']]],
-  ['compound_6',['Compound',['../classkrap_1_1Compound.html#aef99d4765a7f9bdf7e17b3b6ffad26ce',1,'krap::Compound::Compound()'],['../classkrap_1_1Compound.html#ac2d2052d988f8e27dc1b0904bf7ee08a',1,'krap::Compound::Compound(const Compound &amp;)']]],
-  ['compoundtaginitializer_7',['CompoundTagInitializer',['../structkrap_1_1CompoundTagInitializer.html#a0a8cb708ca3aaf78d4b6df9feb3a33ec',1,'krap::CompoundTagInitializer::CompoundTagInitializer()'],['../structkrap_1_1CompoundTagInitializer.html#ab957678bc4241a0265b5d03d25d43cce',1,'krap::CompoundTagInitializer::CompoundTagInitializer(const CompoundTagInitializer&lt; BaseType &gt; &amp;c)'],['../structkrap_1_1CompoundTagInitializer.html#a3218544772271ce61b4cb848e10f1227',1,'krap::CompoundTagInitializer::CompoundTagInitializer(const BaseType &amp;c)'],['../structkrap_1_1CompoundTagInitializer.html#afe7ff0b1b89feec54be393025a165613',1,'krap::CompoundTagInitializer::CompoundTagInitializer(const std::initializer_list&lt; TagType &gt; &amp;elems)']]],
-  ['css_8',['css',['../classkrap_1_1Element.html#a9c647e5c6e69c0105ce54c8d901d9142',1,'krap::Element']]]
+  ['cbegin_0',['cbegin',['../classc5p_1_1Compound.html#afa19096060c126737198c683ffb0a3c4',1,'c5p::Compound']]],
+  ['cend_1',['cend',['../classc5p_1_1Compound.html#a3a5a525f84d078f5953d5d53900cc528',1,'c5p::Compound']]],
+  ['child_2',['child',['../classc5p_1_1Element.html#a008f674eb7fa0757aed65a93d16dbe26',1,'c5p::Element']]],
+  ['clear_3',['clear',['../classc5p_1_1Compound.html#aeaf9914bf36e4eefc7178f352f2a6817',1,'c5p::Compound']]],
+  ['clone_4',['clone',['../structc5p_1_1CompoundTagInitializer.html#a01b4262aa896678e6dcdf3243627c1bf',1,'c5p::CompoundTagInitializer::clone()'],['../classc5p_1_1Element.html#a0c30f1979f94fd0930d8e3dfb1423e24',1,'c5p::Element::clone()'],['../classc5p_1_1HtmlTagImpl.html#af844c23c19fc7705c1c9b0a8c66376f0',1,'c5p::HtmlTagImpl::clone() const override']]],
+  ['clone_5fcast_5',['clone_cast',['../classc5p_1_1HtmlTagImpl.html#a6da8352cd2dd4431e372e3b5063f0f69',1,'c5p::HtmlTagImpl']]],
+  ['compound_6',['Compound',['../classc5p_1_1Compound.html#aaa9739ed9a4e67375b21a7e3aa94df9f',1,'c5p::Compound::Compound()'],['../classc5p_1_1Compound.html#a79f84a36543f8851825b71816f955f32',1,'c5p::Compound::Compound(const Compound &amp;)']]],
+  ['compoundtaginitializer_7',['CompoundTagInitializer',['../structc5p_1_1CompoundTagInitializer.html#adfba66af7dafb38e84f54ffddd110992',1,'c5p::CompoundTagInitializer::CompoundTagInitializer()'],['../structc5p_1_1CompoundTagInitializer.html#aad0d2d46ea684f44c8a0a23f933c68bd',1,'c5p::CompoundTagInitializer::CompoundTagInitializer(const CompoundTagInitializer&lt; BaseType &gt; &amp;c)'],['../structc5p_1_1CompoundTagInitializer.html#a7e638432d0ab0053d513a83f7781f3d6',1,'c5p::CompoundTagInitializer::CompoundTagInitializer(const BaseType &amp;c)'],['../structc5p_1_1CompoundTagInitializer.html#a840aa3036c1d239b9e1d23e4391e407b',1,'c5p::CompoundTagInitializer::CompoundTagInitializer(const std::initializer_list&lt; TagType &gt; &amp;elems)']]],
+  ['css_8',['css',['../classc5p_1_1Element.html#a8f44403cdc4dc0d22ee5d25383c37f61',1,'c5p::Element']]]
 ];

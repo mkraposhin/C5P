@@ -1,8 +1,8 @@
 var Compound_8hxx =
 [
-    [ "krap::Compound", "classkrap_1_1Compound.html", "classkrap_1_1Compound" ],
-    [ "krap::CompoundTagInitializer< BaseType >", "structkrap_1_1CompoundTagInitializer.html", "structkrap_1_1CompoundTagInitializer" ],
-    [ "operator+", "Compound_8hxx.html#a9bc39774c37faeda1b56bb30b4b54990", null ],
-    [ "operator+", "Compound_8hxx.html#add7239786de4f9c49314dd84a1a1bda4", null ],
-    [ "operator+", "Compound_8hxx.html#a0c60f8fdb8889db01af367d94f9a1045", null ]
+    [ "c5p::Compound", "classc5p_1_1Compound.html", "classc5p_1_1Compound" ],
+    [ "c5p::CompoundTagInitializer< BaseType >", "structc5p_1_1CompoundTagInitializer.html", "structc5p_1_1CompoundTagInitializer" ],
+    [ "operator+", "Compound_8hxx.html#affc3495439369b3474b073959d4411e2", null ],
+    [ "operator+", "Compound_8hxx.html#a8cbc0bf37536cd33f310c0b56afc85e7", null ],
+    [ "operator+", "Compound_8hxx.html#a4772741682b2ac8ce5019816f6daae91", null ]
 ];

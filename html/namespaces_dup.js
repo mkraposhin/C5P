@@ -1,4 +1,4 @@
 var namespaces_dup =
 [
-    [ "krap", "namespacekrap.html", "namespacekrap" ]
+    [ "c5p", "namespacec5p.html", "namespacec5p" ]
 ];

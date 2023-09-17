@@ -1,4 +1,4 @@
 var Debug_8hxx =
 [
-    [ "krap::Debug", "classkrap_1_1Debug.html", "classkrap_1_1Debug" ]
+    [ "c5p::Debug", "classc5p_1_1Debug.html", "classc5p_1_1Debug" ]
 ];

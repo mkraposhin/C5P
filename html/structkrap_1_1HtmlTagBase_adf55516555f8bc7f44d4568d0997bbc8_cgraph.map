@@ -1,6 +1,0 @@
-<map id="krap::HtmlTagBase::print" name="krap::HtmlTagBase::print">
-<area shape="rect" id="node1" title="Print elements in this html tag element." alt="" coords="5,27,144,67"/>
-<area shape="rect" id="node2" href="$structkrap_1_1HtmlTagBase.html#af6904a1c92514f7285821ad635a53fbd" title="This actually prints an html tag into an ostream." alt="" coords="192,27,331,67"/>
-<area shape="rect" id="node3" href="$classkrap_1_1Element.html#a9c647e5c6e69c0105ce54c8d901d9142" title="gives const&#45;ref access to the style class" alt="" coords="385,5,511,31"/>
-<area shape="rect" id="node4" href="$structkrap_1_1HtmlTagBase.html#a509e1cbca865a00439911a4c6b5259ca" title=" " alt="" coords="379,55,517,95"/>
-</map>
