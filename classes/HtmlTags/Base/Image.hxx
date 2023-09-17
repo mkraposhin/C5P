@@ -4,14 +4,14 @@
 #include "HtmlTag.hxx"
 #include "Attributes.hxx"
 
-namespace krap
+namespace c5p
 {
 
 /*---------------------------------------------------------------------------*\
                             Class Image Declaration
 \*---------------------------------------------------------------------------*/
 
-struct ImageValue : public ValueBase<krap::TagId::IMAGE,true,void*>
+struct ImageValue : public ValueBase<c5p::TagId::IMAGE,true,void*>
 {
     //!
     ImageValue() = default;

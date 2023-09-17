@@ -2,7 +2,7 @@
 #include "CSS.hxx"
 #include "Size.hxx"
 
-krap::Div &krap::DivRow::div_row()
+c5p::Div &c5p::DivRow::div_row()
 {
     #warning "Make it as in DivColumn"
     std::cout<< "krap::DivColumn::div_row s" << std::endl;
@@ -11,7 +11,7 @@ krap::Div &krap::DivRow::div_row()
     return this->operator()<Div>(0).operator()<Div>(0);
 }
 
-krap::DivRow::DivRow()
+c5p::DivRow::DivRow()
 :
     Div(),
     div_table_row_ptr_{new CSSClass{css::divTableRow.name()}},
@@ -31,11 +31,11 @@ krap::DivRow::DivRow()
     Div::add(row_body);
 }
 
-krap::DivRow::~DivRow()
+c5p::DivRow::~DivRow()
 {
 }
 
-krap::ElementPtr& krap::DivRow::add(const Element& el)
+c5p::ElementPtr& c5p::DivRow::add(const Element& el)
 {
     Div &div_row = this->div_row();
     Div el_cell;
@@ -45,7 +45,7 @@ krap::ElementPtr& krap::DivRow::add(const Element& el)
     return div_row.add(el_cell);
 }
 
-krap::ElementPtr& krap::DivRow::add(Element* eptr)
+c5p::ElementPtr& c5p::DivRow::add(Element* eptr)
 {
     Div &div_row = this->div_row();
     Div el_cell;
@@ -55,7 +55,7 @@ krap::ElementPtr& krap::DivRow::add(Element* eptr)
     return div_row.add(el_cell);
 }
 
-krap::ElementPtr& krap::DivRow::add(const ElementPtr& eptr)
+c5p::ElementPtr& c5p::DivRow::add(const ElementPtr& eptr)
 {
     Div &div_row = this->div_row();
     Div el_cell;
@@ -65,12 +65,12 @@ krap::ElementPtr& krap::DivRow::add(const ElementPtr& eptr)
     return div_row.add(el_cell);
 }
 
-krap::ElementPtr krap::DivRow::clone() const
+c5p::ElementPtr c5p::DivRow::clone() const
 {
     return ElementPtr(new DivRow(*this));
 }
 
-void krap::DivRow::cell_width(int w)
+void c5p::DivRow::cell_width(int w)
 {
     std::string nm = css::divTableCell.name() +
         "_width" + std::to_string(w) + "px";
@@ -84,7 +84,7 @@ void krap::DivRow::cell_width(int w)
     }
 }
 
-void krap::DivRow::row_css(const CSSClass& css_class)
+void c5p::DivRow::row_css(const CSSClass& css_class)
 {
     std::string nm_row = css::divTableRow.name() +
         + "_" + css_class.name();

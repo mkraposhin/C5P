@@ -6,7 +6,7 @@
 #include "JScript.hxx"
 #include "Link.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class MainMenu;

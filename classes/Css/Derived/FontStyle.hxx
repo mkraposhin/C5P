@@ -4,7 +4,7 @@
 #include "Exception.hxx"
 #include "CSSElement.hxx"
 
-namespace krap
+namespace c5p
 {
 
 template<int sz>
@@ -19,7 +19,7 @@ private:
     {
         if constexpr (val < min || val > max)
         {
-            throw krap::GenericException
+            throw c5p::GenericException
                 {"Wrong font size:" + std::to_string(val)};
         }
     }

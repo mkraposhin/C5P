@@ -3,7 +3,7 @@
 #ifndef Size_H
 #define Size_H
 
-namespace krap
+namespace c5p
 {
 
 class Width : public CSSElement

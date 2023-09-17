@@ -3,7 +3,7 @@
 
 #include "CSSClass.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class CSSRegistry

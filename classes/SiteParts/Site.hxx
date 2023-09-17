@@ -6,7 +6,7 @@
 #include "MainMenu.hxx"
 #include <map>
 
-namespace krap
+namespace c5p
 {
 
 /*---------------------------------------------------------------------------*\

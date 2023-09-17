@@ -5,7 +5,7 @@
 #include <Element.hxx>
 #include <CSSClass.hxx>
 
-namespace krap
+namespace c5p
 {
 
 //!
@@ -60,8 +60,8 @@ struct ValueBase
 };
 
 template<unsigned int tagid, bool t_has_closing, typename T>
-const std::string krap::ValueBase<tagid,t_has_closing,T>::tag_str =
-std::string(krap::tag_str[tagid]);
+const std::string c5p::ValueBase<tagid,t_has_closing,T>::tag_str =
+std::string(c5p::tag_str[tagid]);
 
 //!
 template <class ValueType, class ...Attrs>

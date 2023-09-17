@@ -4,7 +4,7 @@
 #include <string>
 #include <iostream>
 
-namespace krap
+namespace c5p
 {
 
 //! A base class to define an html attribute

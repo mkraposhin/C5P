@@ -1,6 +1,6 @@
 #include "Globals.hxx"
 
-namespace krap
+namespace c5p
 {
     // const std::string constants::site_uri = "kraposhin.online/";
     const std::string constants::site_uri = "127.0.0.1/";

@@ -5,11 +5,11 @@
 #include "HtmlTag.hxx"
 #include "Attributes.hxx"
 
-namespace krap
+namespace c5p
 {
 
 //!
-struct UnorderedListValue : public ValueBase<krap::TagId::UNORDERED_LIST,true,void*>, public Compound
+struct UnorderedListValue : public ValueBase<c5p::TagId::UNORDERED_LIST,true,void*>, public Compound
 {
     //!
     UnorderedListValue() = default;

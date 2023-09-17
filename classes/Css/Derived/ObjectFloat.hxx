@@ -3,7 +3,7 @@
 
 #include "CSSElement.hxx"
 
-namespace krap
+namespace c5p
 {
 
 template<char float_type>

@@ -1,14 +1,14 @@
 #include "Element.hxx"
 #include "CSSClass.hxx"
 
-using namespace krap;
+using namespace c5p;
 
-void krap::Element::set_child(ElementPtr& new_child)
+void c5p::Element::set_child(ElementPtr& new_child)
 {
     child_ = new_child;
 }
 
-void krap::Element::set_css_class(const CSSClass& css)
+void c5p::Element::set_css_class(const CSSClass& css)
 {
     if (dynamic_cast<CSSClass*>(this)) //it is a CSSClass
     {
@@ -24,7 +24,7 @@ void krap::Element::set_css_class(const CSSClass& css)
     }
 }
 
-krap::Element::Element()
+c5p::Element::Element()
 :
     child_(nullptr),
     css_(nullptr)
@@ -32,7 +32,7 @@ krap::Element::Element()
 
 }
 
-krap::Element::Element(const Element& el)
+c5p::Element::Element(const Element& el)
 :
     child_(nullptr),
     css_(el.css_)
@@ -43,27 +43,27 @@ krap::Element::Element(const Element& el)
     }
 }
 
-krap::Element::~Element()
+c5p::Element::~Element()
 {
 
 }
 
-krap::ElementPtr krap::Element::clone() const
+c5p::ElementPtr c5p::Element::clone() const
 {
     return std::make_shared<Element>(*this);
 }
 
-const krap::ElementPtr& krap::Element::child() const
+const c5p::ElementPtr& c5p::Element::child() const
 {
     return child_;
 }
 
-const krap::CSSClassPtr& krap::Element::css() const
+const c5p::CSSClassPtr& c5p::Element::css() const
 {
     return css_;
 }
 
-std::ostream& krap::Element::print(std::ostream& ostr) const
+std::ostream& c5p::Element::print(std::ostream& ostr) const
 {
     if (bool(child_))
     {
@@ -72,12 +72,12 @@ std::ostream& krap::Element::print(std::ostream& ostr) const
     return ostr;
 }
 
-std::ostream& krap::operator << (std::ostream& ostr, const krap::Element& elem)
+std::ostream& c5p::operator << (std::ostream& ostr, const c5p::Element& elem)
 {
     return elem.print(ostr);
 }
 
-krap::Element& krap::operator ^ (krap::Element& el, const krap::Element& cel)
+c5p::Element& c5p::operator ^ (c5p::Element& el, const c5p::Element& cel)
 {
     if (&el == &cel)
     {
@@ -89,17 +89,17 @@ krap::Element& krap::operator ^ (krap::Element& el, const krap::Element& cel)
     return el;
 }
 
-krap::CSSClassPtr& krap::operator % (krap::Element& el, 
-    const krap::CSSClass& css)
+c5p::CSSClassPtr& c5p::operator % (c5p::Element& el, 
+    const c5p::CSSClass& css)
 {
     el.set_css_class(css);
     return el.css_;
 }
 
-krap::CSSClassPtr& krap::operator % 
+c5p::CSSClassPtr& c5p::operator % 
 (
-    krap::Element& el,
-    krap::CSSClassPtr& cssptr
+    c5p::Element& el,
+    c5p::CSSClassPtr& cssptr
 )
 {
     el.css_ = cssptr;

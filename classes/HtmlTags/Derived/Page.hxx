@@ -6,7 +6,7 @@
 #include "CSSRegistry.hxx"
 #include "JScript.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class Document;

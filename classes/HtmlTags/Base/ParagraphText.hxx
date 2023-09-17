@@ -4,13 +4,13 @@
 #include "HtmlTag.hxx"
 #include "Attributes.hxx"
 
-namespace krap
+namespace c5p
 {
 /*---------------------------------------------------------------------------*\
                             Class ParagraphText Declaration
 \*---------------------------------------------------------------------------*/
 
-struct ParagraphTextValue : public ValueBase<krap::TagId::P,true,std::string>
+struct ParagraphTextValue : public ValueBase<c5p::TagId::P,true,std::string>
 {
     //!
     ParagraphTextValue() = default;

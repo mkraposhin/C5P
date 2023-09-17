@@ -1,6 +1,6 @@
 #include "CSS.hxx"
 
-namespace krap::css
+namespace c5p::css
 {
     const CSSElement bcolorWhite{"background-color","white"};
     const CSSElement bcolorGray{"background-color", "gray"};

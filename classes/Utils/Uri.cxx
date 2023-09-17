@@ -3,13 +3,13 @@
 #include <sstream>
 #include <cgicc/HTMLClasses.h>
 
-krap::Uri::Uri(std::string uri)
+c5p::Uri::Uri(std::string uri)
 :
     uri_string_(uri)
 {
 }
 
-krap::Uri::Uri(std::string doc_name, const Site& site)
+c5p::Uri::Uri(std::string doc_name, const Site& site)
 :
     uri_string_(std::string(""))
 {
@@ -19,17 +19,17 @@ krap::Uri::Uri(std::string doc_name, const Site& site)
     }
 }
 
-krap::Uri::Uri (const Uri& uri)
+c5p::Uri::Uri (const Uri& uri)
 {
     uri_string_ = uri.uri_string_;
 }
 
-const std::string& krap::Uri::uri() const
+const std::string& c5p::Uri::uri() const
 {
     return uri_string_;
 }
 
-const std::string krap::Uri::html(const std::string& txt) const
+const std::string c5p::Uri::html(const std::string& txt) const
 {
     std::stringstream ostr;
 

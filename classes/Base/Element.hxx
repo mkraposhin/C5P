@@ -7,7 +7,7 @@
 
 #include "Globals.hxx"
 
-namespace krap
+namespace c5p
 {
 
 //- Forward declaration of Element

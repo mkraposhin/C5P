@@ -4,14 +4,14 @@
 #include "HtmlTag.hxx"
 #include "Attributes.hxx"
 
-namespace krap
+namespace c5p
 {
 
 /*---------------------------------------------------------------------------*\
                             Class Title Declaration
 \*---------------------------------------------------------------------------*/
 
-struct TitleValue : public ValueBase<krap::TagId::TITLE,true,std::string>
+struct TitleValue : public ValueBase<c5p::TagId::TITLE,true,std::string>
 {
     //!
     TitleValue() = default;

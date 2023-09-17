@@ -3,7 +3,7 @@
 
 #include <string>
 
-namespace krap
+namespace c5p
 {
 
 struct constants

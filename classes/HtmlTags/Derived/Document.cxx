@@ -3,7 +3,7 @@
 #include <cgicc/HTTPHTMLHeader.h>
 #include <cgicc/HTMLClasses.h>
 
-krap::Document::Document()
+c5p::Document::Document()
 :
     Element(),
     css_class_map_{},
@@ -12,7 +12,7 @@ krap::Document::Document()
 {
 }
 
-krap::Document::Document(const Document& doc)
+c5p::Document::Document(const Document& doc)
 :
     Element(doc),
     css_class_map_(doc.css_class_map_),
@@ -21,11 +21,11 @@ krap::Document::Document(const Document& doc)
 {
 }
 
-krap::Document::~Document()
+c5p::Document::~Document()
 {
 }
 
-std::ostream& krap::Document::print(std::ostream& ostr) const
+std::ostream& c5p::Document::print(std::ostream& ostr) const
 {
     ostr <<  cgicc::HTTPHTMLHeader() << std::endl;
     ostr << std::endl << "<!DOCTYPE html>" << std::endl;
@@ -39,17 +39,17 @@ std::ostream& krap::Document::print(std::ostream& ostr) const
     return ostr;
 }
 
-krap::Page& krap::Document::body()
+c5p::Page& c5p::Document::body()
 {
     return body_;
 }
 
-krap::Head& krap::Document::head()
+c5p::Head& c5p::Document::head()
 {
     return head_;
 }
 
-krap::ElementPtr krap::Document::clone() const
+c5p::ElementPtr c5p::Document::clone() const
 {
     return ElementPtr (new Document(*this));
 }

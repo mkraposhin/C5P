@@ -4,7 +4,7 @@
 #include "Div.hxx"
 #include "Button.hxx"
 
-namespace krap
+namespace c5p
 {
 
 /// @brief describes one entry in a blog

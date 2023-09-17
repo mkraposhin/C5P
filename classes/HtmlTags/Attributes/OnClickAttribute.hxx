@@ -4,7 +4,7 @@
 #include "HtmlAttributeBase.hxx"
 #include "JScript.hxx"
 
-namespace krap
+namespace c5p
 {
 class OnClickAttribute : public HtmlAttributeBase
 {

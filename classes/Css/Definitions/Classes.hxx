@@ -3,7 +3,7 @@
 
 #include "CSSClass.hxx"
 
-namespace krap::css
+namespace c5p::css
 {
     extern const CSSClass menuText;
     extern const CSSClass emptyClass;

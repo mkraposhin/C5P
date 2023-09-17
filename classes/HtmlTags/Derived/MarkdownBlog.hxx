@@ -3,7 +3,7 @@
 
 #include "Blog.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class MarkdownBlog : public Blog

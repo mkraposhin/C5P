@@ -3,7 +3,7 @@
 
 #include "Div.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class DivColumn : public Div

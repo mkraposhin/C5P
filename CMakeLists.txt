@@ -19,5 +19,5 @@ set(MD4C_INC_DIR "/home/matvey-l/data/site-forge/src/md4c-release-0.4.8/src")
 
 add_subdirectory(classes)
 add_subdirectory(executables)
-add_subdirectory(pages) 
+add_subdirectory(pages)
 

@@ -4,14 +4,14 @@
 #include "HtmlTag.hxx"
 #include "Attributes.hxx"
 
-namespace krap
+namespace c5p
 {
 
 /*---------------------------------------------------------------------------*\
                             Class ATextImpl Declaration
 \*---------------------------------------------------------------------------*/
 
-struct ATextValue : public ValueBase<krap::TagId::A,true,std::string>
+struct ATextValue : public ValueBase<c5p::TagId::A,true,std::string>
 {
     //!
     ATextValue() = default;

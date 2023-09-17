@@ -1,7 +1,7 @@
 #include "DivColumn.hxx"
 #include "CSS.hxx"
 
-krap::Div& krap::DivColumn::init_column_body()
+c5p::Div& c5p::DivColumn::init_column_body()
 {
     Div col_body;
     col_body % css::divTableBody;
@@ -14,22 +14,22 @@ krap::Div& krap::DivColumn::init_column_body()
     return div;
 }
 
-krap::DivColumn::DivColumn()
+c5p::DivColumn::DivColumn()
 :
     Div(),
     column_body_(init_column_body())
 {}
 
-krap::DivColumn::~DivColumn()
+c5p::DivColumn::~DivColumn()
 {
 }
 
-krap::ElementPtr krap::DivColumn::clone() const
+c5p::ElementPtr c5p::DivColumn::clone() const
 {
     return ElementPtr(new DivColumn(*this));
 }
 
-krap::ElementPtr& krap::DivColumn::add(const Element& el)
+c5p::ElementPtr& c5p::DivColumn::add(const Element& el)
 {
     Div el_row;
     el_row % css::divTableRow;
@@ -41,7 +41,7 @@ krap::ElementPtr& krap::DivColumn::add(const Element& el)
     return column_body_.add(el_row);
 }
 
-krap::ElementPtr& krap::DivColumn::add(Element* eptr)
+c5p::ElementPtr& c5p::DivColumn::add(Element* eptr)
 {
     Div el_row;
     el_row % css::divTableRow;
@@ -53,7 +53,7 @@ krap::ElementPtr& krap::DivColumn::add(Element* eptr)
     return column_body_.add(el_row);
 }
 
-krap::ElementPtr& krap::DivColumn::add(const ElementPtr& eptr)
+c5p::ElementPtr& c5p::DivColumn::add(const ElementPtr& eptr)
 {
     Div el_row;
     el_row % css::divTableRow;

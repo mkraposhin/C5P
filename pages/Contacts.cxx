@@ -4,7 +4,7 @@
 #include "DivColumn.hxx"
 #include "Size.hxx"
 
-krap::Contacts::Contacts(const Site& site)
+c5p::Contacts::Contacts(const Site& site)
 :
     DocumentImpl(site)
 {

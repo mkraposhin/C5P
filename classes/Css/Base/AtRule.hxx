@@ -4,7 +4,7 @@
 #include <iostream>
 #include <memory>
 
-namespace krap
+namespace c5p
 {
 
 class AtRule;
@@ -40,7 +40,7 @@ public:
 } //namespace krap
 
 template<class NT> std::ostream&
-krap::AtRule::print(const NT& nested, std::ostream& ostr) const
+c5p::AtRule::print(const NT& nested, std::ostream& ostr) const
 {
     ostr<< name_ << " " << pars_ 
         << "{" << std::endl;

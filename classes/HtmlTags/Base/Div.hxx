@@ -5,11 +5,11 @@
 #include "HtmlTag.hxx"
 #include "Attributes.hxx"
 
-namespace krap
+namespace c5p
 {
 
 //!
-struct DivValue : public ValueBase<krap::TagId::DIV,true,void*>, public Compound
+struct DivValue : public ValueBase<c5p::TagId::DIV,true,void*>, public Compound
 {
     //!
     DivValue() = default;

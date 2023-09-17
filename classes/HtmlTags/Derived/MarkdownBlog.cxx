@@ -2,7 +2,7 @@
 #include "Markdown.hxx"
 #include <string>
 
-krap::MarkdownBlog::MarkdownBlog
+c5p::MarkdownBlog::MarkdownBlog
 (
     const std::string& dir,
     const std::vector<std::string>& titles
@@ -44,7 +44,7 @@ krap::MarkdownBlog::MarkdownBlog
     }
 }
 
-krap::MarkdownBlog::MarkdownBlog(const MarkdownBlog& md_blog)
+c5p::MarkdownBlog::MarkdownBlog(const MarkdownBlog& md_blog)
 :
     Blog(md_blog),
     dir_(md_blog.dir_),
@@ -54,7 +54,7 @@ krap::MarkdownBlog::MarkdownBlog(const MarkdownBlog& md_blog)
 }
 
 
-krap::MarkdownBlog::~MarkdownBlog()
+c5p::MarkdownBlog::~MarkdownBlog()
 {
 
 }

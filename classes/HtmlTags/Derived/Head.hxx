@@ -7,7 +7,7 @@
 #include "Link.hxx"
 #include <vector>
 
-namespace krap
+namespace c5p
 {
 
 /*---------------------------------------------------------------------------*\

@@ -1,6 +1,6 @@
 #include "FontStyles.hxx"
 
-namespace krap::css
+namespace c5p::css
 {
     const FontStyle<'n'> fontStyleNormal;
     const FontStyle<'o'> fontOblique;

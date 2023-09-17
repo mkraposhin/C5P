@@ -4,56 +4,55 @@
 #include "Page.hxx"
 #include "Head.hxx"
 
-namespace krap
+namespace c5p
 {
 
 /*---------------------------------------------------------------------------*\
                           Class Document Declaration
 \*---------------------------------------------------------------------------*/
 
-class Document;
 
-using DocumentPtr = std::shared_ptr<Document>;
-
+/// @brief Represents one HTML web page
 class Document
 :
     public Element
 {
 protected:
 
-    //-
+    /// @brief  Holds map of CSS classes used in the document
     CSSClassMap css_class_map_;
 
-    //- Represents the header of the document
+    /// @brief Represents the header of the document
     Head head_;
 
-    //- Represents the body of the document
+    /// @brief Represents the body of the document
     Page body_;
-
 
 public:
      
-    //- Default constructor (creates empty compound)
+    /// @brief Default constructor (creates an empty document)
     Document();
 
-    //- Copy constructor
+    /// @brief Creates a copy of the given document
     Document(const Document&);
 
-    //- Destructor
-    ~Document();
+    /// @brief Destruct the document
+    virtual ~Document();
 
-    //- Print the content of the document
+    /// @brief Prints the content of the document
     virtual std::ostream& print(std::ostream& ostr) const override;
 
-    //- Non-const access to the documents body
+    /// @brief Gives non-const access to the documents body
     Page& body();
     
-    //- Non-const access to the documents head
+    /// @brief Gives non-const access to the documents head
     Head& head();
 
-    //- creates a clone of itself
+    /// @brief Creates a clone of itself (copy of the document)
     virtual ElementPtr clone() const override;
 };
+
+using DocumentPtr = std::shared_ptr<Document>;
 
 }
 

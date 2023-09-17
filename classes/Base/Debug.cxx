@@ -1,6 +1,6 @@
 #include "Debug.hxx"
 
-krap::Debug::~Debug()
+c5p::Debug::~Debug()
 {
     
 }

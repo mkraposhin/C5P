@@ -78,7 +78,7 @@ process_output(const MD_CHAR* text, MD_SIZE size, void* userdata)
 
 #endif
 
-void krap::MarkdownValue::value_print(std::ostream& ostr) const
+void c5p::MarkdownValue::value_print(std::ostream& ostr) const
 {
 #ifdef MD4C_MD_TRANSLATOR
 
@@ -152,13 +152,13 @@ void krap::MarkdownValue::value_print(std::ostream& ostr) const
 #endif
 }
 
-void krap::MarkdownValue::set_text(const std::string txt)
+void c5p::MarkdownValue::set_text(const std::string txt)
 {
     file_name_ = "";
     text_ = txt;
 }
 
-void krap::MarkdownValue::set_file(const std::string file_name)
+void c5p::MarkdownValue::set_file(const std::string file_name)
 {
     text_ = "";
     file_name_ = file_name;

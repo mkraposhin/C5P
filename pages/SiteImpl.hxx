@@ -9,7 +9,7 @@
 #include "Contacts.hxx"
 #include "Site.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class SiteImpl : public Site

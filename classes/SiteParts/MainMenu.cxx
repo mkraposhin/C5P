@@ -11,7 +11,7 @@
 
 #define MAIN_MENU_ID "MainMenuOfSiteID"
 
-krap::MainMenu::MainMenu()
+c5p::MainMenu::MainMenu()
 : 
     Div()
 {
@@ -142,14 +142,14 @@ krap::MainMenu::MainMenu()
     this->add(resp_txt);
 }
 
-void krap::MainMenu::insert(std::string nm)
+void c5p::MainMenu::insert(std::string nm)
 {
     ElementPtr item = 
         AText(nm).clone();
     this->add(item);
 }
 
-void krap::MainMenu::insert(std::string name, const UriPtr& uri_ptr)
+void c5p::MainMenu::insert(std::string name, const UriPtr& uri_ptr)
 {
     #warning "function requires simplification"
     ATextPtr atext = std::dynamic_pointer_cast<AText>(AText(name).clone());
@@ -158,12 +158,12 @@ void krap::MainMenu::insert(std::string name, const UriPtr& uri_ptr)
     this->add(item);
 }
 
-const std::shared_ptr<krap::JScript>& krap::MainMenu::jscript() const
+const std::shared_ptr<c5p::JScript>& c5p::MainMenu::jscript() const
 {
     return jscript_;
 }
 
-const std::shared_ptr<krap::Link>& krap::MainMenu::link() const
+const std::shared_ptr<c5p::Link>& c5p::MainMenu::link() const
 {
     return link_;
 }

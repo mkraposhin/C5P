@@ -3,7 +3,7 @@
 
 #include "DocumentImpl.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class Home : public DocumentImpl

@@ -5,7 +5,7 @@
 #include <exception>
 #include "Globals.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class GenericException : public std::exception

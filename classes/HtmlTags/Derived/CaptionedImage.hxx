@@ -4,7 +4,7 @@
 #include "Image.hxx"
 #include "Div.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class CaptionedImage : public Div

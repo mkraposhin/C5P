@@ -12,7 +12,7 @@
 #include "UnorderedList.hxx"
 #include "ListItem.hxx"
 
-krap::Home::Home(const Site& site)
+c5p::Home::Home(const Site& site)
 :
     DocumentImpl(site)
 {

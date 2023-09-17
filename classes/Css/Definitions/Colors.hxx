@@ -3,7 +3,7 @@
 #ifndef Colors_H
 #define Colors_H
 
-namespace krap::css
+namespace c5p::css
 {
 
 namespace color

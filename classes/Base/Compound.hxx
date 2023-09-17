@@ -6,7 +6,7 @@
 #include <memory>
 #include <initializer_list>
 
-namespace krap
+namespace c5p
 {
 
 /*---------------------------------------------------------------------------*\
@@ -149,7 +149,7 @@ std::shared_ptr<Compound> operator +
 
 // actually we have to check correctness of casting here
 template <class CType> CType& 
-krap::Compound::operator () (int i)
+c5p::Compound::operator () (int i)
 {
     return dynamic_cast<CType&>(this->operator[](i));
 }

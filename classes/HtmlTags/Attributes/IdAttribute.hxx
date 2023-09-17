@@ -3,7 +3,7 @@
 
 #include "HtmlAttributeBase.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class IdAttribute : public HtmlAttributeBase

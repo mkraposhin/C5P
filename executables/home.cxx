@@ -9,7 +9,7 @@
 
 int main (int argc, char * argv[])
 {
-    using namespace krap;
+    using namespace c5p;
     try
     {
         cgicc::Cgicc cgi;

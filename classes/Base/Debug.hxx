@@ -3,7 +3,7 @@
 
 #include "Globals.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class Debug

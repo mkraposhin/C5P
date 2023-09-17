@@ -1,14 +1,14 @@
 #include "CSSRegistry.hxx"
 #include "Compound.hxx"
 
-krap::CSSRegistry::CSSRegistry(CSSClassMap& cmap)
+c5p::CSSRegistry::CSSRegistry(CSSClassMap& cmap)
 :
     css_class_map_(cmap)
 {
 }
 
 #warning "Make this map both ordered and unique"
-void krap::CSSRegistry::register_css_class(const Element& nelem)
+void c5p::CSSRegistry::register_css_class(const Element& nelem)
 {
     if (nelem.css())
     {
@@ -37,7 +37,7 @@ void krap::CSSRegistry::register_css_class(const Element& nelem)
     }
 }
 
-void krap::CSSRegistry::register_css_class(const ElementPtr& eptr)
+void c5p::CSSRegistry::register_css_class(const ElementPtr& eptr)
 {
     if (eptr)
     {

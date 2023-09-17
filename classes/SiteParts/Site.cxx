@@ -6,7 +6,7 @@
 // #include "Contacts.hxx"
 // #include "MyContributions.hxx"
 
-void krap::Site::insert_doc(std::string nm, const Document& doc)
+void c5p::Site::insert_doc(std::string nm, const Document& doc)
 {
     DocumentPtr doc_ptr = std::dynamic_pointer_cast<Document>(doc.clone());
 
@@ -24,7 +24,7 @@ void krap::Site::insert_doc(std::string nm, const Document& doc)
     main_menu_.insert(nm, uri);
 }
 
-krap::Site::Site()
+c5p::Site::Site()
 :
     doc_map_{},
     blank_doc_{},
@@ -32,18 +32,18 @@ krap::Site::Site()
 {
 }
 
-int krap::Site::n_documents() const
+int c5p::Site::n_documents() const
 {
     return doc_map_.size();
 }
 
-bool krap::Site::has_document(const std::string& name) const
+bool c5p::Site::has_document(const std::string& name) const
 {
     return doc_map_.count(name);
 }
 
-const krap::Document&
-krap::Site::operator[] (const std::string& doc_name) const
+const c5p::Document&
+c5p::Site::operator[] (const std::string& doc_name) const
 {
     if (has_document(doc_name))
     {
@@ -52,8 +52,8 @@ krap::Site::operator[] (const std::string& doc_name) const
     return blank_doc_;
 }
 
-const krap::MainMenu&
-krap::Site::main_menu() const
+const c5p::MainMenu&
+c5p::Site::main_menu() const
 {
     return main_menu_;
 }

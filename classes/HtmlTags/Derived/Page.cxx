@@ -3,7 +3,7 @@
 #include "CSSClass.hxx"
 #include <cgicc/HTMLClasses.h>
 
-krap::Page::Page(CSSClassMap& ccm)
+c5p::Page::Page(CSSClassMap& ccm)
 :
     Element(),
     Compound(),
@@ -11,7 +11,7 @@ krap::Page::Page(CSSClassMap& ccm)
 {
 }
 
-krap::Page::Page(const Page& page, CSSClassMap& css_class_map)
+c5p::Page::Page(const Page& page, CSSClassMap& css_class_map)
 :
     Element(page),
     Compound(page),
@@ -20,11 +20,11 @@ krap::Page::Page(const Page& page, CSSClassMap& css_class_map)
 {
 }
 
-krap::Page::~Page()
+c5p::Page::~Page()
 {
 }
 
-std::ostream& krap::Page::print(std::ostream& ostr) const
+std::ostream& c5p::Page::print(std::ostream& ostr) const
 {
     if (css())
     {
@@ -44,40 +44,40 @@ std::ostream& krap::Page::print(std::ostream& ostr) const
     return ostr;
 }
 
-const krap::Page& krap::Page::operator = (const krap::Compound& right)
+const c5p::Page& c5p::Page::operator = (const c5p::Compound& right)
 {
-    krap::Compound::operator=(right);
+    c5p::Compound::operator=(right);
     return *this;
 }
 
-krap::ElementPtr& krap::Page::add(const krap::Element& elem)
+c5p::ElementPtr& c5p::Page::add(const c5p::Element& elem)
 {
     ElementPtr& nptr = Compound::add(elem);
     register_css_class(nptr);
     return nptr;
 }
 
-krap::ElementPtr& krap::Page::add(Element* elem)
+c5p::ElementPtr& c5p::Page::add(Element* elem)
 {
     ElementPtr& nptr = Compound::add(elem);
     register_css_class(nptr);
     return nptr;
 }
 
-krap::ElementPtr& krap::Page::add(const ElementPtr& elem)
+c5p::ElementPtr& c5p::Page::add(const ElementPtr& elem)
 {
     ElementPtr& nptr = Compound::add(elem);
     register_css_class(nptr);
     return nptr;
 }
 
-void krap::Page::jscript(const JScript& js)
+void c5p::Page::jscript(const JScript& js)
 {
     jscripts_.push_back(*js.clone());
 }
 
-krap::CSSClassPtr& krap::operator % (krap::Page& page,
-    const krap::CSSClass& css)
+c5p::CSSClassPtr& c5p::operator % (c5p::Page& page,
+    const c5p::CSSClass& css)
 {
     Element& elem = dynamic_cast<Element&>(page);
     CSSClassPtr& cssptr = elem % css;

@@ -1,6 +1,6 @@
 #include "FontSizes.hxx"
 
-namespace krap::css
+namespace c5p::css
 {
     const FontSize<24> font24px;
     const FontSize<22> font22px;

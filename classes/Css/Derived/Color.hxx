@@ -5,7 +5,7 @@
 #ifndef Color_H
 #define Color_H
 
-namespace krap
+namespace c5p
 {
 
 template<unsigned char r, unsigned char g, unsigned char b>

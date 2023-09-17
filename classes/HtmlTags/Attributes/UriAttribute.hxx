@@ -4,7 +4,7 @@
 #include "HtmlAttributeBase.hxx"
 #include "Uri.hxx"
 
-namespace krap
+namespace c5p
 {
 class UriAttribute : public HtmlAttributeBase
 {

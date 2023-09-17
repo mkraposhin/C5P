@@ -4,7 +4,7 @@
 #include "HtmlTag.hxx"
 #include "Attributes.hxx"
 
-namespace krap
+namespace c5p
 {
 
 /*---------------------------------------------------------------------------*\
@@ -12,7 +12,7 @@ namespace krap
 \*---------------------------------------------------------------------------*/
 
 /// @brief represents <li> </li> HTML element
-struct ListItemValue : public ValueBase<krap::TagId::LIST_ITEM,true,std::string>
+struct ListItemValue : public ValueBase<c5p::TagId::LIST_ITEM,true,std::string>
 {
     /// @brief default constructor
     ListItemValue() = default;

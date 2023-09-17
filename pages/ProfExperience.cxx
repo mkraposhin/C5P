@@ -4,7 +4,7 @@
 #include "Header.hxx"
 #include "Size.hxx"
 
-krap::ProfExperience::ProfExperience(const Site& site)
+c5p::ProfExperience::ProfExperience(const Site& site)
 :
     DocumentImpl(site)
 {

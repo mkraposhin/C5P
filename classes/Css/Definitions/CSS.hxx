@@ -11,7 +11,7 @@
 #include "Colors.hxx"
 #include "Geometries.hxx"
 
-namespace krap::css
+namespace c5p::css
 {
     /*
      *

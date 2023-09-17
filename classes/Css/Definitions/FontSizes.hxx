@@ -3,7 +3,7 @@
 
 #include "FontStyle.hxx"
 
-namespace krap::css
+namespace c5p::css
 {
     /*
      *

@@ -1,7 +1,7 @@
 #include "BlogEntry.hxx"
 
 
-krap::BlogEntry::BlogEntry
+c5p::BlogEntry::BlogEntry
 (
     const std::string& title, Div entry_contents,
     const CSSClass& title_css, const CSSClass& cont_css
@@ -17,7 +17,7 @@ krap::BlogEntry::BlogEntry
     Div::add(entry_contents_);
 }
 
-krap::BlogEntry::BlogEntry()
+c5p::BlogEntry::BlogEntry()
 :
     BlogEntry
     (
@@ -27,7 +27,7 @@ krap::BlogEntry::BlogEntry()
 {
 }
 
-krap::BlogEntry::BlogEntry(const BlogEntry& be)
+c5p::BlogEntry::BlogEntry(const BlogEntry& be)
 :
     BlogEntry
     (
@@ -37,7 +37,7 @@ krap::BlogEntry::BlogEntry(const BlogEntry& be)
 {
 }
 
-krap::BlogEntry::BlogEntry
+c5p::BlogEntry::BlogEntry
 (
     const BlogEntry& be, const CSSClass& css_title, const CSSClass& css_cont
 )
@@ -46,7 +46,7 @@ krap::BlogEntry::BlogEntry
 {
 }
 
-krap::BlogEntry::BlogEntry(const std::string& title, Div entry_contents)
+c5p::BlogEntry::BlogEntry(const std::string& title, Div entry_contents)
 :
     BlogEntry
     (
@@ -56,13 +56,13 @@ krap::BlogEntry::BlogEntry(const std::string& title, Div entry_contents)
 {
 }
 
-std::ostream& krap::BlogEntry::print(std::ostream& ostr) const
+std::ostream& c5p::BlogEntry::print(std::ostream& ostr) const
 {
     Div::print(ostr);
     return ostr;
 }
 
-krap::ElementPtr krap::BlogEntry::clone() const
+c5p::ElementPtr c5p::BlogEntry::clone() const
 {
     return ElementPtr{new BlogEntry{*this}};
 }

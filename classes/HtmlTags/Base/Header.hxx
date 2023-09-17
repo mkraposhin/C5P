@@ -5,7 +5,7 @@
 #include "CSSClass.hxx"
 #include <cgicc/HTMLClasses.h>
 
-namespace krap
+namespace c5p
 {
 
 template <int lev>

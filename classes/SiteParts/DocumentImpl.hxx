@@ -5,7 +5,7 @@
 #include "MainMenu.hxx"
 #include "Site.hxx"
 
-namespace krap
+namespace c5p
 {
 
 class DocumentImpl : public Document

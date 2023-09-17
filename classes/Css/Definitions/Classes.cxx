@@ -1,7 +1,7 @@
 #include "CSS.hxx"
 #include "Classes.hxx"
 
-namespace krap::css
+namespace c5p::css
 {
     const CSSClass menuText {"menuText"};
     const CSSClass emptyClass {"emptyCss"};

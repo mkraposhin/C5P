@@ -4,7 +4,7 @@
 #include "CaptionedImage.hxx"
 #include "Size.hxx"
 
-krap::Education::Education(const Site& site)
+c5p::Education::Education(const Site& site)
 :
     DocumentImpl(site)
 {

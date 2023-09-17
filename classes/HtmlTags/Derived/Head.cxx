@@ -4,14 +4,14 @@
 
 #include <cgicc/HTMLClasses.h>
 
-krap::Head::Head(CSSClassMap& css_class_map)
+c5p::Head::Head(CSSClassMap& css_class_map)
 :
     Element(),
     CSSRegistry(css_class_map)
 {
 }
 
-krap::Head::Head(const Head& h, CSSClassMap& css_class_map)
+c5p::Head::Head(const Head& h, CSSClassMap& css_class_map)
 :
     Element(h),
     CSSRegistry(css_class_map),
@@ -21,11 +21,11 @@ krap::Head::Head(const Head& h, CSSClassMap& css_class_map)
 {
 }
 
-krap::Head::~Head()
+c5p::Head::~Head()
 {
 }
 
-void krap::Head::print_styles(std::ostream& ostr) const
+void c5p::Head::print_styles(std::ostream& ostr) const
 {
     ostr << "<style>" << std::endl;
     for(auto it=css_class_map_.cbegin();
@@ -36,7 +36,7 @@ void krap::Head::print_styles(std::ostream& ostr) const
     ostr << "</style>" << std::endl;
 }
 
-std::ostream& krap::Head::print(std::ostream& ostr) const
+std::ostream& c5p::Head::print(std::ostream& ostr) const
 {
     ostr << cgicc::head() << std::endl;
     print_styles(ostr);
@@ -56,22 +56,22 @@ std::ostream& krap::Head::print(std::ostream& ostr) const
     return ostr;
 }
 
-void krap::Head::jscript(const JScript& js)
+void c5p::Head::jscript(const JScript& js)
 {
     jscripts_.push_back(*js.clone());
 }
 
-void krap::Head::link(const Link& l)
+void c5p::Head::link(const Link& l)
 {
     link_ = std::dynamic_pointer_cast<Link>(l.clone());
 }
 
-void krap::Head::add_meta(const std::string name, const std::string content)
+void c5p::Head::add_meta(const std::string name, const std::string content)
 {
     metas_.insert(metas_.cend(), MetaPair{name,content});
 }
 
-krap::Element& krap::operator ^ (Head& el, const Element& child)
+c5p::Element& c5p::operator ^ (Head& el, const Element& child)
 {
     dynamic_cast<Element&>(el) ^ child;
     el.register_css_class(el.child());

@@ -7,7 +7,7 @@
 #include <map>
 #include <initializer_list>
 
-namespace krap
+namespace c5p
 {
 
 /*---------------------------------------------------------------------------*\

@@ -11,7 +11,7 @@
 #include "Size.hxx"
 #include "CSS.hxx"
 
-krap::MyContributions::MyContributions(const Site& site)
+c5p::MyContributions::MyContributions(const Site& site)
 :
     DocumentImpl(site)
 {
@@ -277,7 +277,7 @@ krap::MyContributions::MyContributions(const Site& site)
 */
 }
 
-krap::MyContributions::~MyContributions()
+c5p::MyContributions::~MyContributions()
 {
 
 };

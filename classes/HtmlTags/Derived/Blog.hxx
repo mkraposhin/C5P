@@ -5,7 +5,7 @@
 #include "BlogEntry.hxx"
 #include "JScript.hxx"
 
-namespace krap
+namespace c5p
 {
 
 /// @brief keeps and renders blog (list of titled records)

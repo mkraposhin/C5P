@@ -8,7 +8,7 @@
 //     #warning "Isn't it be better to prohibit default ctor?"
 // }
 
-krap::CSSElement::CSSElement(const std::string& name, const std::string& text)
+c5p::CSSElement::CSSElement(const std::string& name, const std::string& text)
 :
     Element(),
     css_name_(name),
@@ -16,7 +16,7 @@ krap::CSSElement::CSSElement(const std::string& name, const std::string& text)
 {
 }
 
-krap::CSSElement::CSSElement(const CSSElement& csselem)
+c5p::CSSElement::CSSElement(const CSSElement& csselem)
 :
     Element(csselem),
     css_name_(csselem.css_name_),
@@ -24,27 +24,27 @@ krap::CSSElement::CSSElement(const CSSElement& csselem)
 {
 }
 
-krap::CSSElement::~CSSElement()
+c5p::CSSElement::~CSSElement()
 {
 }
 
-std::ostream& krap::CSSElement::print(std::ostream& ostr) const
+std::ostream& c5p::CSSElement::print(std::ostream& ostr) const
 {
     ostr << name() << ":" << value() << ";" << std::endl;
     return ostr;
 }
 
-krap::ElementPtr krap::CSSElement::clone() const
+c5p::ElementPtr c5p::CSSElement::clone() const
 {
     return ElementPtr(new CSSElement(*this));
 }
 
-const std::string& krap::CSSElement::name() const
+const std::string& c5p::CSSElement::name() const
 {
     return css_name_;
 }
 
-const std::string& krap::CSSElement::value() const
+const std::string& c5p::CSSElement::value() const
 {
     return css_value_;
 }

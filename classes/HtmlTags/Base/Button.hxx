@@ -4,14 +4,14 @@
 #include "HtmlTag.hxx"
 #include "Attributes.hxx"
 
-namespace krap
+namespace c5p
 {
 
 /*---------------------------------------------------------------------------*\
                             Class ButtonImpl Declaration
 \*---------------------------------------------------------------------------*/
 
-struct ButtonValue : public ValueBase<krap::TagId::BUTTON,true,std::string>
+struct ButtonValue : public ValueBase<c5p::TagId::BUTTON,true,std::string>
 {
     //!
     ButtonValue() = default;

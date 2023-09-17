@@ -3,7 +3,7 @@
 #include "ParagraphText.hxx"
 #include "Size.hxx"
 
-void krap::CaptionedImage::construct()
+void c5p::CaptionedImage::construct()
 {
     (*this) % css::divTable;
 
@@ -39,7 +39,7 @@ void krap::CaptionedImage::construct()
     this->add(table_body);
 }
 
-krap::CaptionedImage::CaptionedImage()
+c5p::CaptionedImage::CaptionedImage()
 :
     Div(),
     image_(),
@@ -48,7 +48,7 @@ krap::CaptionedImage::CaptionedImage()
     construct();
 }
 
-krap::CaptionedImage::CaptionedImage(const std::string& where)
+c5p::CaptionedImage::CaptionedImage(const std::string& where)
 :
     Div(),
     image_(),
@@ -58,7 +58,7 @@ krap::CaptionedImage::CaptionedImage(const std::string& where)
     construct();
 }
 
-krap::CaptionedImage::CaptionedImage(const CaptionedImage& p)
+c5p::CaptionedImage::CaptionedImage(const CaptionedImage& p)
 :
     Div(),
     image_(p.image_),
@@ -67,35 +67,35 @@ krap::CaptionedImage::CaptionedImage(const CaptionedImage& p)
     construct();
 }
 
-krap::CaptionedImage::~CaptionedImage(){}
+c5p::CaptionedImage::~CaptionedImage(){}
 
-const std::string& krap::CaptionedImage::caption(const std::string& s)
+const std::string& c5p::CaptionedImage::caption(const std::string& s)
 {
     caption_ = s;
     return caption_;
 }
 
-const std::string& krap::CaptionedImage::caption() const
+const std::string& c5p::CaptionedImage::caption() const
 {
     return caption_;
 }
 
-krap::Image& krap::CaptionedImage::image()
+c5p::Image& c5p::CaptionedImage::image()
 {
     return image_;
 }
 
-const krap::Image& krap::CaptionedImage::image() const
+const c5p::Image& c5p::CaptionedImage::image() const
 {
     return image_;
 }
 
-std::ostream& krap::CaptionedImage::print(std::ostream& ostr) const
+std::ostream& c5p::CaptionedImage::print(std::ostream& ostr) const
 {
     return Div::print(ostr);
 }
 
-krap::ElementPtr krap::CaptionedImage::clone() const
+c5p::ElementPtr c5p::CaptionedImage::clone() const
 {
     CaptionedImage* new_image = new CaptionedImage(*this);
     new_image->clear();

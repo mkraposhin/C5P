@@ -1,14 +1,14 @@
 #include "CSSClass.hxx"
 #include <cgicc/HTMLClasses.h>
 
-krap::CSSClass::CSSClass(const std::string& name)
+c5p::CSSClass::CSSClass(const std::string& name)
 :
     Element(),
     css_class_(name)
 {
 }
 
-krap::CSSClass::CSSClass
+c5p::CSSClass::CSSClass
 (
     const std::string& name,
     const std::initializer_list<CSSElement> &elems
@@ -23,7 +23,7 @@ krap::CSSClass::CSSClass
     }
 }
 
-krap::CSSClass::CSSClass(const CSSClass& cssclass)
+c5p::CSSClass::CSSClass(const CSSClass& cssclass)
 :
     Element(cssclass),
     css_class_(cssclass.css_class_),
@@ -32,11 +32,11 @@ krap::CSSClass::CSSClass(const CSSClass& cssclass)
 {
 }
 
-krap::CSSClass::~CSSClass()
+c5p::CSSClass::~CSSClass()
 {
 }
 
-std::ostream& krap::CSSClass::print(std::ostream& ostr) const
+std::ostream& c5p::CSSClass::print(std::ostream& ostr) const
 {
     const auto& nm = this->name();
     const auto& css_props = this->css_properties_;
@@ -58,17 +58,17 @@ std::ostream& krap::CSSClass::print(std::ostream& ostr) const
     return ostr;
 }
 
-krap::ElementPtr krap::CSSClass::clone() const
+c5p::ElementPtr c5p::CSSClass::clone() const
 {
     return ElementPtr(new CSSClass(*this));
 }
 
-const std::string& krap::CSSClass::name() const
+const std::string& c5p::CSSClass::name() const
 {
     return css_class_;
 }
 
-void krap::CSSClass::add(const CSSElement& element)
+void c5p::CSSClass::add(const CSSElement& element)
 {
     std::shared_ptr<CSSElement> elptr 
     {
@@ -83,7 +83,7 @@ void krap::CSSClass::add(const CSSElement& element)
     );
 }
 
-bool krap::CSSClass::remove(const CSSElement& element)
+bool c5p::CSSClass::remove(const CSSElement& element)
 {
     if (css_properties_.count(element.name()))
     {
@@ -93,7 +93,7 @@ bool krap::CSSClass::remove(const CSSElement& element)
     return false;
 }
 
-const krap::CSSClass& krap::CSSClass::operator = (const CSSClass& css_class)
+const c5p::CSSClass& c5p::CSSClass::operator = (const CSSClass& css_class)
 {
     css_properties_.clear();
     
@@ -122,7 +122,7 @@ const krap::CSSClass& krap::CSSClass::operator = (const CSSClass& css_class)
     return *this;
 }
 
-const krap::CSSClass& krap::CSSClass::operator += (const CSSClass& css_class)
+const c5p::CSSClass& c5p::CSSClass::operator += (const CSSClass& css_class)
 {
     for (const auto& property : css_class.css_properties_)
     {
@@ -139,7 +139,7 @@ const krap::CSSClass& krap::CSSClass::operator += (const CSSClass& css_class)
     return *this;
 }
 
-void krap::CSSClass::at_rule(const AtRule& atru)
+void c5p::CSSClass::at_rule(const AtRule& atru)
 {
     this->at_rule_ = atru.clone();
 }

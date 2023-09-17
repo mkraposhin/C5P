@@ -1,7 +1,7 @@
 #include "JScript.hxx"
 #include <cgicc/HTMLClasses.h>
 
-krap::JScript::JScript(const std::string& fname, const std::string& s)
+c5p::JScript::JScript(const std::string& fname, const std::string& s)
 :
     //Element(),
     func_name_(fname),
@@ -10,18 +10,18 @@ krap::JScript::JScript(const std::string& fname, const std::string& s)
 
 }
 
-const std::string& krap::JScript::function_name() const
+const std::string& c5p::JScript::function_name() const
 {
     return func_name_;
 }
 
-std::shared_ptr<krap::JScript> krap::JScript::clone() const
+std::shared_ptr<c5p::JScript> c5p::JScript::clone() const
 {
     return std::shared_ptr<JScript>
         {new JScript{this->func_name_,this->script_txt_}};
 }
 
-std::ostream& krap::JScript::print(std::ostream& ostr) const
+std::ostream& c5p::JScript::print(std::ostream& ostr) const
 {
     ostr << cgicc::script() << std::endl;
     if (this->func_name_.size())

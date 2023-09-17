@@ -4,14 +4,14 @@
 #include "HtmlTag.hxx"
 #include "Attributes.hxx"
 
-namespace krap
+namespace c5p
 {
 
 /*---------------------------------------------------------------------------*\
                             Class Link Declaration
 \*---------------------------------------------------------------------------*/
 
-struct LinkValue : public ValueBase<krap::TagId::LINK,false,void*>
+struct LinkValue : public ValueBase<c5p::TagId::LINK,false,void*>
 {
     //!
     LinkValue() = default;

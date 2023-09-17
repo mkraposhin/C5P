@@ -35,9 +35,9 @@ set(SOURCES ${SOURCES} SiteParts/MainMenu.cxx)
 set(SOURCES ${SOURCES} SiteParts/DocumentImpl.cxx)
 set(SOURCES ${SOURCES} SiteParts/Site.cxx)
 
-add_library(krap-classes ${SOURCES})
-target_link_libraries(krap-classes ${CgiCc_DIR}/lib/libcgicc.a ${MD4C_LIB_DIR}/libmd4c-html.a ${MD4C_LIB_DIR}/libmd4c.a)
-target_include_directories(krap-classes PRIVATE
+add_library(c5p-classes ${SOURCES})
+target_link_libraries(c5p-classes ${CgiCc_DIR}/lib/libcgicc.a ${MD4C_LIB_DIR}/libmd4c-html.a ${MD4C_LIB_DIR}/libmd4c.a)
+target_include_directories(c5p-classes PRIVATE
     "Globals"
     "Base"
     "Css/Base"

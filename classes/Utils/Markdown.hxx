@@ -4,12 +4,12 @@
 #include "HtmlTag.hxx"
 #include "Attributes.hxx"
 
-namespace krap
+namespace c5p
 {
 /// @brief This class is responsible for translation from the Markdown to the
 /// HTML formats. Today it uses a Maddy library
 /// (https://github.com/progsource/maddy)
-struct MarkdownValue : public ValueBase<krap::TagId::DIV,true,void*>
+struct MarkdownValue : public ValueBase<c5p::TagId::DIV,true,void*>
 {
     /// @brief 
     MarkdownValue() = default;
