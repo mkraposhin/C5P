@@ -33,6 +33,14 @@ Child classes of __Document__ (such as __Contacts__, __Home__, __Education__,
 etc) create HTML elements or corresponding web pages and pass their copies
 to corresponding __Page__ instances.
 
+Supports
+--------
+
+- Basic HTML element, .e.g. <a>, <p>, <div>, <jscript>, <meta>, <button>,
+<image>, <header>, etc
+
+- Markdown language via external libraries
+
 USES
 ----
 
@@ -41,5 +49,4 @@ USES
 3. [CgiCC](https://gnu.org/software/cgicc) for CGI requests
 4. [MD4C](https://github.com/mity/md4c) for Markdown 2 HTML rendering 
 (fast version)
-
 
