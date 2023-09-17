@@ -33,9 +33,11 @@ krap::DocumentImpl::DocumentImpl(const Site& site)
 {
     head().add_meta("viewport", "width=device-width, initial-scale=1.0");
 
-    CSSClass bodyCss {"bodyCss"};
-    bodyCss.add(css::margin::top20px);
-    bodyCss.add(css::padding::top20px);
+    CSSClass bodyCss
+    {
+        "bodyCss",
+        {css::margin::top20px, css::padding::top20px}
+    };
 
     body() % bodyCss;
 
