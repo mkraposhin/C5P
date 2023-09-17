@@ -60,7 +60,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"Compound_8cxx.html"
+"Compound_8cxx.html",
+"structkrap_1_1ValueBase.html#ad5e6ea65f069ea6cc1d01106c833af51"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

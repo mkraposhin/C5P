@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "krap", "namespacekrap.html", [
       [ "Compound", "classkrap_1_1Compound.html", "classkrap_1_1Compound" ],
+      [ "CompoundTagInitializer", "structkrap_1_1CompoundTagInitializer.html", "structkrap_1_1CompoundTagInitializer" ],
       [ "Debug", "classkrap_1_1Debug.html", "classkrap_1_1Debug" ],
       [ "Element", "classkrap_1_1Element.html", "classkrap_1_1Element" ],
       [ "GenericException", "classkrap_1_1GenericException.html", "classkrap_1_1GenericException" ],

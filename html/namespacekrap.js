@@ -1,6 +1,7 @@
 var namespacekrap =
 [
     [ "Compound", "classkrap_1_1Compound.html", "classkrap_1_1Compound" ],
+    [ "CompoundTagInitializer", "structkrap_1_1CompoundTagInitializer.html", "structkrap_1_1CompoundTagInitializer" ],
     [ "Debug", "classkrap_1_1Debug.html", "classkrap_1_1Debug" ],
     [ "Element", "classkrap_1_1Element.html", "classkrap_1_1Element" ],
     [ "GenericException", "classkrap_1_1GenericException.html", "classkrap_1_1GenericException" ],
@@ -8,7 +9,6 @@ var namespacekrap =
     [ "HtmlTagBase", "structkrap_1_1HtmlTagBase.html", "structkrap_1_1HtmlTagBase" ],
     [ "HtmlTagImpl", "classkrap_1_1HtmlTagImpl.html", "classkrap_1_1HtmlTagImpl" ],
     [ "ValueBase", "structkrap_1_1ValueBase.html", "structkrap_1_1ValueBase" ],
-    [ "AttributesList", "namespacekrap.html#a8fb957480fd9066fdd56672d31c2d94d", null ],
     [ "CSSClassMap", "namespacekrap.html#a7ba765b12204455fa5ede118ef74f4eb", null ],
     [ "CSSClassMapRec", "namespacekrap.html#ac30bea7e585d4f5833b3d7780b8bd928", null ],
     [ "CSSClassPtr", "namespacekrap.html#ae65e6c8a9cd62c7a08e121cdb7b665e3", null ],

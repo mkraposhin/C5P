@@ -3,6 +3,9 @@ var hierarchy =
     [ "Base", null, [
       [ "krap::HtmlTagImpl< Base >", "classkrap_1_1HtmlTagImpl.html", null ]
     ] ],
+    [ "BaseType", null, [
+      [ "krap::CompoundTagInitializer< BaseType >", "structkrap_1_1CompoundTagInitializer.html", null ]
+    ] ],
     [ "krap::Compound", "classkrap_1_1Compound.html", null ],
     [ "krap::Debug", "classkrap_1_1Debug.html", null ],
     [ "krap::Element", "classkrap_1_1Element.html", [

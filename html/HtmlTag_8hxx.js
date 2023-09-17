@@ -3,7 +3,6 @@ var HtmlTag_8hxx =
     [ "krap::ValueBase< tagid, t_has_closing, T >", "structkrap_1_1ValueBase.html", "structkrap_1_1ValueBase" ],
     [ "krap::HtmlTagBase< ValueType, Attrs >", "structkrap_1_1HtmlTagBase.html", "structkrap_1_1HtmlTagBase" ],
     [ "krap::HtmlTagImpl< Base >", "classkrap_1_1HtmlTagImpl.html", "classkrap_1_1HtmlTagImpl" ],
-    [ "AttributesList", "HtmlTag_8hxx.html#a8fb957480fd9066fdd56672d31c2d94d", null ],
     [ "TagId", "HtmlTag_8hxx.html#a5b960fa3f20ac0f2661e5d156def7d43", [
       [ "A", "HtmlTag_8hxx.html#a5b960fa3f20ac0f2661e5d156def7d43a8695e973ab8dbe77bac2339f7fde2290", null ],
       [ "P", "HtmlTag_8hxx.html#a5b960fa3f20ac0f2661e5d156def7d43a30d1f68b7e8b0a03a8d3bff791b3db13", null ],
