@@ -36,8 +36,8 @@ to corresponding __Page__ instances.
 Supports
 --------
 
-- Basic HTML element, .e.g. <a>, <p>, <div>, <jscript>, <meta>, <button>,
-<image>, <header>, etc
+- Basic HTML element, .e.g. ```<a>, <p>, <div>, <jscript>, <meta>, <button>,
+<image>, <header>```, etc
 
 - Markdown language via external libraries
 
