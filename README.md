@@ -37,8 +37,12 @@ Supports
 --------
 
 - Basic HTML element, .e.g. ```<a>, <p>, <div>, <jscript>, <meta>, <button>,
+<<<<<<< HEAD
 <image>, <header>```, etc.
 - Simple CSS classes.
+=======
+<image>, <header>```, etc
+>>>>>>> 78b3f1f532cf55a78549ed6d6e01d39530d3b529
 
 - Markdown language via external libraries.
 
