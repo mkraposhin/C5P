@@ -5,34 +5,25 @@ namespace krap::css
 {
     const CSSClass menuText {"menuText"};
     const CSSClass emptyClass {"emptyCss"};
-    const CSSClass divRow {"divRow"};
-    const CSSClass middleColumn {"middleColumn"};
-    const CSSClass sideColumn {"sideColumn"};
-    const CSSClass divTable {"divTable"};
-    const CSSClass divTableBody {"divTableBody"};
-    const CSSClass divTableRow {"divTableRow"};
-    const CSSClass divTableCell {"divTableCell"};
-}
-
-void krap::css::init_globals()
-{
-    //const_cast<CSSClass&>(menuText).add(font24px);
-
-    const_cast<CSSClass&>(divRow).add(boxSizing);
-    const_cast<CSSClass&>(divRow).add(displayFlex);
-
-    const_cast<CSSClass&>(middleColumn).add(width80perc);
-    //const_cast<CSSClass&>(middleColumn).add(displayFlex);
-    const_cast<CSSClass&>(middleColumn).add(boxSizing);
-
-    const_cast<CSSClass&>(sideColumn).add(width10perc);
-    const_cast<CSSClass&>(sideColumn).add(displayFlex);
-    const_cast<CSSClass&>(sideColumn).add(boxSizing);
-
-    const_cast<CSSClass&>(divTable).add(displayTable);
-    const_cast<CSSClass&>(divTableBody).add(displayTableRowGroup);
-    const_cast<CSSClass&>(divTableRow).add(displayTableRow);
-    const_cast<CSSClass&>(divTableCell).add(displayTableCell);
+    const CSSClass divRow
+    {
+        "divRow",
+        {boxSizing, displayFlex}
+    };
+    const CSSClass middleColumn
+    {
+        "middleColumn",
+        {width80perc, boxSizing}
+    };
+    const CSSClass sideColumn
+    {
+        "sideColumn",
+        {width10perc, displayFlex, boxSizing}
+    };
+    const CSSClass divTable {"divTable", {displayTable}};
+    const CSSClass divTableBody {"divTableBody", {displayTableRowGroup}};
+    const CSSClass divTableRow {"divTableRow", {displayTableRow}};
+    const CSSClass divTableCell {"divTableCell", {displayTableCell}};
 }
 
 //

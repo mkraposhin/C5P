@@ -4,6 +4,7 @@
 #include "Element.hxx"
 #include <vector>
 #include <memory>
+#include <initializer_list>
 
 namespace krap
 {
@@ -29,7 +30,7 @@ public:
     Compound();
 
     //! Copy constructor for the Compound
-    Compound(const Compound&);
+    explicit Compound(const Compound&);
 
     //! Destructor
     ~Compound();
@@ -37,11 +38,12 @@ public:
     //! Adds a new element
     virtual ElementPtr& add (const Element&);
 
-    //! Adds an element stored by ordinary pointer
+    /// @brief Adds an element stored by ordinary pointer. Takes ownership
+    /// of the object
     virtual ElementPtr& add (Element* ept);
 
     //! Adds an element stored by shared_ptr pointer
-    virtual ElementPtr& add (ElementPtr& eptr);
+    virtual ElementPtr& add (const ElementPtr& eptr);
 
     //! Prints elements in compound
     virtual std::ostream& print(std::ostream& ostr) const;
@@ -79,6 +81,49 @@ public:
 };
 
 
+/// @brief Template structure to allow initialization of compound HTML elements
+/// @tparam BaseType 
+template <typename BaseType>
+struct CompoundTagInitializer : public BaseType
+{
+    CompoundTagInitializer()
+    :
+        BaseType()
+    {}
+
+    CompoundTagInitializer(const CompoundTagInitializer<BaseType>& c)
+    :
+        BaseType(c)
+    {}
+
+    CompoundTagInitializer(const BaseType& c)
+    :
+        BaseType(c)
+    {}
+
+    /// @brief Adds support for initialization from list of object (tags) with similar type
+    /// @tparam TagType is a type of HTML elements in the list
+    /// @param elems is the list of given HTML elements
+    template <typename TagType>
+    explicit CompoundTagInitializer(const std::initializer_list<TagType> &elems)
+    :
+        BaseType()
+    {
+        for(auto it_el = elems.begin(); it_el != elems.end(); it_el++)
+        {
+            BaseType::add(*it_el);
+        }
+    }
+
+    ElementPtr clone () const override
+    {
+        using CompoundDerivedType = CompoundTagInitializer<BaseType>;
+        return this->template clone_cast<CompoundDerivedType>();
+    }
+
+    virtual ~CompoundTagInitializer(){};
+};
+
 //- summation of two Elements is the new Compound with two elements
 std::shared_ptr<Compound> operator + 
 (
@@ -102,6 +147,7 @@ std::shared_ptr<Compound> operator +
     const std::shared_ptr<Compound>& comp1
 );
 
+// actually we have to check correctness of casting here
 template <class CType> CType& 
 krap::Compound::operator () (int i)
 {

@@ -25,7 +25,8 @@ struct DivValue : public ValueBase<krap::TagId::DIV,true,void*>, public Compound
 };
 
 using DivBase = HtmlTagBase<DivValue,IdAttribute>;
-using Div = HtmlTagImpl<DivBase>;
+using Div = CompoundTagInitializer<HtmlTagImpl<DivBase>>;
+// using Div = HtmlTagImpl<DivBase>;
 
 }
 

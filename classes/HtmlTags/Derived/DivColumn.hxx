@@ -25,8 +25,19 @@ public:
     //- Creates copy of this object
     DivColumn(const DivColumn&) = default;
 
+    // @brief Creates Div column from a list of elements
+    template <typename TagType>
+    explicit DivColumn (const std::initializer_list<TagType>& elems)
+    : column_body_(init_column_body())
+    {
+        for(auto it_el = elems.begin(); it_el != elems.end(); it_el++)
+        {
+            add(*it_el);
+        }
+    }
+
     //- Dtor
-    ~DivColumn();
+    virtual ~DivColumn();
 
     //- Add a new element
     virtual ElementPtr& add (const Element&) override;
@@ -35,7 +46,7 @@ public:
     virtual ElementPtr& add (Element* ept) override;
 
     //- Add the element stored by a shared_ptr pointer
-    virtual ElementPtr& add (ElementPtr& eptr) override;
+    virtual ElementPtr& add (const ElementPtr& eptr) override;
 
     //- Creates copy 
     ElementPtr clone() const override;

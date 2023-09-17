@@ -95,11 +95,11 @@ krap::ElementPtr& krap::Blog::add (Element* eptr)
     return Compound::add(eptr);
 }
 
-krap::ElementPtr& krap::Blog::add (ElementPtr& eptr)
-{
-    throw GenericException {"NotImplemented krap::Blog::add"};
-    return Compound::add(eptr);
-}
+// krap::ElementPtr& krap::Blog::add (ElementPtr& eptr)
+// {
+//     throw GenericException {"NotImplemented krap::Blog::add"};
+//     return Compound::add(eptr);
+// }
 
 //
 //END-OF-FILE

@@ -26,7 +26,7 @@ void krap::CSSRegistry::register_css_class(const Element& nelem)
     }
     if (dynamic_cast<const Compound*>(&nelem))//if it is a Compound
     {
-        auto compound_of_elements = 
+        const Compound& compound_of_elements = 
             dynamic_cast<const Compound&>(nelem);
         for(auto it=compound_of_elements.cbegin(); 
             it != compound_of_elements.cend();

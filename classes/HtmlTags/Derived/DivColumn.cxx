@@ -9,7 +9,9 @@ krap::Div& krap::DivColumn::init_column_body()
     (*this) % css::divTable;
     Div::add(col_body);
 
-    return this->operator()<Div>(0);
+    Element& eref = this->operator[](0);
+    Div& div = dynamic_cast<Div&>(eref);
+    return div;
 }
 
 krap::DivColumn::DivColumn()
@@ -51,7 +53,7 @@ krap::ElementPtr& krap::DivColumn::add(Element* eptr)
     return column_body_.add(el_row);
 }
 
-krap::ElementPtr& krap::DivColumn::add(ElementPtr& eptr)
+krap::ElementPtr& krap::DivColumn::add(const ElementPtr& eptr)
 {
     Div el_row;
     el_row % css::divTableRow;

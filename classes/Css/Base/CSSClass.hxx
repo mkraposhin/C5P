@@ -5,6 +5,7 @@
 #include "CSSElement.hxx"
 #include "AtRule.hxx"
 #include <map>
+#include <initializer_list>
 
 namespace krap
 {
@@ -37,10 +38,18 @@ public:
     /// @brief Forbid Default constructor of CSSClass
     CSSClass() = delete;
 
-    //! Create a CSSClass object from the text string
-    CSSClass(const std::string& name);
+    /// @brief Creates a CSSClass object from the text string
+    explicit CSSClass(const std::string& name);
+ 
+    /// @brief Creates a new CSS class from  the given name and
+    /// the list of elements
+    CSSClass
+    (
+        const std::string& name,
+        const std::initializer_list<CSSElement>& elems
+    );
 
-    //! Copy constructor
+    /// @brief Copy constructor
     CSSClass(const CSSClass& );
 
     //! Destructor

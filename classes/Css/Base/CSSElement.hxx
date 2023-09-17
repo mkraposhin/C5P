@@ -31,7 +31,7 @@ public:
     CSSElement(const std::string& name, const std::string& text);
 
     //- Copy constructor
-    CSSElement(const CSSElement& );
+    CSSElement(const CSSElement& css_elem);
 
     //- Destructor
     ~CSSElement();

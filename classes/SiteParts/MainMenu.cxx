@@ -15,7 +15,6 @@ krap::MainMenu::MainMenu()
 : 
     Div()
 {
-
     //- A base css class for the main menu
     CSSClass menu_class ("menuCssClass");
 

@@ -58,7 +58,7 @@ public:
     ElementPtr& add(Element* elem) override;
 
     /// @brief Adds element and registers its CSS class in the table;
-    ElementPtr& add(ElementPtr& elem) override;
+    ElementPtr& add(const ElementPtr& elem) override;
 
     /// @brief Adds a java script for this body
     void jscript(const JScript& js);

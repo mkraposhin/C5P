@@ -37,7 +37,7 @@ public:
     virtual ElementPtr& add (Element* ept) override;
 
     /// @brief Adds an element stored by a shared_ptr pointer to a div row
-    virtual ElementPtr& add (ElementPtr& eptr) override;
+    virtual ElementPtr& add (const ElementPtr& eptr) override;
 
     /// @brief Creates copy 
     ElementPtr clone() const override;

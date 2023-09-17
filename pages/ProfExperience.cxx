@@ -68,8 +68,6 @@ krap::ProfExperience::ProfExperience(const Site& site)
     div_col.add(txt_paraview);
 
     Div& mid_col = layout().operator()<Div>(1);
-    //mid_col.add(txt_nrcki);
-    // //body().add(txt);
     mid_col.add(div_col);
 }
 

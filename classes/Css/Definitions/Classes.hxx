@@ -14,8 +14,6 @@ namespace krap::css
     extern const CSSClass divTableBody;
     extern const CSSClass divTableRow;
     extern const CSSClass divTableCell;
-
-    void init_globals();
 }
 
 #endif

@@ -5,6 +5,9 @@
 krap::Div &krap::DivRow::div_row()
 {
     #warning "Make it as in DivColumn"
+    std::cout<< "krap::DivColumn::div_row s" << std::endl;
+    Div& div = this->operator()<Div>(0);
+    std::cout<< "krap::DivColumn::div_row e" << std::endl;
     return this->operator()<Div>(0).operator()<Div>(0);
 }
 
@@ -52,7 +55,7 @@ krap::ElementPtr& krap::DivRow::add(Element* eptr)
     return div_row.add(el_cell);
 }
 
-krap::ElementPtr& krap::DivRow::add(ElementPtr& eptr)
+krap::ElementPtr& krap::DivRow::add(const ElementPtr& eptr)
 {
     Div &div_row = this->div_row();
     Div el_cell;

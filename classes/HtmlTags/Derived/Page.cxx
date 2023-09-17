@@ -64,7 +64,7 @@ krap::ElementPtr& krap::Page::add(Element* elem)
     return nptr;
 }
 
-krap::ElementPtr& krap::Page::add(ElementPtr& elem)
+krap::ElementPtr& krap::Page::add(const ElementPtr& elem)
 {
     ElementPtr& nptr = Compound::add(elem);
     register_css_class(nptr);

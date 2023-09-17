@@ -16,13 +16,14 @@ krap::MyContributions::MyContributions(const Site& site)
     DocumentImpl(site)
 {
     const int width = 300; //px
-    Div& mid_col = layout().operator()<Div>(1);
     Blog contributions;
     body().jscript(*contributions.jscript());
 
     // Open source projects
     {
+        //Div div1 {{AText{"txt1"}, AText{"txt2"}, AText{"txt3"}}};
         DivColumn div_col;
+        //div_col.add(div1);
 
         CSSClass ossProjColClass ("ossProjColClass");
         ossProjColClass.add(Width(width));
@@ -61,41 +62,31 @@ krap::MyContributions::MyContributions(const Site& site)
             };
 
             ParagraphText txt4{
-                "Up to now, solvers have been used in more than 50 scientific studies (8 defended PhD),"
+                "Up to now, the solvers have been used in more than 50 scientific studies (8 defended PhD),"
                 " such as:"
             };
 
-            ListItem it1 {"Analysis of Radiation Discretization for Modelling a Spark Gap for Surge Currents "};
-            ListItem it2 {"Computational analysis and mitigation of micro-pressure waves in high-speed train tunnels"};
-            ListItem it3 {"Numerical analysis of cavitation about marine propellers using a compressible multiphase VOF fractional step method"};
-            ListItem it4 {"Numerical investigation of the auto-ignition of transient hydrogen injection in supersonic airflow"};
-            ListItem it5 {"Three-dimensional Effects in Dual-pulse Laser Energy Deposition:"};
-            ListItem it6 {"URANS Analysis of a Launch Vehicle Aero-Acoustic Environment"};
-            ListItem it7 {"Analysis of the oscillations induced by a supersonic jet applied to produce nanofibers"};
-            ListItem it8 {"Numerical and experimental analysis of detonation induced by shock wave focusing"};
-            ListItem it9 {"The diffraction and re-initiation behavior of detonation wave in premixed H2–O2–Ar mixture"};
-            ListItem it10{"Calculations of the Density Profile for Pulse Injection of Working Gas into the PF Chamber and Experimental Results"};
-            ListItem it11{"And other studies."};
-
-            UnorderedList uo;
-            uo.add(it1);
-            uo.add(it2);
-            uo.add(it3);
-            uo.add(it4);
-            uo.add(it5);
-            uo.add(it6);
-            uo.add(it7);
-            uo.add(it8);
-            uo.add(it9);
-            uo.add(it10);
-            uo.add(it11);
+            // UnorderedList uo
+            // ({
+            //     ListItem {"Analysis of Radiation Discretization for Modelling a Spark Gap for Surge Currents "},
+            //     ListItem {"Computational analysis and mitigation of micro-pressure waves in high-speed train tunnels"},
+            //     ListItem {"Numerical analysis of cavitation about marine propellers using a compressible multiphase VOF fractional step method"},
+            //     ListItem {"Numerical investigation of the auto-ignition of transient hydrogen injection in supersonic airflow"},
+            //     ListItem {"Three-dimensional Effects in Dual-pulse Laser Energy Deposition:"},
+            //     ListItem {"URANS Analysis of a Launch Vehicle Aero-Acoustic Environment"},
+            //     ListItem {"Analysis of the oscillations induced by a supersonic jet applied to produce nanofibers"},
+            //     ListItem {"Numerical and experimental analysis of detonation induced by shock wave focusing"},
+            //     ListItem {"The diffraction and re-initiation behavior of detonation wave in premixed H2-O2-Ar mixture"},
+            //     ListItem {"Calculations of the Density Profile for Pulse Injection of Working Gas into the PF Chamber and Experimental Results"},
+            //     ListItem {"And other studies."}
+            // });
 
             div_hcs.add(txt_hcs);
             div_hcs.add(txt1);
             div_hcs.add(txt2);
             div_hcs.add(txt3);
             div_hcs.add(txt4);
-            div_hcs.add(uo);
+            // div_hcs.add(uo);
         }
         //txt_hcs % textVertSpaces;
 
@@ -257,17 +248,14 @@ krap::MyContributions::MyContributions(const Site& site)
     {
         ParagraphText txt1 {"I participated in next forums:"};
 
-        ListItem it1 {"Special section of ISP RAS Open Conference, chair of the section (2015 - 2021)"};
-        ListItem it2 {"OpenFOAM workshop training tracks, author and instructor of a track"};
-        ListItem it3 {"Local Russian OpenFOAM training tracks, author and instructor"};
-        ListItem it4 {"MDPI special issue \"The Progress of Fluid Flow Computer Modelling Using Open Source Software\", guest editor"};
-        ListItem it5 {"Tungsten Fabric section of LFN Developer & Testers Forum June 2023, program committee member"};
-        UnorderedList uo;
-        uo.add(it1);
-        uo.add(it2);
-        uo.add(it3);
-        uo.add(it4);
-        uo.add(it5);
+        UnorderedList uo
+        {
+            ListItem {"Special section of ISP RAS Open Conference, chair of the section (2015 - 2021)"},
+            ListItem {"OpenFOAM workshop training tracks, author and instructor of a track"},
+            ListItem {"Local Russian OpenFOAM training tracks, author and instructor"},
+            ListItem {"MDPI special issue \"The Progress of Fluid Flow Computer Modelling Using Open Source Software\", guest editor"},
+            ListItem {"Tungsten Fabric section of LFN Developer & Testers Forum June 2023, program committee member"}
+        };
 
         DivColumn div_col;
         div_col.add(uo);
@@ -275,6 +263,7 @@ krap::MyContributions::MyContributions(const Site& site)
         contributions.add(be);
     }
 
+    Div& mid_col = layout().operator()<Div>(1);
     mid_col.add(contributions);
 /*
     Contact information.

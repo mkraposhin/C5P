@@ -8,6 +8,21 @@ krap::CSSClass::CSSClass(const std::string& name)
 {
 }
 
+krap::CSSClass::CSSClass
+(
+    const std::string& name,
+    const std::initializer_list<CSSElement> &elems
+)
+:
+    Element(),
+    css_class_(name)
+{
+    for(auto it_el = elems.begin(); it_el != elems.end(); it_el++)
+    {
+        add(*it_el);
+    }
+}
+
 krap::CSSClass::CSSClass(const CSSClass& cssclass)
 :
     Element(cssclass),

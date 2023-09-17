@@ -9,6 +9,9 @@
 #include "MarkdownBlog.hxx"
 #include "Header.hxx"
 
+#include "UnorderedList.hxx"
+#include "ListItem.hxx"
+
 krap::Home::Home(const Site& site)
 :
     DocumentImpl(site)
@@ -35,6 +38,7 @@ krap::Home::Home(const Site& site)
 
     const std::vector<std::string> md_titles =
         {
+            "Abbreviations",
             "Markdown Rendering Using HTML",
             "Developers And Testers Forum June 2023",
             "Tungsten Fabric Ports",

@@ -63,10 +63,6 @@ template<unsigned int tagid, bool t_has_closing, typename T>
 const std::string krap::ValueBase<tagid,t_has_closing,T>::tag_str =
 std::string(krap::tag_str[tagid]);
 
-//! A type to hold several attributes
-template <class ...Attrs>
-using AttributesList = std::tuple<Attrs...>;
-
 //!
 template <class ValueType, class ...Attrs>
 struct HtmlTagBase : public Element, ValueType, public Attrs...
@@ -133,30 +129,39 @@ protected:
     template <typename ToClass>
     ElementPtr clone_cast() const
     {
-        ElementPtr eptr {new ToClass{*dynamic_cast<const ToClass*>(this)}};
+        ElementPtr eptr (new ToClass(*dynamic_cast<const ToClass*>(this)));
         return eptr;
     }
 
 public:
 
     //!
-    HtmlTagImpl(){};
+    HtmlTagImpl()
+    :
+        Base()
+    {}
 
     //!
-    HtmlTagImpl(const HtmlTagImpl& html_impl) = default;
+    HtmlTagImpl(const HtmlTagImpl& html_impl)
+    :
+        Base(html_impl)
+    {}
 
     //!
-    HtmlTagImpl(const typename Base::value_type& val)
-    : Base()
+    explicit HtmlTagImpl(const typename Base::value_type& val)
+    :
+        Base()
     {
         Base::value_ = val;
-    };
+    }
 
     //!
-    ~HtmlTagImpl(){};
+    virtual ~HtmlTagImpl(){};
 
-    //!
-    ElementPtr clone () const override
+    /// @brief  returns clone of this object casted to the wrapped type.
+    /// Must be re-implemented in all wrapping (inheriting) types
+    /// @return ElementPtr (general pointer) to copy.
+    virtual ElementPtr clone () const override
     {
         return clone_cast<DerivedType>();
     }

@@ -14,8 +14,6 @@ int main (int argc, char * argv[])
     {
         cgicc::Cgicc cgi;
 
-        krap::css::init_globals();
-
         SiteImpl site;
 
         auto goHome = [&cgi, &site]()

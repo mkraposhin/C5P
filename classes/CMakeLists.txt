@@ -17,7 +17,6 @@ set(SOURCES ${SOURCES} Css/Definitions/Colors.cxx)
 set(SOURCES ${SOURCES} Css/Definitions/FontSizes.cxx)
 set(SOURCES ${SOURCES} Css/Definitions/FontStyles.cxx)
 
-
 set(SOURCES ${SOURCES} Utils/Uri.cxx)
 set(SOURCES ${SOURCES} Utils/Markdown.cxx) #(it will be better to split Markdown into Tag and renderer)
 

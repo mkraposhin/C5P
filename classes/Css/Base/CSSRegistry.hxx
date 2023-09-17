@@ -31,7 +31,7 @@ protected:
 public:
 
     //!
-    CSSRegistry (CSSClassMap& css_map);
+    explicit CSSRegistry (CSSClassMap& css_map);
 
 };
 

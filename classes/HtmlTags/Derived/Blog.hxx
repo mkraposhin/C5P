@@ -55,8 +55,8 @@ private:
     /// @brief Forbid adding of Element specified by pointer
     virtual ElementPtr& add (Element* ept);
 
-    /// @brief Forbid adding of Element specifed by ElementPtr
-    virtual ElementPtr& add (ElementPtr& eptr);
+    // /// @brief Forbid adding of Element specifed by ElementPtr
+    // virtual ElementPtr& add (ElementPtr& eptr);
 
 };
 

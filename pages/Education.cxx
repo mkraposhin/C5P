@@ -13,14 +13,24 @@ krap::Education::Education(const Site& site)
     CSSClass eduColClass ("eduColClass");
     eduColClass.add(Width(width));
 
-    ParagraphText txt ("Education");
+    DivColumn div_col
+    {
+       ParagraphText {"2000 - 2006: National University"
+       " \"Moscow Power Engineering Institute\": Nuclear Power Plants dept.,"
+       " MSc"},
+       ParagraphText {"2017: Keldysh institute of applied mathematics"
+       " of the RAS, PhD"}
+    };
+    div_col % eduColClass;
 
-    ParagraphText txt_mpei("2000 - 2006: National University"
-    " \"Moscow Power Engineering Institute\": Nuclear Power Plants dept.,"
-    " MSc");
+    //ParagraphText txt ("Education");
 
-    ParagraphText txt_kiam("2017: Keldysh institute of applied mathematics"
-    " of the RAS, PhD");
+    // ParagraphText txt_mpei("2000 - 2006: National University"
+    // " \"Moscow Power Engineering Institute\": Nuclear Power Plants dept.,"
+    // " MSc");
+
+    // ParagraphText txt_kiam("2017: Keldysh institute of applied mathematics"
+    // " of the RAS, PhD");
     
     CaptionedImage im_cpp98("cpp_98_scaled.png");
     im_cpp98.image().width(300);
@@ -44,19 +54,13 @@ krap::Education::Education(const Site& site)
     );
     im_udemy_sql.caption(txt_udemy_sql);
 
-
-    DivColumn div_col;
-    div_col % eduColClass;
-
-    div_col.add(txt_mpei);
-    div_col.add(txt_kiam);
+    // div_col.add(txt_mpei);
+    // div_col.add(txt_kiam);
     div_col.add(im_cpp98);
     div_col.add(im_intro_nw);
     div_col.add(im_udemy_sql);
 
     Div& mid_col = layout().operator()<Div>(1);
-    //mid_col.add(txt_nrcki);
-    // //body().add(txt);
     mid_col.add(div_col);
 }
 

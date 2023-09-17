@@ -15,7 +15,11 @@ struct UnorderedListValue : public ValueBase<krap::TagId::UNORDERED_LIST,true,vo
     UnorderedListValue() = default;
     
     //!
-    UnorderedListValue(const UnorderedListValue& divval) = default;
+    UnorderedListValue(const UnorderedListValue& uolist)
+    :
+        ValueBase(),
+        Compound(uolist)
+    {}
 
     //!
     void value_print(std::ostream& ostr) const override
@@ -25,7 +29,7 @@ struct UnorderedListValue : public ValueBase<krap::TagId::UNORDERED_LIST,true,vo
 };
 
 using UnorderedListBase = HtmlTagBase<UnorderedListValue,IdAttribute>;
-using UnorderedList = HtmlTagImpl<UnorderedListBase>;
+using UnorderedList = CompoundTagInitializer<HtmlTagImpl<UnorderedListBase>>;
 
 }
 
