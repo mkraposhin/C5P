@@ -1,4 +1,4 @@
-C++ powered personal page (C5P)
+C++ - powered personal page (C5P)
 -------------------------------
 
 The repository contains the source code for a personal site.
