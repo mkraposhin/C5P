@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['value_5fprint_0',['value_print',['../structc5p_1_1ValueBase.html#a10ed783b30717f4cf556feed160d520e',1,'c5p::ValueBase']]],
-  ['valuebase_1',['ValueBase',['../structc5p_1_1ValueBase.html#a55d7b17c607fd864f94359f0663df9d6',1,'c5p::ValueBase::ValueBase()'],['../structc5p_1_1ValueBase.html#ae84608e731128b3197cd63fda4fcc6e1',1,'c5p::ValueBase::ValueBase(const ValueBase &amp;valbase)'],['../structc5p_1_1ValueBase.html#a37c20734c9ede2888e0b34cf7dcf0314',1,'c5p::ValueBase::ValueBase(ValueBase &amp;&amp;v)=delete']]]
+  ['what_0',['what',['../classc5p_1_1GenericException.html#a591056e014566ae5e0db76db0ea8175f',1,'c5p::GenericException']]],
+  ['write_5frecord_1',['write_record',['../classc5p_1_1GenericException.html#a831814d1d5fa0e7f8704dbfc0ef2f3df',1,'c5p::GenericException::write_record(const std::string) noexcept'],['../classc5p_1_1GenericException.html#ac0efc4d7a3cd14f40f6ab0575bb7e166',1,'c5p::GenericException::write_record() const noexcept']]]
 ];
