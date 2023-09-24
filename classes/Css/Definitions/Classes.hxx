@@ -13,6 +13,7 @@ namespace c5p::css
     extern const CSSClass divTable;
     extern const CSSClass divTableBody;
     extern const CSSClass divTableRow;
+    extern const CSSClass divTableColumn;
     extern const CSSClass divTableCell;
 }
 

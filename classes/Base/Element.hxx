@@ -28,48 +28,48 @@ class Element
 
 private:
 
-    //! Pointer to the child of this Element object
+    /// @brief Pointer to the child of this Element object
     ElementPtr child_;
 
-    //! Pointer to the css class (if applicable)
+    /// @brief Pointer to the css class (if applicable)
     CSSClassPtr css_;
 
-    //! Sets the pointer to new child
+    /// @brief Sets the pointer to new child
     void set_child(ElementPtr& new_child);
 
-    //! Sets the CSS Class for this element
+    /// @brief Sets the CSS Class for this element
     void set_css_class(const CSSClass& css);
 
-    //! this operator adds child element to the Element el
+    /// @brief this operator adds child element to the Element el
     friend Element& operator ^ (Element& el, const Element& child);
 
-    //! this operator applies CSSClass stored in the reference css
+    /// @brief this operator applies CSSClass stored in the reference css
     friend CSSClassPtr& operator % (Element& el, const CSSClass& css);
 
-    //! this operator applies CSSClass stored in the pointer cssptr
+    /// @brief this operator applies CSSClass stored in the pointer cssptr
     friend CSSClassPtr& operator % (Element& el, CSSClassPtr& cssptr);
 
 public:
 
-    //! Default constructor
+    /// @brief Default constructor
     Element();
 
-    //! Copy constructor
+    /// @brief Copy constructor
     Element(const Element&);
 
-    //! Destructor
+    /// @brief Destructor
     ~Element();
 
-    //!
+    /// @brief 
     virtual std::ostream& print(std::ostream& ostr) const;
 
-    //! creates clone of itself
+    /// @brief creates clone of itself
     virtual ElementPtr clone() const;
 
-    //! const-ref access to the child pointr
+    /// @brief const-ref access to the child pointr
     const ElementPtr& child() const;
 
-    //! gives const-ref access to the style class
+    /// @brief gives const-ref access to the style class
     const CSSClassPtr& css() const;
 };
 

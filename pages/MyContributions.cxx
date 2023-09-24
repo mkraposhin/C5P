@@ -62,31 +62,31 @@ c5p::MyContributions::MyContributions(const Site& site)
             };
 
             ParagraphText txt4{
-                "Up to now, the solvers have been used in more than 50 scientific studies (8 defended PhD),"
+                "Up to now, the solvers have been used in more than 50 scientific studies (several defended PhD),"
                 " such as:"
             };
 
-            // UnorderedList uo
-            // ({
-            //     ListItem {"Analysis of Radiation Discretization for Modelling a Spark Gap for Surge Currents "},
-            //     ListItem {"Computational analysis and mitigation of micro-pressure waves in high-speed train tunnels"},
-            //     ListItem {"Numerical analysis of cavitation about marine propellers using a compressible multiphase VOF fractional step method"},
-            //     ListItem {"Numerical investigation of the auto-ignition of transient hydrogen injection in supersonic airflow"},
-            //     ListItem {"Three-dimensional Effects in Dual-pulse Laser Energy Deposition:"},
-            //     ListItem {"URANS Analysis of a Launch Vehicle Aero-Acoustic Environment"},
-            //     ListItem {"Analysis of the oscillations induced by a supersonic jet applied to produce nanofibers"},
-            //     ListItem {"Numerical and experimental analysis of detonation induced by shock wave focusing"},
-            //     ListItem {"The diffraction and re-initiation behavior of detonation wave in premixed H2-O2-Ar mixture"},
-            //     ListItem {"Calculations of the Density Profile for Pulse Injection of Working Gas into the PF Chamber and Experimental Results"},
-            //     ListItem {"And other studies."}
-            // });
+            UnorderedList uo
+            {
+                ListItem {"Analysis of Radiation Discretization for Modelling a Spark Gap for Surge Currents "},
+                ListItem {"Computational analysis and mitigation of micro-pressure waves in high-speed train tunnels"},
+                ListItem {"Numerical analysis of cavitation about marine propellers using a compressible multiphase VOF fractional step method"},
+                ListItem {"Numerical investigation of the auto-ignition of transient hydrogen injection in supersonic airflow"},
+                ListItem {"Three-dimensional Effects in Dual-pulse Laser Energy Deposition:"},
+                ListItem {"URANS Analysis of a Launch Vehicle Aero-Acoustic Environment"},
+                ListItem {"Analysis of the oscillations induced by a supersonic jet applied to produce nanofibers"},
+                ListItem {"Numerical and experimental analysis of detonation induced by shock wave focusing"},
+                ListItem {"The diffraction and re-initiation behavior of detonation wave in premixed H2-O2-Ar mixture"},
+                ListItem {"Calculations of the Density Profile for Pulse Injection of Working Gas into the PF Chamber and Experimental Results"},
+                ListItem {"And other studies."}
+            };
 
             div_hcs.add(txt_hcs);
             div_hcs.add(txt1);
             div_hcs.add(txt2);
             div_hcs.add(txt3);
             div_hcs.add(txt4);
-            // div_hcs.add(uo);
+            div_hcs.add(uo);
         }
         //txt_hcs % textVertSpaces;
 

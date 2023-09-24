@@ -23,6 +23,7 @@ namespace c5p::css
     const CSSClass divTable {"divTable", {displayTable}};
     const CSSClass divTableBody {"divTableBody", {displayTableRowGroup}};
     const CSSClass divTableRow {"divTableRow", {displayTableRow}};
+    const CSSClass divTableColumn {"divTableColumn"};
     const CSSClass divTableCell {"divTableCell", {displayTableCell}};
 }
 

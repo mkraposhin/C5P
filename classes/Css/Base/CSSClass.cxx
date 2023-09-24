@@ -8,6 +8,15 @@ c5p::CSSClass::CSSClass(const std::string& name)
 {
 }
 
+c5p::CSSClass::CSSClass(const std::string& name, const CSSClass& cssclass)
+:
+    Element(cssclass),
+    css_class_(name),
+    css_properties_(cssclass.css_properties_),
+    at_rule_(cssclass.at_rule_)
+{
+}    
+
 c5p::CSSClass::CSSClass
 (
     const std::string& name,

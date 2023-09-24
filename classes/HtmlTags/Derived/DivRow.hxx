@@ -1,52 +1,41 @@
 #ifndef DivRow_H
 #define DivRow_H
 
-#include "Div.hxx"
+#include "DivVector.hxx"
 
 namespace c5p
 {
 
 /// @brief 
-class DivRow : public Div
+class DivRow : public DivVector
 {
 
-    /// @brief a style for the whole row
-    CSSClassPtr div_table_row_ptr_;
+protected:
 
-    /// @brief a style for an each cell
-    CSSClassPtr div_table_cell_ptr_;
-
-    /// @brief gives a non-const access to a list of div's in the row
-    Div &div_row();
+    /// @brief
+    const CSSClass& vector_element_css() override;
 
 public:
 
     /// @brief Constructs a row of Div elements
-    DivRow();
+    DivRow() = default;
 
     /// @brief Creates copy of this object
     DivRow(const DivRow&) = default;
 
+    // @brief Creates Div row from a list of elements
+    template <typename TagType>
+    explicit DivRow (const std::initializer_list<TagType>& elems)
+    : DivVector()
+    {
+        add_elements(elems);
+    }
+
     /// @brief Dtor
-    ~DivRow();
-
-    /// @brief Adds a new element to a div row
-    virtual ElementPtr& add (const Element&) override;
-
-    /// @brief Adds an element stored by a ordinary pointer to a div row
-    virtual ElementPtr& add (Element* ept) override;
-
-    /// @brief Adds an element stored by a shared_ptr pointer to a div row
-    virtual ElementPtr& add (const ElementPtr& eptr) override;
+    virtual ~DivRow();
 
     /// @brief Creates copy 
     ElementPtr clone() const override;
-
-    /// @brief Sets width for each element
-    void cell_width(int w);
-
-    /// @brief Sets css class of the contained row
-    void row_css(const CSSClass& css);
 };
 
 }

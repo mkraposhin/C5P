@@ -3,6 +3,7 @@
 #include "DivColumn.hxx"
 #include "CaptionedImage.hxx"
 #include "Size.hxx"
+#include "CSS.hxx"
 
 c5p::Education::Education(const Site& site)
 :
@@ -10,7 +11,7 @@ c5p::Education::Education(const Site& site)
 {
     const int width = 300;
 
-    CSSClass eduColClass ("eduColClass");
+    CSSClass eduColClass ("eduColClass", css::divTable);
     eduColClass.add(Width(width));
 
     DivColumn div_col

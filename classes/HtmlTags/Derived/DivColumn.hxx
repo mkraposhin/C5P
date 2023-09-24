@@ -1,54 +1,39 @@
 #ifndef DivColumn_H
 #define DivColumn_H
 
-#include "Div.hxx"
+#include "DivVector.hxx"
 
 namespace c5p
 {
 
-class DivColumn : public Div
+class DivColumn : public DivVector
 {
 
-private:
+protected:
 
     /// @brief
-    Div& init_column_body();
-
-    /// @brief
-    Div& column_body_;
+    const CSSClass& vector_element_css() override;
 
 public:
 
-    //- Constructs column of Div elements
-    DivColumn();
+    /// @brief Constructs column of Div elements
+    DivColumn() : DivVector(){};
 
-    //- Creates copy of this object
-    DivColumn(const DivColumn&) = default;
+    /// @brief Creates copy of this column of Divs
+    DivColumn(const DivColumn& divc) : DivVector(divc){};
 
-    // @brief Creates Div column from a list of elements
+    /// @brief Creates Div column from a list of elements
     template <typename TagType>
     explicit DivColumn (const std::initializer_list<TagType>& elems)
-    : column_body_(init_column_body())
+    : DivVector()
     {
-        for(auto it_el = elems.begin(); it_el != elems.end(); it_el++)
-        {
-            add(*it_el);
-        }
+        add_elements(elems);
     }
 
-    //- Dtor
+    /// @brief Dtor
     virtual ~DivColumn();
 
-    //- Add a new element
-    virtual ElementPtr& add (const Element&) override;
-
-    //- Add the element stored by a ordinary pointer
-    virtual ElementPtr& add (Element* ept) override;
-
-    //- Add the element stored by a shared_ptr pointer
-    virtual ElementPtr& add (const ElementPtr& eptr) override;
-
-    //- Creates copy 
+    /// @brief Creates copy 
     ElementPtr clone() const override;
 
 };
