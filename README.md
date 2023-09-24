@@ -1,4 +1,4 @@
-C++ powered personal page (C5P)
+C++ - powered personal page (C5P)
 -------------------------------
 
 The repository contains the source code for a personal site.
@@ -20,6 +20,7 @@ by requesting __Document__'s class virtual method __print__.
 An object of __Document__ class owns:
 - an instance of __Head__ class that contains HTML header;
 - an instance of __Page__ class that contains HTML body.
+
 Each page (__Document__ implementation) of a site is responsible to fill
 contents of header and body elements. Instances of __Head__ and __Page__
 classes should own objects that represent their nested HTML elements.
