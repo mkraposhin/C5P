@@ -16,18 +16,17 @@ c5p::Home::Home(const Site& site)
 :
     DocumentImpl(site)
 {
-    head().add_meta("keywords", "Matvey Kraposhin, C++, SDN, Tungsten Fabric, OpenFOAM, FVM");
+    head().add_meta("keywords", "Matvey Kraposhin, C++, SDN, OpenSDN, Tungsten Fabric, OpenFOAM, FVM");
     Header<2> head_techn ("Hello!");
-    ParagraphText txt_hi ("I'm Matvey Kraposhin and this is my personal site."
-    " I hope you'll find it useful.");
+    ParagraphText txt_hi ("And welcome to my personal site.");
 
-    ParagraphText txt_about ("This resource is about my professional experience,"
-    " and interests. Main areas of my expertise are: "
-    " open source software, software development with C++, tungsten fabric SDN,"
+    ParagraphText txt_about ("This resource is about my professional experience"
+    " and interests, they are: "
+    " open source software, software development with C++, Tungsten Fabric SDN,"
     " computational analysis of fluids & gases motion.");
 
     ParagraphText txt_blog("You can find news, list of resources and short notes "
-    "about open source in the blog below."
+    "about open source software in the blog below."
     " If you have any ideas for sharing or about collaboration,"
     " please feel free to contact me.");
 
