@@ -23,7 +23,7 @@ c5p::Home::Home(const Site& site)
 
     ParagraphText txt_about ("This resource is about my professional experience,"
     " and interests. Main areas of my expertise are: "
-    " open source software, software development with C++ (the site is assemblied using this language),"
+    " open source software, software development with C++, tungsten fabric SDN,"
     " computational analysis of fluids & gases motion.");
 
     ParagraphText txt_blog("You can find news, list of resources and short notes "
@@ -38,6 +38,10 @@ c5p::Home::Home(const Site& site)
 
     const std::vector<std::string> md_titles =
         {
+            "The First Release Of OpenSDN",
+            "Implementation of NAT66 (IPv6 NAT) in Tungsten Fabric",
+            "The Internal Structure of Route Tables of Tungsten Fabric vRouter Agent",
+            "NAT and VxLAN in Tungsten Fabric",
             "Abbreviations",
             "Markdown Rendering Using HTML",
             "Developers And Testers Forum June 2023",

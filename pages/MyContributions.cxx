@@ -101,6 +101,10 @@ c5p::MyContributions::MyContributions(const Site& site)
             ": is OpenFOAM framework for simulation of fluid"
             " flows using regularized (QGD/QHD) equations approach"};
 
+        AText txt_opensdn {Uri("https://github.com/OpenSDN-io").
+            html("OpenSDN SDN platform") +
+            " Transition of the codebase to C++11, update of third-party libraries, etc"};
+
         AText txt_tf { Uri("https://github.com/tungstenfabric/tf-controller/graphs/contributors?from=2020-01-06&to=2023-09-01&type=a").
             html("Tungsten Fabric controller") +
             " Improvements of TF controller modules (Metadata service, VxLAN)"};
@@ -112,6 +116,7 @@ c5p::MyContributions::MyContributions(const Site& site)
         div_col % ossProjColClass;
 
 
+        div_col.add(txt_opensdn);
         div_col.add(txt_tf_rest);
         div_col.add(txt_tf);
         div_col.add(div_hcs);
