@@ -17,8 +17,7 @@ c5p::Home::Home(const Site& site)
     DocumentImpl(site)
 {
     head().add_meta("keywords", "Matvey Kraposhin, C++, SDN, OpenSDN, Tungsten Fabric, OpenFOAM, FVM");
-    Header<2> head_techn ("Hello!");
-    ParagraphText txt_hi ("And welcome to my personal site.");
+    ParagraphText txt_hi ("Welcome to my personal site.");
 
     ParagraphText txt_about ("This resource is about my professional experience"
     " and interests, they are: "
@@ -37,6 +36,7 @@ c5p::Home::Home(const Site& site)
 
     const std::vector<std::string> md_titles =
         {
+            "New OpenSDN IPv6 capabilities",
             "The First Release Of OpenSDN",
             "Implementation of NAT66 (IPv6 NAT) in Tungsten Fabric",
             "The Internal Structure of Route Tables of Tungsten Fabric vRouter Agent",
@@ -53,7 +53,6 @@ c5p::Home::Home(const Site& site)
     MarkdownBlog md_blog {"../md", md_titles};
 
     Div& mid_col = layout().operator()<Div>(1);
-    mid_col.add(head_techn);
     mid_col.add(txt_hi);
     mid_col.add(txt_about);
     mid_col.add(txt_blog);
