@@ -21,7 +21,7 @@ c5p::Home::Home(const Site& site)
 
     ParagraphText txt_about ("This resource is about my professional experience"
     " and interests, they are: "
-    " open source software, software development with C++, Tungsten Fabric SDN,"
+    " open source software, software development with C++, OpenSDN (Tungsten Fabric SDN),"
     " computational analysis of fluids & gases motion.");
 
     ParagraphText txt_blog("You can find news, list of resources and short notes "
