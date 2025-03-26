@@ -30,14 +30,7 @@ c5p::Contacts::Contacts(const Site& site)
         //GitHub
         ParagraphText {
             Uri("https://github.com/mkraposhin").
-            html("GitHub account")},
-
-        //E-Mail
-
-        //Telegram
-        ParagraphText {
-            Uri("https://t.me/kraposhin").
-            html("Telegram account")}
+            html("GitHub account")}
     };
 
     div_col % contactsColClass;
