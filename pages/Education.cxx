@@ -29,14 +29,6 @@ c5p::Education::Education(const Site& site)
     std::string txt_cpp98 ("2018: Progrmming with Visual Studio C++");
     im_cpp98.caption(txt_cpp98);
 
-    CaptionedImage im_intro_nw ("NYUx_FCS.NET.1_Certificate_edX.png");
-    im_intro_nw.image().width(300);
-    std::string txt_intro_nw ("2023: Introduction to Networks, EdX," +
-        Uri("https://courses.edx.org/certificates/"
-            "80ea6e76b8c54c5ebde296d2dfce16da").html("certificate")
-    );
-    im_intro_nw.caption(txt_intro_nw);
-
     CaptionedImage im_udemy_sql{"sql_udemy.jpg"};
     im_udemy_sql.image().width(300);
     std::string txt_udemy_sql ("2020: SQL & PostgreSQL for Beginners: "
@@ -46,9 +38,33 @@ c5p::Education::Education(const Site& site)
     );
     im_udemy_sql.caption(txt_udemy_sql);
 
+    CaptionedImage im_intro_nw ("NYUx_FCS.NET.1_Certificate_edX.png");
+    im_intro_nw.image().width(300);
+    std::string txt_intro_nw ("2023: Introduction to Networks, EdX," +
+        Uri("https://courses.edx.org/certificates/"
+            "80ea6e76b8c54c5ebde296d2dfce16da").html("certificate")
+    );
+    im_intro_nw.caption(txt_intro_nw);
+
+    CaptionedImage im_boost_stl("boost_stl.jpg");
+    im_boost_stl.image().width(300);
+    std::string txt_boost_stl("2024: STL and Boost: standard algorithms"
+        " and libraries");
+    im_boost_stl.caption(txt_boost_stl);
+
+    CaptionedImage im_nacc("nacc.jpg");
+    im_nacc.image().width(300);
+    std::string txt_nacc("2024: Network automation with Contrail Cloud "
+        "(Tungsten Fabric / OpenSDN) " +
+        Uri("https://www.junipertrain.ru/course/?category=16&course=86").
+            html("by poplar.ru"));
+    im_nacc.caption(txt_nacc);
+
     div_col.add(im_cpp98);
-    div_col.add(im_intro_nw);
     div_col.add(im_udemy_sql);
+    div_col.add(im_intro_nw);
+    div_col.add(im_boost_stl);
+    div_col.add(im_nacc);
 
     Div& mid_col = layout().operator()<Div>(1);
     mid_col.add(div_col);
