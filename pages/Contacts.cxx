@@ -1,3 +1,4 @@
+#include "Globals.hxx"
 #include "Contacts.hxx"
 #include "ParagraphText.hxx"
 #include "Uri.hxx"
@@ -8,14 +9,14 @@ c5p::Contacts::Contacts(const Site& site)
 :
     DocumentImpl(site)
 {
-    const int width = 300;
+    const int width = constants::column_width;
 
     CSSClass contactsColClass ("contactsColClass");
     contactsColClass.add(Width(width));
 
     DivColumn div_col
     {
-        ParagraphText {"You can reach me using these means: "},
+        ParagraphText {"You can contact me through the following channels:"},
 
         //ResearchGate
         ParagraphText {

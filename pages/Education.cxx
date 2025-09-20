@@ -1,3 +1,4 @@
+#include "Globals.hxx"
 #include "Education.hxx"
 #include "ParagraphText.hxx"
 #include "DivColumn.hxx"
@@ -9,7 +10,7 @@ c5p::Education::Education(const Site& site)
 :
     DocumentImpl(site)
 {
-    const int width = 300;
+    const int width = constants::column_width;
 
     CSSClass eduColClass ("eduColClass", css::divTable);
     eduColClass.add(Width(width));

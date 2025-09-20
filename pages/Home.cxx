@@ -17,17 +17,16 @@ c5p::Home::Home(const Site& site)
     DocumentImpl(site)
 {
     head().add_meta("keywords", "Matvey Kraposhin, C++, SDN, OpenSDN, Tungsten Fabric, OpenFOAM, FVM");
-    ParagraphText txt_hi ("Welcome to my personal site.");
+    ParagraphText txt_hi ("Ahoy and welcome to a personal page showcasing "
+        "my professional experience and interests! These include, but are "
+        "not limited to: open source software, software development with C++, "
+        "OpenSDN (Tungsten Fabric SDN), and computational analysis of fluid "
+        "and gas motion.");
 
-    ParagraphText txt_about ("This resource is about my professional experience"
-    " and interests, they are: "
-    " open source software, software development with C++, OpenSDN (Tungsten Fabric SDN),"
-    " computational analysis of fluids & gases motion.");
-
-    ParagraphText txt_blog("You can find news, list of resources and short notes "
-    "about open source software in the blog below."
-    " If you have any ideas for sharing or about collaboration,"
-    " please feel free to contact me.");
+    ParagraphText txt_blog("You might find the news, resources, and short "
+        "notes about open source software in the blog below useful. If you "
+        "have any ideas for sharing information or collaboration, please "
+        "feel free to contact me.");
 
     Header<2> head_notes ("Notes & news");
     Blog blog1;
@@ -36,6 +35,8 @@ c5p::Home::Home(const Site& site)
 
     const std::vector<std::string> md_titles =
         {
+            "The OpenSDN transition to Rocky9",
+            "10th Anniversary of Hybrid Central Solvers",
             "OpenSDN vRouter Forwarder flows tutorial",
             "Basic OpenSDN vRouter Forwarder Tutorial",
             "CFD programs verification and validation automation using GitHub and OpenFOAM",
@@ -57,7 +58,6 @@ c5p::Home::Home(const Site& site)
 
     Div& mid_col = layout().operator()<Div>(1);
     mid_col.add(txt_hi);
-    mid_col.add(txt_about);
     mid_col.add(txt_blog);
     mid_col.add(head_notes);
     mid_col.add(md_blog);

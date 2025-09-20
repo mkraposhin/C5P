@@ -1,3 +1,4 @@
+#include "Globals.hxx"
 #include "MyContributions.hxx"
 #include "Blog.hxx"
 #include "BlogEntry.hxx"
@@ -15,7 +16,7 @@ c5p::MyContributions::MyContributions(const Site& site)
 :
     DocumentImpl(site)
 {
-    const int width = 300; //px
+    const int width = constants::column_width; //px
     Blog contributions;
     body().jscript(*contributions.jscript());
 
@@ -102,8 +103,10 @@ c5p::MyContributions::MyContributions(const Site& site)
             " flows using regularized (QGD/QHD) equations approach"};
 
         AText txt_opensdn {Uri("https://github.com/OpenSDN-io").
-            html("OpenSDN SDN platform") +
-            " Transition of the codebase to C++11, update of third-party libraries, etc"};
+            html("OpenSDN SDN platform ") +
+            "Transition of the codebase to C++11, update of third-party "
+            "libraries, improvement of documentation, bug fixes, "
+            "organizational activities, etc"};
 
         AText txt_tf { Uri("https://github.com/tungstenfabric/tf-controller/graphs/contributors?from=2020-01-06&to=2023-09-01&type=a").
             html("Tungsten Fabric controller") +
@@ -255,6 +258,7 @@ c5p::MyContributions::MyContributions(const Site& site)
 
         UnorderedList uo
         {
+            ListItem {"First OpenSDN bootcamp (Bangkok, 2025): invited talks and training tracks organization and conduction"},
             ListItem {"Special section of ISP RAS Open Conference, chair of the section (2015 - 2021)"},
             ListItem {"OpenFOAM workshop training tracks, author and instructor of a track"},
             ListItem {"Local Russian OpenFOAM training tracks, author and instructor"},

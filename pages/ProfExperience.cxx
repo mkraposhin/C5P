@@ -1,3 +1,4 @@
+#include "Globals.hxx"
 #include "ProfExperience.hxx"
 #include "ParagraphText.hxx"
 #include "DivColumn.hxx"
@@ -9,7 +10,7 @@ c5p::ProfExperience::ProfExperience(const Site& site)
     DocumentImpl(site)
 {
 
-    const int width = 300;
+    const int width = constants::column_width;
 
     CSSClass profExperienceColClass ("profExperienceColClass");
     profExperienceColClass.add(Width(width));
@@ -26,10 +27,13 @@ c5p::ProfExperience::ProfExperience(const Site& site)
     Header<2> head_techn ("Skills & Technologies");
 
     ParagraphText txt_cpp ("C++ language - standards ISO98, C++11, g++"
-        "compiler");
+        " compiler");
     ParagraphText txt_bash ("Bash scripting language");
     ParagraphText txt_linux ("Linux operating system experienced user");
-    ParagraphText txt_tf ("Tungsten Fabric SDN user & contributor");
+    ParagraphText txt_tf (Uri("https://github.com/tungstenfabric").
+    html("Tungsten Fabric ") + " user & contributor");
+    ParagraphText txt_opensdn (Uri("https://github.com/OpenSDN-io").
+    html("OpenSDN ") + " user & contributor");
     ParagraphText txt_make ("GNU " + Uri("https://www.gnu.org/software/make/").
         html("Make") + " project build system");
     ParagraphText txt_docker ("Docker container virtualization technology");
@@ -37,7 +41,7 @@ c5p::ProfExperience::ProfExperience(const Site& site)
     ParagraphText txt_sql ("SQL (PostgreSQL) user");
     ParagraphText txt_git ("Git version control system");
     ParagraphText txt_parallel ("Parallel and distributed computations (MPI"
-    "/Lihux threads");
+    "/Linux threads");
     ParagraphText txt_openfoam (Uri("https://www.openfoam.com/").
     html("OpenFOAM") + " Finite Volume Method framework");
     ParagraphText txt_salome (Uri("https://www.salome-platform.org/").
@@ -57,6 +61,7 @@ c5p::ProfExperience::ProfExperience(const Site& site)
     div_col.add(txt_bash);
     div_col.add(txt_linux);
     div_col.add(txt_tf);
+    div_col.add(txt_opensdn);
     div_col.add(txt_make);
     div_col.add(txt_docker);
     div_col.add(txt_latex);

@@ -11,6 +11,7 @@ struct constants
     static const std::string protocol;
     static const std::string site_uri;
     static const std::string log_path;
+    static const int column_width = 300; //px
 };
 
 }
