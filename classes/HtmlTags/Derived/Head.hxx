@@ -5,6 +5,7 @@
 #include "JScript.hxx"
 #include "CSSRegistry.hxx"
 #include "Link.hxx"
+#include "Title.hxx"
 #include <vector>
 
 namespace c5p
@@ -31,19 +32,22 @@ private:
     /// @brief Storage for JS in this head
     std::vector<JScript> jscripts_;
 
-    //! Storage for a Link stored in this head
+    /// @brief Storage for a Link stored in this head
     std::shared_ptr<Link> link_;
 
-    //! A list of the meta tags
+    /// @brief A list of the meta tags
     std::list<MetaPair> metas_;
 
-    //! forbid the default constructor
+    /// @brief Storage for a title of this head
+   TitlePtr title_;
+
+    /// @brief forbid the default constructor
     Head() = delete;
 
-    //! forbid copy ctor since it can lead to a broken reference
+    /// @brief forbid copy ctor since it can lead to a broken reference
     Head(const Head&) = delete;
     
-    //! Prints the list of styles into a separate section
+    /// @brief Prints the list of styles into a separate section
     void print_styles(std::ostream& ostr) const;
 
 public:
@@ -68,6 +72,9 @@ public:
 
     /// @brief Adds a new meta tag
     void add_meta(const std::string name, const std::string content);
+
+    /// @brief Sets title for this head
+    void title(const std::string& title_name);
 };
 
 //! this operator is to set a nested element for a given Head

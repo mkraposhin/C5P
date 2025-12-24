@@ -20,6 +20,9 @@ c5p::MyContributions::MyContributions(const Site& site)
     Blog contributions;
     body().jscript(*contributions.jscript());
 
+    head().add_meta("keywords", "Matvey Kraposhin, C++, SDN, OpenSDN, Tungsten Fabric, OpenFOAM, FVM");
+    head().title(std::string{constants::site_name + " - My Contributions"});
+
     // Open source projects
     {
         //Div div1 {{AText{"txt1"}, AText{"txt2"}, AText{"txt3"}}};

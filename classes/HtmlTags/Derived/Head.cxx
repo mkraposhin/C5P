@@ -17,7 +17,8 @@ c5p::Head::Head(const Head& h, CSSClassMap& css_class_map)
     CSSRegistry(css_class_map),
     jscripts_(h.jscripts_),
     link_(h.link_),
-    metas_(h.metas_)
+    metas_(h.metas_),
+    title_(h.title_)
 {
 }
 
@@ -51,6 +52,9 @@ std::ostream& c5p::Head::print(std::ostream& ostr) const
         ostr<<cgicc::meta().set("name",it->first).set("content",it->second)
             <<std::endl;
     }
+    if (bool(title_)) {
+        title_->print(ostr);
+    }
     Element::print(ostr);
     ostr << cgicc::head() << std::endl;
     return ostr;
@@ -69,6 +73,10 @@ void c5p::Head::link(const Link& l)
 void c5p::Head::add_meta(const std::string name, const std::string content)
 {
     metas_.insert(metas_.cend(), MetaPair{name,content});
+}
+
+void c5p::Head::title(const std::string& title_name) {
+    title_.reset(new Title{title_name});
 }
 
 c5p::Element& c5p::operator ^ (Head& el, const Element& child)

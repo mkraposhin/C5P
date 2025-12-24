@@ -8,6 +8,7 @@ namespace c5p
 
 struct constants
 {
+    static const std::string site_name;
     static const std::string protocol;
     static const std::string site_uri;
     static const std::string log_path;

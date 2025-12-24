@@ -15,6 +15,9 @@ c5p::Education::Education(const Site& site)
     CSSClass eduColClass ("eduColClass", css::divTable);
     eduColClass.add(Width(width));
 
+    head().add_meta("keywords", "Matvey Kraposhin, C++, SDN, OpenSDN, Tungsten Fabric, OpenFOAM, FVM");
+    head().title(std::string{constants::site_name + " - Education"});
+
     DivColumn div_col
     {
        ParagraphText {"2000 - 2006: National University"

@@ -9,11 +9,13 @@ c5p::ProfExperience::ProfExperience(const Site& site)
 :
     DocumentImpl(site)
 {
-
     const int width = constants::column_width;
 
     CSSClass profExperienceColClass ("profExperienceColClass");
     profExperienceColClass.add(Width(width));
+
+    head().add_meta("keywords", "Matvey Kraposhin, C++, SDN, OpenSDN, Tungsten Fabric, OpenFOAM, FVM");
+    head().title(std::string{constants::site_name + " - Professional experience"});
 
     Header<2> head_empl ("Employment history");
 

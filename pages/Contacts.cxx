@@ -14,6 +14,9 @@ c5p::Contacts::Contacts(const Site& site)
     CSSClass contactsColClass ("contactsColClass");
     contactsColClass.add(Width(width));
 
+    head().add_meta("keywords", "Matvey Kraposhin, C++, SDN, OpenSDN, Tungsten Fabric, OpenFOAM, FVM");
+    head().title(std::string{constants::site_name + " - Contacts"});
+
     DivColumn div_col
     {
         ParagraphText {"You can contact me through the following channels:"},

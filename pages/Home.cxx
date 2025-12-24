@@ -17,6 +17,7 @@ c5p::Home::Home(const Site& site)
     DocumentImpl(site)
 {
     head().add_meta("keywords", "Matvey Kraposhin, C++, SDN, OpenSDN, Tungsten Fabric, OpenFOAM, FVM");
+    head().title(std::string{constants::site_name + " - Home"});
     ParagraphText txt_hi ("Ahoy and welcome to a personal page showcasing "
         "my professional experience and interests! These include, but are "
         "not limited to: open source software, software development with C++, "
@@ -35,6 +36,7 @@ c5p::Home::Home(const Site& site)
 
     const std::vector<std::string> md_titles =
         {
+            "A seminar at Tsinghua university: similarities between computer vehicular and gasdynamic networks",
             "The OpenSDN transition to Rocky9",
             "10th Anniversary of Hybrid Central Solvers",
             "OpenSDN vRouter Forwarder flows tutorial",
