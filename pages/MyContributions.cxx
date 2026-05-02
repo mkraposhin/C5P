@@ -66,8 +66,8 @@ c5p::MyContributions::MyContributions(const Site& site)
             };
 
             ParagraphText txt4{
-                "Up to now, the solvers have been used in more than 50 scientific studies (several defended PhD),"
-                " such as:"
+                "Up to now, the solvers have been used in more than 70 scientific studies (12 defended PhD),"
+                " such as, but not limited to:"
             };
 
             UnorderedList uo
@@ -186,7 +186,7 @@ c5p::MyContributions::MyContributions(const Site& site)
         Header<2> h_other ("Other works");
 
         AText txt_pubs {"Other publications (~60 items) can"
-        " be found at the Google scholar page"};
+        " be found at the Google scholar page, HI 11"};
         txt_pubs.uri("https://scholar.google.com/citations?user=dNIvricAAAAJ&hl=ru");
 
         col_content % myPubClass;
@@ -261,6 +261,7 @@ c5p::MyContributions::MyContributions(const Site& site)
 
         UnorderedList uo
         {
+            ListItem {"2026 OpenSDN (Bangkok, 2026) course for Chulalongkorn university: lectures and labs preparation and delivery"},
             ListItem {"First OpenSDN bootcamp (Bangkok, 2025): invited talks and training tracks organization and conduction"},
             ListItem {"Special section of ISP RAS Open Conference, chair of the section (2015 - 2021)"},
             ListItem {"OpenFOAM workshop training tracks, author and instructor of a track"},

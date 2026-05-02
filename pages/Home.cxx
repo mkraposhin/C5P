@@ -36,6 +36,7 @@ c5p::Home::Home(const Site& site)
 
     const std::vector<std::string> md_titles =
         {
+            "2026 OpenSDN university course in Chulalongkorn",
             "A seminar at Tsinghua university: similarities between computer vehicular and gasdynamic networks",
             "The OpenSDN transition to Rocky9",
             "10th Anniversary of Hybrid Central Solvers",

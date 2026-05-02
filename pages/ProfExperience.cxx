@@ -20,11 +20,11 @@ c5p::ProfExperience::ProfExperience(const Site& site)
     Header<2> head_empl ("Employment history");
 
     ParagraphText txt_nrcki("2006 - 2014: National Research Center"
-    " \"Kurchatow institute\": engineer, junior researcher, researcher"
-    " head of a laboratory");
+    " \"Kurchatow institute\": an engineer, a junior researcher, a researcher,"
+    "a head of the laboratory");
 
-    ParagraphText txt_ispras("2015 - 2022: Institute for system programming"
-    " of the RAS: senior researcher, head of a laboratory");
+    ParagraphText txt_ispras("2015 - 2022: Ivannikov institute for system programming"
+    " of the RAS: a senior researcher, a head of the laboratory");
 
     Header<2> head_techn ("Skills & Technologies");
 
