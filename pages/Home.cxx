@@ -36,6 +36,8 @@ c5p::Home::Home(const Site& site)
 
     const std::vector<std::string> md_titles =
         {
+            "Principles and Practices of Interconnection Networks, Part 1",
+            "What distinguishes OpenSDN among other SDN platforms",
             "2026 OpenSDN university course in Chulalongkorn",
             "Hybrid Central Solvers results are on the journal's cover",
             "A seminar at Tsinghua university: similarities between computer vehicular and gasdynamic networks",

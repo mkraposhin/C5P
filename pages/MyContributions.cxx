@@ -38,7 +38,7 @@ c5p::MyContributions::MyContributions(const Site& site)
 
         Div div_hcs;
         {
-            AText txt_hcs { Uri("https://github.com/mkraposhin/hybridCentralSolvers").
+            AText txt_hcs { Uri("https://github.com/unicfdlab/hybridCentralSolvers").
                 html("Hybrid Central Solvers") + 
                 ": a set of OpenFOAM programs for"
                 " comptational analysis of compressible gas and fluid flow, include"
@@ -66,7 +66,7 @@ c5p::MyContributions::MyContributions(const Site& site)
             };
 
             ParagraphText txt4{
-                "Up to now, the solvers have been used in more than 70 scientific studies (12 defended PhD),"
+                "Up to now, the solvers have been used in more than 70 scientific studies and in 12 defended PhD),"
                 " such as, but not limited to:"
             };
 
@@ -94,16 +94,18 @@ c5p::MyContributions::MyContributions(const Site& site)
         }
         //txt_hcs % textVertSpaces;
 
-        AText txt_liba { Uri("https://github.com/mkraposhin/libAcoustics").
+        AText txt_liba { Uri("https://github.com/unicfdlab/libAcoustics").
             html("libAcoustics") + 
             ": a OpenFOAM library for computational"
             " analysis"
-            " of a far field noise induced by turbulent motions of fluids or gases"};
+            " of a far field noise induced by turbulent motions of fluids or gases."
+            " At least 1 defended PhD disseration."};
 
-        AText txt_qgd { Uri("https://github.com/mkraposhin/QGDsolver").
+        AText txt_qgd { Uri("https://github.com/unicfdlab/QGDsolver").
             html("QGDsolver") + 
             ": is OpenFOAM framework for simulation of fluid"
-            " flows using regularized (QGD/QHD) equations approach"};
+            " flows using regularized (QGD/QHD) equations approach."
+            " At least, 3 defended PhD theses."};
 
         AText txt_opensdn {Uri("https://github.com/OpenSDN-io").
             html("OpenSDN SDN platform ") +
